@@ -3,6 +3,24 @@ import { countries } from "@/data/countries";
 import { designs } from "@/data/designs";
 import DesignCard from "@/components/DesignCard";
 import SectionHeading from "@/components/SectionHeading";
+import { Metadata } from "next";
+
+export async function generateMetadata(props: { params: Promise<{ id: string }> }): Promise<Metadata> {
+  const params = await props.params;
+  const country = countries.find((c) => c.id === params.id);
+  if (!country) return { title: "Not Found" };
+  
+  return {
+    title: `${country.name} Mehndi Styles`,
+    description: country.description,
+    alternates: { canonical: `/styles/${country.id}` },
+    openGraph: {
+      title: `${country.name} Mehndi Styles`,
+      description: country.description,
+      type: "website",
+    }
+  };
+}
 
 export function generateStaticParams() {
   return countries.map((country) => ({
@@ -24,8 +42,18 @@ export default async function CountryStylePage(props: { params: Promise<{ id: st
     return cn.includes(dc) || dc.includes(cn);
   });
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: `${country.name} Mehndi Styles`,
+    description: country.description,
+    url: `https://hennaverse.com/styles/${country.id}`,
+  };
+
   return (
-    <div className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto min-h-screen">
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <div className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto min-h-screen">
       <div className="mb-16">
         <div className="text-6xl mb-4">{country.flag}</div>
         <h1 className="text-4xl md:text-5xl font-serif font-bold text-gold mb-6">
@@ -65,5 +93,6 @@ export default async function CountryStylePage(props: { params: Promise<{ id: st
         <p className="text-muted">More designs from this region coming soon.</p>
       )}
     </div>
+    </>
   );
 }

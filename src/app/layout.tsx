@@ -17,7 +17,11 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "HennaVerse — Discover the Art of Henna",
+  metadataBase: new URL("https://hennaverse.com"),
+  title: {
+    default: "HennaVerse — Discover the Art of Henna",
+    template: "%s | HennaVerse",
+  },
   description:
     "Explore 100+ stunning mehndi designs from around the world. Discover traditional and modern henna patterns, tutorials, cultural guides, and inspiration for every occasion.",
   keywords: [
@@ -31,6 +35,22 @@ export const metadata: Metadata = {
     "henna art",
     "henna tutorial",
   ],
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "HennaVerse — Discover the Art of Henna",
+    description: "Explore 100+ stunning mehndi designs from around the world.",
+    url: "https://hennaverse.com",
+    siteName: "HennaVerse",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "HennaVerse — Discover the Art of Henna",
+    description: "Explore 100+ stunning mehndi designs from around the world.",
+  },
 };
 
 export default function RootLayout({
@@ -44,6 +64,26 @@ export default function RootLayout({
       className={`${inter.variable} ${playfair.variable} antialiased`}
     >
       <body className="min-h-screen flex flex-col bg-background text-foreground font-sans">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "HennaVerse",
+              url: "https://hennaverse.com",
+              description: "Explore 100+ stunning mehndi designs from around the world.",
+              publisher: {
+                "@type": "Organization",
+                name: "HennaVerse",
+                logo: {
+                  "@type": "ImageObject",
+                  url: "https://hennaverse.com/icon.png"
+                }
+              }
+            })
+          }}
+        />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
