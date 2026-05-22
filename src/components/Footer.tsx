@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Logo from "@/components/Logo";
 
 const quickLinks = [
   { href: "/gallery", label: "Design Gallery" },
@@ -65,10 +66,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link href="/" className="inline-block mb-4">
-              <span className="text-2xl font-serif font-bold text-gradient-gold">
-                HennaVerse
-              </span>
+            <Link href="/" className="inline-block mb-4 outline-none">
+              <Logo className="mb-2" />
             </Link>
             <p className="text-muted text-sm leading-relaxed mb-6">
               Your premier destination for discovering stunning mehndi designs from
