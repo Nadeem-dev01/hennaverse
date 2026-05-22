@@ -1,8 +1,9 @@
 "use client";
 
-import { useState, useMemo } from "react";
-import { designs } from "@/data/designs";
+import { useState, useMemo, useCallback, useEffect, useRef } from "react";
+import { designs as staticDesigns } from "@/data/designs";
 import { countries } from "@/data/countries";
+import { useDesigns, type Design } from "@/hooks/useDesigns";
 import DesignCard from "@/components/DesignCard";
 import FilterBar from "@/components/FilterBar";
 import Lightbox from "@/components/Lightbox";
@@ -11,33 +12,65 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const INITIAL_COUNT = 24;
 
+// Skeleton loading card
+function SkeletonCard() {
+  return (
+    <div className="bg-surface rounded-xl border border-border overflow-hidden animate-pulse">
+      <div className="aspect-[4/3] bg-gradient-to-br from-surface via-border to-surface" />
+      <div className="p-4 space-y-3">
+        <div className="h-5 bg-border rounded w-3/4" />
+        <div className="h-3 bg-border rounded w-1/2" />
+        <div className="flex gap-1.5">
+          <div className="h-4 w-14 bg-border rounded-full" />
+          <div className="h-4 w-12 bg-border rounded-full" />
+          <div className="h-4 w-16 bg-border rounded-full" />
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function GalleryClient() {
   const [activeFilters, setActiveFilters] = useState<Record<string, string>>({});
   const [searchValue, setSearchValue] = useState("");
-  const [showAll, setShowAll] = useState(false);
-  const [selectedDesign, setSelectedDesign] = useState<(typeof designs)[0] | null>(null);
+  const [debouncedSearch, setDebouncedSearch] = useState("");
+  const [selectedDesign, setSelectedDesign] = useState<Design | null>(null);
+  const [useAPI, setUseAPI] = useState(true);
+  const observerRef = useRef<HTMLDivElement>(null);
 
-  const countryNames = useMemo(
-    () => [...new Set(countries.map((c) => c.name))],
-    []
-  );
-  const styles = useMemo(
-    () => [...new Set(designs.map((d) => d.style))],
-    []
-  );
-  const difficulties = useMemo(
-    () => [...new Set(designs.map((d) => d.difficulty))],
-    []
-  );
+  // Debounce search input
+  useEffect(() => {
+    const timer = setTimeout(() => setDebouncedSearch(searchValue), 300);
+    return () => clearTimeout(timer);
+  }, [searchValue]);
 
-  const filters = [
-    { label: "Country", options: countryNames },
-    { label: "Style", options: styles },
-    { label: "Difficulty", options: difficulties },
-  ];
+  // Supabase API hook
+  const {
+    designs: apiDesigns,
+    loading,
+    loadingMore,
+    error,
+    pagination,
+    loadMore,
+  } = useDesigns({
+    country: activeFilters.Country,
+    style: activeFilters.Style,
+    difficulty: activeFilters.Difficulty,
+    search: debouncedSearch,
+    limit: INITIAL_COUNT,
+  });
 
-  const filteredDesigns = useMemo(() => {
-    return designs.filter((design) => {
+  // Fallback to static data if API fails
+  useEffect(() => {
+    if (error) {
+      setUseAPI(false);
+    }
+  }, [error]);
+
+  // Static data filter (fallback)
+  const filteredStaticDesigns = useMemo(() => {
+    if (useAPI) return [];
+    return staticDesigns.filter((design) => {
       const matchesSearch =
         !searchValue ||
         design.title.toLowerCase().includes(searchValue.toLowerCase()) ||
@@ -59,18 +92,77 @@ export default function GalleryClient() {
 
       return matchesSearch && matchesCountry && matchesStyle && matchesDifficulty;
     });
-  }, [activeFilters, searchValue]);
+  }, [activeFilters, searchValue, useAPI]);
 
-  const displayedDesigns = showAll
-    ? filteredDesigns
-    : filteredDesigns.slice(0, INITIAL_COUNT);
+  // Select the active designs list
+  const designs: Design[] = useAPI
+    ? apiDesigns
+    : filteredStaticDesigns.map((d) => ({
+        ...d,
+        views: undefined,
+        likes: undefined,
+        photographer: undefined,
+      }));
+
+  const totalCount = useAPI
+    ? (pagination?.total || designs.length)
+    : filteredStaticDesigns.length;
+
+  // Infinite scroll with Intersection Observer
+  const lastCardRef = useCallback(
+    (node: HTMLDivElement | null) => {
+      if (!useAPI || loadingMore || !pagination?.hasMore) return;
+      const observer = new IntersectionObserver(
+        (entries) => {
+          if (entries[0].isIntersecting) {
+            loadMore();
+          }
+        },
+        { threshold: 0.1 }
+      );
+      if (node) observer.observe(node);
+      return () => observer.disconnect();
+    },
+    [useAPI, loadingMore, pagination, loadMore]
+  );
+
+  const countryNames = useMemo(
+    () => [...new Set(countries.map((c) => c.name))],
+    []
+  );
+  const styles = useMemo(
+    () => [...new Set(staticDesigns.map((d) => d.style))],
+    []
+  );
+  const difficulties = useMemo(
+    () => [...new Set(staticDesigns.map((d) => d.difficulty))],
+    []
+  );
+
+  const filters = [
+    { label: "Country", options: countryNames },
+    { label: "Style", options: styles },
+    { label: "Difficulty", options: difficulties },
+  ];
 
   return (
     <div className="min-h-screen pt-24 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <SectionHeading
         title="Design Gallery"
-        subtitle={`${filteredDesigns.length} stunning mehndi designs to explore`}
+        subtitle={`${totalCount} stunning mehndi designs to explore`}
       />
+
+      {/* Data source indicator */}
+      <div className="flex items-center justify-center gap-2 mb-6">
+        <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium ${
+          useAPI 
+            ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/20' 
+            : 'bg-amber-500/10 text-amber-400 border border-amber-500/20'
+        }`}>
+          <span className={`w-1.5 h-1.5 rounded-full ${useAPI ? 'bg-emerald-400' : 'bg-amber-400'} animate-pulse`} />
+          {useAPI ? '🔥 Live from Supabase' : '📦 Static Data (Offline Mode)'}
+        </span>
+      </div>
 
       <FilterBar
         filters={filters}
@@ -83,27 +175,54 @@ export default function GalleryClient() {
         searchPlaceholder="Search designs by name or tag..."
       />
 
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={JSON.stringify(activeFilters) + searchValue}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.3 }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
-        >
-          {displayedDesigns.map((design, index) => (
-            <DesignCard
-              key={design.id}
-              design={design}
-              index={index}
-              onClick={() => setSelectedDesign(design)}
-            />
+      {/* Loading state */}
+      {loading && (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {Array.from({ length: 12 }).map((_, i) => (
+            <SkeletonCard key={i} />
           ))}
-        </motion.div>
-      </AnimatePresence>
+        </div>
+      )}
 
-      {filteredDesigns.length === 0 && (
+      {/* Designs grid */}
+      {!loading && (
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={JSON.stringify(activeFilters) + debouncedSearch}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+          >
+            {designs.map((design, index) => (
+              <div
+                key={design.id}
+                ref={index === designs.length - 1 ? lastCardRef : undefined}
+              >
+                <DesignCard
+                  design={design}
+                  index={index}
+                  onClick={() => setSelectedDesign(design)}
+                />
+              </div>
+            ))}
+          </motion.div>
+        </AnimatePresence>
+      )}
+
+      {/* Loading more indicator */}
+      {loadingMore && (
+        <div className="flex items-center justify-center py-8">
+          <div className="flex items-center gap-3 text-gold">
+            <div className="w-5 h-5 border-2 border-gold/30 border-t-gold rounded-full animate-spin" />
+            <span className="text-sm font-medium">Loading more designs...</span>
+          </div>
+        </div>
+      )}
+
+      {/* No results */}
+      {!loading && designs.length === 0 && (
         <div className="text-center py-20">
           <p className="text-muted text-lg">No designs found matching your filters.</p>
           <button
@@ -118,16 +237,11 @@ export default function GalleryClient() {
         </div>
       )}
 
-      {!showAll && filteredDesigns.length > INITIAL_COUNT && (
-        <div className="text-center mt-12">
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            onClick={() => setShowAll(true)}
-            className="px-8 py-3 border border-gold/50 text-gold rounded-full font-medium hover:bg-gold/10 transition-colors"
-          >
-            Show All {filteredDesigns.length} Designs
-          </motion.button>
+      {/* Show total info */}
+      {!loading && pagination && useAPI && (
+        <div className="text-center mt-8 text-muted text-sm">
+          Showing {designs.length} of {pagination.total} designs
+          {pagination.hasMore && " • Scroll down to load more"}
         </div>
       )}
 

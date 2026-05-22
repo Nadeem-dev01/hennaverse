@@ -4,10 +4,23 @@ import { useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
 
-import type { Design } from "@/data/designs";
+interface LightboxDesign {
+  id: number;
+  title: string;
+  description: string;
+  country: string;
+  style: string;
+  occasion: string;
+  difficulty: string;
+  imageUrl: string;
+  tags: string[];
+  views?: number;
+  likes?: number;
+  photographer?: string | null;
+}
 
 interface LightboxProps {
-  design: Design | null;
+  design: LightboxDesign | null;
   isOpen: boolean;
   onClose: () => void;
 }
@@ -73,11 +86,19 @@ export default function Lightbox({ design, isOpen, onClose }: LightboxProps) {
               <X size={20} />
             </button>
 
-            {/* Image placeholder */}
-            <div className="aspect-[16/10] bg-gradient-to-br from-purple-dark/40 via-surface to-gold/15 relative">
-              <div className="absolute inset-0 flex items-center justify-center opacity-20">
-                <div className="w-32 h-32 mandala" />
-              </div>
+            {/* Image area */}
+            <div className="aspect-[16/10] bg-gradient-to-br from-purple-dark/40 via-surface to-gold/15 relative overflow-hidden">
+              {design.imageUrl && design.imageUrl.startsWith('http') ? (
+                <img
+                  src={design.imageUrl}
+                  alt={design.title}
+                  className="w-full h-full object-cover"
+                />
+              ) : (
+                <div className="absolute inset-0 flex items-center justify-center opacity-20">
+                  <div className="w-32 h-32 mandala" />
+                </div>
+              )}
               <div className="absolute bottom-4 left-4 flex gap-2">
                 <span className="px-3 py-1 text-sm bg-surface/80 backdrop-blur-sm rounded-md">
                   {design.country}
@@ -90,6 +111,11 @@ export default function Lightbox({ design, isOpen, onClose }: LightboxProps) {
                   {design.difficulty}
                 </span>
               </div>
+              {design.photographer && (
+                <div className="absolute bottom-4 right-4 bg-background/60 backdrop-blur-sm px-2 py-1 rounded text-xs text-muted">
+                  📷 {design.photographer}
+                </div>
+              )}
             </div>
 
             {/* Content */}
