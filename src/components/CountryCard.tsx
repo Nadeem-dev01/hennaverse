@@ -12,7 +12,8 @@ interface Country {
   styles: string[];
   designCount: number;
   heroImage: string;
-  traditions: string[];
+  traditions: string;
+  famousFor: string;
 }
 
 interface CountryCardProps {

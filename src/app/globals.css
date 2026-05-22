@@ -10,10 +10,11 @@
   --color-purple: #7c3aed;
   --color-purple-dark: #4c1d95;
   --color-muted: #8888a0;
-  --font-sans: ui-sans-serif, system-ui, sans-serif;
-  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-playfair), ui-serif, Georgia, "Times New Roman", serif;
 }
 
+/* ── Smooth scrolling & selection ─────────────────────────── */
 html {
   scroll-behavior: smooth;
 }
@@ -28,19 +29,93 @@ body {
   color: white;
 }
 
+/* ── Custom scrollbar ─────────────────────────────────────── */
 ::-webkit-scrollbar {
   width: 8px;
 }
-
 ::-webkit-scrollbar-track {
   background: var(--color-background);
 }
-
 ::-webkit-scrollbar-thumb {
   background: var(--color-border);
   border-radius: 4px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-gold);
+}
+
+/* ── Glassmorphism helper ─────────────────────────────────── */
+.glass {
+  background: rgba(18, 18, 26, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(201, 168, 76, 0.12);
+}
+
+/* ── Gold gradient text ───────────────────────────────────── */
+.text-gradient-gold {
+  background: linear-gradient(135deg, #c9a84c 0%, #f0d080 50%, #c9a84c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Mandala decorative shape (CSS-only) ─────────────────── */
+.mandala {
+  position: relative;
+  border-radius: 50%;
+  border: 2px solid rgba(201, 168, 76, 0.4);
+  box-shadow:
+    0 0 0 8px rgba(201, 168, 76, 0.06),
+    0 0 0 16px rgba(124, 58, 237, 0.06),
+    0 0 0 24px rgba(201, 168, 76, 0.04),
+    0 0 0 36px rgba(124, 58, 237, 0.03);
+}
+.mandala::before {
+  content: "";
+  position: absolute;
+  inset: 20%;
+  border-radius: 50%;
+  border: 1px solid rgba(201, 168, 76, 0.3);
+}
+.mandala::after {
+  content: "";
+  position: absolute;
+  inset: 40%;
+  border-radius: 50%;
+  background: rgba(201, 168, 76, 0.15);
+}
+
+/* ── Animations ───────────────────────────────────────────── */
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+@keyframes gradient-shift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-12px); }
+}
+@keyframes shimmer {
+  0%   { opacity: 0.4; }
+  50%  { opacity: 0.8; }
+  100% { opacity: 0.4; }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 8s ease infinite;
+}
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+.animate-shimmer {
+  animation: shimmer 3s ease-in-out infinite;
 }

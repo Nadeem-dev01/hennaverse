@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 
 const quickLinks = [
@@ -8,10 +10,10 @@ const quickLinks = [
 ];
 
 const styleLinks = [
-  { href: "/styles/indian", label: "Indian Mehndi" },
-  { href: "/styles/arabic", label: "Arabic Henna" },
-  { href: "/styles/moroccan", label: "Moroccan" },
-  { href: "/styles/pakistani", label: "Pakistani" },
+  { href: "/styles/india", label: "Indian Mehndi" },
+  { href: "/styles/arabia", label: "Arabic Henna" },
+  { href: "/styles/morocco", label: "Moroccan" },
+  { href: "/styles/pakistan", label: "Pakistani" },
 ];
 
 function PinterestIcon({ size = 20 }: { size?: number }) {
