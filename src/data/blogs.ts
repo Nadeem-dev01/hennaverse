@@ -23,7 +23,7 @@ export const blogs: BlogPost[] = [
     "readTime": "4 min read",
     "category": "Tutorial",
     "country": "Global",
-    "imageUrl": "/images/blogs/blog-1.jpg",
+    "imageUrl": "https://cdn.pixabay.com/photo/2020/08/12/10/25/mehndi-5482292_1280.jpg",
     "tags": [
       "henna",
       "tutorial"
@@ -39,7 +39,7 @@ export const blogs: BlogPost[] = [
     "readTime": "6 min read",
     "category": "Guide",
     "country": "Global",
-    "imageUrl": "/images/blogs/blog-2.jpg",
+    "imageUrl": "https://cdn.pixabay.com/photo/2022/01/20/15/31/bride-6952618_1280.jpg",
     "tags": [
       "henna",
       "guide"
@@ -55,7 +55,7 @@ export const blogs: BlogPost[] = [
     "readTime": "5 min read",
     "category": "Culture",
     "country": "Global",
-    "imageUrl": "/images/blogs/blog-3.jpg",
+    "imageUrl": "https://cdn.pixabay.com/photo/2020/08/12/10/25/mehndi-5482292_1280.jpg",
     "tags": [
       "henna",
       "culture"
@@ -71,7 +71,7 @@ export const blogs: BlogPost[] = [
     "readTime": "5 min read",
     "category": "Tips",
     "country": "Global",
-    "imageUrl": "/images/blogs/blog-4.jpg",
+    "imageUrl": "https://cdn.pixabay.com/photo/2020/12/31/14/54/henna-5876752_1280.jpg",
     "tags": [
       "henna",
       "tips"
@@ -87,7 +87,7 @@ export const blogs: BlogPost[] = [
     "readTime": "7 min read",
     "category": "Trends",
     "country": "Global",
-    "imageUrl": "/images/blogs/blog-5.jpg",
+    "imageUrl": "https://cdn.pixabay.com/photo/2016/05/03/20/48/henna-1370136_1280.jpg",
     "tags": [
       "henna",
       "trends"
@@ -103,7 +103,7 @@ export const blogs: BlogPost[] = [
     "readTime": "3 min read",
     "category": "Tutorial",
     "country": "Global",
-    "imageUrl": "/images/blogs/blog-1.jpg",
+    "imageUrl": "https://cdn.pixabay.com/photo/2016/05/03/20/48/henna-1370136_1280.jpg",
     "tags": [
       "henna",
       "tutorial"
@@ -119,7 +119,7 @@ export const blogs: BlogPost[] = [
     "readTime": "7 min read",
     "category": "Guide",
     "country": "Global",
-    "imageUrl": "/images/blogs/blog-2.jpg",
+    "imageUrl": "https://cdn.pixabay.com/photo/2019/08/19/16/49/henna-4416944_1280.jpg",
     "tags": [
       "henna",
       "guide"
@@ -135,7 +135,7 @@ export const blogs: BlogPost[] = [
     "readTime": "3 min read",
     "category": "Culture",
     "country": "Global",
-    "imageUrl": "/images/blogs/blog-3.jpg",
+    "imageUrl": "https://cdn.pixabay.com/photo/2020/08/12/10/25/mehndi-5482292_1280.jpg",
     "tags": [
       "henna",
       "culture"
@@ -151,7 +151,7 @@ export const blogs: BlogPost[] = [
     "readTime": "5 min read",
     "category": "Tips",
     "country": "Global",
-    "imageUrl": "/images/blogs/blog-4.jpg",
+    "imageUrl": "https://cdn.pixabay.com/photo/2024/04/28/19/17/ai-generated-8726163_1280.png",
     "tags": [
       "henna",
       "tips"
@@ -167,7 +167,7 @@ export const blogs: BlogPost[] = [
     "readTime": "3 min read",
     "category": "Trends",
     "country": "Global",
-    "imageUrl": "/images/blogs/blog-5.jpg",
+    "imageUrl": "https://cdn.pixabay.com/photo/2020/12/31/14/54/henna-5876752_1280.jpg",
     "tags": [
       "henna",
       "trends"
@@ -183,7 +183,7 @@ export const blogs: BlogPost[] = [
     "readTime": "3 min read",
     "category": "Tutorial",
     "country": "Global",
-    "imageUrl": "/images/blogs/blog-1.jpg",
+    "imageUrl": "https://cdn.pixabay.com/photo/2026/05/18/20/37/bucharena-grater-10286671_960_720.png",
     "tags": [
       "henna",
       "tutorial"
@@ -199,7 +199,7 @@ export const blogs: BlogPost[] = [
     "readTime": "5 min read",
     "category": "Guide",
     "country": "Global",
-    "imageUrl": "/images/blogs/blog-2.jpg",
+    "imageUrl": "https://cdn.pixabay.com/photo/2024/04/28/19/17/ai-generated-8726163_1280.png",
     "tags": [
       "henna",
       "guide"
@@ -215,7 +215,7 @@ export const blogs: BlogPost[] = [
     "readTime": "7 min read",
     "category": "Culture",
     "country": "Global",
-    "imageUrl": "/images/blogs/blog-3.jpg",
+    "imageUrl": "https://cdn.pixabay.com/photo/2020/11/04/03/55/henna-5711381_1280.jpg",
     "tags": [
       "henna",
       "culture"
@@ -231,7 +231,7 @@ export const blogs: BlogPost[] = [
     "readTime": "4 min read",
     "category": "Tips",
     "country": "Global",
-    "imageUrl": "/images/blogs/blog-4.jpg",
+    "imageUrl": "https://cdn.pixabay.com/photo/2019/03/13/15/15/information-processing-4053081_1280.jpg",
     "tags": [
       "henna",
       "tips"
@@ -247,7 +247,7 @@ export const blogs: BlogPost[] = [
     "readTime": "5 min read",
     "category": "Trends",
     "country": "Global",
-    "imageUrl": "/images/blogs/blog-5.jpg",
+    "imageUrl": "https://cdn.pixabay.com/photo/2017/10/14/06/03/mehndi-2849864_1280.jpg",
     "tags": [
       "henna",
       "trends"

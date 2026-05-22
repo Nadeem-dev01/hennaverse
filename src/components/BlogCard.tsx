@@ -48,15 +48,24 @@ export default function BlogCard({
           className="group relative bg-surface rounded-2xl border border-border overflow-hidden hover:border-gold/30 transition-all"
         >
           <div className="grid md:grid-cols-2 gap-0">
-            {/* Image placeholder */}
+            {/* Image */}
             <div
-              className={`aspect-[16/9] md:aspect-auto bg-gradient-to-br ${gradient} relative`}
+              className={`aspect-[16/9] md:aspect-auto bg-gradient-to-br ${gradient} relative overflow-hidden`}
             >
-              <div className="absolute inset-0 flex items-center justify-center opacity-15">
-                <div className="w-40 h-40 mandala" />
-              </div>
-              <div className="absolute top-4 left-4">
-                <span className="px-3 py-1 text-xs font-medium bg-purple/80 text-white rounded-full backdrop-blur-sm">
+              {blog.imageUrl && blog.imageUrl.startsWith('http') ? (
+                <img 
+                  src={blog.imageUrl} 
+                  alt={blog.title} 
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
+                  loading="lazy" 
+                />
+              ) : (
+                <div className="absolute inset-0 flex items-center justify-center opacity-15">
+                  <div className="w-40 h-40 mandala" />
+                </div>
+              )}
+              <div className="absolute top-4 left-4 z-10">
+                <span className="px-3 py-1 text-xs font-medium bg-purple/80 text-white rounded-full backdrop-blur-sm shadow-sm">
                   {blog.category}
                 </span>
               </div>
@@ -99,13 +108,22 @@ export default function BlogCard({
         whileHover={{ y: -6 }}
         className="group h-full bg-surface rounded-xl border border-border overflow-hidden hover:border-gold/30 hover:shadow-lg hover:shadow-gold/5 transition-all"
       >
-        {/* Image placeholder */}
-        <div className={`aspect-[16/10] bg-gradient-to-br ${gradient} relative`}>
-          <div className="absolute inset-0 flex items-center justify-center opacity-15">
-            <div className="w-20 h-20 mandala" />
-          </div>
-          <div className="absolute top-3 left-3">
-            <span className="px-2.5 py-0.5 text-[10px] font-medium bg-purple/80 text-white rounded-full backdrop-blur-sm">
+        {/* Image */}
+        <div className={`aspect-[16/10] bg-gradient-to-br ${gradient} relative overflow-hidden`}>
+          {blog.imageUrl && blog.imageUrl.startsWith('http') ? (
+            <img 
+              src={blog.imageUrl} 
+              alt={blog.title} 
+              className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+              loading="lazy" 
+            />
+          ) : (
+            <div className="absolute inset-0 flex items-center justify-center opacity-15">
+              <div className="w-20 h-20 mandala" />
+            </div>
+          )}
+          <div className="absolute top-3 left-3 z-10">
+            <span className="px-2.5 py-0.5 text-[10px] font-medium bg-purple/80 text-white rounded-full backdrop-blur-sm shadow-sm">
               {blog.category}
             </span>
           </div>

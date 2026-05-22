@@ -1,60 +1,31 @@
 /**
- * HennaVerse Pixabay Image Seeder
+ * HennaVerse Database Seeder
  * 
- * Fetches real mehndi/henna images from Pixabay API and seeds them into Supabase.
+ * Reads the fully populated designs from src/data/designs.ts
+ * and seeds them into Supabase.
  * 
  * Usage:
- *   PIXABAY_API_KEY=xxx NEXT_PUBLIC_SUPABASE_URL=xxx SUPABASE_SERVICE_ROLE_KEY=xxx node scripts/seed-designs.mjs
+ *   NEXT_PUBLIC_SUPABASE_URL=xxx SUPABASE_SERVICE_ROLE_KEY=xxx node scripts/seed-designs.mjs
  */
 
 import { createClient } from '@supabase/supabase-js';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
-const PIXABAY_API_KEY = process.env.PIXABAY_API_KEY;
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const SUPABASE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
-if (!PIXABAY_API_KEY || !SUPABASE_URL || !SUPABASE_KEY) {
+if (!SUPABASE_URL || !SUPABASE_KEY) {
   console.error('❌ Missing environment variables. Required:');
-  console.error('   PIXABAY_API_KEY, NEXT_PUBLIC_SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY');
+  console.error('   NEXT_PUBLIC_SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY');
   process.exit(1);
 }
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
-
-// Search queries mapped to categories/styles
-const SEARCH_QUERIES = [
-  // India
-  { query: 'mehndi design hand', country: 'India', style: 'Rajasthani', occasion: 'Wedding', limit: 5 },
-  { query: 'bridal mehndi henna', country: 'India', style: 'Bridal', occasion: 'Wedding', limit: 5 },
-  { query: 'mandala henna design', country: 'India', style: 'Mandala', occasion: 'Festival', limit: 4 },
-  { query: 'peacock mehndi art', country: 'India', style: 'Peacock', occasion: 'Diwali', limit: 3 },
-  { query: 'south indian mehndi', country: 'India', style: 'South Indian', occasion: 'Festival', limit: 3 },
-  // Pakistan
-  { query: 'pakistani mehndi bridal', country: 'Pakistan', style: 'Bridal', occasion: 'Wedding', limit: 5 },
-  { query: 'tikki mehndi design', country: 'Pakistan', style: 'Tikki', occasion: 'Eid', limit: 4 },
-  { query: 'geometric henna pattern', country: 'Pakistan', style: 'Geometric', occasion: 'Engagement', limit: 3 },
-  { query: 'floral henna hand', country: 'Pakistan', style: 'Floral', occasion: 'Party', limit: 3 },
-  // Arabia
-  { query: 'arabic mehndi design', country: 'Arabia', style: 'Arabic bold', occasion: 'Eid', limit: 5 },
-  { query: 'gulf khaleeji henna', country: 'Arabia', style: 'Gulf', occasion: 'Wedding', limit: 5 },
-  { query: 'arabic henna minimal', country: 'Arabia', style: 'Minimal Arabic', occasion: 'Casual', limit: 5 },
-  // Morocco
-  { query: 'moroccan henna design', country: 'Morocco', style: 'Berber', occasion: 'Festival', limit: 5 },
-  { query: 'berber tribal henna', country: 'Morocco', style: 'Tribal', occasion: 'Festival', limit: 4 },
-  { query: 'geometric henna moroccan', country: 'Morocco', style: 'Geometric', occasion: 'Casual', limit: 3 },
-  // Turkey
-  { query: 'turkish henna night', country: 'Turkey', style: 'Ottoman', occasion: 'Wedding', limit: 5 },
-  { query: 'ottoman floral pattern', country: 'Turkey', style: 'Floral Turkish', occasion: 'Engagement', limit: 5 },
-  // Indonesia
-  { query: 'javanese henna art', country: 'Indonesia', style: 'Javanese', occasion: 'Wedding', limit: 5 },
-  { query: 'balinese henna design', country: 'Indonesia', style: 'Balinese', occasion: 'Festival', limit: 5 },
-  // Sudan/Africa
-  { query: 'african henna design', country: 'Sudan', style: 'African Tribal', occasion: 'Festival', limit: 4 },
-  { query: 'sudanese henna tattoo', country: 'Sudan', style: 'Sudanese', occasion: 'Wedding', limit: 4 },
-  // Western/Fusion
-  { query: 'minimalist henna tattoo', country: 'Western', style: 'Minimalist', occasion: 'Casual', limit: 5 },
-  { query: 'modern geometric henna', country: 'Western', style: 'Geometric Modern', occasion: 'Party', limit: 5 },
-];
 
 // Category metadata
 const CATEGORIES = [
@@ -67,42 +38,6 @@ const CATEGORIES = [
   { name: 'Sudan', slug: 'sudan', flag: '🇸🇩', description: 'Sudanese and African henna traditions feature bold, striking patterns with thick lines and geometric shapes. The "Sudani" style is particularly distinctive with its dark, dramatic application.', traditions: 'In Sudan, henna ceremonies called "jirtig" are essential wedding preparations. The bride undergoes multiple henna sessions, each with specific cultural significance.', famous_for: 'Bold dramatic patterns with thick lines and deep black stain', styles: ['African Tribal', 'Sudanese'] },
   { name: 'Western', slug: 'western', flag: '🌍', description: 'Western and fusion henna represents the modern evolution of mehndi art, combining traditional elements with contemporary minimalist aesthetics. Popular at music festivals and as temporary body art.', traditions: 'Western henna culture has grown through music festivals, bohemian fashion, and social media, creating a new generation of henna enthusiasts who blend global styles.', famous_for: 'Minimalist designs, geometric patterns, and Indo-Western fusion', styles: ['Minimalist', 'Geometric Modern'] },
 ];
-
-const DIFFICULTIES = ['Easy', 'Medium', 'Hard', 'Expert'];
-
-async function fetchPixabayImages(query, perPage = 10) {
-  const url = `https://pixabay.com/api/?key=${PIXABAY_API_KEY}&q=${encodeURIComponent(query)}&image_type=photo&per_page=${perPage}&safesearch=true&orientation=vertical&min_width=400&min_height=400`;
-  
-  const res = await fetch(url);
-  if (!res.ok) {
-    console.error(`❌ Pixabay API error for "${query}": ${res.status} ${res.statusText}`);
-    return [];
-  }
-  const data = await res.json();
-  return data.hits || [];
-}
-
-function generateTitle(style, country, index) {
-  const adjectives = ['Elegant', 'Stunning', 'Beautiful', 'Intricate', 'Mesmerizing', 'Graceful', 'Exquisite', 'Captivating', 'Enchanting', 'Radiant'];
-  const adj = adjectives[(index + style.length) % adjectives.length];
-  return `${adj} ${style} ${country} Mehndi Design`;
-}
-
-function generateDescription(style, country, occasion) {
-  const templates = [
-    `A breathtaking ${style.toLowerCase()} mehndi design from ${country}, perfect for ${occasion.toLowerCase()} celebrations. This intricate henna pattern showcases the rich artistic heritage of ${country}'s mehndi tradition with stunning detail and craftsmanship.`,
-    `Discover this gorgeous ${style.toLowerCase()} henna art inspired by ${country}'s centuries-old traditions. Ideal for ${occasion.toLowerCase()}, this design features flowing patterns that blend classic elegance with contemporary style.`,
-    `This exquisite ${style.toLowerCase()} mehndi pattern embodies the beauty of ${country}'s henna culture. Created for ${occasion.toLowerCase()} occasions, it combines traditional motifs with artistic flair that will leave everyone mesmerized.`,
-  ];
-  return templates[Math.floor(Math.random() * templates.length)];
-}
-
-function generateTags(style, country, occasion) {
-  const baseTags = [style.toLowerCase(), country.toLowerCase(), occasion.toLowerCase(), 'mehndi', 'henna'];
-  const extraTags = ['bridal', 'traditional', 'modern', 'elegant', 'intricate', 'hand art', 'body art', 'tattoo', 'festival', 'celebration'];
-  const shuffled = extraTags.sort(() => Math.random() - 0.5);
-  return [...new Set([...baseTags, ...shuffled.slice(0, 3)])];
-}
 
 async function seedCategories() {
   console.log('\n📂 Seeding categories...');
@@ -121,69 +56,55 @@ async function seedCategories() {
 }
 
 async function seedDesigns() {
-  console.log('\n🎨 Fetching images from Pixabay and seeding designs...\n');
+  console.log('\n🎨 Reading designs from static file and seeding...');
   
   // Delete existing
   await supabase.from('designs').delete().neq('id', 0);
   
-  let totalSeeded = 0;
-  const seenPixabayIds = new Set();
+  const designsFilePath = path.join(__dirname, '..', 'src', 'data', 'designs.ts');
+  const fileContent = fs.readFileSync(designsFilePath, 'utf8');
   
-  for (const searchConfig of SEARCH_QUERIES) {
-    const { query, country, style, occasion, limit } = searchConfig;
-    
-    console.log(`🔍 Searching: "${query}" (${country}/${style})...`);
-    
-    const images = await fetchPixabayImages(query, limit + 5); // fetch extra to account for duplicates
-    
-    if (images.length === 0) {
-      console.warn(`⚠️  No images found for "${query}". Skipping.`);
-      continue;
-    }
-    
-    const designs = [];
-    let count = 0;
-    
-    for (const img of images) {
-      if (count >= limit) break;
-      if (seenPixabayIds.has(img.id)) continue;
-      seenPixabayIds.add(img.id);
-      
-      designs.push({
-        title: generateTitle(style, country, count),
-        description: generateDescription(style, country, occasion),
-        country,
-        style,
-        occasion,
-        difficulty: DIFFICULTIES[(totalSeeded + count) % 4],
-        image_url: img.largeImageURL || img.webformatURL,
-        thumbnail_url: img.previewURL || img.webformatURL,
-        tags: generateTags(style, country, occasion),
-        pixabay_id: img.id,
-        views: img.views || 0,
-        likes: img.likes || 0,
-        photographer: img.user || null,
-        source: 'pixabay',
-      });
-      
-      count++;
-    }
-    
-    if (designs.length > 0) {
-      const { error } = await supabase.from('designs').insert(designs);
-      if (error) {
-        console.error(`❌ Error inserting designs for "${query}":`, error.message);
-      } else {
-        totalSeeded += designs.length;
-        console.log(`   ✅ Seeded ${designs.length} designs (total: ${totalSeeded})`);
-      }
-    }
-    
-    // Rate limit: Pixabay allows 100 requests/minute
-    await new Promise(r => setTimeout(r, 500));
+  const match = fileContent.match(/export const designs: Design\[\] = (\[[\s\S]*\]);/);
+  if (!match) {
+    throw new Error('Could not find designs array in designs.ts');
   }
   
-  console.log(`\n🎉 Total designs seeded: ${totalSeeded}`);
+  const staticDesigns = JSON.parse(match[1]);
+  console.log(`Found ${staticDesigns.length} designs in static file.`);
+
+  // Map to Supabase schema
+  const dbDesigns = staticDesigns.map(d => ({
+    title: d.title,
+    description: d.description,
+    country: d.country,
+    style: d.style,
+    occasion: d.occasion,
+    difficulty: d.difficulty,
+    image_url: d.imageUrl,
+    thumbnail_url: d.imageUrl,
+    tags: d.tags,
+    pixabay_id: d.pixabay_id || null,
+    views: d.views || 0,
+    likes: d.likes || 0,
+    photographer: d.photographer || null,
+    source: d.source || 'unknown',
+  }));
+
+  // Batch insert
+  const batchSize = 50;
+  let totalSeeded = 0;
+  
+  for (let i = 0; i < dbDesigns.length; i += batchSize) {
+    const batch = dbDesigns.slice(i, i + batchSize);
+    const { error } = await supabase.from('designs').insert(batch);
+    if (error) {
+      console.error(`❌ Error inserting designs batch:`, error.message);
+    } else {
+      totalSeeded += batch.length;
+      console.log(`   ✅ Seeded ${totalSeeded}/${dbDesigns.length} designs`);
+    }
+  }
+
   return totalSeeded;
 }
 
@@ -207,7 +128,7 @@ async function updateCategoryCounts() {
 
 async function main() {
   console.log('╔════════════════════════════════════════╗');
-  console.log('║   HennaVerse Pixabay Image Seeder      ║');
+  console.log('║   HennaVerse Database File Seeder      ║');
   console.log('╚════════════════════════════════════════╝');
   
   const catOk = await seedCategories();

@@ -119,16 +119,25 @@ export default function BlogClient({
             </div>
           </motion.header>
 
-          {/* Hero image placeholder */}
+          {/* Hero image */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
-            className="aspect-[16/9] bg-gradient-to-br from-purple-dark/40 via-surface to-gold/15 rounded-2xl mb-10 relative overflow-hidden"
+            className="aspect-[16/9] bg-gradient-to-br from-purple-dark/40 via-surface to-gold/15 rounded-2xl mb-10 relative overflow-hidden group"
           >
-            <div className="absolute inset-0 flex items-center justify-center opacity-15">
-              <div className="w-32 h-32 mandala" />
-            </div>
+            {blog.imageUrl && blog.imageUrl.startsWith('http') ? (
+              <img
+                src={blog.imageUrl}
+                alt={blog.title}
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            ) : (
+              <div className="absolute inset-0 flex items-center justify-center opacity-15">
+                <div className="w-32 h-32 mandala" />
+              </div>
+            )}
+            <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-60" />
           </motion.div>
 
           {/* Article content */}
