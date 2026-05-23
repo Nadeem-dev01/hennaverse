@@ -112,14 +112,6 @@ export default function BlogClient({
                 <User size={14} />
                 {blog.author}
               </span>
-              <span className="flex items-center gap-1.5">
-                <Calendar size={14} />
-                {blog.date}
-              </span>
-              <span className="flex items-center gap-1.5">
-                <Clock size={14} />
-                {blog.readTime}
-              </span>
             </div>
           </motion.header>
 

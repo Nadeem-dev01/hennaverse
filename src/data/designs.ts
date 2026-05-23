@@ -3346,4 +3346,1381 @@ export const designs: Design[] = [
       "Celebration"
     ]
   }
+,
+  {
+    "id": 3004,
+    "title": "Bridal Mehndi Look 5",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3004.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3003,
+    "title": "Bridal Mehndi Look 4",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3003.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3001,
+    "title": "Bridal Mehndi Look 2",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3001.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3002,
+    "title": "Bridal Mehndi Look 3",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3002.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3000,
+    "title": "Bridal Mehndi Look 1",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3000.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3009,
+    "title": "Bridal Mehndi Look 10",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3009.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3006,
+    "title": "Bridal Mehndi Look 7",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3006.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3005,
+    "title": "Bridal Mehndi Look 6",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3005.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3010,
+    "title": "Bridal Mehndi Look 11",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3010.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3015,
+    "title": "Bridal Mehndi Look 16",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3015.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3011,
+    "title": "Bridal Mehndi Look 12",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3011.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3016,
+    "title": "Bridal Mehndi Look 17",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3016.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3014,
+    "title": "Bridal Mehndi Look 15",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3014.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3012,
+    "title": "Bridal Mehndi Look 13",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3012.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3017,
+    "title": "Bridal Mehndi Look 18",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3017.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3013,
+    "title": "Bridal Mehndi Look 14",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3013.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3019,
+    "title": "Bridal Mehndi Look 20",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3019.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3021,
+    "title": "Bridal Mehndi Look 22",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3021.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3024,
+    "title": "Bridal Mehndi Look 25",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3024.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3028,
+    "title": "Bridal Mehndi Look 29",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3028.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3022,
+    "title": "Bridal Mehndi Look 23",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3022.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3020,
+    "title": "Bridal Mehndi Look 21",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3020.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3026,
+    "title": "Bridal Mehndi Look 27",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3026.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3027,
+    "title": "Bridal Mehndi Look 28",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3027.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3025,
+    "title": "Bridal Mehndi Look 26",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3025.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3029,
+    "title": "Bridal Mehndi Look 30",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3029.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3034,
+    "title": "Bridal Mehndi Look 35",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3034.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3031,
+    "title": "Bridal Mehndi Look 32",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3031.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3033,
+    "title": "Bridal Mehndi Look 34",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3033.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3039,
+    "title": "Bridal Mehndi Look 40",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3039.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3038,
+    "title": "Bridal Mehndi Look 39",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3038.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3032,
+    "title": "Bridal Mehndi Look 33",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3032.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3036,
+    "title": "Bridal Mehndi Look 37",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3036.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3030,
+    "title": "Bridal Mehndi Look 31",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3030.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3040,
+    "title": "Bridal Mehndi Look 41",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3040.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3049,
+    "title": "Bridal Mehndi Look 50",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3049.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3042,
+    "title": "Bridal Mehndi Look 43",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3042.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3047,
+    "title": "Bridal Mehndi Look 48",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3047.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3045,
+    "title": "Bridal Mehndi Look 46",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3045.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3048,
+    "title": "Bridal Mehndi Look 49",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3048.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3041,
+    "title": "Bridal Mehndi Look 42",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3041.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3043,
+    "title": "Bridal Mehndi Look 44",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3043.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3051,
+    "title": "Bridal Mehndi Look 52",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3051.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3056,
+    "title": "Bridal Mehndi Look 57",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3056.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3050,
+    "title": "Bridal Mehndi Look 51",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3050.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3052,
+    "title": "Bridal Mehndi Look 53",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3052.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3057,
+    "title": "Bridal Mehndi Look 58",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3057.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3053,
+    "title": "Bridal Mehndi Look 54",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3053.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3055,
+    "title": "Bridal Mehndi Look 56",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3055.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3059,
+    "title": "Bridal Mehndi Look 60",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3059.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3058,
+    "title": "Bridal Mehndi Look 59",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3058.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3062,
+    "title": "Bridal Mehndi Look 63",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3062.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3066,
+    "title": "Bridal Mehndi Look 67",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3066.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3060,
+    "title": "Bridal Mehndi Look 61",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3060.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3069,
+    "title": "Bridal Mehndi Look 70",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3069.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3068,
+    "title": "Bridal Mehndi Look 69",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3068.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3064,
+    "title": "Bridal Mehndi Look 65",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3064.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3065,
+    "title": "Bridal Mehndi Look 66",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3065.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3061,
+    "title": "Bridal Mehndi Look 62",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3061.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3073,
+    "title": "Bridal Mehndi Look 74",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3073.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3071,
+    "title": "Bridal Mehndi Look 72",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3071.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3078,
+    "title": "Bridal Mehndi Look 79",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3078.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3074,
+    "title": "Bridal Mehndi Look 75",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3074.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3076,
+    "title": "Bridal Mehndi Look 77",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3076.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3077,
+    "title": "Bridal Mehndi Look 78",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3077.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3070,
+    "title": "Bridal Mehndi Look 71",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3070.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3072,
+    "title": "Bridal Mehndi Look 73",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3072.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3084,
+    "title": "Bridal Mehndi Look 85",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3084.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3082,
+    "title": "Bridal Mehndi Look 83",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3082.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3088,
+    "title": "Bridal Mehndi Look 89",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3088.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3089,
+    "title": "Bridal Mehndi Look 90",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3089.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3080,
+    "title": "Bridal Mehndi Look 81",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3080.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3086,
+    "title": "Bridal Mehndi Look 87",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3086.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3081,
+    "title": "Bridal Mehndi Look 82",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3081.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3087,
+    "title": "Bridal Mehndi Look 88",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3087.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3085,
+    "title": "Bridal Mehndi Look 86",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3085.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3097,
+    "title": "Bridal Mehndi Look 98",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3097.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3090,
+    "title": "Bridal Mehndi Look 91",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3090.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3098,
+    "title": "Bridal Mehndi Look 99",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3098.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3093,
+    "title": "Bridal Mehndi Look 94",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3093.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3094,
+    "title": "Bridal Mehndi Look 95",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3094.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3096,
+    "title": "Bridal Mehndi Look 97",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3096.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3091,
+    "title": "Bridal Mehndi Look 92",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3091.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3095,
+    "title": "Bridal Mehndi Look 96",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3095.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3092,
+    "title": "Bridal Mehndi Look 93",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3092.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 3099,
+    "title": "Bridal Mehndi Look 100",
+    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "country": "Global",
+    "style": "Bridal",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3099.jpg",
+    "tags": [
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Celebration"
+    ]
+  }
 ];

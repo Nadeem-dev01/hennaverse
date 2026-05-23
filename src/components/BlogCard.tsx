@@ -81,19 +81,9 @@ export default function BlogCard({
               <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground group-hover:text-gold transition-colors mb-3 line-clamp-2">
                 {blog.title}
               </h2>
-              <p className="text-muted text-sm leading-relaxed mb-4 line-clamp-3">
+              <p className="text-muted text-sm leading-relaxed line-clamp-3">
                 {blog.excerpt}
               </p>
-              <div className="flex items-center gap-4 text-xs text-muted">
-                <span className="flex items-center gap-1">
-                  <Calendar size={12} />
-                  {blog.date}
-                </span>
-                <span className="flex items-center gap-1">
-                  <Clock size={12} />
-                  {blog.readTime}
-                </span>
-              </div>
             </div>
           </div>
         </motion.article>
@@ -137,19 +127,9 @@ export default function BlogCard({
           <h3 className="font-serif text-lg font-semibold text-foreground group-hover:text-gold transition-colors mb-2 line-clamp-2">
             {blog.title}
           </h3>
-          <p className="text-muted text-sm leading-relaxed mb-4 line-clamp-2">
+          <p className="text-muted text-sm leading-relaxed line-clamp-2">
             {blog.excerpt}
           </p>
-          <div className="flex items-center justify-between text-xs text-muted">
-            <span className="flex items-center gap-1">
-              <Calendar size={12} />
-              {blog.date}
-            </span>
-            <span className="flex items-center gap-1">
-              <Clock size={12} />
-              {blog.readTime}
-            </span>
-          </div>
         </div>
       </motion.article>
     </Link>
