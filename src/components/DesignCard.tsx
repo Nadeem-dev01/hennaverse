@@ -69,6 +69,7 @@ export default function DesignCard({ design, index = 0, onClick }: DesignCardPro
             src={design.imageUrl}
             alt={design.title}
             fill
+            priority={index < 4}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             onLoad={() => setImgLoaded(true)}
             onError={() => setImgError(true)}

@@ -1,6 +1,8 @@
 import { designs } from "@/data/designs";
 import { blogs } from "@/data/blogs";
 import { countries } from "@/data/countries";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
 import DesignCard from "@/components/DesignCard";
 import BlogCard from "@/components/BlogCard";
@@ -14,7 +16,7 @@ export default function Home() {
   const featuredDesigns = designs.slice(0, 6);
   const featuredCountries = countries.slice(0, 8);
   const latestBlogs = blogs.slice(0, 3);
-  const eidDesigns = designs.filter(design => design.occasion === "Eid");
+  const eidDesigns = designs.filter(design => design.occasion === "Eid").slice(0, 6);
 
   return (
     <>
@@ -46,13 +48,27 @@ export default function Home() {
               subtitle="Special mehndi designs to celebrate Eid with elegance and beauty"
             />
           </ScrollReveal>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
             {eidDesigns.map((design, index) => (
               <ScrollReveal key={`eid-${design.id}`} delay={index * 0.1}>
                 <DesignCard design={design} index={index + 2} />
               </ScrollReveal>
             ))}
           </div>
+          <ScrollReveal delay={0.4}>
+            <div className="flex justify-center mt-8">
+              <Link
+                href="/eidhennaz"
+                className="group flex items-center gap-2 bg-gold/10 text-gold font-semibold px-8 py-3 rounded-full hover:bg-gold hover:text-background transition-all hover:shadow-lg hover:shadow-gold/25 border border-gold/30"
+              >
+                View All Eid Designs
+                <ArrowRight
+                  size={18}
+                  className="group-hover:translate-x-1 transition-transform"
+                />
+              </Link>
+            </div>
+          </ScrollReveal>
         </section>
       )}
 
