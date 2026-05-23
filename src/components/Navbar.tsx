@@ -42,8 +42,8 @@ export default function Navbar() {
         transition={{ duration: 0.6, ease: "easeOut" }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           isScrolled
-            ? "glass shadow-lg shadow-black/20"
-            : "bg-transparent"
+            ? "bg-white shadow-md shadow-black/5"
+            : "bg-white/95 backdrop-blur-sm border-b border-gray-200/50"
         }`}
       >
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -66,8 +66,8 @@ export default function Navbar() {
                     <span
                       className={
                         isActive
-                          ? "text-gold"
-                          : "text-muted hover:text-foreground"
+                          ? "text-gold font-bold"
+                          : "text-slate-600 hover:text-black"
                       }
                     >
                       {link.label}
@@ -91,7 +91,7 @@ export default function Navbar() {
             {/* Mobile menu button */}
             <button
               onClick={() => setIsMobileOpen(!isMobileOpen)}
-              className="md:hidden text-foreground p-2 hover:text-gold transition-colors"
+              className="md:hidden text-slate-800 p-2 hover:text-gold transition-colors"
               aria-label="Toggle menu"
             >
               {isMobileOpen ? <X size={24} /> : <Menu size={24} />}
