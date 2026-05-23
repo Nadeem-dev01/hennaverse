@@ -1,11 +1,21 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import Logo from "@/components/Logo";
+
+const designDropdown = [
+  { href: "/arabic-mehndi", label: "Arabic Mehndi", emoji: "🌿" },
+  { href: "/mandala-mehndi", label: "Mandala Mehndi", emoji: "🔮" },
+  { href: "/rajasthani-mehndi", label: "Rajasthani Mehndi", emoji: "🦚" },
+  { href: "/pakistani-mehndi", label: "Pakistani Mehndi", emoji: "🌺" },
+  { href: "/kids-mehndi", label: "Kids Mehndi", emoji: "🌸" },
+  { href: "/bridalhennaz", label: "Bridal Mehndi", emoji: "👰" },
+  { href: "/eidhennaz", label: "Eid Mehndi", emoji: "✨" },
+];
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -19,20 +29,35 @@ const navLinks = [
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isMobileDesignsOpen, setIsMobileDesignsOpen] = useState(false);
   const pathname = usePathname();
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
+    const handleScroll = () => setIsScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close mobile menu on route change
   useEffect(() => {
     setIsMobileOpen(false);
+    setIsDropdownOpen(false);
+    setIsMobileDesignsOpen(false);
   }, [pathname]);
+
+  // Close dropdown on outside click
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+        setIsDropdownOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  const isDesignActive = designDropdown.some((d) => pathname === d.href);
 
   return (
     <>
@@ -54,7 +79,7 @@ export default function Navbar() {
             </Link>
 
             {/* Desktop navigation */}
-            <div className="hidden md:flex items-center gap-8">
+            <div className="hidden md:flex items-center gap-7">
               {navLinks.map((link) => {
                 const isActive = pathname === link.href;
                 return (
@@ -63,29 +88,72 @@ export default function Navbar() {
                     href={link.href}
                     className="relative py-2 text-sm font-medium tracking-wide uppercase transition-colors"
                   >
-                    <span
-                      className={
-                        isActive
-                          ? "text-gold font-bold"
-                          : "text-slate-600 hover:text-black"
-                      }
-                    >
+                    <span className={isActive ? "text-gold font-bold" : "text-slate-600 hover:text-black"}>
                       {link.label}
                     </span>
                     {isActive && (
                       <motion.span
                         layoutId="activeNav"
                         className="absolute -bottom-0.5 left-0 right-0 h-0.5 bg-gold rounded-full"
-                        transition={{
-                          type: "spring",
-                          stiffness: 300,
-                          damping: 30,
-                        }}
+                        transition={{ type: "spring", stiffness: 300, damping: 30 }}
                       />
                     )}
                   </Link>
                 );
               })}
+
+              {/* Designs Dropdown */}
+              <div className="relative" ref={dropdownRef}>
+                <button
+                  onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                  className={`relative py-2 text-sm font-medium tracking-wide uppercase transition-colors flex items-center gap-1 ${
+                    isDesignActive ? "text-gold font-bold" : "text-slate-600 hover:text-black"
+                  }`}
+                >
+                  Designs
+                  <ChevronDown
+                    size={14}
+                    className={`transition-transform duration-200 ${isDropdownOpen ? "rotate-180" : ""}`}
+                  />
+                  {isDesignActive && (
+                    <motion.span
+                      layoutId="activeNav"
+                      className="absolute -bottom-0.5 left-0 right-0 h-0.5 bg-gold rounded-full"
+                      transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                    />
+                  )}
+                </button>
+
+                <AnimatePresence>
+                  {isDropdownOpen && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 8, scale: 0.97 }}
+                      animate={{ opacity: 1, y: 0, scale: 1 }}
+                      exit={{ opacity: 0, y: 8, scale: 0.97 }}
+                      transition={{ duration: 0.18 }}
+                      className="absolute top-full right-0 mt-2 w-52 bg-white border border-gray-100 rounded-xl shadow-xl shadow-black/10 overflow-hidden z-50"
+                    >
+                      {designDropdown.map((item) => {
+                        const isActive = pathname === item.href;
+                        return (
+                          <Link
+                            key={item.href}
+                            href={item.href}
+                            className={`flex items-center gap-3 px-4 py-3 text-sm transition-colors ${
+                              isActive
+                                ? "bg-gold/10 text-gold font-semibold"
+                                : "text-slate-700 hover:bg-gray-50 hover:text-black"
+                            }`}
+                          >
+                            <span className="text-base">{item.emoji}</span>
+                            {item.label}
+                          </Link>
+                        );
+                      })}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
             </div>
 
             {/* Mobile menu button */}
@@ -119,10 +187,10 @@ export default function Navbar() {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "spring", damping: 25, stiffness: 200 }}
-              className="fixed top-0 right-0 bottom-0 w-72 bg-surface border-l border-border z-50 md:hidden"
+              className="fixed top-0 right-0 bottom-0 w-72 bg-surface border-l border-border z-50 md:hidden overflow-y-auto"
             >
               <div className="flex flex-col h-full pt-20 px-6">
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-1">
                   {navLinks.map((link, index) => {
                     const isActive = pathname === link.href;
                     return (
@@ -130,11 +198,11 @@ export default function Navbar() {
                         key={link.href}
                         initial={{ opacity: 0, x: 20 }}
                         animate={{ opacity: 1, x: 0 }}
-                        transition={{ delay: index * 0.1 }}
+                        transition={{ delay: index * 0.07 }}
                       >
                         <Link
                           href={link.href}
-                          className={`block py-3 px-4 rounded-lg text-lg font-medium transition-all ${
+                          className={`block py-3 px-4 rounded-lg text-base font-medium transition-all ${
                             isActive
                               ? "text-gold bg-gold/10"
                               : "text-muted hover:text-foreground hover:bg-white/5"
@@ -145,6 +213,58 @@ export default function Navbar() {
                       </motion.div>
                     );
                   })}
+
+                  {/* Mobile Designs accordion */}
+                  <motion.div
+                    initial={{ opacity: 0, x: 20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: navLinks.length * 0.07 }}
+                  >
+                    <button
+                      onClick={() => setIsMobileDesignsOpen(!isMobileDesignsOpen)}
+                      className={`w-full flex items-center justify-between py-3 px-4 rounded-lg text-base font-medium transition-all ${
+                        isDesignActive ? "text-gold bg-gold/10" : "text-muted hover:text-foreground hover:bg-white/5"
+                      }`}
+                    >
+                      Designs
+                      <ChevronDown
+                        size={16}
+                        className={`transition-transform duration-200 ${isMobileDesignsOpen ? "rotate-180" : ""}`}
+                      />
+                    </button>
+
+                    <AnimatePresence>
+                      {isMobileDesignsOpen && (
+                        <motion.div
+                          initial={{ height: 0, opacity: 0 }}
+                          animate={{ height: "auto", opacity: 1 }}
+                          exit={{ height: 0, opacity: 0 }}
+                          transition={{ duration: 0.2 }}
+                          className="overflow-hidden"
+                        >
+                          <div className="flex flex-col gap-0.5 pl-4 pr-2 pb-2">
+                            {designDropdown.map((item) => {
+                              const isActive = pathname === item.href;
+                              return (
+                                <Link
+                                  key={item.href}
+                                  href={item.href}
+                                  className={`flex items-center gap-3 py-2.5 px-3 rounded-lg text-sm transition-all ${
+                                    isActive
+                                      ? "text-gold bg-gold/10 font-semibold"
+                                      : "text-muted hover:text-foreground hover:bg-white/5"
+                                  }`}
+                                >
+                                  <span>{item.emoji}</span>
+                                  {item.label}
+                                </Link>
+                              );
+                            })}
+                          </div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </motion.div>
                 </div>
 
                 {/* Decorative element at bottom */}

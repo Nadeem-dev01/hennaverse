@@ -7,17 +7,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.mehndidesignhenna.com';
 
   const staticRoutes = [
-    '', 
-    '/about', 
-    '/gallery', 
-    '/blog', 
-    '/styles', 
+    '',
+    '/about',
+    '/gallery',
+    '/blog',
+    '/styles',
     '/mehndi-designs',
     '/bridalhennaz',
     '/eidhennaz',
+    '/arabic-mehndi',
+    '/mandala-mehndi',
+    '/rajasthani-mehndi',
+    '/pakistani-mehndi',
+    '/kids-mehndi',
     '/privacy-policy',
     '/disclaimer',
-    '/contact'
+    '/contact',
   ].map(
     (route) => ({
       url: `${baseUrl}${route}`,
