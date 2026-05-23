@@ -14,7 +14,7 @@ export default function Home() {
   const featuredDesigns = designs.slice(0, 6);
   const featuredCountries = countries.slice(0, 8);
   const latestBlogs = blogs.slice(0, 3);
-  const eidDesigns = designs.filter(design => design.occasion === "Eid").slice(0, 6);
+  const eidDesigns = designs.filter(design => design.occasion === "Eid");
 
   return (
     <>

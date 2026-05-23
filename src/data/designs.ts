@@ -2017,4 +2017,1333 @@ export const designs: Design[] = [
     "pexels_id": null,
     "source": "pixabay"
   }
+,
+  {
+    "id": 2000,
+    "title": "Eid Special Mehndi 1",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2000.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2006,
+    "title": "Eid Special Mehndi 7",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2006.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2001,
+    "title": "Eid Special Mehndi 2",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2001.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2002,
+    "title": "Eid Special Mehndi 3",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2002.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2004,
+    "title": "Eid Special Mehndi 5",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2004.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2008,
+    "title": "Eid Special Mehndi 9",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2008.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2003,
+    "title": "Eid Special Mehndi 4",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2003.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2019,
+    "title": "Eid Special Mehndi 20",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2019.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2016,
+    "title": "Eid Special Mehndi 17",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2016.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2014,
+    "title": "Eid Special Mehndi 15",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2014.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2018,
+    "title": "Eid Special Mehndi 19",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2018.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2015,
+    "title": "Eid Special Mehndi 16",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2015.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2013,
+    "title": "Eid Special Mehndi 14",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2013.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2011,
+    "title": "Eid Special Mehndi 12",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2011.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2024,
+    "title": "Eid Special Mehndi 25",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2024.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2020,
+    "title": "Eid Special Mehndi 21",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2020.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2026,
+    "title": "Eid Special Mehndi 27",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2026.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2028,
+    "title": "Eid Special Mehndi 29",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2028.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2025,
+    "title": "Eid Special Mehndi 26",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2025.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2021,
+    "title": "Eid Special Mehndi 22",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2021.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2022,
+    "title": "Eid Special Mehndi 23",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2022.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2027,
+    "title": "Eid Special Mehndi 28",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2027.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2031,
+    "title": "Eid Special Mehndi 32",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2031.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2037,
+    "title": "Eid Special Mehndi 38",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2037.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2034,
+    "title": "Eid Special Mehndi 35",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2034.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2038,
+    "title": "Eid Special Mehndi 39",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2038.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2032,
+    "title": "Eid Special Mehndi 33",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2032.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2035,
+    "title": "Eid Special Mehndi 36",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2035.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2033,
+    "title": "Eid Special Mehndi 34",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2033.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2030,
+    "title": "Eid Special Mehndi 31",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2030.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2036,
+    "title": "Eid Special Mehndi 37",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2036.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2039,
+    "title": "Eid Special Mehndi 40",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2039.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2044,
+    "title": "Eid Special Mehndi 45",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2044.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2043,
+    "title": "Eid Special Mehndi 44",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2043.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2042,
+    "title": "Eid Special Mehndi 43",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2042.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2048,
+    "title": "Eid Special Mehndi 49",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2048.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2041,
+    "title": "Eid Special Mehndi 42",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2041.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2047,
+    "title": "Eid Special Mehndi 48",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2047.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2040,
+    "title": "Eid Special Mehndi 41",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2040.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2046,
+    "title": "Eid Special Mehndi 47",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2046.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2049,
+    "title": "Eid Special Mehndi 50",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2049.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2050,
+    "title": "Eid Special Mehndi 51",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2050.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2059,
+    "title": "Eid Special Mehndi 60",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2059.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2053,
+    "title": "Eid Special Mehndi 54",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2053.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2057,
+    "title": "Eid Special Mehndi 58",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2057.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2051,
+    "title": "Eid Special Mehndi 52",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2051.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2058,
+    "title": "Eid Special Mehndi 59",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2058.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2052,
+    "title": "Eid Special Mehndi 53",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2052.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2054,
+    "title": "Eid Special Mehndi 55",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2054.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2060,
+    "title": "Eid Special Mehndi 61",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2060.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2066,
+    "title": "Eid Special Mehndi 67",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2066.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2062,
+    "title": "Eid Special Mehndi 63",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2062.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2069,
+    "title": "Eid Special Mehndi 70",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2069.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2063,
+    "title": "Eid Special Mehndi 64",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2063.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2064,
+    "title": "Eid Special Mehndi 65",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2064.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2065,
+    "title": "Eid Special Mehndi 66",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2065.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2068,
+    "title": "Eid Special Mehndi 69",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2068.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2061,
+    "title": "Eid Special Mehndi 62",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2061.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2077,
+    "title": "Eid Special Mehndi 78",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2077.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2078,
+    "title": "Eid Special Mehndi 79",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2078.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2073,
+    "title": "Eid Special Mehndi 74",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2073.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2079,
+    "title": "Eid Special Mehndi 80",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2079.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2074,
+    "title": "Eid Special Mehndi 75",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2074.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2072,
+    "title": "Eid Special Mehndi 73",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2072.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2070,
+    "title": "Eid Special Mehndi 71",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2070.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2075,
+    "title": "Eid Special Mehndi 76",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2075.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2076,
+    "title": "Eid Special Mehndi 77",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2076.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2081,
+    "title": "Eid Special Mehndi 82",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2081.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2087,
+    "title": "Eid Special Mehndi 88",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2087.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2080,
+    "title": "Eid Special Mehndi 81",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2080.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2086,
+    "title": "Eid Special Mehndi 87",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2086.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2088,
+    "title": "Eid Special Mehndi 89",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2088.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2084,
+    "title": "Eid Special Mehndi 85",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2084.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2085,
+    "title": "Eid Special Mehndi 86",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2085.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2089,
+    "title": "Eid Special Mehndi 90",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2089.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2099,
+    "title": "Eid Special Mehndi 100",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2099.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2095,
+    "title": "Eid Special Mehndi 96",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2095.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2091,
+    "title": "Eid Special Mehndi 92",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2091.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2097,
+    "title": "Eid Special Mehndi 98",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2097.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2090,
+    "title": "Eid Special Mehndi 91",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2090.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2098,
+    "title": "Eid Special Mehndi 99",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2098.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2094,
+    "title": "Eid Special Mehndi 95",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2094.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2096,
+    "title": "Eid Special Mehndi 97",
+    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "country": "Global",
+    "style": "Festive",
+    "occasion": "Eid",
+    "difficulty": "Medium",
+    "imageUrl": "/eid/eid-2096.jpg",
+    "tags": [
+      "Eid",
+      "Festive",
+      "Mehndi",
+      "Celebration"
+    ]
+  }
 ];
