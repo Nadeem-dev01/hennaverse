@@ -15,6 +15,8 @@ import {
   Link as LinkIcon,
 } from "lucide-react";
 
+import { generateBlogLongContent } from "@/utils/generateBlogLongContent";
+
 export default function BlogClient({
   params,
 }: {
@@ -54,6 +56,8 @@ export default function BlogClient({
       </div>
     );
   }
+
+  const longContentHtml = generateBlogLongContent(blog.title, blog.category, blog.imageUrl);
 
   const relatedPosts = blogs
     .filter(
@@ -126,7 +130,7 @@ export default function BlogClient({
             transition={{ delay: 0.2, duration: 0.6 }}
             className="aspect-[16/9] bg-gradient-to-br from-purple-dark/40 via-surface to-gold/15 rounded-2xl mb-10 relative overflow-hidden group"
           >
-            {blog.imageUrl && blog.imageUrl.startsWith('http') ? (
+            {blog.imageUrl ? (
               <img
                 src={blog.imageUrl}
                 alt={blog.title}
@@ -156,7 +160,7 @@ export default function BlogClient({
               [&_em]:text-gold-light
               [&_blockquote]:border-l-4 [&_blockquote]:border-gold/30 [&_blockquote]:pl-4 [&_blockquote]:italic [&_blockquote]:text-muted
               [&_a]:text-gold [&_a]:underline [&_a]:underline-offset-2 hover:[&_a]:text-gold-light"
-            dangerouslySetInnerHTML={{ __html: blog.content }}
+            dangerouslySetInnerHTML={{ __html: longContentHtml }}
           />
 
           {/* Divider */}

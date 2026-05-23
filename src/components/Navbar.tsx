@@ -9,6 +9,7 @@ import Logo from "@/components/Logo";
 
 const navLinks = [
   { href: "/", label: "Home" },
+  { href: "/mehndi-designs", label: "Mehndi Designs" },
   { href: "/gallery", label: "Gallery" },
   { href: "/blog", label: "Blog" },
   { href: "/styles", label: "Styles" },

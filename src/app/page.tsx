@@ -8,11 +8,13 @@ import CountryCard from "@/components/CountryCard";
 import Newsletter from "@/components/Newsletter";
 import SectionHeading from "@/components/SectionHeading";
 import ScrollReveal from "@/components/ScrollReveal";
+import HomeSEOContent from "@/components/HomeSEOContent";
 
 export default function Home() {
   const featuredDesigns = designs.slice(0, 6);
   const featuredCountries = countries.slice(0, 8);
   const latestBlogs = blogs.slice(0, 3);
+  const eidDesigns = designs.filter(design => design.occasion === "Eid").slice(0, 6);
 
   return (
     <>
@@ -34,6 +36,25 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      {/* EidHannaz Section */}
+      {eidDesigns.length > 0 && (
+        <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-surface/30">
+          <ScrollReveal>
+            <SectionHeading
+              title="EidHannaz"
+              subtitle="Special mehndi designs to celebrate Eid with elegance and beauty"
+            />
+          </ScrollReveal>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {eidDesigns.map((design, index) => (
+              <ScrollReveal key={`eid-${design.id}`} delay={index * 0.1}>
+                <DesignCard design={design} index={index + 2} />
+              </ScrollReveal>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Explore by Country */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
@@ -68,6 +89,11 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      {/* Comprehensive SEO Content */}
+      <ScrollReveal>
+        <HomeSEOContent />
+      </ScrollReveal>
 
       {/* Newsletter */}
       <ScrollReveal>

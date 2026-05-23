@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 // Accept designs from both static data and API hook
 interface DesignType {
@@ -44,7 +45,7 @@ export default function DesignCard({ design, index = 0, onClick }: DesignCardPro
   const gradient = gradients[index % gradients.length];
   const [imgLoaded, setImgLoaded] = useState(false);
   const [imgError, setImgError] = useState(false);
-  const hasRealImage = design.imageUrl && design.imageUrl.startsWith('http');
+  const hasRealImage = !!design.imageUrl;
 
   return (
     <motion.div
@@ -64,13 +65,14 @@ export default function DesignCard({ design, index = 0, onClick }: DesignCardPro
       >
         {/* Real image from Pixabay/Supabase */}
         {hasRealImage && !imgError && (
-          <img
+          <Image
             src={design.imageUrl}
             alt={design.title}
-            loading="lazy"
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             onLoad={() => setImgLoaded(true)}
             onError={() => setImgError(true)}
-            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${
+            className={`object-cover transition-opacity duration-500 ${
               imgLoaded ? 'opacity-100' : 'opacity-0'
             }`}
           />

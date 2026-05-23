@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Clock, Calendar } from "lucide-react";
 
@@ -52,12 +53,13 @@ export default function BlogCard({
             <div
               className={`aspect-[16/9] md:aspect-auto bg-gradient-to-br ${gradient} relative overflow-hidden`}
             >
-              {blog.imageUrl && blog.imageUrl.startsWith('http') ? (
-                <img 
+              {blog.imageUrl ? (
+                <Image 
                   src={blog.imageUrl} 
                   alt={blog.title} 
-                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
-                  loading="lazy" 
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover group-hover:scale-105 transition-transform duration-700" 
                 />
               ) : (
                 <div className="absolute inset-0 flex items-center justify-center opacity-15">
@@ -110,12 +112,13 @@ export default function BlogCard({
       >
         {/* Image */}
         <div className={`aspect-[16/10] bg-gradient-to-br ${gradient} relative overflow-hidden`}>
-          {blog.imageUrl && blog.imageUrl.startsWith('http') ? (
-            <img 
+          {blog.imageUrl ? (
+            <Image 
               src={blog.imageUrl} 
               alt={blog.title} 
-              className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
-              loading="lazy" 
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
+              className="object-cover group-hover:scale-105 transition-transform duration-500" 
             />
           ) : (
             <div className="absolute inset-0 flex items-center justify-center opacity-15">

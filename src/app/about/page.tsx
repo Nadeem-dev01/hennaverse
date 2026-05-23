@@ -169,6 +169,42 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* E-E-A-T & Editorial Standards */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <SectionHeading
+          title="Editorial Standards & Our Expertise"
+          subtitle="Committed to accuracy, authenticity, and high-quality content"
+        />
+        <div className="grid md:grid-cols-2 gap-12 mt-12">
+          <div className="glass p-8 rounded-2xl border border-border">
+            <h3 className="font-serif text-2xl font-bold text-gold mb-4">Our Expertise</h3>
+            <p className="text-muted leading-relaxed mb-4">
+              HennaVerse is managed by a dedicated team of henna enthusiasts, cultural researchers, and experienced artists. With years of hands-on experience and a deep respect for the cultural roots of mehndi, we ensure that every tutorial, design category, and article is meticulously researched.
+            </p>
+            <p className="text-muted leading-relaxed">
+              We consult with traditional artists from India, Pakistan, the Middle East, and North Africa to guarantee that our content accurately reflects the rich history and distinct techniques of each regional style.
+            </p>
+          </div>
+          <div className="bg-surface p-8 rounded-2xl border border-border">
+            <h3 className="font-serif text-2xl font-bold text-gold mb-4">Editorial Guidelines</h3>
+            <ul className="space-y-4 text-muted">
+              <li className="flex items-start">
+                <div className="w-1.5 h-1.5 rounded-full bg-purple mt-2 mr-3 shrink-0" />
+                <p><strong>Accuracy First:</strong> All historical and cultural claims are cross-referenced with established texts and authentic artistic traditions.</p>
+              </li>
+              <li className="flex items-start">
+                <div className="w-1.5 h-1.5 rounded-full bg-purple mt-2 mr-3 shrink-0" />
+                <p><strong>Original Content:</strong> Our guides are uniquely written to provide the most comprehensive, step-by-step knowledge available online.</p>
+              </li>
+              <li className="flex items-start">
+                <div className="w-1.5 h-1.5 rounded-full bg-purple mt-2 mr-3 shrink-0" />
+                <p><strong>Safety Conscious:</strong> We rigorously promote natural henna and actively warn against dangerous chemical alternatives like "Black Henna".</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* Values */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-surface/30">
         <div className="max-w-7xl mx-auto">

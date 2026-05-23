@@ -1,11 +1,22 @@
 import { MetadataRoute } from 'next';
 import { blogs } from '@/data/blogs';
 import { countries } from '@/data/countries';
+import { designCategories } from '@/data/designCategories';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://hennaverse.com';
 
-  const staticRoutes = ['', '/about', '/gallery', '/blog', '/styles'].map(
+  const staticRoutes = [
+    '', 
+    '/about', 
+    '/gallery', 
+    '/blog', 
+    '/styles', 
+    '/mehndi-designs',
+    '/privacy-policy',
+    '/disclaimer',
+    '/contact'
+  ].map(
     (route) => ({
       url: `${baseUrl}${route}`,
       lastModified: new Date(),
@@ -28,5 +39,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticRoutes, ...blogRoutes, ...styleRoutes];
+  const categoryRoutes = designCategories.map((category) => ({
+    url: `${baseUrl}/mehndi-designs/${category.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.9,
+  }));
+
+  return [...staticRoutes, ...blogRoutes, ...styleRoutes, ...categoryRoutes];
 }

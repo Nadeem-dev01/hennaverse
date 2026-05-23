@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useCallback } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
 
@@ -88,11 +89,13 @@ export default function Lightbox({ design, isOpen, onClose }: LightboxProps) {
 
             {/* Image area */}
             <div className="aspect-[16/10] bg-gradient-to-br from-purple-dark/40 via-surface to-gold/15 relative overflow-hidden">
-              {design.imageUrl && design.imageUrl.startsWith('http') ? (
-                <img
+              {design.imageUrl ? (
+                <Image
                   src={design.imageUrl}
                   alt={design.title}
-                  className="w-full h-full object-cover"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 800px"
+                  className="object-cover"
                 />
               ) : (
                 <div className="absolute inset-0 flex items-center justify-center opacity-20">

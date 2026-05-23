@@ -25,7 +25,7 @@ export const designs: Design[] = [
     "style": "Mandala",
     "occasion": "Engagement",
     "difficulty": "Hard",
-    "imageUrl": "https://cdn.pixabay.com/photo/2020/08/12/10/25/mehndi-5482292_1280.jpg",
+    "imageUrl": "/b02e17fbd25d259f56c2d4275f15d406.avif",
     "tags": [
       "traditional",
       "modern"
@@ -45,7 +45,7 @@ export const designs: Design[] = [
     "style": "Tikki",
     "occasion": "Eid",
     "difficulty": "Easy",
-    "imageUrl": "https://cdn.pixabay.com/photo/2020/10/17/04/26/mehndi-5661103_1280.jpg",
+    "imageUrl": "/chakra-bridal-front-hand-mehndi-820x1024.avif",
     "tags": [
       "light",
       "modern"
@@ -65,7 +65,7 @@ export const designs: Design[] = [
     "style": "Arabic bold",
     "occasion": "Wedding",
     "difficulty": "Easy",
-    "imageUrl": "https://cdn.pixabay.com/photo/2020/10/17/04/27/mehndi-5661107_1280.jpg",
+    "imageUrl": "/328978478_228082722895910_7671478419807944337_n.avif",
     "tags": [
       "bold",
       "light"
@@ -85,7 +85,7 @@ export const designs: Design[] = [
     "style": "tribal",
     "occasion": "Engagement",
     "difficulty": "Hard",
-    "imageUrl": "https://cdn.pixabay.com/photo/2019/08/19/16/49/henna-4416944_1280.jpg",
+    "imageUrl": "/non_henna_by_divyaaa.avif",
     "tags": [
       "floral",
       "heavy"
@@ -105,7 +105,7 @@ export const designs: Design[] = [
     "style": "floral Turkish",
     "occasion": "Party",
     "difficulty": "Expert",
-    "imageUrl": "https://cdn.pixabay.com/photo/2016/05/03/20/48/henna-1370136_1280.jpg",
+    "imageUrl": "/Snapinsta.app_75272080_549807429192424_8548226213132767972_n_1080.jpg",
     "tags": [
       "traditional",
       "geometric"
@@ -125,7 +125,7 @@ export const designs: Design[] = [
     "style": "Balinese",
     "occasion": "Diwali",
     "difficulty": "Medium",
-    "imageUrl": "https://cdn.pixabay.com/photo/2020/12/31/14/54/henna-5876752_1280.jpg",
+    "imageUrl": "/wedding_salad.avif",
     "tags": [
       "modern",
       "traditional"
@@ -145,7 +145,7 @@ export const designs: Design[] = [
     "style": "Sudanese",
     "occasion": "Casual",
     "difficulty": "Medium",
-    "imageUrl": "https://cdn.pixabay.com/photo/2020/12/31/14/55/henna-5876757_1280.jpg",
+    "imageUrl": "/Snapinsta.app_354788581_580258730890538_975214172231979515_n_1080.avif",
     "tags": [
       "light",
       "traditional"
@@ -165,7 +165,7 @@ export const designs: Design[] = [
     "style": "Indo-Western",
     "occasion": "Diwali",
     "difficulty": "Medium",
-    "imageUrl": "https://cdn.pixabay.com/photo/2020/11/04/03/55/henna-5711381_1280.jpg",
+    "imageUrl": "/345956115_190860273864053_8182753276442096218_n.jfif",
     "tags": [
       "geometric",
       "elegant"
@@ -185,7 +185,7 @@ export const designs: Design[] = [
     "style": "South Indian",
     "occasion": "Party",
     "difficulty": "Hard",
-    "imageUrl": "https://cdn.pixabay.com/photo/2017/10/14/06/03/mehndi-2849864_1280.jpg",
+    "imageUrl": "/samiras.jpg",
     "tags": [
       "modern",
       "elegant"
@@ -205,7 +205,7 @@ export const designs: Design[] = [
     "style": "Tikki",
     "occasion": "Teej",
     "difficulty": "Medium",
-    "imageUrl": "https://cdn.pixabay.com/photo/2020/08/08/13/00/mehndi-5472963_1280.jpg",
+    "imageUrl": "/360034206_972751270446070_4099761826674818325_n.jfif",
     "tags": [
       "geometric",
       "heavy"
@@ -225,7 +225,7 @@ export const designs: Design[] = [
     "style": "Arabic bold",
     "occasion": "Engagement",
     "difficulty": "Expert",
-    "imageUrl": "https://cdn.pixabay.com/photo/2020/09/14/16/00/mehndi-5571333_1280.jpg",
+    "imageUrl": "/Vows_and_tales.avif",
     "tags": [
       "light",
       "elegant"
@@ -245,7 +245,7 @@ export const designs: Design[] = [
     "style": "Berber",
     "occasion": "Teej",
     "difficulty": "Medium",
-    "imageUrl": "https://cdn.pixabay.com/photo/2020/08/06/10/16/tattoo-5467524_1280.jpg",
+    "imageUrl": "/379288675_1023897062286434_1523391240408966938_n.jpg",
     "tags": [
       "light",
       "bold"
@@ -265,7 +265,7 @@ export const designs: Design[] = [
     "style": "floral Turkish",
     "occasion": "Eid",
     "difficulty": "Hard",
-    "imageUrl": "https://cdn.pixabay.com/photo/2019/11/25/10/00/henna-4651552_1280.jpg",
+    "imageUrl": "/Snapinsta.app_119664771_171131687927465_5489743928879459640_n_1080.avif",
     "tags": [
       "elegant",
       "intricate"
@@ -285,7 +285,7 @@ export const designs: Design[] = [
     "style": "Javanese",
     "occasion": "Engagement",
     "difficulty": "Easy",
-    "imageUrl": "https://cdn.pixabay.com/photo/2020/12/24/13/25/henna-5857379_1280.jpg",
+    "imageUrl": "/anjali_henna_(8).avif",
     "tags": [
       "heavy",
       "floral"
@@ -305,7 +305,7 @@ export const designs: Design[] = [
     "style": "Sudanese",
     "occasion": "Engagement",
     "difficulty": "Expert",
-    "imageUrl": "https://cdn.pixabay.com/photo/2020/10/19/12/27/mehndi-5667629_1280.jpg",
+    "imageUrl": "/qwqwasasasassdddfff.avif",
     "tags": [
       "modern",
       "traditional"
@@ -325,7 +325,7 @@ export const designs: Design[] = [
     "style": "Geometric modern",
     "occasion": "Casual",
     "difficulty": "Expert",
-    "imageUrl": "https://cdn.pixabay.com/photo/2019/11/14/15/54/henna-4626471_1280.jpg",
+    "imageUrl": "/parrot-motifs-for-front-hand-bridal-mehndi-1024x841.avif",
     "tags": [
       "traditional",
       "geometric"
@@ -345,7 +345,7 @@ export const designs: Design[] = [
     "style": "Mughal",
     "occasion": "Festival",
     "difficulty": "Hard",
-    "imageUrl": "https://cdn.pixabay.com/photo/2020/08/26/10/59/mehndi-5519259_1280.jpg",
+    "imageUrl": "/front-hand-intricate-half-and-half-mehendi-1024x1024.avif",
     "tags": [
       "heavy",
       "intricate"
@@ -365,7 +365,7 @@ export const designs: Design[] = [
     "style": "Geometric",
     "occasion": "Festival",
     "difficulty": "Easy",
-    "imageUrl": "https://cdn.pixabay.com/photo/2023/02/23/06/00/man-7807978_1280.jpg",
+    "imageUrl": "/Snapinsta.app_293334462_803557777300433_1780926414613850463_n_1080.avif",
     "tags": [
       "floral",
       "geometric"
@@ -385,7 +385,7 @@ export const designs: Design[] = [
     "style": "minimal Arabic",
     "occasion": "Teej",
     "difficulty": "Expert",
-    "imageUrl": "https://images.pexels.com/photos/16550865/pexels-photo-16550865.jpeg?cs=srgb&dl=pexels-faheem-ahamad-422934800-16550865.jpg&fm=jpg",
+    "imageUrl": "/320851229_3241788612779301_5931930448531612572_n.jfif",
     "tags": [
       "floral",
       "intricate"
@@ -405,7 +405,7 @@ export const designs: Design[] = [
     "style": "geometric",
     "occasion": "Teej",
     "difficulty": "Easy",
-    "imageUrl": "https://cdn.pixabay.com/photo/2023/10/18/20/08/henna-8325033_640.png",
+    "imageUrl": "/Snapinsta.app_276984494_1121195125340368_881341424541864188_n_1080.avif",
     "tags": [
       "heavy",
       "floral"
@@ -425,7 +425,7 @@ export const designs: Design[] = [
     "style": "floral Turkish",
     "occasion": "Eid",
     "difficulty": "Medium",
-    "imageUrl": "https://cdn.pixabay.com/photo/2023/01/30/10/07/dancer-7755275_1280.jpg",
+    "imageUrl": "/sunflower-back-hand-mehendi-819x1024.avif",
     "tags": [
       "traditional",
       "intricate"
@@ -445,7 +445,7 @@ export const designs: Design[] = [
     "style": "Balinese",
     "occasion": "Diwali",
     "difficulty": "Medium",
-    "imageUrl": "https://cdn.pixabay.com/photo/2024/02/19/06/28/ai-generated-8582615_1280.jpg",
+    "imageUrl": "/16230071_241347312975869_1934039183731458048_n.avif",
     "tags": [
       "heavy",
       "intricate"
@@ -465,7 +465,7 @@ export const designs: Design[] = [
     "style": "African tribal",
     "occasion": "Engagement",
     "difficulty": "Medium",
-    "imageUrl": "https://cdn.pixabay.com/photo/2016/03/27/19/47/water-1283963_1280.jpg",
+    "imageUrl": "/_hennabydevakysdharan.jpg",
     "tags": [
       "elegant",
       "heavy"
@@ -485,7 +485,7 @@ export const designs: Design[] = [
     "style": "Geometric modern",
     "occasion": "Party",
     "difficulty": "Easy",
-    "imageUrl": "https://cdn.pixabay.com/video/2021/06/06/76681-559745365_tiny.jpg",
+    "imageUrl": "/51a553620a851d5b012a96b54f6634b9.avif",
     "tags": [
       "floral",
       "elegant"
@@ -505,7 +505,7 @@ export const designs: Design[] = [
     "style": "Bridal",
     "occasion": "Wedding",
     "difficulty": "Medium",
-    "imageUrl": "https://cdn.pixabay.com/video/2017/11/02/12716-241674181_tiny.jpg",
+    "imageUrl": "/365086079_245979131602145_6342154400046918624_n.avif",
     "tags": [
       "modern",
       "bold"
@@ -525,7 +525,7 @@ export const designs: Design[] = [
     "style": "Geometric",
     "occasion": "Wedding",
     "difficulty": "Easy",
-    "imageUrl": "https://cdn.pixabay.com/photo/2023/11/10/02/30/woman-8378634_1280.jpg",
+    "imageUrl": "/337864951_196585219743768_5030452438526200238_n.avif",
     "tags": [
       "traditional",
       "light"
@@ -545,7 +545,7 @@ export const designs: Design[] = [
     "style": "Arabic bold",
     "occasion": "Teej",
     "difficulty": "Medium",
-    "imageUrl": "https://cdn.pixabay.com/photo/2026/05/17/20/03/20-03-21-506_1280.jpg",
+    "imageUrl": "/divya_2.jpg",
     "tags": [
       "modern",
       "geometric"
@@ -565,7 +565,7 @@ export const designs: Design[] = [
     "style": "geometric",
     "occasion": "Diwali",
     "difficulty": "Easy",
-    "imageUrl": "https://cdn.pixabay.com/photo/2013/09/12/21/37/henna-181786_1280.png",
+    "imageUrl": "/mehndi_by_sofia_haque.avif",
     "tags": [
       "traditional",
       "intricate"
@@ -585,7 +585,7 @@ export const designs: Design[] = [
     "style": "Ottoman",
     "occasion": "Engagement",
     "difficulty": "Medium",
-    "imageUrl": "https://cdn.pixabay.com/photo/2025/04/29/04/23/blue-9566138_1920__a1ef64cf39.jpg",
+    "imageUrl": "/028a55c2409155d7d41fbce8487f4983.jpg",
     "tags": [
       "bold",
       "heavy"
@@ -605,7 +605,7 @@ export const designs: Design[] = [
     "style": "Javanese",
     "occasion": "Festival",
     "difficulty": "Hard",
-    "imageUrl": "https://cdn.pixabay.com/photo/2026/05/19/06/55/06-55-02-805_1280.jpg",
+    "imageUrl": "/eefj.avif",
     "tags": [
       "geometric",
       "bold"
@@ -625,7 +625,7 @@ export const designs: Design[] = [
     "style": "Sudanese",
     "occasion": "Casual",
     "difficulty": "Easy",
-    "imageUrl": "https://cdn.pixabay.com/photo/2018/08/14/09/26/italy-3605022_1280.jpg",
+    "imageUrl": "/Minimalistic-Chakra-Design-819x1024.jpg",
     "tags": [
       "intricate",
       "traditional"
@@ -645,7 +645,7 @@ export const designs: Design[] = [
     "style": "Minimalist",
     "occasion": "Mehendi Night",
     "difficulty": "Medium",
-    "imageUrl": "https://cdn.pixabay.com/photo/2026/05/14/19/21/19-21-45-576_1280.jpg",
+    "imageUrl": "/W4WYWW4W5YRERH.avif",
     "tags": [
       "traditional",
       "elegant"
@@ -665,7 +665,7 @@ export const designs: Design[] = [
     "style": "South Indian",
     "occasion": "Party",
     "difficulty": "Hard",
-    "imageUrl": "https://cdn.pixabay.com/video/2020/07/30/46012-448062061_tiny.jpg",
+    "imageUrl": "/divyaa.avif",
     "tags": [
       "heavy",
       "light"
@@ -685,7 +685,7 @@ export const designs: Design[] = [
     "style": "Geometric",
     "occasion": "Diwali",
     "difficulty": "Easy",
-    "imageUrl": "https://cdn.pixabay.com/photo/2022/07/27/09/40/child-7347494_1280.jpg",
+    "imageUrl": "/flowers-with-meshwork-front-hand-mehndi-1024x683.avif",
     "tags": [
       "elegant",
       "light"
@@ -705,7 +705,7 @@ export const designs: Design[] = [
     "style": "Arabic bold",
     "occasion": "Wedding",
     "difficulty": "Hard",
-    "imageUrl": "https://cdn.pixabay.com/photo/2024/06/17/14/58/school-8835808_1280.jpg",
+    "imageUrl": "/9..avif",
     "tags": [
       "geometric",
       "elegant"
@@ -725,7 +725,7 @@ export const designs: Design[] = [
     "style": "geometric",
     "occasion": "Engagement",
     "difficulty": "Easy",
-    "imageUrl": "https://cdn.pixabay.com/photo/2013/09/12/21/37/henna-181795_1280.png",
+    "imageUrl": "/Chakra-front-hand-mehndi-design-819x1024.avif",
     "tags": [
       "modern",
       "traditional"
@@ -745,7 +745,7 @@ export const designs: Design[] = [
     "style": "floral Turkish",
     "occasion": "Party",
     "difficulty": "Easy",
-    "imageUrl": "https://cdn.pixabay.com/photo/2018/05/09/23/31/turkish-women-3386477_1280.jpg",
+    "imageUrl": "/362994868_270225565650314_4450455011723621872_n.avif",
     "tags": [
       "heavy",
       "bold"
@@ -765,7 +765,7 @@ export const designs: Design[] = [
     "style": "Balinese",
     "occasion": "Wedding",
     "difficulty": "Expert",
-    "imageUrl": "https://cdn.pixabay.com/video/2026/05/18/353388_tiny.jpg",
+    "imageUrl": "/elephant-grid-back-hand-mehendi-819x1024.avif",
     "tags": [
       "heavy",
       "light"
@@ -785,7 +785,7 @@ export const designs: Design[] = [
     "style": "Sudanese",
     "occasion": "Teej",
     "difficulty": "Medium",
-    "imageUrl": "https://cdn.pixabay.com/photo/2026/05/19/16/11/16-11-44-125_1280.jpg",
+    "imageUrl": "/370034030_18199582642302002_9199000020486484550_n.avif",
     "tags": [
       "traditional",
       "intricate"
@@ -805,7 +805,7 @@ export const designs: Design[] = [
     "style": "Indo-Western",
     "occasion": "Mehendi Night",
     "difficulty": "Expert",
-    "imageUrl": "https://cdn.pixabay.com/photo/2026/05/15/19/28/19-28-49-360_1280.jpg",
+    "imageUrl": "/happy_flashbacks.jpg",
     "tags": [
       "bold",
       "elegant"
@@ -825,7 +825,7 @@ export const designs: Design[] = [
     "style": "Bridal",
     "occasion": "Festival",
     "difficulty": "Expert",
-    "imageUrl": "https://cdn.pixabay.com/photo/2020/03/26/07/54/rice-4969509_960_720.jpg",
+    "imageUrl": "/340680629_1168190557141921_7497450264020054635_n.jfif",
     "tags": [
       "light",
       "modern"
@@ -845,7 +845,7 @@ export const designs: Design[] = [
     "style": "Floral",
     "occasion": "Diwali",
     "difficulty": "Medium",
-    "imageUrl": "https://cdn.pixabay.com/photo/2020/08/21/08/46/african-5505598_1280.jpg",
+    "imageUrl": "/candid_wedding_stories.jpg",
     "tags": [
       "intricate",
       "traditional"
@@ -865,7 +865,7 @@ export const designs: Design[] = [
     "style": "Gulf/Khaleeji",
     "occasion": "Engagement",
     "difficulty": "Medium",
-    "imageUrl": "https://cdn.pixabay.com/photo/2024/05/20/18/32/ai-generated-8775948_1280.jpg",
+    "imageUrl": "/non_anjali_henna.avif",
     "tags": [
       "traditional",
       "light"
@@ -885,7 +885,7 @@ export const designs: Design[] = [
     "style": "tribal",
     "occasion": "Eid",
     "difficulty": "Easy",
-    "imageUrl": "https://cdn.pixabay.com/photo/2024/02/19/06/28/ai-generated-8582615_960_720.jpg",
+    "imageUrl": "/186880279_109560234551449_8706702133746067147_n.avif",
     "tags": [
       "geometric",
       "bold"
@@ -905,7 +905,7 @@ export const designs: Design[] = [
     "style": "Ottoman",
     "occasion": "Casual",
     "difficulty": "Hard",
-    "imageUrl": "https://cdn.pixabay.com/photo/2017/07/26/16/32/woman-2542252_1280.jpg",
+    "imageUrl": "/henna_by_shamsa_(6).avif",
     "tags": [
       "traditional",
       "light"
@@ -925,7 +925,7 @@ export const designs: Design[] = [
     "style": "Javanese",
     "occasion": "Casual",
     "difficulty": "Hard",
-    "imageUrl": "https://cdn.pixabay.com/photo/2026/05/19/08/33/08-33-32-480_1280.jpg",
+    "imageUrl": "/mini_magick20231014-18559-d9k360.avif",
     "tags": [
       "floral",
       "heavy"
@@ -945,7 +945,7 @@ export const designs: Design[] = [
     "style": "African tribal",
     "occasion": "Casual",
     "difficulty": "Hard",
-    "imageUrl": "https://cdn.pixabay.com/photo/2026/05/19/16/34/16-34-25-614_1280.png",
+    "imageUrl": "/521980859716c8d801dce4c58250c9e7.jpg",
     "tags": [
       "traditional",
       "modern"
@@ -965,7 +965,7 @@ export const designs: Design[] = [
     "style": "Indo-Western",
     "occasion": "Karva Chauth",
     "difficulty": "Expert",
-    "imageUrl": "https://cdn.pixabay.com/photo/2026/05/15/08/27/08-27-07-663_960_720.png",
+    "imageUrl": "/361_degree_productions.avif",
     "tags": [
       "floral",
       "heavy"
@@ -985,7 +985,7 @@ export const designs: Design[] = [
     "style": "Mandala",
     "occasion": "Mehendi Night",
     "difficulty": "Medium",
-    "imageUrl": "https://cdn.pixabay.com/photo/2026/05/19/16/34/16-34-25-614_640.png",
+    "imageUrl": "/359255363_18058938619425017_2980609639300639243_n.avif",
     "tags": [
       "geometric",
       "elegant"
@@ -1005,7 +1005,7 @@ export const designs: Design[] = [
     "style": "Tikki",
     "occasion": "Festival",
     "difficulty": "Medium",
-    "imageUrl": "https://cdn.pixabay.com/photo/2021/09/14/01/35/chocolate-labrador-6622701_1280.jpg",
+    "imageUrl": "/277592948_1066844400533747_5596981114046555_n.avif",
     "tags": [
       "bold",
       "intricate"
@@ -1025,7 +1025,7 @@ export const designs: Design[] = [
     "style": "minimal Arabic",
     "occasion": "Party",
     "difficulty": "Medium",
-    "imageUrl": "https://cdn.pixabay.com/photo/2016/03/14/17/08/pants-1255857_960_720.jpg",
+    "imageUrl": "/Snapinsta.app_355148640_2089582684740789_8491820625466169110_n_1080.avif",
     "tags": [
       "heavy",
       "geometric"
@@ -1045,7 +1045,7 @@ export const designs: Design[] = [
     "style": "Berber",
     "occasion": "Party",
     "difficulty": "Hard",
-    "imageUrl": "https://cdn.pixabay.com/video/2022/06/29/122530-725502979_tiny.jpg",
+    "imageUrl": "/anjali_henna_(14).jpg",
     "tags": [
       "traditional",
       "floral"
@@ -1065,7 +1065,7 @@ export const designs: Design[] = [
     "style": "floral Turkish",
     "occasion": "Teej",
     "difficulty": "Hard",
-    "imageUrl": "https://cdn.pixabay.com/photo/2023/10/18/20/03/henna-8325022_640.png",
+    "imageUrl": "/henna_by_divya_(8).avif",
     "tags": [
       "intricate",
       "modern"
@@ -1085,7 +1085,7 @@ export const designs: Design[] = [
     "style": "Balinese",
     "occasion": "Diwali",
     "difficulty": "Hard",
-    "imageUrl": "https://cdn.pixabay.com/photo/2024/10/17/12/16/japanese-serow-9127450_1280.jpg",
+    "imageUrl": "/_hennabymaziah.avif",
     "tags": [
       "modern",
       "floral"
@@ -1105,7 +1105,7 @@ export const designs: Design[] = [
     "style": "Sudanese",
     "occasion": "Karva Chauth",
     "difficulty": "Hard",
-    "imageUrl": "https://cdn.pixabay.com/photo/2026/05/19/09/27/09-27-08-947_960_720.jpg",
+    "imageUrl": "/358715288_18058938601425017_7096240074605130185_n.avif",
     "tags": [
       "traditional",
       "geometric"
@@ -1125,7 +1125,7 @@ export const designs: Design[] = [
     "style": "Indo-Western",
     "occasion": "Teej",
     "difficulty": "Easy",
-    "imageUrl": "https://cdn.pixabay.com/photo/2026/05/18/20/37/bucharena-grater-10286671_960_720.png",
+    "imageUrl": "/Snapinsta.app_360146176_18297944026104080_1483667979503638697_n_1080.avif",
     "tags": [
       "intricate",
       "heavy"
@@ -1145,7 +1145,7 @@ export const designs: Design[] = [
     "style": "Peacock",
     "occasion": "Karva Chauth",
     "difficulty": "Easy",
-    "imageUrl": "https://cdn.pixabay.com/photo/2019/03/13/15/15/information-processing-4053081_1280.jpg",
+    "imageUrl": "/Mansi_Siddhapura.avif",
     "tags": [
       "modern",
       "heavy"
@@ -1165,7 +1165,7 @@ export const designs: Design[] = [
     "style": "Geometric",
     "occasion": "Teej",
     "difficulty": "Hard",
-    "imageUrl": "https://cdn.pixabay.com/photo/2024/08/29/13/23/rock-hyrax-9007027_1280.jpg",
+    "imageUrl": "/124239582_139477791280649_7516324932121243411_n.avif",
     "tags": [
       "floral",
       "heavy"
@@ -1185,7 +1185,7 @@ export const designs: Design[] = [
     "style": "Gulf/Khaleeji",
     "occasion": "Engagement",
     "difficulty": "Easy",
-    "imageUrl": "https://cdn.pixabay.com/photo/2026/05/15/02/51/02-51-36-114_960_720.jpg",
+    "imageUrl": "/Snapinsta.app_321822369_223661390002933_3544312425646401498_n_1080.jpg",
     "tags": [
       "traditional",
       "elegant"
@@ -1205,7 +1205,7 @@ export const designs: Design[] = [
     "style": "Berber",
     "occasion": "Mehendi Night",
     "difficulty": "Hard",
-    "imageUrl": "https://cdn.pixabay.com/photo/2021/03/15/21/00/empathy-6098070_1280.png",
+    "imageUrl": "/Snapinsta.app_101442012_288322382290494_5329724816677708205_n_1080.avif",
     "tags": [
       "intricate",
       "floral"
@@ -1225,7 +1225,7 @@ export const designs: Design[] = [
     "style": "floral Turkish",
     "occasion": "Casual",
     "difficulty": "Medium",
-    "imageUrl": "https://cdn.pixabay.com/photo/2010/11/29/india-324_1280.jpg",
+    "imageUrl": "/adsadadfa.avif",
     "tags": [
       "bold",
       "light"
@@ -1245,7 +1245,7 @@ export const designs: Design[] = [
     "style": "Balinese",
     "occasion": "Karva Chauth",
     "difficulty": "Easy",
-    "imageUrl": "https://cdn.pixabay.com/video/2026/05/18/353404_tiny.jpg",
+    "imageUrl": "/Snapinsta.app_120905684_167346931654911_3435251164984002391_n_1080.avif",
     "tags": [
       "geometric",
       "elegant"
@@ -1265,7 +1265,7 @@ export const designs: Design[] = [
     "style": "Sudanese",
     "occasion": "Mehendi Night",
     "difficulty": "Hard",
-    "imageUrl": "https://cdn.pixabay.com/photo/2017/02/11/17/08/surgery-2058088_1280.jpg",
+    "imageUrl": "/176615861_887141298531201_4788140400645202544_n.avif",
     "tags": [
       "elegant",
       "traditional"
@@ -1285,7 +1285,7 @@ export const designs: Design[] = [
     "style": "Geometric modern",
     "occasion": "Karva Chauth",
     "difficulty": "Hard",
-    "imageUrl": "https://cdn.pixabay.com/photo/2026/05/17/18/30/18-30-57-80_1280.png",
+    "imageUrl": "/henna_by_divya.avif",
     "tags": [
       "traditional",
       "heavy"
@@ -1305,7 +1305,7 @@ export const designs: Design[] = [
     "style": "Mughal",
     "occasion": "Karva Chauth",
     "difficulty": "Hard",
-    "imageUrl": "https://cdn.pixabay.com/photo/2026/05/20/20/43/20-43-51-990_960_720.jpg",
+    "imageUrl": "/amrita_henna.jpg",
     "tags": [
       "elegant",
       "bold"
@@ -1325,7 +1325,7 @@ export const designs: Design[] = [
     "style": "Floral",
     "occasion": "Mehendi Night",
     "difficulty": "Expert",
-    "imageUrl": "https://cdn.pixabay.com/photo/2024/04/28/19/17/ai-generated-8726163_1280.png",
+    "imageUrl": "/375658402_975475350409711_3507580074053013633_n.jfif",
     "tags": [
       "floral",
       "elegant"
@@ -1345,7 +1345,7 @@ export const designs: Design[] = [
     "style": "Arabic bold",
     "occasion": "Karva Chauth",
     "difficulty": "Expert",
-    "imageUrl": "https://cdn.pixabay.com/photo/2019/03/26/14/47/cyclist-4082787_1280.jpg",
+    "imageUrl": "/henna_by_divya_(7).avif",
     "tags": [
       "heavy",
       "light"
@@ -1365,7 +1365,7 @@ export const designs: Design[] = [
     "style": "tribal",
     "occasion": "Diwali",
     "difficulty": "Hard",
-    "imageUrl": "https://cdn.pixabay.com/photo/2025/07/20/18/29/nature-9724867_960_720.jpg",
+    "imageUrl": "/Amrita_Henna_(4).jpg",
     "tags": [
       "intricate",
       "modern"
@@ -1385,7 +1385,7 @@ export const designs: Design[] = [
     "style": "Ottoman",
     "occasion": "Mehendi Night",
     "difficulty": "Expert",
-    "imageUrl": "https://cdn.pixabay.com/photo/2023/10/10/14/27/night-view-8306605_1280.jpg",
+    "imageUrl": "/minal_beauty_(8).jpg",
     "tags": [
       "floral",
       "light"
@@ -1405,7 +1405,7 @@ export const designs: Design[] = [
     "style": "Balinese",
     "occasion": "Casual",
     "difficulty": "Easy",
-    "imageUrl": "https://cdn.pixabay.com/photo/2017/09/29/08/29/kumbang-2798326_1280.jpg",
+    "imageUrl": "/anjj.avif",
     "tags": [
       "modern",
       "bold"
@@ -1425,7 +1425,7 @@ export const designs: Design[] = [
     "style": "Sudanese",
     "occasion": "Karva Chauth",
     "difficulty": "Hard",
-    "imageUrl": "https://cdn.pixabay.com/photo/2026/05/18/18/42/18-42-20-176_960_720.jpg",
+    "imageUrl": "/henna_6.avif",
     "tags": [
       "modern",
       "geometric"
@@ -1445,7 +1445,7 @@ export const designs: Design[] = [
     "style": "Indo-Western",
     "occasion": "Mehendi Night",
     "difficulty": "Medium",
-    "imageUrl": "https://cdn.pixabay.com/video/2026/05/06/350812_tiny.jpg",
+    "imageUrl": "/alankrita_by_rashi_(7).avif",
     "tags": [
       "floral",
       "bold"
@@ -1465,7 +1465,7 @@ export const designs: Design[] = [
     "style": "Mughal",
     "occasion": "Party",
     "difficulty": "Hard",
-    "imageUrl": "https://cdn.pixabay.com/photo/2025/07/20/18/29/nature-9724867_640.jpg",
+    "imageUrl": "/358556412_580706557593153_7538074724656005252_n.avif",
     "tags": [
       "floral",
       "light"
@@ -1485,7 +1485,7 @@ export const designs: Design[] = [
     "style": "Tikki",
     "occasion": "Festival",
     "difficulty": "Expert",
-    "imageUrl": "https://cdn.pixabay.com/photo/2023/10/08/09/15/ai-generated-8301792_640.jpg",
+    "imageUrl": "/hennabyaz_(4).avif",
     "tags": [
       "heavy",
       "bold"
@@ -1505,7 +1505,7 @@ export const designs: Design[] = [
     "style": "Arabic bold",
     "occasion": "Diwali",
     "difficulty": "Expert",
-    "imageUrl": "https://cdn.pixabay.com/photo/2017/10/07/12/31/finland-2826391_1280.jpg",
+    "imageUrl": "/Snapinsta.app_354421838_826069441785120_2849743104236246373_n_1080.avif",
     "tags": [
       "geometric",
       "modern"
@@ -1525,7 +1525,7 @@ export const designs: Design[] = [
     "style": "Berber",
     "occasion": "Karva Chauth",
     "difficulty": "Hard",
-    "imageUrl": "https://cdn.pixabay.com/objects3d/2025/07/17/15-35-26-823_720x720.png",
+    "imageUrl": "/329379225_606354211047668_56710652147884024_n.avif",
     "tags": [
       "modern",
       "intricate"
@@ -1545,7 +1545,7 @@ export const designs: Design[] = [
     "style": "Ottoman",
     "occasion": "Party",
     "difficulty": "Easy",
-    "imageUrl": "https://cdn.pixabay.com/photo/2022/09/07/01/18/calligraphy-7437705_1280.png",
+    "imageUrl": "/hayat.avif",
     "tags": [
       "modern",
       "heavy"
@@ -1565,7 +1565,7 @@ export const designs: Design[] = [
     "style": "Javanese",
     "occasion": "Party",
     "difficulty": "Medium",
-    "imageUrl": "https://cdn.pixabay.com/photo/2016/04/11/08/12/indonesia-1321504_1280.jpg",
+    "imageUrl": "/PicsArt_04-09-10.14.24.avif",
     "tags": [
       "heavy",
       "bold"
@@ -1585,7 +1585,7 @@ export const designs: Design[] = [
     "style": "Sudanese",
     "occasion": "Diwali",
     "difficulty": "Hard",
-    "imageUrl": "https://cdn.pixabay.com/photo/2024/05/04/02/30/african-woman-8738173_1280.jpg",
+    "imageUrl": "/375288515_18200712892302002_935923178137333924_n.avif",
     "tags": [
       "traditional",
       "intricate"
@@ -1605,7 +1605,7 @@ export const designs: Design[] = [
     "style": "Minimalist",
     "occasion": "Diwali",
     "difficulty": "Hard",
-    "imageUrl": "https://cdn.pixabay.com/photo/2012/04/16/12/58/star-35893_1280.png",
+    "imageUrl": "/3426d9e9069b7bb4456a9c68ed9849c2.jpg",
     "tags": [
       "floral",
       "traditional"
@@ -1625,7 +1625,7 @@ export const designs: Design[] = [
     "style": "Mughal",
     "occasion": "Engagement",
     "difficulty": "Hard",
-    "imageUrl": "https://cdn.pixabay.com/video/2024/04/21/208815_tiny.jpg",
+    "imageUrl": "/333155814_486528953514552_1943120532658796596_n.avif",
     "tags": [
       "intricate",
       "floral"
@@ -1645,7 +1645,7 @@ export const designs: Design[] = [
     "style": "Floral",
     "occasion": "Diwali",
     "difficulty": "Medium",
-    "imageUrl": "https://cdn.pixabay.com/photo/2019/02/27/12/12/pakistani-boy-4023937_1280.jpg",
+    "imageUrl": "/Snapinsta.app_240315638_1201763823659936_764299298912109232_n_1080.avif",
     "tags": [
       "intricate",
       "heavy"
@@ -1665,7 +1665,7 @@ export const designs: Design[] = [
     "style": "minimal Arabic",
     "occasion": "Casual",
     "difficulty": "Easy",
-    "imageUrl": "https://cdn.pixabay.com/photo/2015/04/12/02/14/skull-and-crossbones-718445_1280.jpg",
+    "imageUrl": "/unnamed.avif",
     "tags": [
       "heavy",
       "bold"
@@ -1685,7 +1685,7 @@ export const designs: Design[] = [
     "style": "geometric",
     "occasion": "Teej",
     "difficulty": "Easy",
-    "imageUrl": "https://cdn.pixabay.com/photo/2026/05/19/06/55/06-55-02-805_960_720.jpg",
+    "imageUrl": "/344464257_642077003923589_9125182905211196400_n.avif",
     "tags": [
       "bold",
       "intricate"
@@ -1705,7 +1705,7 @@ export const designs: Design[] = [
     "style": "Ottoman",
     "occasion": "Party",
     "difficulty": "Expert",
-    "imageUrl": "https://cdn.pixabay.com/photo/2019/09/26/13/39/turkish-delight-4505999_1280.jpg",
+    "imageUrl": "/Snapinsta.app_242517882_382307166890737_7386207358374737613_n_1080.avif",
     "tags": [
       "floral",
       "bold"
@@ -1725,7 +1725,7 @@ export const designs: Design[] = [
     "style": "Javanese",
     "occasion": "Mehendi Night",
     "difficulty": "Expert",
-    "imageUrl": "https://cdn.pixabay.com/photo/2022/02/13/12/05/boy-7011010_1280.jpg",
+    "imageUrl": "/346423398_937550154117603_7116329827553741891_n.avif",
     "tags": [
       "floral",
       "elegant"
@@ -1745,7 +1745,7 @@ export const designs: Design[] = [
     "style": "Sudanese",
     "occasion": "Festival",
     "difficulty": "Easy",
-    "imageUrl": "https://cdn.pixabay.com/photo/2022/08/29/21/37/african-pattern-7419841_1280.png",
+    "imageUrl": "/ABCD.avif",
     "tags": [
       "elegant",
       "intricate"
@@ -1765,7 +1765,7 @@ export const designs: Design[] = [
     "style": "Geometric modern",
     "occasion": "Party",
     "difficulty": "Hard",
-    "imageUrl": "https://cdn.pixabay.com/video/2026/05/06/350804_tiny.jpg",
+    "imageUrl": "/355419759_1227554437927690_7428575999984366409_n.jpg",
     "tags": [
       "traditional",
       "light"
@@ -1785,7 +1785,7 @@ export const designs: Design[] = [
     "style": "South Indian",
     "occasion": "Engagement",
     "difficulty": "Medium",
-    "imageUrl": "https://cdn.pixabay.com/photo/2016/04/05/11/04/india-1309206_640.jpg",
+    "imageUrl": "/337172410_180233828133936_8252768828852222895_n.jfif",
     "tags": [
       "heavy",
       "modern"
@@ -1805,7 +1805,7 @@ export const designs: Design[] = [
     "style": "Tikki",
     "occasion": "Diwali",
     "difficulty": "Expert",
-    "imageUrl": "https://cdn.pixabay.com/photo/2022/12/31/14/32/cat-7688749_1280.jpg",
+    "imageUrl": "/b7c6278301a4514d4f7916402e3c1139.avif",
     "tags": [
       "floral",
       "elegant"
@@ -1825,7 +1825,7 @@ export const designs: Design[] = [
     "style": "Gulf/Khaleeji",
     "occasion": "Teej",
     "difficulty": "Easy",
-    "imageUrl": "https://cdn.pixabay.com/photo/2016/12/05/19/57/background-1884790_960_720.png",
+    "imageUrl": "/Snapinsta.app_120905684_167346931654911_3435251164984002391_n_1080.jpg",
     "tags": [
       "intricate",
       "floral"
@@ -1845,7 +1845,7 @@ export const designs: Design[] = [
     "style": "Berber",
     "occasion": "Mehendi Night",
     "difficulty": "Expert",
-    "imageUrl": "https://cdn.pixabay.com/photo/2013/07/12/13/26/saturn-147035_640.png",
+    "imageUrl": "/Snapinsta.app_307884443_777567116868171_1162855896794549843_n_1080.jpg",
     "tags": [
       "geometric",
       "heavy"
@@ -1865,7 +1865,7 @@ export const designs: Design[] = [
     "style": "floral Turkish",
     "occasion": "Teej",
     "difficulty": "Expert",
-    "imageUrl": "https://cdn.pixabay.com/photo/2020/07/27/14/34/stars-5442598_1280.jpg",
+    "imageUrl": "/amrita_henna.avif",
     "tags": [
       "heavy",
       "floral"
@@ -1885,7 +1885,7 @@ export const designs: Design[] = [
     "style": "Javanese",
     "occasion": "Mehendi Night",
     "difficulty": "Easy",
-    "imageUrl": "https://cdn.pixabay.com/photo/2018/11/17/15/31/indonesia-3821296_1280.jpg",
+    "imageUrl": "/363502805_833318421495315_5577863500440832143_n.avif",
     "tags": [
       "modern",
       "bold"
@@ -1905,7 +1905,7 @@ export const designs: Design[] = [
     "style": "Sudanese",
     "occasion": "Teej",
     "difficulty": "Easy",
-    "imageUrl": "https://cdn.pixabay.com/photo/2019/05/19/08/36/hand-4213487_1280.jpg",
+    "imageUrl": "/331134392_6163570930369677_5241764034404393003_n.avif",
     "tags": [
       "elegant",
       "heavy"
@@ -1925,7 +1925,7 @@ export const designs: Design[] = [
     "style": "Geometric modern",
     "occasion": "Karva Chauth",
     "difficulty": "Hard",
-    "imageUrl": "https://cdn.pixabay.com/video/2021/01/25/62823-505080338_tiny.jpg",
+    "imageUrl": "/317196994_860615678411997_7902818446797822306_n.jfif",
     "tags": [
       "geometric",
       "light"
@@ -1945,7 +1945,7 @@ export const designs: Design[] = [
     "style": "Peacock",
     "occasion": "Wedding",
     "difficulty": "Easy",
-    "imageUrl": "https://cdn.pixabay.com/photo/2016/11/22/19/15/hand-1850120_1920__b873924b15.jpg",
+    "imageUrl": "/13702998_316859012037113_144333033_n.jpg",
     "tags": [
       "intricate",
       "modern"
@@ -1965,7 +1965,7 @@ export const designs: Design[] = [
     "style": "Geometric",
     "occasion": "Mehendi Night",
     "difficulty": "Expert",
-    "imageUrl": "https://cdn.pixabay.com/photo/2024/01/29/14/12/boy-8539958_1280.jpg",
+    "imageUrl": "/candid_wedding_stories.avif",
     "tags": [
       "floral",
       "intricate"
@@ -1985,7 +1985,7 @@ export const designs: Design[] = [
     "style": "minimal Arabic",
     "occasion": "Party",
     "difficulty": "Medium",
-    "imageUrl": "https://cdn.pixabay.com/photo/2023/01/22/02/40/arabic-text-7735504_1280.jpg",
+    "imageUrl": "/359459706_18058938610425017_2437887919008177950_n.avif",
     "tags": [
       "heavy",
       "bold"
@@ -2005,7 +2005,7 @@ export const designs: Design[] = [
     "style": "geometric",
     "occasion": "Karva Chauth",
     "difficulty": "Expert",
-    "imageUrl": "https://cdn.pixabay.com/photo/2017/12/08/22/06/landscape-3006816_1280.jpg",
+    "imageUrl": "/ennaforallny.jfif",
     "tags": [
       "heavy",
       "geometric"

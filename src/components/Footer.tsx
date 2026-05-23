@@ -4,6 +4,7 @@ import Link from "next/link";
 import Logo from "@/components/Logo";
 
 const quickLinks = [
+  { href: "/mehndi-designs", label: "All Mehndi Designs" },
   { href: "/gallery", label: "Design Gallery" },
   { href: "/blog", label: "Blog" },
   { href: "/styles", label: "Henna Styles" },
@@ -11,10 +12,10 @@ const quickLinks = [
 ];
 
 const styleLinks = [
-  { href: "/styles/india", label: "Indian Mehndi" },
-  { href: "/styles/arabia", label: "Arabic Henna" },
-  { href: "/styles/morocco", label: "Moroccan" },
-  { href: "/styles/pakistan", label: "Pakistani" },
+  { href: "/mehndi-designs/bridal-mehndi-designs", label: "Bridal Mehndi" },
+  { href: "/mehndi-designs/arabic-mehndi-designs", label: "Arabic Henna" },
+  { href: "/mehndi-designs/simple-mehndi-designs", label: "Simple Designs" },
+  { href: "/mehndi-designs/minimalist-mehndi-designs", label: "Minimalist" },
 ];
 
 function PinterestIcon({ size = 20 }: { size?: number }) {
@@ -179,9 +180,11 @@ export default function Footer() {
             <p className="text-muted text-xs">
               © {currentYear} HennaVerse. All rights reserved.
             </p>
-            <p className="text-muted text-xs">
-              Celebrating the art of henna across cultures
-            </p>
+            <div className="flex items-center gap-4 text-xs text-muted">
+              <Link href="/privacy-policy" className="hover:text-gold transition-colors">Privacy Policy</Link>
+              <Link href="/disclaimer" className="hover:text-gold transition-colors">Disclaimer</Link>
+              <Link href="/contact" className="hover:text-gold transition-colors">Contact</Link>
+            </div>
           </div>
         </div>
       </div>
