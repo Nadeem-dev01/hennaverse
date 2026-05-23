@@ -43,7 +43,6 @@ const gradients = [
 
 export default function DesignCard({ design, index = 0, onClick }: DesignCardProps) {
   const gradient = gradients[index % gradients.length];
-  const [imgLoaded, setImgLoaded] = useState(false);
   const [imgError, setImgError] = useState(false);
   const hasRealImage = !!design.imageUrl;
 
@@ -63,7 +62,7 @@ export default function DesignCard({ design, index = 0, onClick }: DesignCardPro
       <div
         className={`relative aspect-[4/3] bg-gradient-to-br ${gradient} overflow-hidden`}
       >
-        {/* Real image from Pixabay/Supabase */}
+        {/* Real image */}
         {hasRealImage && !imgError && (
           <Image
             src={design.imageUrl}
@@ -71,17 +70,9 @@ export default function DesignCard({ design, index = 0, onClick }: DesignCardPro
             fill
             priority={index < 4}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            onLoad={() => setImgLoaded(true)}
             onError={() => setImgError(true)}
-            className={`object-cover transition-opacity duration-500 ${
-              imgLoaded ? 'opacity-100' : 'opacity-0'
-            }`}
+            className="object-cover"
           />
-        )}
-
-        {/* Shimmer loading animation */}
-        {hasRealImage && !imgLoaded && !imgError && (
-          <div className="absolute inset-0 bg-gradient-to-r from-surface via-border to-surface animate-pulse" />
         )}
 
         {/* Fallback mandala pattern if no real image */}
@@ -106,7 +97,7 @@ export default function DesignCard({ design, index = 0, onClick }: DesignCardPro
         </div>
 
         {/* Photographer credit */}
-        {design.photographer && imgLoaded && (
+        {design.photographer && (
           <div className="absolute bottom-2 right-2 bg-background/60 backdrop-blur-sm px-2 py-0.5 rounded text-[10px] text-muted z-10">
             📷 {design.photographer}
           </div>

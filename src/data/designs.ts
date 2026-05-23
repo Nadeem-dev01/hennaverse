@@ -165,7 +165,7 @@ export const designs: Design[] = [
     "style": "Indo-Western",
     "occasion": "Diwali",
     "difficulty": "Medium",
-    "imageUrl": "/345956115_190860273864053_8182753276442096218_n.jfif",
+    "imageUrl": "/345956115_190860273864053_8182753276442096218_n.jpg",
     "tags": [
       "geometric",
       "elegant"
@@ -205,7 +205,7 @@ export const designs: Design[] = [
     "style": "Tikki",
     "occasion": "Teej",
     "difficulty": "Medium",
-    "imageUrl": "/360034206_972751270446070_4099761826674818325_n.jfif",
+    "imageUrl": "/360034206_972751270446070_4099761826674818325_n.jpg",
     "tags": [
       "geometric",
       "heavy"
@@ -385,7 +385,7 @@ export const designs: Design[] = [
     "style": "minimal Arabic",
     "occasion": "Teej",
     "difficulty": "Expert",
-    "imageUrl": "/320851229_3241788612779301_5931930448531612572_n.jfif",
+    "imageUrl": "/320851229_3241788612779301_5931930448531612572_n.jpg",
     "tags": [
       "floral",
       "intricate"
@@ -825,7 +825,7 @@ export const designs: Design[] = [
     "style": "Bridal",
     "occasion": "Festival",
     "difficulty": "Expert",
-    "imageUrl": "/340680629_1168190557141921_7497450264020054635_n.jfif",
+    "imageUrl": "/340680629_1168190557141921_7497450264020054635_n.jpg",
     "tags": [
       "light",
       "modern"
@@ -1325,7 +1325,7 @@ export const designs: Design[] = [
     "style": "Floral",
     "occasion": "Mehendi Night",
     "difficulty": "Expert",
-    "imageUrl": "/375658402_975475350409711_3507580074053013633_n.jfif",
+    "imageUrl": "/375658402_975475350409711_3507580074053013633_n.jpg",
     "tags": [
       "floral",
       "elegant"
@@ -1785,7 +1785,7 @@ export const designs: Design[] = [
     "style": "South Indian",
     "occasion": "Engagement",
     "difficulty": "Medium",
-    "imageUrl": "/337172410_180233828133936_8252768828852222895_n.jfif",
+    "imageUrl": "/337172410_180233828133936_8252768828852222895_n.jpg",
     "tags": [
       "heavy",
       "modern"
@@ -1925,7 +1925,7 @@ export const designs: Design[] = [
     "style": "Geometric modern",
     "occasion": "Karva Chauth",
     "difficulty": "Hard",
-    "imageUrl": "/317196994_860615678411997_7902818446797822306_n.jfif",
+    "imageUrl": "/317196994_860615678411997_7902818446797822306_n.jpg",
     "tags": [
       "geometric",
       "light"
@@ -2005,7 +2005,7 @@ export const designs: Design[] = [
     "style": "geometric",
     "occasion": "Karva Chauth",
     "difficulty": "Expert",
-    "imageUrl": "/ennaforallny.jfif",
+    "imageUrl": "/ennaforallny.jpg",
     "tags": [
       "heavy",
       "geometric"
