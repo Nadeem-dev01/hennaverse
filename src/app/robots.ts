@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://hennaverse.com/sitemap.xml',
+    sitemap: 'https://www.mehndidesignhenna.com/sitemap.xml',
   };
 }

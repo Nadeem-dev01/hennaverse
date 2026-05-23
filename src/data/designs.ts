@@ -4722,5 +4722,22 @@ export const designs: Design[] = [
       "Mehndi",
       "Celebration"
     ]
+  },
+  {
+    "id": 4001,
+    "title": "Mandala Bridal Mehndi #70",
+    "description": "An exquisite Mandala Bridal Mehndi design showcasing a striking central mandala, detailed finger patterns, and intricate wrist cuffs. Perfect for adding a traditional yet modern touch to your bridal look.",
+    "country": "India",
+    "style": "Mandala",
+    "occasion": "Wedding",
+    "difficulty": "Expert",
+    "imageUrl": "/bridal/bridal-3070.jpg",
+    "tags": [
+      "Mandala",
+      "Bridal",
+      "Wedding",
+      "Mehndi",
+      "Traditional"
+    ]
   }
 ];

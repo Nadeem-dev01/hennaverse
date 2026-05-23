@@ -4,7 +4,7 @@ import { countries } from '@/data/countries';
 import { designCategories } from '@/data/designCategories';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://hennaverse.com';
+  const baseUrl = 'https://www.mehndidesignhenna.com';
 
   const staticRoutes = [
     '', 
@@ -13,6 +13,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog', 
     '/styles', 
     '/mehndi-designs',
+    '/bridalhennaz',
+    '/eidhennaz',
     '/privacy-policy',
     '/disclaimer',
     '/contact'

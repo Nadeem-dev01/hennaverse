@@ -19,7 +19,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://hennaverse.com"),
+  metadataBase: new URL("https://www.mehndidesignhenna.com"),
   title: {
     default: "HennaVerse — Discover the Art of Henna",
     template: "%s | HennaVerse",
@@ -37,13 +37,10 @@ export const metadata: Metadata = {
     "henna art",
     "henna tutorial",
   ],
-  alternates: {
-    canonical: "/",
-  },
   openGraph: {
     title: "HennaVerse — Discover the Art of Henna",
     description: "Explore 100+ stunning mehndi designs from around the world.",
-    url: "https://hennaverse.com",
+    url: "https://www.mehndidesignhenna.com",
     siteName: "HennaVerse",
     locale: "en_US",
     type: "website",
@@ -79,14 +76,14 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "WebSite",
               name: "HennaVerse",
-              url: "https://hennaverse.com",
+              url: "https://www.mehndidesignhenna.com",
               description: "Explore 100+ stunning mehndi designs from around the world.",
               publisher: {
                 "@type": "Organization",
                 name: "HennaVerse",
                 logo: {
                   "@type": "ImageObject",
-                  url: "https://hennaverse.com/icon.png"
+                  url: "https://www.mehndidesignhenna.com/icon.png"
                 }
               }
             })
