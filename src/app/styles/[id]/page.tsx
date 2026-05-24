@@ -3,7 +3,9 @@ import { countries } from "@/data/countries";
 import { designs } from "@/data/designs";
 import DesignCard from "@/components/DesignCard";
 import SectionHeading from "@/components/SectionHeading";
-import { Metadata } from "next";
+import type { Metadata } from "next";
+
+const BASE_URL = "https://www.mehndidesignhenna.com";
 
 export async function generateMetadata(props: { params: Promise<{ id: string }> }): Promise<Metadata> {
   const params = await props.params;
@@ -11,14 +13,22 @@ export async function generateMetadata(props: { params: Promise<{ id: string }> 
   if (!country) return { title: "Not Found" };
   
   return {
-    title: `${country.name} Mehndi Styles`,
+    title: `${country.name} Mehndi Styles — Traditional Henna Patterns and Designs`,
     description: country.description,
+    keywords: [`${country.name.toLowerCase()} mehndi`, `${country.name.toLowerCase()} henna`, "mehndi styles", "henna designs", "mehndi patterns"],
     alternates: { canonical: `/styles/${country.id}` },
     openGraph: {
       title: `${country.name} Mehndi Styles`,
       description: country.description,
       type: "website",
-    }
+      url: `${BASE_URL}/styles/${country.id}`,
+      siteName: "HennaVerse",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${country.name} Mehndi Styles | HennaVerse`,
+      description: country.description,
+    },
   };
 }
 
@@ -47,13 +57,25 @@ export default async function CountryStylePage(props: { params: Promise<{ id: st
     "@type": "CollectionPage",
     name: `${country.name} Mehndi Styles`,
     description: country.description,
-    url: `https://hennaverse.com/styles/${country.id}`,
+    url: `${BASE_URL}/styles/${country.id}`,
+    publisher: { "@type": "Organization", name: "HennaVerse", url: BASE_URL },
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: BASE_URL },
+      { "@type": "ListItem", position: 2, name: "Styles", item: `${BASE_URL}/styles` },
+      { "@type": "ListItem", position: 3, name: `${country.name} Styles`, item: `${BASE_URL}/styles/${country.id}` },
+    ],
   };
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <div className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <main className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto min-h-screen">
       <div className="mb-16">
         <div className="text-6xl mb-4">{country.flag}</div>
         <h1 className="text-4xl md:text-5xl font-serif font-bold text-gold mb-6">
@@ -92,7 +114,7 @@ export default async function CountryStylePage(props: { params: Promise<{ id: st
       ) : (
         <p className="text-muted">More designs from this region coming soon.</p>
       )}
-    </div>
+    </main>
     </>
   );
 }

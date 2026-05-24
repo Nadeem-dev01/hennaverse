@@ -1,11 +1,37 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, Palette, BookOpen, Globe, Heart } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
 
-export const metadata = {
-  title: "About HennaVerse | Celebrating the Art of Henna Worldwide",
+const BASE_URL = "https://www.mehndidesignhenna.com";
+
+export const metadata: Metadata = {
+  title: "About HennaVerse — Our Mission to Celebrate Henna Art Worldwide",
   description:
-    "Learn about HennaVerse — our mission to celebrate henna art from every culture, provide tutorials, and connect the global mehndi community.",
+    "Learn about HennaVerse — our mission to celebrate henna art from every culture, provide expert tutorials, and connect the global mehndi community. Meet our values and editorial standards.",
+  keywords: [
+    "about hennaverse",
+    "henna art mission",
+    "mehndi community",
+    "henna traditions",
+    "mehndi editorial team",
+  ],
+  alternates: {
+    canonical: "/about",
+  },
+  openGraph: {
+    title: "About HennaVerse — Celebrating the Art of Henna Worldwide",
+    description:
+      "Our mission to celebrate henna art from every culture, provide expert tutorials, and connect the global mehndi community.",
+    type: "website",
+    url: `${BASE_URL}/about`,
+    siteName: "HennaVerse",
+  },
+  twitter: {
+    card: "summary",
+    title: "About HennaVerse",
+    description: "Our mission to celebrate henna art from every culture worldwide.",
+  },
 };
 
 const values = [
@@ -70,8 +96,32 @@ const offerings = [
 ];
 
 export default function AboutPage() {
+  const organizationJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "HennaVerse",
+    url: BASE_URL,
+    description: "HennaVerse celebrates henna art from every culture — providing expert tutorials, curated designs, and cultural guides for the global mehndi community.",
+    sameAs: [
+      "https://www.instagram.com/hennaverse",
+      "https://www.pinterest.com/hennaverse",
+    ],
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: BASE_URL },
+      { "@type": "ListItem", position: 2, name: "About", item: `${BASE_URL}/about` },
+    ],
+  };
+
   return (
-    <div className="min-h-screen">
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <main className="min-h-screen">
       {/* Hero */}
       <section className="relative pt-36 pb-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
         {/* Background glows */}
@@ -299,6 +349,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-    </div>
+    </main>
+    </>
   );
 }

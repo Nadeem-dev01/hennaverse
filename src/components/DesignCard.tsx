@@ -104,17 +104,43 @@ export default function DesignCard({ design, index = 0, onClick }: DesignCardPro
         )}
 
         {/* Hover overlay */}
-        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 z-20">
-          <div className="text-center">
-            <p className="text-foreground/90 text-sm leading-relaxed line-clamp-4">
+        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-4 z-20">
+          <div className="text-center mb-3">
+            <p className="text-foreground/90 text-sm leading-relaxed line-clamp-3">
               {design.description}
             </p>
-            {(design.views !== undefined || design.likes !== undefined) && (
-              <div className="flex items-center justify-center gap-4 mt-3 text-muted text-xs">
-                {design.views !== undefined && <span>👁 {design.views.toLocaleString()}</span>}
-                {design.likes !== undefined && <span>❤️ {design.likes.toLocaleString()}</span>}
-              </div>
-            )}
+          </div>
+          
+          <div className="flex items-center gap-3 mt-2">
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                if (!design.imageUrl) return;
+                const link = document.createElement("a");
+                link.href = design.imageUrl;
+                link.download = `mehndi-design-${design.title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}.jpg`;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
+              className="flex items-center gap-1.5 px-3 py-1.5 bg-gold text-background text-xs font-bold rounded-lg hover:bg-gold-light transition-colors shadow-md"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+              Download
+            </button>
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                const shareUrl = `${window.location.origin}/gallery?search=${encodeURIComponent(design.title)}`;
+                navigator.clipboard.writeText(shareUrl).then(() => {
+                  alert("Link copied to clipboard!");
+                });
+              }}
+              className="flex items-center gap-1.5 px-3 py-1.5 bg-surface border border-border text-foreground hover:text-gold text-xs font-bold rounded-lg transition-colors shadow-md"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/></svg>
+              Share
+            </button>
           </div>
         </div>
       </div>

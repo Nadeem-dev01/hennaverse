@@ -1,110 +1,86 @@
-"use client";
+import type { Metadata } from "next";
+import BlogListClient from "./BlogListClient";
 
-import { useState, useMemo } from "react";
-import { blogs } from "@/data/blogs";
-import BlogCard from "@/components/BlogCard";
-import FilterBar from "@/components/FilterBar";
-import SectionHeading from "@/components/SectionHeading";
-import { motion, AnimatePresence } from "framer-motion";
+const BASE_URL = "https://www.mehndidesignhenna.com";
+
+export const metadata: Metadata = {
+  title: "Mehndi Design Blog: Tutorials, Tips and Cultural Guides | HennaVerse",
+  description:
+    "Read expert henna and mehndi tutorials, bridal design guides, aftercare tips, and cultural insights from India, Pakistan, Arabia, Morocco and beyond. Updated weekly.",
+  keywords: [
+    "mehndi blog",
+    "henna tutorials",
+    "mehndi design tips",
+    "bridal henna guide",
+    "henna aftercare",
+    "mehndi culture",
+    "henna art blog",
+  ],
+  alternates: {
+    canonical: "/blog",
+  },
+  openGraph: {
+    title: "Mehndi Design Blog: Tutorials, Tips and Cultural Guides",
+    description:
+      "Expert henna tutorials, bridal mehndi guides, aftercare secrets, and cultural insights from traditions around the world.",
+    type: "website",
+    url: `${BASE_URL}/blog`,
+    siteName: "HennaVerse",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mehndi Design Blog | HennaVerse",
+    description:
+      "Expert henna tutorials, bridal mehndi guides, aftercare secrets, and cultural insights.",
+  },
+};
 
 export default function BlogPage() {
-  const [activeFilters, setActiveFilters] = useState<Record<string, string>>({});
-  const [searchValue, setSearchValue] = useState("");
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    name: "HennaVerse Blog",
+    description:
+      "Expert mehndi tutorials, cultural guides, bridal henna tips, and design inspiration from traditions around the world.",
+    url: `${BASE_URL}/blog`,
+    publisher: {
+      "@type": "Organization",
+      name: "HennaVerse",
+      url: BASE_URL,
+    },
+  };
 
-  const categories = useMemo(
-    () => [...new Set(blogs.map((b) => b.category))],
-    []
-  );
-  const blogCountries = useMemo(
-    () => [...new Set(blogs.map((b) => b.country).filter(Boolean))],
-    []
-  );
-
-  const filters = [
-    { label: "Category", options: categories },
-    { label: "Country", options: blogCountries },
-  ];
-
-  const filteredBlogs = useMemo(() => {
-    return blogs.filter((blog) => {
-      const matchesSearch =
-        !searchValue ||
-        blog.title.toLowerCase().includes(searchValue.toLowerCase()) ||
-        blog.tags.some((t) =>
-          t.toLowerCase().includes(searchValue.toLowerCase())
-        );
-      const matchesCategory =
-        !activeFilters.Category ||
-        activeFilters.Category === "All" ||
-        blog.category === activeFilters.Category;
-      const matchesCountry =
-        !activeFilters.Country ||
-        activeFilters.Country === "All" ||
-        blog.country === activeFilters.Country;
-
-      return matchesSearch && matchesCategory && matchesCountry;
-    });
-  }, [activeFilters, searchValue]);
-
-  const featuredBlog = filteredBlogs[0];
-  const remainingBlogs = filteredBlogs.slice(1);
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: BASE_URL },
+      { "@type": "ListItem", position: 2, name: "Blog", item: `${BASE_URL}/blog` },
+    ],
+  };
 
   return (
-    <div className="min-h-screen pt-24 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-      <SectionHeading
-        title="HennaVerse Blog"
-        subtitle="Stories, tutorials, and cultural insights from the world of henna art"
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-
-      <FilterBar
-        filters={filters}
-        activeFilters={activeFilters}
-        onFilterChange={(label, value) =>
-          setActiveFilters((prev) => ({ ...prev, [label]: value }))
-        }
-        searchValue={searchValue}
-        onSearchChange={setSearchValue}
-        searchPlaceholder="Search blog posts..."
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
+      <main className="min-h-screen pt-24 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <header className="text-center mb-12">
+          <h1 className="font-serif text-4xl sm:text-5xl font-bold text-foreground mb-4">
+            HennaVerse Blog
+          </h1>
+          <p className="text-muted text-lg max-w-2xl mx-auto">
+            Stories, tutorials, and cultural insights from the world of henna art
+          </p>
+        </header>
 
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={JSON.stringify(activeFilters) + searchValue}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.3 }}
-        >
-          {/* Featured blog post */}
-          {featuredBlog && (
-            <div className="mb-10">
-              <BlogCard blog={featuredBlog} featured />
-            </div>
-          )}
-
-          {/* Remaining posts grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {remainingBlogs.map((blog, index) => (
-              <BlogCard key={blog.slug} blog={blog} index={index} />
-            ))}
-          </div>
-
-          {filteredBlogs.length === 0 && (
-            <div className="text-center py-20">
-              <p className="text-muted text-lg">No blog posts found.</p>
-              <button
-                onClick={() => {
-                  setActiveFilters({});
-                  setSearchValue("");
-                }}
-                className="mt-4 text-gold hover:text-gold-light transition-colors text-sm"
-              >
-                Clear all filters
-              </button>
-            </div>
-          )}
-        </motion.div>
-      </AnimatePresence>
-    </div>
+        <BlogListClient />
+      </main>
+    </>
   );
 }

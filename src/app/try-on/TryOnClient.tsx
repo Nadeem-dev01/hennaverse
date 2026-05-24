@@ -19,8 +19,8 @@ export default function TryOnClient() {
   const fileInputRef = useRef<HTMLInputElement>(null);
   const canvasRef = useRef<HTMLDivElement>(null);
 
-  // Extract PNG designs (best for overlays)
-  const overlayDesigns = designs.filter(d => d.imageUrl.toLowerCase().endsWith('.png') || d.imageUrl.toLowerCase().includes('png'));
+  // Use all designs for the try-on tool (blend-mode: multiply works well with JPGs)
+  const overlayDesigns = designs;
 
   const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];

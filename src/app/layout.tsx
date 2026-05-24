@@ -93,7 +93,7 @@ export default function RootLayout({
         <Script
           id="adsbygoogle-init"
           strategy="afterInteractive"
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8920350773715513"
           crossOrigin="anonymous"
         />
         <script
@@ -103,8 +103,9 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "WebSite",
               name: "HennaVerse",
+              alternateName: "Mehndi Design Henna",
               url: "https://www.mehndidesignhenna.com",
-              description: "Explore 100+ stunning mehndi designs from around the world.",
+              description: "Explore stunning mehndi designs from India, Pakistan, Arabia, Morocco and beyond. Tutorials, cultural guides, and inspiration for every occasion.",
               publisher: {
                 "@type": "Organization",
                 name: "HennaVerse",
@@ -112,6 +113,11 @@ export default function RootLayout({
                   "@type": "ImageObject",
                   url: "https://www.mehndidesignhenna.com/icon.png"
                 }
+              },
+              potentialAction: {
+                "@type": "SearchAction",
+                target: "https://www.mehndidesignhenna.com/gallery?q={search_term_string}",
+                "query-input": "required name=search_term_string"
               }
             })
           }}

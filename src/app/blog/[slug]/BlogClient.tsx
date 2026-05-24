@@ -17,7 +17,7 @@ import {
   Link as LinkIcon,
 } from "lucide-react";
 
-import { generateBlogLongContent } from "@/utils/generateBlogLongContent";
+
 
 export default function BlogClient({
   params,
@@ -100,7 +100,7 @@ export default function BlogClient({
     );
   }
 
-  const longContentHtml = generateBlogLongContent(blog.title, blog.category, blog.imageUrl);
+
 
   const relatedPosts = blogs
     .filter(
@@ -303,7 +303,7 @@ export default function BlogClient({
                   [&_em]:text-gold-light
                   [&_blockquote]:border-l-4 [&_blockquote]:border-gold/30 [&_blockquote]:bg-surface/30 [&_blockquote]:p-4 [&_blockquote]:rounded-r-lg [&_blockquote]:italic [&_blockquote]:text-muted [&_blockquote]:my-8
                   [&_a]:text-gold [&_a]:underline [&_a]:underline-offset-2 hover:[&_a]:text-gold-light"
-                dangerouslySetInnerHTML={{ __html: longContentHtml }}
+                dangerouslySetInnerHTML={{ __html: blog.content }}
               />
 
               {/* Tags */}

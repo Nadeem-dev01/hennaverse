@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { designs } from "@/data/designs";
 import { blogs } from "@/data/blogs";
 import { countries } from "@/data/countries";
@@ -11,6 +12,43 @@ import Newsletter from "@/components/Newsletter";
 import SectionHeading from "@/components/SectionHeading";
 import ScrollReveal from "@/components/ScrollReveal";
 import HomeSEOContent from "@/components/HomeSEOContent";
+
+const BASE_URL = "https://www.mehndidesignhenna.com";
+
+export const metadata: Metadata = {
+  title: "Mehndi Design Henna — Beautiful Henna Designs, Tutorials and Cultural Guides",
+  description:
+    "Explore stunning mehndi designs from India, Pakistan, Arabia, Morocco and beyond. Browse bridal henna patterns, easy tutorials, aftercare tips, and cultural guides for every occasion.",
+  keywords: [
+    "mehndi design",
+    "henna design",
+    "bridal mehndi",
+    "arabic henna",
+    "indian mehndi patterns",
+    "easy mehndi designs",
+    "henna tutorial",
+    "mehndi for beginners",
+    "wedding henna",
+    "eid mehndi",
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Mehndi Design Henna — Beautiful Henna Designs, Tutorials and Cultural Guides",
+    description:
+      "Explore stunning mehndi designs from India, Pakistan, Arabia, Morocco and beyond. Bridal patterns, tutorials, and cultural guides.",
+    type: "website",
+    url: BASE_URL,
+    siteName: "HennaVerse",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mehndi Design Henna | HennaVerse",
+    description: "Stunning mehndi designs, bridal henna, tutorials, and cultural guides from around the world.",
+  },
+};
+
 
 export default function Home() {
   const featuredDesigns = designs.slice(0, 6);
