@@ -72,6 +72,23 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${playfair.variable} antialiased`}
     >
+      <head>
+        {/* Google tag (gtag.js) */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-1JDYJ0QPC4"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-1JDYJ0QPC4');
+          `}
+        </Script>
+      </head>
       <body className="min-h-screen flex flex-col bg-background text-foreground font-sans">
         <Script
           id="adsbygoogle-init"

@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { Download, Share2 } from "lucide-react";
 import Breadcrumbs from "./Breadcrumbs";
 import TableOfContents from "./TableOfContents";
 import AdSlot from "./AdSlot";
@@ -12,6 +13,47 @@ interface CategoryPageProps {
 }
 
 export default function CategoryPage({ category, contentHtml }: CategoryPageProps) {
+  const handleDownload = async (imageUrl: string, title: string) => {
+    try {
+      const response = await fetch(imageUrl);
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      const cleanTitle = title.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+      link.setAttribute("download", `mehndi-design-${cleanTitle}.jpg`);
+      document.body.appendChild(link);
+      link.click();
+      link.parentNode?.removeChild(link);
+      window.URL.revokeObjectURL(url);
+    } catch (error) {
+      console.error("Failed to download image:", error);
+      window.open(imageUrl, "_blank");
+    }
+  };
+
+  const handleShare = async (title: string, description: string, urlPath: string) => {
+    const shareUrl = `${window.location.origin}${urlPath}`;
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: `${title} | HennaVerse`,
+          text: description,
+          url: shareUrl,
+        });
+      } catch (err) {
+        console.log("Error sharing:", err);
+      }
+    } else {
+      try {
+        await navigator.clipboard.writeText(shareUrl);
+        alert("Link copied to clipboard!");
+      } catch (err) {
+        console.error("Failed to copy link:", err);
+      }
+    }
+  };
+
   return (
     <div className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto min-h-screen">
       <Breadcrumbs
@@ -71,8 +113,34 @@ export default function CategoryPage({ category, contentHtml }: CategoryPageProp
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                     sizes="(max-width: 640px) 50vw, 33vw"
                   />
-                  <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4 text-center">
-                    <span className="text-sm font-medium text-white">{img.title}</span>
+                  <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-3 text-center z-10">
+                    <div className="w-full flex justify-end gap-2">
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handleDownload(img.src, img.title || category.title);
+                        }}
+                        className="p-2 rounded-lg bg-surface/90 hover:bg-gold text-foreground hover:text-background transition-all duration-300 cursor-pointer shadow-md"
+                        title="Download Image"
+                      >
+                        <Download size={16} />
+                      </button>
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handleShare(
+                            img.title || category.title,
+                            img.alt || category.metaDescription,
+                            `/mehndi-designs/${category.slug}#gallery`
+                          );
+                        }}
+                        className="p-2 rounded-lg bg-surface/90 hover:bg-gold text-foreground hover:text-background transition-all duration-300 cursor-pointer shadow-md"
+                        title="Share Link"
+                      >
+                        <Share2 size={16} />
+                      </button>
+                    </div>
+                    <span className="text-sm font-medium text-white mb-2">{img.title}</span>
                   </div>
                 </div>
               ))}

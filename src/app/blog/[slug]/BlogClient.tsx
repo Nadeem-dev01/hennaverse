@@ -13,6 +13,7 @@ import {
   Clock,
   User,
   Share2,
+  Download,
   Link as LinkIcon,
 } from "lucide-react";
 
@@ -27,6 +28,47 @@ export default function BlogClient({
   const [readProgress, setReadProgress] = useState(0);
 
   const blog = blogs.find((b) => b.slug === slug);
+
+  const handleDownload = async (imageUrl: string, title: string) => {
+    try {
+      const response = await fetch(imageUrl);
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      const cleanTitle = title.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+      link.setAttribute("download", `mehndi-design-${cleanTitle}.jpg`);
+      document.body.appendChild(link);
+      link.click();
+      link.parentNode?.removeChild(link);
+      window.URL.revokeObjectURL(url);
+    } catch (error) {
+      console.error("Failed to download image:", error);
+      window.open(imageUrl, "_blank");
+    }
+  };
+
+  const handleShare = async (title: string, description: string, urlPath: string) => {
+    const shareUrl = `${window.location.origin}${urlPath}`;
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: `${title} | HennaVerse`,
+          text: description,
+          url: shareUrl,
+        });
+      } catch (err) {
+        console.log("Error sharing:", err);
+      }
+    } else {
+      try {
+        await navigator.clipboard.writeText(shareUrl);
+        alert("Link copied to clipboard!");
+      } catch (err) {
+        console.error("Failed to copy link:", err);
+      }
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -136,6 +178,34 @@ export default function BlogClient({
                     />
                   )}
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-60" />
+                  
+                  {/* Action buttons on hover */}
+                  <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-4 z-10">
+                    <div className="w-full flex justify-end gap-2">
+                      <button
+                        onClick={() => handleDownload(blog.imageUrl || galleryImages[0], blog.title)}
+                        className="p-2.5 rounded-lg bg-surface/90 hover:bg-gold text-foreground hover:text-background transition-all duration-300 cursor-pointer shadow-md"
+                        title="Download Image"
+                      >
+                        <Download size={18} />
+                      </button>
+                      <button
+                        onClick={() => handleShare(
+                          blog.title,
+                          blog.excerpt,
+                          `/blog/${blog.slug}`
+                        )}
+                        className="p-2.5 rounded-lg bg-surface/90 hover:bg-gold text-foreground hover:text-background transition-all duration-300 cursor-pointer shadow-md"
+                        title="Share Link"
+                      >
+                        <Share2 size={18} />
+                      </button>
+                    </div>
+                    <div className="text-left">
+                      <span className="text-xs text-gold font-medium uppercase tracking-wider block mb-1">{blog.category}</span>
+                      <span className="text-sm font-semibold text-white line-clamp-2">{blog.title}</span>
+                    </div>
+                  </div>
                 </motion.div>
 
                 {/* Additional Images Grid */}
@@ -146,9 +216,34 @@ export default function BlogClient({
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.3 + (idx * 0.1), duration: 0.5 }}
-                      className="aspect-square rounded-xl overflow-hidden shadow-md shadow-black/10 group"
+                      className="aspect-square rounded-xl overflow-hidden shadow-md shadow-black/10 group relative"
                     >
                       <img src={img} alt="Mehndi inspiration" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                      
+                      {/* Action buttons on hover */}
+                      <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-2 z-10">
+                        <div className="w-full flex justify-end gap-1.5">
+                          <button
+                            onClick={() => handleDownload(img, `inspiration-${idx + 1}`)}
+                            className="p-1.5 rounded-lg bg-surface/90 hover:bg-gold text-foreground hover:text-background transition-all duration-300 cursor-pointer shadow-sm"
+                            title="Download Image"
+                          >
+                            <Download size={14} />
+                          </button>
+                          <button
+                            onClick={() => handleShare(
+                              `Mehndi Inspiration #${idx + 1}`,
+                              "Look at this gorgeous mehndi design inspiration!",
+                              `/blog/${blog.slug}`
+                            )}
+                            className="p-1.5 rounded-lg bg-surface/90 hover:bg-gold text-foreground hover:text-background transition-all duration-300 cursor-pointer shadow-sm"
+                            title="Share Link"
+                          >
+                            <Share2 size={14} />
+                          </button>
+                        </div>
+                        <span className="text-[10px] text-white/80 font-medium">Mehndi Design</span>
+                      </div>
                     </motion.div>
                   ))}
                 </div>
