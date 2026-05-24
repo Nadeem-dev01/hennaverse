@@ -69,6 +69,7 @@ export default function DesignCard({ design, index = 0, onClick }: DesignCardPro
             alt={design.title}
             fill
             priority={index < 4}
+            quality={60}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             onError={() => setImgError(true)}
             className="object-cover"
