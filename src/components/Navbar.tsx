@@ -2,9 +2,9 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, ChevronDown, Wrench } from "lucide-react";
+import { Menu, X, ChevronDown, Wrench, Search } from "lucide-react";
 import Logo from "@/components/Logo";
 import { mehndiTools, mehndiToolCategories } from "@/data/mehndiTools";
 
@@ -21,7 +21,9 @@ export default function Navbar() {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   const [isToolsOpen, setIsToolsOpen] = useState(false);
   const [isMobileToolsOpen, setIsMobileToolsOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
   const pathname = usePathname();
+  const router = useRouter();
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -47,6 +49,15 @@ export default function Navbar() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      router.push(`/gallery?search=${encodeURIComponent(searchQuery.trim())}`);
+      setSearchQuery("");
+      setIsMobileOpen(false);
+    }
+  };
+
   const isToolsActive = pathname.startsWith("/tools");
 
   return (
@@ -64,12 +75,12 @@ export default function Navbar() {
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
-            <Link href="/" className="outline-none">
+            <Link href="/" className="outline-none flex-shrink-0">
               <Logo />
             </Link>
 
             {/* Desktop navigation */}
-            <div className="hidden md:flex items-center gap-7">
+            <div className="hidden md:flex items-center gap-7 flex-1 justify-center">
               {navLinks.map((link) => {
                 const isActive = pathname === link.href;
                 return (
@@ -179,10 +190,25 @@ export default function Navbar() {
               </div>
             </div>
 
+            {/* Search Bar - Desktop */}
+            <div className="hidden md:flex items-center justify-end flex-shrink-0">
+              <form onSubmit={handleSearch} className="relative group">
+                <input
+                  type="text"
+                  placeholder="Search designs..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="w-48 lg:w-64 pl-10 pr-4 py-2 bg-gray-100/80 border border-transparent rounded-full text-sm focus:outline-none focus:bg-white focus:border-gold/50 focus:ring-2 focus:ring-gold/20 transition-all text-slate-700 placeholder-slate-400 group-hover:bg-gray-100"
+                />
+                <Search size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 group-hover:text-gold transition-colors" />
+                <button type="submit" className="hidden">Search</button>
+              </form>
+            </div>
+
             {/* Mobile menu button */}
             <button
               onClick={() => setIsMobileOpen(!isMobileOpen)}
-              className="md:hidden text-slate-800 p-2 hover:text-gold transition-colors"
+              className="md:hidden text-slate-800 p-2 hover:text-gold transition-colors ml-4"
               aria-label="Toggle menu"
             >
               {isMobileOpen ? <X size={24} /> : <Menu size={24} />}
@@ -213,6 +239,19 @@ export default function Navbar() {
               className="fixed top-0 right-0 bottom-0 w-80 bg-white border-l border-gray-100 z-50 md:hidden overflow-y-auto"
             >
               <div className="flex flex-col h-full pt-20 px-6">
+                
+                {/* Mobile Search */}
+                <form onSubmit={handleSearch} className="relative mb-6">
+                  <input
+                    type="text"
+                    placeholder="Search designs..."
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    className="w-full pl-10 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-gold/50 focus:ring-2 focus:ring-gold/20 transition-all text-slate-700 placeholder-slate-400"
+                  />
+                  <Search size={18} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400" />
+                </form>
+
                 <div className="flex flex-col gap-2">
                   {navLinks.map((link, index) => {
                     const isActive = pathname === link.href;
