@@ -39,17 +39,43 @@ export default function Lightbox({ design, isOpen, onClose }: LightboxProps) {
 
   const handleDownload = async (imageUrl: string, title: string) => {
     try {
-      const response = await fetch(imageUrl);
-      const blob = await response.blob();
-      const url = window.URL.createObjectURL(blob);
-      const link = document.createElement("a");
-      link.href = url;
-      const cleanTitle = title.toLowerCase().replace(/[^a-z0-9]+/g, "-");
-      link.setAttribute("download", `mehndi-design-${cleanTitle}.jpg`);
-      document.body.appendChild(link);
-      link.click();
-      link.parentNode?.removeChild(link);
-      window.URL.revokeObjectURL(url);
+      const img = new window.Image();
+      img.crossOrigin = "anonymous";
+      img.onload = () => {
+        const canvas = document.createElement("canvas");
+        canvas.width = img.width;
+        canvas.height = img.height;
+        const ctx = canvas.getContext("2d");
+        if (!ctx) {
+          window.open(imageUrl, "_blank");
+          return;
+        }
+        // Fill white background (crucial for transparent PNGs converted to JPG)
+        ctx.fillStyle = "#FFFFFF";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(img, 0, 0);
+        
+        canvas.toBlob((blob) => {
+          if (!blob) {
+            window.open(imageUrl, "_blank");
+            return;
+          }
+          const url = window.URL.createObjectURL(blob);
+          const link = document.createElement("a");
+          link.href = url;
+          const cleanTitle = title.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+          link.setAttribute("download", `mehndi-design-${cleanTitle}.jpg`);
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+          window.URL.revokeObjectURL(url);
+        }, "image/jpeg", 0.95); // High quality JPG
+      };
+      img.onerror = () => {
+        // Fallback directly to URL if canvas fails (e.g. strict CORS on external images)
+        window.open(imageUrl, "_blank");
+      };
+      img.src = imageUrl;
     } catch (error) {
       console.error("Failed to download image:", error);
       window.open(imageUrl, "_blank");

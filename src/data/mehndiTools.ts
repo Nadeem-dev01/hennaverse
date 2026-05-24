@@ -2200,6 +2200,28 @@ export const mehndiTools: MehndiTool[] = [
     ],
     relatedSlugs: ["mehndi-style-matcher", "mehndi-recommendation-tool", "ai-mehndi-suggestion-tool"],
   },
+  {
+    slug: "design-finder",
+    title: "AI Design Finder",
+    emoji: "🔍",
+    category: "finder",
+    tagline: "Upload your hand photo and let our AI find the perfect mehndi design",
+    description: "Our revolutionary AI Design Finder takes the guesswork out of choosing mehndi. Simply upload a photo of your hand or foot, and our advanced tool scans global databases to suggest the best matching mehndi designs tailored to your specific hand shape and structure.",
+    keywords: ["design finder", "mehndi scanner", "ai mehndi match", "upload hand for mehndi", "mehndi finder tool"],
+    faqs: [
+      { q: "How does the AI Design Finder work?", a: "You upload an image, and our system analyzes your hand shape, then matches it against thousands of high-quality designs to suggest the best options." },
+      { q: "Are my photos saved?", a: "No, the image is only processed locally in your browser for privacy." },
+      { q: "Can I upload a foot photo?", a: "Yes, the tool works for both hands and feet." },
+      { q: "Are the suggested designs free to download?", a: "Absolutely, all suggested designs from our gallery are 100% free to download." }
+    ],
+    tips: [
+      "Upload a clear, well-lit photo of your hand for the best analysis",
+      "Keep your fingers slightly spread in the photo",
+      "Try scanning different hands to see different results",
+      "Download your favorite results immediately before scanning again"
+    ],
+    relatedSlugs: ["hand-size-mehndi-matcher", "mehndi-style-quiz", "virtual-mehndi-try-on"]
+  }
 ];
 
 export function getToolBySlug(slug: string): MehndiTool | undefined {

@@ -117,12 +117,42 @@ export default function DesignCard({ design, index = 0, onClick }: DesignCardPro
               onClick={(e) => {
                 e.stopPropagation();
                 if (!design.imageUrl) return;
-                const link = document.createElement("a");
-                link.href = design.imageUrl;
-                link.download = `mehndi-design-${design.title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}.jpg`;
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
+                
+                const img = new window.Image();
+                img.crossOrigin = "anonymous";
+                img.onload = () => {
+                  const canvas = document.createElement("canvas");
+                  canvas.width = img.width;
+                  canvas.height = img.height;
+                  const ctx = canvas.getContext("2d");
+                  if (!ctx) return;
+                  ctx.fillStyle = "#FFFFFF";
+                  ctx.fillRect(0, 0, canvas.width, canvas.height);
+                  ctx.drawImage(img, 0, 0);
+                  
+                  canvas.toBlob((blob) => {
+                    if (!blob) return;
+                    const url = window.URL.createObjectURL(blob);
+                    const link = document.createElement("a");
+                    link.href = url;
+                    const cleanTitle = design.title.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+                    link.download = `mehndi-design-${cleanTitle}.jpg`;
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                    window.URL.revokeObjectURL(url);
+                  }, "image/jpeg", 0.95);
+                };
+                img.onerror = () => {
+                  // Fallback
+                  const link = document.createElement("a");
+                  link.href = design.imageUrl;
+                  link.download = `mehndi-design-${design.title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}.jpg`;
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                };
+                img.src = design.imageUrl;
               }}
               className="flex items-center gap-1.5 px-3 py-1.5 bg-gold text-background text-xs font-bold rounded-lg hover:bg-gold-light transition-colors shadow-md"
             >
