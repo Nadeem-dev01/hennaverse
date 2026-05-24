@@ -68,9 +68,10 @@ export default function Navbar() {
         transition={{ duration: 0.6, ease: "easeOut" }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           isScrolled
-            ? "bg-white shadow-md shadow-black/5"
-            : "bg-white/95 backdrop-blur-sm border-b border-gray-200/50"
+            ? "shadow-md shadow-black/5"
+            : "backdrop-blur-sm border-b border-gray-200/50"
         }`}
+        style={{ backgroundColor: "#FCF2E5" }}
       >
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 md:h-20">
@@ -132,7 +133,8 @@ export default function Navbar() {
                       animate={{ opacity: 1, y: 0, scale: 1 }}
                       exit={{ opacity: 0, y: 8, scale: 0.97 }}
                       transition={{ duration: 0.18 }}
-                      className="absolute top-full -right-32 mt-4 w-[80vw] max-w-5xl bg-white border border-gray-100 rounded-2xl shadow-2xl shadow-black/10 overflow-hidden z-50 p-6"
+                      className="absolute top-full -right-32 mt-4 w-[80vw] max-w-5xl border border-gray-100 rounded-2xl shadow-2xl shadow-black/10 overflow-hidden z-50 p-6"
+                      style={{ backgroundColor: "#FCF2E5" }}
                     >
                       <div className="flex justify-between items-center mb-6 pb-4 border-b border-gray-100">
                         <div>
@@ -236,7 +238,8 @@ export default function Navbar() {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "spring", damping: 25, stiffness: 200 }}
-              className="fixed top-0 right-0 bottom-0 w-80 bg-white border-l border-gray-100 z-50 md:hidden overflow-y-auto"
+              className="fixed top-0 right-0 bottom-0 w-80 border-l border-gray-100 z-50 md:hidden overflow-y-auto"
+              style={{ backgroundColor: "#FCF2E5" }}
             >
               <div className="flex flex-col h-full pt-20 px-6">
                 
