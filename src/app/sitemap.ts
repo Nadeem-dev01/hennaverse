@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next';
 import { blogs } from '@/data/blogs';
 import { countries } from '@/data/countries';
 import { designCategories } from '@/data/designCategories';
+import { mehndiTools } from '@/data/mehndiTools';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.mehndidesignhenna.com';
@@ -12,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/gallery',
     '/blog',
     '/styles',
+    '/tools',
     '/mehndi-designs',
     '/bridalhennaz',
     '/eidhennaz',
@@ -53,5 +55,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
-  return [...staticRoutes, ...blogRoutes, ...styleRoutes, ...categoryRoutes];
+  const toolRoutes = mehndiTools.map((tool) => ({
+    url: `${baseUrl}/tools/${tool.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.9,
+  }));
+
+  return [...staticRoutes, ...blogRoutes, ...styleRoutes, ...categoryRoutes, ...toolRoutes];
 }

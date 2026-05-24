@@ -4,22 +4,12 @@ import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, Wrench } from "lucide-react";
 import Logo from "@/components/Logo";
-
-const designDropdown = [
-  { href: "/arabic-mehndi", label: "Arabic Mehndi", emoji: "🌿" },
-  { href: "/mandala-mehndi", label: "Mandala Mehndi", emoji: "🔮" },
-  { href: "/rajasthani-mehndi", label: "Rajasthani Mehndi", emoji: "🦚" },
-  { href: "/pakistani-mehndi", label: "Pakistani Mehndi", emoji: "🌺" },
-  { href: "/kids-mehndi", label: "Kids Mehndi", emoji: "🌸" },
-  { href: "/bridalhennaz", label: "Bridal Mehndi", emoji: "👰" },
-  { href: "/eidhennaz", label: "Eid Mehndi", emoji: "✨" },
-];
+import { mehndiTools, mehndiToolCategories } from "@/data/mehndiTools";
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/mehndi-designs", label: "Mehndi Designs" },
   { href: "/gallery", label: "Gallery" },
   { href: "/blog", label: "Blog" },
   { href: "/styles", label: "Styles" },
@@ -29,8 +19,8 @@ const navLinks = [
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [isMobileDesignsOpen, setIsMobileDesignsOpen] = useState(false);
+  const [isToolsOpen, setIsToolsOpen] = useState(false);
+  const [isMobileToolsOpen, setIsMobileToolsOpen] = useState(false);
   const pathname = usePathname();
   const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -42,22 +32,22 @@ export default function Navbar() {
 
   useEffect(() => {
     setIsMobileOpen(false);
-    setIsDropdownOpen(false);
-    setIsMobileDesignsOpen(false);
+    setIsToolsOpen(false);
+    setIsMobileToolsOpen(false);
   }, [pathname]);
 
   // Close dropdown on outside click
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
-        setIsDropdownOpen(false);
+        setIsToolsOpen(false);
       }
     };
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  const isDesignActive = designDropdown.some((d) => pathname === d.href);
+  const isToolsActive = pathname.startsWith("/tools");
 
   return (
     <>
@@ -102,20 +92,20 @@ export default function Navbar() {
                 );
               })}
 
-              {/* Designs Dropdown */}
+              {/* Tools Mega Dropdown */}
               <div className="relative" ref={dropdownRef}>
                 <button
-                  onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                  onClick={() => setIsToolsOpen(!isToolsOpen)}
                   className={`relative py-2 text-sm font-medium tracking-wide uppercase transition-colors flex items-center gap-1 ${
-                    isDesignActive ? "text-gold font-bold" : "text-slate-600 hover:text-black"
+                    isToolsActive ? "text-gold font-bold" : "text-slate-600 hover:text-black"
                   }`}
                 >
-                  Designs
+                  Tools
                   <ChevronDown
                     size={14}
-                    className={`transition-transform duration-200 ${isDropdownOpen ? "rotate-180" : ""}`}
+                    className={`transition-transform duration-200 ${isToolsOpen ? "rotate-180" : ""}`}
                   />
-                  {isDesignActive && (
+                  {isToolsActive && (
                     <motion.span
                       layoutId="activeNav"
                       className="absolute -bottom-0.5 left-0 right-0 h-0.5 bg-gold rounded-full"
@@ -125,31 +115,64 @@ export default function Navbar() {
                 </button>
 
                 <AnimatePresence>
-                  {isDropdownOpen && (
+                  {isToolsOpen && (
                     <motion.div
                       initial={{ opacity: 0, y: 8, scale: 0.97 }}
                       animate={{ opacity: 1, y: 0, scale: 1 }}
                       exit={{ opacity: 0, y: 8, scale: 0.97 }}
                       transition={{ duration: 0.18 }}
-                      className="absolute top-full right-0 mt-2 w-52 bg-white border border-gray-100 rounded-xl shadow-xl shadow-black/10 overflow-hidden z-50"
+                      className="absolute top-full -right-32 mt-4 w-[80vw] max-w-5xl bg-white border border-gray-100 rounded-2xl shadow-2xl shadow-black/10 overflow-hidden z-50 p-6"
                     >
-                      {designDropdown.map((item) => {
-                        const isActive = pathname === item.href;
-                        return (
-                          <Link
-                            key={item.href}
-                            href={item.href}
-                            className={`flex items-center gap-3 px-4 py-3 text-sm transition-colors ${
-                              isActive
-                                ? "bg-gold/10 text-gold font-semibold"
-                                : "text-slate-700 hover:bg-gray-50 hover:text-black"
-                            }`}
-                          >
-                            <span className="text-base">{item.emoji}</span>
-                            {item.label}
-                          </Link>
-                        );
-                      })}
+                      <div className="flex justify-between items-center mb-6 pb-4 border-b border-gray-100">
+                        <div>
+                          <h3 className="font-serif text-2xl font-bold text-slate-900">Mehndi Design Tools</h3>
+                          <p className="text-sm text-slate-500 mt-1">Explore our collection of 100+ free mehndi tools and generators.</p>
+                        </div>
+                        <Link 
+                          href="/tools" 
+                          className="px-5 py-2 bg-gold/10 text-gold hover:bg-gold hover:text-white rounded-lg font-medium transition-colors text-sm"
+                          onClick={() => setIsToolsOpen(false)}
+                        >
+                          View All Tools
+                        </Link>
+                      </div>
+
+                      <div className="grid grid-cols-4 gap-x-8 gap-y-10 max-h-[60vh] overflow-y-auto pr-2 custom-scrollbar">
+                        {mehndiToolCategories.map((cat) => {
+                          const catTools = mehndiTools.filter(t => t.category === cat.id);
+                          if (catTools.length === 0) return null;
+                          return (
+                            <div key={cat.id} className="flex flex-col gap-3">
+                              <h4 className="flex items-center gap-2 font-semibold text-slate-900 border-b border-gray-100 pb-2">
+                                <span>{cat.emoji}</span>
+                                {cat.label}
+                              </h4>
+                              <div className="flex flex-col gap-1.5">
+                                {catTools.slice(0, 10).map((tool) => (
+                                  <Link
+                                    key={tool.slug}
+                                    href={`/tools/${tool.slug}`}
+                                    className="text-sm text-slate-600 hover:text-gold hover:translate-x-1 transition-all"
+                                    onClick={() => setIsToolsOpen(false)}
+                                  >
+                                    <span className="opacity-70 mr-1.5 text-xs">{tool.emoji}</span>
+                                    {tool.title.replace(' Generator', '').replace(' Preview', '').replace(' Tool', '').replace(' Finder', '')}
+                                  </Link>
+                                ))}
+                                {catTools.length > 10 && (
+                                  <Link 
+                                    href={`/tools#${cat.id}`}
+                                    className="text-xs font-medium text-gold mt-1 hover:underline"
+                                    onClick={() => setIsToolsOpen(false)}
+                                  >
+                                    + {catTools.length - 10} more
+                                  </Link>
+                                )}
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
                     </motion.div>
                   )}
                 </AnimatePresence>
@@ -187,10 +210,10 @@ export default function Navbar() {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "spring", damping: 25, stiffness: 200 }}
-              className="fixed top-0 right-0 bottom-0 w-72 bg-surface border-l border-border z-50 md:hidden overflow-y-auto"
+              className="fixed top-0 right-0 bottom-0 w-80 bg-white border-l border-gray-100 z-50 md:hidden overflow-y-auto"
             >
               <div className="flex flex-col h-full pt-20 px-6">
-                <div className="flex flex-col gap-1">
+                <div className="flex flex-col gap-2">
                   {navLinks.map((link, index) => {
                     const isActive = pathname === link.href;
                     return (
@@ -198,14 +221,14 @@ export default function Navbar() {
                         key={link.href}
                         initial={{ opacity: 0, x: 20 }}
                         animate={{ opacity: 1, x: 0 }}
-                        transition={{ delay: index * 0.07 }}
+                        transition={{ delay: index * 0.05 }}
                       >
                         <Link
                           href={link.href}
-                          className={`block py-3 px-4 rounded-lg text-base font-medium transition-all ${
+                          className={`block py-3 px-4 rounded-xl text-base font-medium transition-all ${
                             isActive
-                              ? "text-gold bg-gold/10"
-                              : "text-muted hover:text-foreground hover:bg-white/5"
+                              ? "text-gold bg-gold/5"
+                              : "text-slate-600 hover:text-black hover:bg-gray-50"
                           }`}
                         >
                           {link.label}
@@ -214,50 +237,76 @@ export default function Navbar() {
                     );
                   })}
 
-                  {/* Mobile Designs accordion */}
+                  {/* Mobile Tools accordion */}
                   <motion.div
                     initial={{ opacity: 0, x: 20 }}
                     animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: navLinks.length * 0.07 }}
+                    transition={{ delay: navLinks.length * 0.05 }}
+                    className="mt-2"
                   >
                     <button
-                      onClick={() => setIsMobileDesignsOpen(!isMobileDesignsOpen)}
-                      className={`w-full flex items-center justify-between py-3 px-4 rounded-lg text-base font-medium transition-all ${
-                        isDesignActive ? "text-gold bg-gold/10" : "text-muted hover:text-foreground hover:bg-white/5"
+                      onClick={() => setIsMobileToolsOpen(!isMobileToolsOpen)}
+                      className={`w-full flex items-center justify-between py-3 px-4 rounded-xl text-base font-medium transition-all ${
+                        isToolsActive ? "text-gold bg-gold/5" : "text-slate-600 hover:text-black hover:bg-gray-50"
                       }`}
                     >
-                      Designs
+                      <div className="flex items-center gap-2">
+                        <Wrench size={18} className={isToolsActive ? "text-gold" : "text-slate-400"} />
+                        Mehndi Tools
+                      </div>
                       <ChevronDown
-                        size={16}
-                        className={`transition-transform duration-200 ${isMobileDesignsOpen ? "rotate-180" : ""}`}
+                        size={18}
+                        className={`transition-transform duration-300 ${isMobileToolsOpen ? "rotate-180" : ""}`}
                       />
                     </button>
 
                     <AnimatePresence>
-                      {isMobileDesignsOpen && (
+                      {isMobileToolsOpen && (
                         <motion.div
                           initial={{ height: 0, opacity: 0 }}
                           animate={{ height: "auto", opacity: 1 }}
                           exit={{ height: 0, opacity: 0 }}
-                          transition={{ duration: 0.2 }}
+                          transition={{ duration: 0.3 }}
                           className="overflow-hidden"
                         >
-                          <div className="flex flex-col gap-0.5 pl-4 pr-2 pb-2">
-                            {designDropdown.map((item) => {
-                              const isActive = pathname === item.href;
+                          <div className="flex flex-col gap-4 pl-4 pr-2 py-4 bg-gray-50/50 rounded-xl mt-2">
+                            <Link 
+                              href="/tools" 
+                              className="font-medium text-gold text-sm py-2 px-3 bg-gold/10 rounded-lg text-center"
+                            >
+                              View All 100+ Tools →
+                            </Link>
+                            
+                            {mehndiToolCategories.map((cat) => {
+                              const catTools = mehndiTools.filter(t => t.category === cat.id);
+                              if (catTools.length === 0) return null;
                               return (
-                                <Link
-                                  key={item.href}
-                                  href={item.href}
-                                  className={`flex items-center gap-3 py-2.5 px-3 rounded-lg text-sm transition-all ${
-                                    isActive
-                                      ? "text-gold bg-gold/10 font-semibold"
-                                      : "text-muted hover:text-foreground hover:bg-white/5"
-                                  }`}
-                                >
-                                  <span>{item.emoji}</span>
-                                  {item.label}
-                                </Link>
+                                <div key={cat.id}>
+                                  <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2 pl-2">
+                                    {cat.emoji} {cat.label}
+                                  </h4>
+                                  <div className="flex flex-col gap-1">
+                                    {catTools.slice(0, 5).map(tool => (
+                                      <Link
+                                        key={tool.slug}
+                                        href={`/tools/${tool.slug}`}
+                                        className="text-sm text-slate-600 py-1.5 px-2 hover:text-gold transition-colors"
+                                        onClick={() => setIsMobileOpen(false)}
+                                      >
+                                        {tool.title}
+                                      </Link>
+                                    ))}
+                                    {catTools.length > 5 && (
+                                      <Link 
+                                        href="/tools" 
+                                        className="text-xs text-gold py-1 px-2 hover:underline"
+                                        onClick={() => setIsMobileOpen(false)}
+                                      >
+                                        + See all {cat.label.toLowerCase()} tools
+                                      </Link>
+                                    )}
+                                  </div>
+                                </div>
                               );
                             })}
                           </div>
@@ -268,10 +317,10 @@ export default function Navbar() {
                 </div>
 
                 {/* Decorative element at bottom */}
-                <div className="mt-auto pb-8">
+                <div className="mt-auto pb-8 pt-8">
                   <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-gold/30 to-transparent mb-6" />
-                  <p className="text-xs text-muted text-center">
-                    Celebrating henna art worldwide
+                  <p className="text-xs text-slate-400 text-center font-medium">
+                    HennaVerse
                   </p>
                 </div>
               </div>
