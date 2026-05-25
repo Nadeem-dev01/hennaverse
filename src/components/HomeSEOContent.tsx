@@ -21,6 +21,7 @@ export default function HomeSEOContent() {
             src="/chakra-bridal-front-hand-mehndi-820x1024.avif" 
             alt="Intricate bridal henna design showing cultural significance"
             fill
+            quality={60}
             sizes="(max-width: 768px) 100vw, 800px"
             className="object-cover"
           />
@@ -50,6 +51,7 @@ export default function HomeSEOContent() {
             src="/minimalistic-back-hand-mehendi-with-vines-819x1024.avif" 
             alt="Minimalist modern henna design"
             fill
+            quality={60}
             sizes="(max-width: 768px) 100vw, 800px"
             className="object-cover"
           />
@@ -79,6 +81,7 @@ export default function HomeSEOContent() {
             src="/elephant-grid-back-hand-mehendi-819x1024.avif" 
             alt="Elephant motifs in traditional Indian Mehndi"
             fill
+            quality={60}
             sizes="(max-width: 768px) 100vw, 800px"
             className="object-cover"
           />
@@ -101,6 +104,7 @@ export default function HomeSEOContent() {
             src="/sunflower-back-hand-mehendi-819x1024.avif" 
             alt="Modern sunflower henna trend"
             fill
+            quality={60}
             sizes="(max-width: 768px) 100vw, 800px"
             className="object-cover"
           />

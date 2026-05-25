@@ -84,6 +84,8 @@ export default function CategoryPage({ category, contentHtml }: CategoryPageProp
                 src={category.heroImage}
                 alt={category.title}
                 fill
+                quality={60}
+                sizes="(max-width: 1200px) 100vw, 1200px"
                 className="object-cover"
                 priority
               />
@@ -110,6 +112,7 @@ export default function CategoryPage({ category, contentHtml }: CategoryPageProp
                     src={img.src}
                     alt={img.alt}
                     fill
+                    quality={60}
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                     sizes="(max-width: 640px) 50vw, 33vw"
                   />
