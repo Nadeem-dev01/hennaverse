@@ -75,11 +75,10 @@ export default function RootLayout({
       <head>
         {/* Google tag (gtag.js) */}
         <Script
-          async
           src="https://www.googletagmanager.com/gtag/js?id=G-1JDYJ0QPC4"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -92,7 +91,7 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col bg-background text-foreground font-sans">
         <Script
           id="adsbygoogle-init"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8920350773715513"
           crossOrigin="anonymous"
         />
