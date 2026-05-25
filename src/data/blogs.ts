@@ -23,7 +23,7 @@ export const blogs: BlogPost[] = [
     "readTime": "12 min read",
     "category": "Guide",
     "country": "India",
-    "imageUrl": "/images/blogs/blog-1.jpg",
+    "imageUrl": "/bridal-3000.jpeg",
     "tags": [
       "indian mehndi",
       "rajasthani",
@@ -40,7 +40,7 @@ export const blogs: BlogPost[] = [
     "readTime": "12 min read",
     "category": "Guide",
     "country": "Pakistan",
-    "imageUrl": "/images/blogs/blog-2.jpg",
+    "imageUrl": "/eid-1000.jpeg",
     "tags": [
       "pakistani",
       "bridal",
@@ -57,7 +57,7 @@ export const blogs: BlogPost[] = [
     "readTime": "12 min read",
     "category": "Styles",
     "country": "Arabia",
-    "imageUrl": "/images/blogs/blog-3.jpg",
+    "imageUrl": "/bridal-3001.jpeg",
     "tags": [
       "arabic",
       "bold",
@@ -74,7 +74,7 @@ export const blogs: BlogPost[] = [
     "readTime": "12 min read",
     "category": "Culture",
     "country": "Morocco",
-    "imageUrl": "/images/blogs/blog-4.jpg",
+    "imageUrl": "/eid-1001.jpeg",
     "tags": [
       "moroccan",
       "berber",
@@ -91,7 +91,7 @@ export const blogs: BlogPost[] = [
     "readTime": "12 min read",
     "category": "Culture",
     "country": "Turkey",
-    "imageUrl": "/images/blogs/blog-5.jpg",
+    "imageUrl": "/bridal-3002.jpeg",
     "tags": [
       "turkish",
       "ceremony",
@@ -108,7 +108,7 @@ export const blogs: BlogPost[] = [
     "readTime": "12 min read",
     "category": "Culture",
     "country": "Indonesia",
-    "imageUrl": "/images/blogs/blog-1.jpg",
+    "imageUrl": "/bridal-3000.jpeg",
     "tags": [
       "indonesian",
       "javanese",
@@ -125,7 +125,7 @@ export const blogs: BlogPost[] = [
     "readTime": "12 min read",
     "category": "Culture",
     "country": "Africa",
-    "imageUrl": "/images/blogs/blog-2.jpg",
+    "imageUrl": "/eid-1000.jpeg",
     "tags": [
       "african",
       "sudanese",
@@ -142,7 +142,7 @@ export const blogs: BlogPost[] = [
     "readTime": "12 min read",
     "category": "Tutorial",
     "country": "Global",
-    "imageUrl": "/images/blogs/blog-3.jpg",
+    "imageUrl": "/bridal-3001.jpeg",
     "tags": [
       "easy",
       "beginners",
@@ -159,7 +159,7 @@ export const blogs: BlogPost[] = [
     "readTime": "12 min read",
     "category": "Tutorial",
     "country": "Global",
-    "imageUrl": "/images/blogs/blog-4.jpg",
+    "imageUrl": "/eid-1001.jpeg",
     "tags": [
       "diy",
       "paste",
@@ -176,7 +176,7 @@ export const blogs: BlogPost[] = [
     "readTime": "12 min read",
     "category": "Guide",
     "country": "Global",
-    "imageUrl": "/images/blogs/blog-5.jpg",
+    "imageUrl": "/bridal-3002.jpeg",
     "tags": [
       "bridal",
       "wedding",
@@ -193,7 +193,7 @@ export const blogs: BlogPost[] = [
     "readTime": "12 min read",
     "category": "Tips",
     "country": "Global",
-    "imageUrl": "/images/blogs/blog-1.jpg",
+    "imageUrl": "/bridal-3000.jpeg",
     "tags": [
       "aftercare",
       "stain",
@@ -210,7 +210,7 @@ export const blogs: BlogPost[] = [
     "readTime": "12 min read",
     "category": "Trends",
     "country": "Global",
-    "imageUrl": "/images/blogs/blog-2.jpg",
+    "imageUrl": "/eid-1000.jpeg",
     "tags": [
       "trends",
       "modern",
@@ -227,7 +227,7 @@ export const blogs: BlogPost[] = [
     "readTime": "12 min read",
     "category": "Styles",
     "country": "Global",
-    "imageUrl": "/images/blogs/blog-3.jpg",
+    "imageUrl": "/bridal-3001.jpeg",
     "tags": [
       "minimalist",
       "modern",
@@ -244,7 +244,7 @@ export const blogs: BlogPost[] = [
     "readTime": "12 min read",
     "category": "History",
     "country": "Global",
-    "imageUrl": "/images/blogs/blog-4.jpg",
+    "imageUrl": "/eid-1001.jpeg",
     "tags": [
       "history",
       "culture",
@@ -261,7 +261,7 @@ export const blogs: BlogPost[] = [
     "readTime": "12 min read",
     "category": "Festivals",
     "country": "Global",
-    "imageUrl": "/images/blogs/blog-5.jpg",
+    "imageUrl": "/bridal-3002.jpeg",
     "tags": [
       "festival",
       "eid",
