@@ -2,11 +2,7 @@ export interface SimpleDesign {
   id: string;
   title: string;
   imageUrl: string;
-  description: 'A beautiful simple mehndi design.',
-  country: 'Global',
-  style: 'Minimalist',
-  occasion: 'Casual',
-  difficulty: 'Easy',string;
+  category: string;
   tags: string[];
 }
 
