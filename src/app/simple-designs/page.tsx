@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import GalleryGrid from "@/components/GalleryGrid";
+import DesignCard from "@/components/DesignCard";
 import { simpleDesigns } from "@/data/simpleDesigns";
 
 export const metadata: Metadata = {
@@ -55,7 +55,15 @@ export default function SimpleDesignsPage() {
 
       {/* Gallery Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <GalleryGrid initialDesigns={simpleDesigns} />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {simpleDesigns.map((design) => (
+            <DesignCard
+              key={design.id}
+              design={design as any}
+              onSelect={() => {}}
+            />
+          ))}
+        </div>
       </section>
     </div>
   );
