@@ -60,7 +60,6 @@ export default function SimpleDesignsPage() {
             <DesignCard
               key={design.id}
               design={design as any}
-              onSelect={() => {}}
             />
           ))}
         </div>
