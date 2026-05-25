@@ -4,7 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
-import Script from "next/script";
+import ThirdPartyScripts from "@/components/ThirdPartyScripts";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -73,28 +73,9 @@ export default function RootLayout({
       className={`${inter.variable} ${playfair.variable} antialiased`}
     >
       <head>
-        {/* Google tag (gtag.js) */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-1JDYJ0QPC4"
-          strategy="lazyOnload"
-        />
-        <Script id="google-analytics" strategy="lazyOnload">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-1JDYJ0QPC4');
-          `}
-        </Script>
       </head>
       <body className="min-h-screen flex flex-col bg-background text-foreground font-sans">
-        <Script
-          id="adsbygoogle-init"
-          strategy="lazyOnload"
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8920350773715513"
-          crossOrigin="anonymous"
-        />
+        <ThirdPartyScripts />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
