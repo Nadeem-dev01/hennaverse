@@ -10,6 +10,7 @@ export default function Logo({ className = "" }: { className?: string }) {
           width={264}
           height={84}
           priority
+          quality={80}
           className="h-12 md:h-16 w-auto object-contain transition-transform duration-500 group-hover:scale-105"
         />
       </div>

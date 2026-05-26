@@ -171,6 +171,7 @@ export default function Lightbox({ design, isOpen, onClose }: LightboxProps) {
                   src={design.imageUrl}
                   alt={design.title}
                   fill
+                  quality={80}
                   sizes="(max-width: 768px) 100vw, 800px"
                   className="object-cover"
                 />

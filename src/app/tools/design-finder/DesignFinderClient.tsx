@@ -130,6 +130,7 @@ export default function DesignFinderClient() {
                     src={uploadedImage} 
                     alt="Uploaded Hand" 
                     fill 
+                    unoptimized
                     className="object-cover opacity-80"
                   />
                   
