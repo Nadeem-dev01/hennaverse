@@ -13,8 +13,8 @@ const navLinks = [
   { href: "/gallery", label: "Gallery" },
   { href: "/blog", label: "Blog" },
   { href: "/styles", label: "Styles" },
-  { href: "/simple-designs", label: "Simple Design" },
-  { href: "/eidhennaz", label: "Eid Special" },
+  { href: "/mehndi-designs/simple", label: "Simple Design" },
+  { href: "/mehndi-designs/eid", label: "Eid Special" },
   { href: "/about", label: "About" },
 ];
 
