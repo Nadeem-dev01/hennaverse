@@ -61,7 +61,7 @@ export default function MehndiDesignsHubPage() {
     "@type": "CollectionPage",
     name: "Mehndi Designs Hub",
     description: metadata.description,
-    url: "https://hennaverse.com/mehndi-designs",
+    url: "https://www.mehndidesignhenna.com/mehndi-designs",
   };
 
   return (

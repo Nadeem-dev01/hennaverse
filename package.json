@@ -4,10 +4,16 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/validate-data.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "seed": "node scripts/seed-designs.mjs"
+    "seed": "node scripts/seed-designs.mjs",
+    "fetch-images": "node scripts/fetch-images.mjs",
+    "process-images": "node scripts/process-images.mjs",
+    "build-entries": "node scripts/build-design-entries.mjs",
+    "build-related": "node scripts/build-related.mjs",
+    "pipeline": "node scripts/fetch-images.mjs && node scripts/process-images.mjs && node scripts/build-design-entries.mjs && node scripts/build-related.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.106.1",

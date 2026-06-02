@@ -15,7 +15,7 @@ export interface DesignCategory {
 
 export const designCategories: DesignCategory[] = [
   {
-    "slug": "bridal-mehndi-designs",
+    "slug": "bridal",
     "title": "Bridal Mehndi Designs",
     "metaTitle": "100+ Stunning Bridal Mehndi Designs (2025 Trends) | HennaVerse",
     "metaDescription": "Explore our massive collection of Bridal Mehndi Designs. Discover intricate patterns, easy tutorials, and the latest trends for your next occasion.",
@@ -89,7 +89,7 @@ export const designCategories: DesignCategory[] = [
     ]
   },
   {
-    "slug": "arabic-mehndi-designs",
+    "slug": "arabic",
     "title": "Arabic Mehndi Designs",
     "metaTitle": "100+ Stunning Arabic Mehndi Designs (2025 Trends) | HennaVerse",
     "metaDescription": "Explore our massive collection of Arabic Mehndi Designs. Discover intricate patterns, easy tutorials, and the latest trends for your next occasion.",
@@ -163,7 +163,7 @@ export const designCategories: DesignCategory[] = [
     ]
   },
   {
-    "slug": "indian-mehndi-designs",
+    "slug": "indian",
     "title": "Indian Mehndi Designs",
     "metaTitle": "100+ Stunning Indian Mehndi Designs (2025 Trends) | HennaVerse",
     "metaDescription": "Explore our massive collection of Indian Mehndi Designs. Discover intricate patterns, easy tutorials, and the latest trends for your next occasion.",
@@ -237,7 +237,7 @@ export const designCategories: DesignCategory[] = [
     ]
   },
   {
-    "slug": "pakistani-mehndi-designs",
+    "slug": "pakistani",
     "title": "Pakistani Mehndi Designs",
     "metaTitle": "100+ Stunning Pakistani Mehndi Designs (2025 Trends) | HennaVerse",
     "metaDescription": "Explore our massive collection of Pakistani Mehndi Designs. Discover intricate patterns, easy tutorials, and the latest trends for your next occasion.",
@@ -311,7 +311,7 @@ export const designCategories: DesignCategory[] = [
     ]
   },
   {
-    "slug": "simple-mehndi-designs",
+    "slug": "simple",
     "title": "Simple Mehndi Designs",
     "metaTitle": "100+ Stunning Simple Mehndi Designs (2025 Trends) | HennaVerse",
     "metaDescription": "Explore our massive collection of Simple Mehndi Designs. Discover intricate patterns, easy tutorials, and the latest trends for your next occasion.",
@@ -385,7 +385,7 @@ export const designCategories: DesignCategory[] = [
     ]
   },
   {
-    "slug": "back-hand-mehndi-designs",
+    "slug": "back-hand",
     "title": "Back Hand Mehndi Designs",
     "metaTitle": "100+ Stunning Back Hand Mehndi Designs (2025 Trends) | HennaVerse",
     "metaDescription": "Explore our massive collection of Back Hand Mehndi Designs. Discover intricate patterns, easy tutorials, and the latest trends for your next occasion.",
@@ -459,7 +459,7 @@ export const designCategories: DesignCategory[] = [
     ]
   },
   {
-    "slug": "front-hand-mehndi-designs",
+    "slug": "front-hand",
     "title": "Front Hand Mehndi Designs",
     "metaTitle": "100+ Stunning Front Hand Mehndi Designs (2025 Trends) | HennaVerse",
     "metaDescription": "Explore our massive collection of Front Hand Mehndi Designs. Discover intricate patterns, easy tutorials, and the latest trends for your next occasion.",
@@ -533,7 +533,7 @@ export const designCategories: DesignCategory[] = [
     ]
   },
   {
-    "slug": "finger-mehndi-designs",
+    "slug": "finger",
     "title": "Finger Mehndi Designs",
     "metaTitle": "100+ Stunning Finger Mehndi Designs (2025 Trends) | HennaVerse",
     "metaDescription": "Explore our massive collection of Finger Mehndi Designs. Discover intricate patterns, easy tutorials, and the latest trends for your next occasion.",
@@ -607,7 +607,7 @@ export const designCategories: DesignCategory[] = [
     ]
   },
   {
-    "slug": "mandala-mehndi-designs",
+    "slug": "mandala",
     "title": "Mandala Mehndi Designs",
     "metaTitle": "100+ Stunning Mandala Mehndi Designs (2025 Trends) | HennaVerse",
     "metaDescription": "Explore our massive collection of Mandala Mehndi Designs. Discover intricate patterns, easy tutorials, and the latest trends for your next occasion.",
@@ -681,7 +681,7 @@ export const designCategories: DesignCategory[] = [
     ]
   },
   {
-    "slug": "minimalist-mehndi-designs",
+    "slug": "minimal",
     "title": "Minimalist Mehndi Designs",
     "metaTitle": "100+ Stunning Minimalist Mehndi Designs (2025 Trends) | HennaVerse",
     "metaDescription": "Explore our massive collection of Minimalist Mehndi Designs. Discover intricate patterns, easy tutorials, and the latest trends for your next occasion.",
@@ -755,7 +755,7 @@ export const designCategories: DesignCategory[] = [
     ]
   },
   {
-    "slug": "kids-mehndi-designs",
+    "slug": "kids",
     "title": "Kids Mehndi Designs",
     "metaTitle": "100+ Stunning Kids Mehndi Designs (2025 Trends) | HennaVerse",
     "metaDescription": "Explore our massive collection of Kids Mehndi Designs. Discover intricate patterns, easy tutorials, and the latest trends for your next occasion.",
@@ -829,7 +829,7 @@ export const designCategories: DesignCategory[] = [
     ]
   },
   {
-    "slug": "moroccan-mehndi-designs",
+    "slug": "moroccan",
     "title": "Moroccan Mehndi Designs",
     "metaTitle": "100+ Stunning Moroccan Mehndi Designs (2025 Trends) | HennaVerse",
     "metaDescription": "Explore our massive collection of Moroccan Mehndi Designs. Discover intricate patterns, easy tutorials, and the latest trends for your next occasion.",
@@ -903,7 +903,7 @@ export const designCategories: DesignCategory[] = [
     ]
   },
   {
-    "slug": "leg-mehndi-designs",
+    "slug": "foot",
     "title": "Leg & Feet Mehndi Designs",
     "metaTitle": "100+ Stunning Leg & Feet Mehndi Designs (2025 Trends) | HennaVerse",
     "metaDescription": "Explore our massive collection of Leg & Feet Mehndi Designs. Discover intricate patterns, easy tutorials, and the latest trends for your next occasion.",
@@ -977,7 +977,7 @@ export const designCategories: DesignCategory[] = [
     ]
   },
   {
-    "slug": "floral-mehndi-designs",
+    "slug": "floral",
     "title": "Floral Mehndi Designs",
     "metaTitle": "100+ Stunning Floral Mehndi Designs (2025 Trends) | HennaVerse",
     "metaDescription": "Explore our massive collection of Floral Mehndi Designs. Discover intricate patterns, easy tutorials, and the latest trends for your next occasion.",
@@ -1051,7 +1051,7 @@ export const designCategories: DesignCategory[] = [
     ]
   },
   {
-    "slug": "geometric-mehndi-designs",
+    "slug": "geometric",
     "title": "Geometric Mehndi Designs",
     "metaTitle": "100+ Stunning Geometric Mehndi Designs (2025 Trends) | HennaVerse",
     "metaDescription": "Explore our massive collection of Geometric Mehndi Designs. Discover intricate patterns, easy tutorials, and the latest trends for your next occasion.",

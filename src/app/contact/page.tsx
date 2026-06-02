@@ -75,7 +75,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <h3 className="text-lg font-medium text-foreground">Email</h3>
-                <p className="text-muted">contact@hennaverse.com</p>
+                <p className="text-muted">contact@mehndidesignhenna.com</p>
                 <p className="text-sm text-muted mt-1">We aim to reply within 24 hours.</p>
               </div>
             </div>

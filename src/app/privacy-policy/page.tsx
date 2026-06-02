@@ -16,7 +16,7 @@ export default function PrivacyPolicyPage() {
       
       <div className="prose prose-invert prose-gold max-w-none mt-12">
         <h2>1. Information We Collect</h2>
-        <p>At HennaVerse, accessible from https://hennaverse.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by HennaVerse and how we use it.</p>
+        <p>At HennaVerse, accessible from https://www.mehndidesignhenna.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by HennaVerse and how we use it.</p>
         <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.</p>
         <p>This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in HennaVerse.</p>
 

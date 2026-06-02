@@ -137,10 +137,7 @@ export default function AboutPage() {
     name: "HennaVerse",
     url: BASE_URL,
     description: "HennaVerse celebrates henna art from every culture — providing expert tutorials, curated designs, and cultural guides for the global mehndi community.",
-    sameAs: [
-      "https://www.instagram.com/hennaverse",
-      "https://www.pinterest.com/hennaverse",
-    ],
+    sameAs: [],
   };
 
   const breadcrumbJsonLd = {

@@ -9,10 +9,9 @@ import { DesignCategory } from "@/data/designCategories";
 
 interface CategoryPageProps {
   category: DesignCategory;
-  contentHtml: string;
 }
 
-export default function CategoryPage({ category, contentHtml }: CategoryPageProps) {
+export default function CategoryPage({ category }: CategoryPageProps) {
   const handleDownload = async (imageUrl: string, title: string) => {
     try {
       const response = await fetch(imageUrl);
@@ -91,12 +90,6 @@ export default function CategoryPage({ category, contentHtml }: CategoryPageProp
               />
             </div>
           )}
-
-          {/* Rich Text Content */}
-          <article 
-            className="prose prose-invert prose-gold max-w-none"
-            dangerouslySetInnerHTML={{ __html: contentHtml }}
-          />
 
           <AdSlot adSlot="footer-slot" className="mt-12" />
 

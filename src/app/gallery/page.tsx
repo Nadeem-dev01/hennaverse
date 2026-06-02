@@ -50,6 +50,10 @@ export const metadata: Metadata = {
     "Indonesian henna gallery",
     "mehndi for all occasions"
   ],
+  robots: {
+    index: false,
+    follow: true,
+  },
   alternates: {
     canonical: "/gallery",
   },
