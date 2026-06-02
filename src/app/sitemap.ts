@@ -3,6 +3,7 @@ import { blogs } from "@/data/blogs";
 import { countries } from "@/data/countries";
 import { designCategories } from "@/data/designCategories";
 import { mehndiTools } from "@/data/mehndiTools";
+import { allDesigns } from "@/data/index";
 
 const BASE_URL = "https://www.mehndidesignhenna.com";
 
@@ -89,6 +90,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
+  const designRoutes = allDesigns.map((design) => ({
+    url: `${BASE_URL}/designs/${design.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
   return [
     ...staticRoutes,
     ...categoryRoutes,
@@ -98,5 +106,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...blogRoutes,
     ...styleRoutes,
     ...toolRoutes,
+    ...designRoutes,
   ];
 }
