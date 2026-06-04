@@ -1,6 +1,9 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import type { Design } from "@/data/types";
+import { ImageOverlayActions } from "./ImageActions";
 
 export default function RelatedDesigns({ designs }: { designs: Design[] }) {
   if (!designs.length) return null;
@@ -23,11 +26,12 @@ export default function RelatedDesigns({ designs }: { designs: Design[] }) {
               className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
               sizes="(max-width: 640px) 50vw, 25vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <span className="absolute bottom-3 left-3 right-3 text-white text-sm font-medium truncate">
-                {d.title}
-              </span>
-            </div>
+            <ImageOverlayActions
+              imageUrl={d.image.src}
+              title={d.title}
+              description={d.image.alt}
+              urlPath={`/designs/${d.slug}`}
+            />
           </Link>
         ))}
       </div>

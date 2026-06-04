@@ -1,11 +1,10 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import Link from "next/link";
-import Image from "next/image";
 import { occasions } from "@/data/taxonomy";
 import { designsByOccasion } from "@/data/index";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import SectionHeading from "@/components/SectionHeading";
+import DesignGrid from "@/components/DesignGrid";
 import { buildCollectionPageSchema } from "@/lib/schema";
 
 export const dynamicParams = false;
@@ -50,33 +49,7 @@ export default async function OccasionPage(
         />
         <SectionHeading title={occasion.title} subtitle={occasion.metaDescription} />
 
-        {designs.length > 0 ? (
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 mt-10">
-            {designs.map((d) => (
-              <Link
-                key={d.slug}
-                href={`/designs/${d.slug}`}
-                className="group relative aspect-square rounded-xl overflow-hidden border border-border hover:border-gold/50 transition-colors"
-              >
-                <Image
-                  src={d.image.src}
-                  alt={d.image.alt}
-                  width={d.image.width}
-                  height={d.image.height}
-                  className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
-                  sizes="(max-width: 640px) 50vw, 25vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <span className="absolute bottom-3 left-3 right-3 text-white text-sm font-medium truncate">
-                    {d.title}
-                  </span>
-                </div>
-              </Link>
-            ))}
-          </div>
-        ) : (
-          <p className="text-muted mt-10 text-center">Designs coming soon. Check back for updates!</p>
-        )}
+        <DesignGrid designs={designs} />
       </div>
     </>
   );

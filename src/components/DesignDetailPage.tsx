@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import type { Design } from "@/data/types";
@@ -5,6 +7,7 @@ import Breadcrumbs from "./Breadcrumbs";
 import FAQAccordion from "./FAQAccordion";
 import RelatedDesigns from "./RelatedDesigns";
 import AdSlot from "./AdSlot";
+import { DownloadButton, ShareButton } from "./ImageActions";
 
 function titleCase(str: string) {
   return str.replace(/\b\w/g, (c) => c.toUpperCase());
@@ -58,7 +61,7 @@ export default function DesignDetailPage({
           </div>
         </header>
 
-        <div className="relative w-full max-w-2xl mx-auto mb-10">
+        <div className="relative w-full max-w-2xl mx-auto mb-6">
           <Image
             src={design.image.src}
             alt={design.image.alt}
@@ -81,6 +84,12 @@ export default function DesignDetailPage({
               {" "}({design.image.license})
             </p>
           )}
+        </div>
+
+        {/* Download & Share Buttons */}
+        <div className="flex items-center justify-center gap-3 mb-10 max-w-2xl mx-auto">
+          <DownloadButton imageUrl={design.image.src} title={design.title} />
+          <ShareButton title={design.title} description={design.descriptionParagraphs[0] || design.image.alt} urlPath={`/designs/${design.slug}`} />
         </div>
 
         <AdSlot adSlot="detail-header" />
