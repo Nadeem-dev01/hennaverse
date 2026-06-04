@@ -3,14 +3,49 @@ import { blogs } from "@/data/blogs";
 import { countries } from "@/data/countries";
 import { designCategories } from "@/data/designCategories";
 import { mehndiTools } from "@/data/mehndiTools";
-import { allDesigns } from "@/data/index";
+
+import arabicDesigns from "@/data/designs/arabic.json";
+import indianDesigns from "@/data/designs/indian.json";
+import pakistaniDesigns from "@/data/designs/pakistani.json";
+import moroccanDesigns from "@/data/designs/moroccan.json";
+import gulfDesigns from "@/data/designs/gulf.json";
+import africanDesigns from "@/data/designs/african.json";
+import turkishDesigns from "@/data/designs/turkish.json";
+import rajasthaniDesigns from "@/data/designs/rajasthani.json";
+import indonesianDesigns from "@/data/designs/indonesian.json";
+import bridalDesigns from "@/data/designs/bridal.json";
+import simpleDesigns from "@/data/designs/simple.json";
+import modernDesigns from "@/data/designs/modern.json";
+import traditionalDesigns from "@/data/designs/traditional.json";
+import minimalDesigns from "@/data/designs/minimal.json";
+import floralDesigns from "@/data/designs/floral.json";
+import mandalaDesigns from "@/data/designs/mandala.json";
+import geometricDesigns from "@/data/designs/geometric.json";
+import jewelryDesigns from "@/data/designs/jewelry.json";
+import royalDesigns from "@/data/designs/royal.json";
+import fullHandDesigns from "@/data/designs/full-hand.json";
+import backHandDesigns from "@/data/designs/back-hand.json";
+import frontHandDesigns from "@/data/designs/front-hand.json";
+import fingerDesigns from "@/data/designs/finger.json";
+import footDesigns from "@/data/designs/foot.json";
+import eidDesigns from "@/data/designs/eid.json";
+import kidsDesigns from "@/data/designs/kids.json";
 
 const BASE_URL = "https://www.mehndidesignhenna.com";
 
-const newCategories = [
+const allDesignSlugs: string[] = [
+  arabicDesigns, indianDesigns, pakistaniDesigns, moroccanDesigns,
+  gulfDesigns, africanDesigns, turkishDesigns, rajasthaniDesigns,
+  indonesianDesigns, bridalDesigns, simpleDesigns, modernDesigns,
+  traditionalDesigns, minimalDesigns, floralDesigns, mandalaDesigns,
+  geometricDesigns, jewelryDesigns, royalDesigns, fullHandDesigns,
+  backHandDesigns, frontHandDesigns, fingerDesigns, footDesigns,
+  eidDesigns, kidsDesigns,
+].flat().map((d: any) => d.slug);
+
+const newCategorySlugs = [
   "gulf", "african", "turkish", "rajasthani", "indonesian",
-  "modern", "traditional", "jewelry", "royal",
-  "full-hand", "eid",
+  "modern", "traditional", "jewelry", "royal", "full-hand", "eid",
 ];
 
 const occasionSlugs = [
@@ -24,16 +59,9 @@ const bodyPartSlugs = [
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
-    "",
-    "/about",
-    "/blog",
-    "/styles",
-    "/tools",
-    "/mehndi-designs",
-    "/sitemap-html",
-    "/privacy-policy",
-    "/disclaimer",
-    "/contact",
+    "", "/about", "/blog", "/gallery", "/styles", "/tools",
+    "/mehndi-designs", "/sitemap-html",
+    "/privacy-policy", "/disclaimer", "/contact",
   ].map((route) => ({
     url: `${BASE_URL}${route}`,
     lastModified: new Date(),
@@ -48,12 +76,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
-  const newCategoryRoutes = newCategories.map((slug) => ({
-    url: `${BASE_URL}/mehndi-designs/${slug}`,
-    lastModified: new Date(),
-    changeFrequency: "weekly" as const,
-    priority: 0.9,
-  }));
+  const newCategoryRoutes = newCategorySlugs
+    .filter((s) => !designCategories.some((c) => c.slug === s))
+    .map((slug) => ({
+      url: `${BASE_URL}/mehndi-designs/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.9,
+    }));
 
   const occasionRoutes = occasionSlugs.map((slug) => ({
     url: `${BASE_URL}/occasions/${slug}`,
@@ -90,8 +120,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
-  const designRoutes = allDesigns.map((design) => ({
-    url: `${BASE_URL}/designs/${design.slug}`,
+  const designRoutes = allDesignSlugs.map((slug) => ({
+    url: `${BASE_URL}/designs/${slug}`,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
     priority: 0.7,
