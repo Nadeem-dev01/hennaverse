@@ -53,7 +53,7 @@ export default function BlogClient({
     if (navigator.share) {
       try {
         await navigator.share({
-          title: `${title} | HennaVerse`,
+          title: `${title} | Mehndi Design Henna`,
           text: description,
           url: shareUrl,
         });

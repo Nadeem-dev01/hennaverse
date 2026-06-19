@@ -77,10 +77,10 @@ export function buildArticleSchema(title: string, description: string, image?: s
     headline: title,
     description,
     image: image ? [`${BASE_URL}${image}`] : [],
-    author: { "@type": "Organization", name: "HennaVerse" },
+    author: { "@type": "Organization", name: "Mehndi Design Henna" },
     publisher: {
       "@type": "Organization",
-      name: "HennaVerse",
+      name: "Mehndi Design Henna",
       logo: { "@type": "ImageObject", url: `${BASE_URL}/icon.png` },
     },
   };

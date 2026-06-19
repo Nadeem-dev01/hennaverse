@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     canonical: "https://www.mehndidesignhenna.com/tools/design-finder",
   },
   openGraph: {
-    title: "AI Mehndi Design Finder | HennaVerse",
+    title: "AI Mehndi Design Finder | Mehndi Design Henna",
     description:
       "Upload a photo of your hand and let our AI suggest the perfect mehndi designs tailored for you.",
     url: "https://www.mehndidesignhenna.com/tools/design-finder",

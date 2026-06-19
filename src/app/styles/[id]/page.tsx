@@ -22,11 +22,11 @@ export async function generateMetadata(props: { params: Promise<{ id: string }> 
       description: country.description,
       type: "website",
       url: `${BASE_URL}/styles/${country.id}`,
-      siteName: "HennaVerse",
+      siteName: "Mehndi Design Henna",
     },
     twitter: {
       card: "summary_large_image",
-      title: `${country.name} Mehndi Styles | HennaVerse`,
+      title: `${country.name} Mehndi Styles | Mehndi Design Henna`,
       description: country.description,
     },
   };
@@ -58,7 +58,7 @@ export default async function CountryStylePage(props: { params: Promise<{ id: st
     name: `${country.name} Mehndi Styles`,
     description: country.description,
     url: `${BASE_URL}/styles/${country.id}`,
-    publisher: { "@type": "Organization", name: "HennaVerse", url: BASE_URL },
+    publisher: { "@type": "Organization", name: "Mehndi Design Henna", url: BASE_URL },
   };
 
   const breadcrumbJsonLd = {

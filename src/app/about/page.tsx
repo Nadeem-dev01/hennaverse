@@ -6,65 +6,31 @@ import SectionHeading from "@/components/SectionHeading";
 const BASE_URL = "https://www.mehndidesignhenna.com";
 
 export const metadata: Metadata = {
-  title: "About HennaVerse — Our Mission to Celebrate Henna Art Worldwide",
+  title: "About Mehndi Design Henna — Our Mission to Celebrate Henna Art Worldwide",
   description:
-    "Learn about HennaVerse — our mission to celebrate henna art from every culture, provide expert tutorials, and connect the global mehndi community. Meet our values and editorial standards.",
+    "Learn about Mehndi Design Henna — our mission to celebrate henna art from every culture, provide expert tutorials, and connect the global mehndi community.",
     keywords: [
-    "about hennaverse",
-    "henna art mission",
-    "mehndi community",
-    "henna traditions",
-    "mehndi editorial team",
-    "henna website",
-    "mehndi design website",
-    "about henna art",
-    "mehndi artists",
-    "henna culture",
-    "global mehndi community",
-    "henna art platform",
-    "mehndi inspiration",
-    "henna art gallery",
-    "mehndi design resource",
-    "henna tutorials website",
-    "mehndi patterns online",
-    "free henna designs",
-    "mehndi art celebration",
-    "cultural henna heritage",
-    "mehndi design experts",
-    "henna art education",
-    "mehndi for brides",
-    "henna for weddings",
-    "mehndi for festivals",
-    "henna for eid",
-    "mehndi design inspiration",
-    "henna art online",
-    "mehndi community platform",
-    "henna lovers",
-    "mehndi enthusiasts",
-    "henna art worldwide",
-    "global henna traditions",
-    "mehndi design library",
-    "henna pattern database",
-    "mehndi art guide",
-    "henna design experts",
-    "mehndi knowledge base",
-    "henna cultural guide",
-    "mehndi art values"
+    "about mehndi design henna",
+    "mehndi henna",
+    "henna artist near me",
+    "henna vs mehndi",
+    "easy mehndi designs",
+    "mehndi patterns for hands",
   ],
   alternates: {
     canonical: "/about",
   },
   openGraph: {
-    title: "About HennaVerse — Celebrating the Art of Henna Worldwide",
+    title: "About Mehndi Design Henna — Celebrating the Art of Henna Worldwide",
     description:
       "Our mission to celebrate henna art from every culture, provide expert tutorials, and connect the global mehndi community.",
     type: "website",
     url: `${BASE_URL}/about`,
-    siteName: "HennaVerse",
+    siteName: "Mehndi Design Henna",
   },
   twitter: {
     card: "summary",
-    title: "About HennaVerse",
+    title: "About Mehndi Design Henna",
     description: "Our mission to celebrate henna art from every culture worldwide.",
   },
 };
@@ -92,7 +58,7 @@ const values = [
     icon: "🤝",
     title: "Community Driven",
     description:
-      "HennaVerse is built by and for henna enthusiasts worldwide. We believe art is best when shared.",
+      "Mehndi Design Henna is built by and for henna enthusiasts worldwide. We believe art is best when shared.",
   },
 ];
 
@@ -134,9 +100,9 @@ export default function AboutPage() {
   const organizationJsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "HennaVerse",
+    name: "Mehndi Design Henna",
     url: BASE_URL,
-    description: "HennaVerse celebrates henna art from every culture — providing expert tutorials, curated designs, and cultural guides for the global mehndi community.",
+    description: "Mehndi Design Henna celebrates henna art from every culture — providing expert tutorials, curated designs, and cultural guides for the global mehndi community.",
     sameAs: [],
   };
 
@@ -166,10 +132,10 @@ export default function AboutPage() {
           </span>
           <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl font-bold leading-tight mb-8">
             <span className="text-foreground">About </span>
-            <span className="text-gradient-gold">HennaVerse</span>
+            <span className="text-gradient-gold">Mehndi Design Henna</span>
           </h1>
           <p className="text-muted text-lg sm:text-xl leading-relaxed max-w-3xl mx-auto mb-10">
-            HennaVerse was born from a simple belief: henna art is one of
+            Mehndi Design Henna was born from a simple belief: henna art is one of
             humanity&apos;s most beautiful cross-cultural traditions, and it
             deserves a dedicated home on the internet. We built this platform to
             celebrate, preserve, and share the artistry of mehndi with the
@@ -235,7 +201,7 @@ export default function AboutPage() {
                 lost.
               </p>
               <p>
-                HennaVerse is our answer to that challenge. We document and
+                Mehndi Design Henna is our answer to that challenge. We document and
                 celebrate henna traditions in all their diversity — the bold
                 florals of Gulf Arabia, the geometric precision of Moroccan
                 Berber art, the intricate bridal tapestries of Rajasthan — and
@@ -244,7 +210,7 @@ export default function AboutPage() {
               <p>
                 Whether you&apos;re a professional artist seeking inspiration, a
                 bride planning her mehndi ceremony, or simply curious about this
-                beautiful art form, HennaVerse is your guide.
+                beautiful art form, Mehndi Design Henna is your guide.
               </p>
             </div>
           </div>
@@ -261,7 +227,7 @@ export default function AboutPage() {
           <div className="glass p-8 rounded-2xl border border-border">
             <h3 className="font-serif text-2xl font-bold text-gold mb-4">Our Expertise</h3>
             <p className="text-muted leading-relaxed mb-4">
-              HennaVerse is managed by a dedicated team of henna enthusiasts, cultural researchers, and experienced artists. With years of hands-on experience and a deep respect for the cultural roots of mehndi, we ensure that every tutorial, design category, and article is meticulously researched.
+              Mehndi Design Henna is managed by a dedicated team of henna enthusiasts, cultural researchers, and experienced artists. With years of hands-on experience and a deep respect for the cultural roots of mehndi, we ensure that every tutorial, design category, and article is meticulously researched.
             </p>
             <p className="text-muted leading-relaxed">
               We consult with traditional artists from India, Pakistan, the Middle East, and North Africa to guarantee that our content accurately reflects the rich history and distinct techniques of each regional style.

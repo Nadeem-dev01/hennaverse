@@ -21,8 +21,8 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.mehndidesignhenna.com"),
   title: {
-    default: "HennaVerse — Discover the Art of Henna",
-    template: "%s | HennaVerse",
+    default: "Mehndi Design Henna — 5000+ Easy Mehndi Designs & Henna Patterns",
+    template: "%s | Mehndi Design Henna",
   },
   icons: {
     icon: [
@@ -35,30 +35,36 @@ export const metadata: Metadata = {
     ]
   },
   description:
-    "Explore 100+ stunning mehndi designs from around the world. Discover traditional and modern henna patterns, tutorials, cultural guides, and inspiration for every occasion.",
+    "Mehndi Design Henna: 5000+ easy mehndi designs, mehndi patterns for hands, simple arabic mehndi, bridal henna, and eid patterns. Free henna kits, cones & artist guides.",
   keywords: [
-    "henna",
-    "mehndi",
-    "henna designs",
-    "mehndi patterns",
-    "bridal mehndi",
-    "Arabic henna",
-    "Indian mehndi",
-    "henna art",
-    "henna tutorial",
+    "mehndi design henna",
+    "mehndi henna",
+    "easy mehndi designs",
+    "mehndi patterns for hands",
+    "simple mehndi designs for hands",
+    "henna tattoo near me",
+    "henna artist near me",
+    "easy arabic mehndi design",
+    "back hand mehndi design",
+    "eid henna patterns",
+    "bridal mehndi designs",
+    "henna cones",
+    "henna kit",
+    "henna stencils",
   ],
   openGraph: {
-    title: "HennaVerse — Discover the Art of Henna",
-    description: "Explore 100+ stunning mehndi designs from around the world.",
+    title: "Mehndi Design Henna — 5000+ Easy Mehndi Designs & Henna Patterns",
+    description: "5000+ easy mehndi designs, mehndi patterns for hands, and henna tattoo ideas for every occasion.",
     url: "https://www.mehndidesignhenna.com",
-    siteName: "HennaVerse",
+    siteName: "Mehndi Design Henna",
     locale: "en_US",
     type: "website",
+    images: [{ url: "/Logo_Mehndidesign.png", width: 800, height: 255, alt: "Mehndi Design Henna" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "HennaVerse — Discover the Art of Henna",
-    description: "Explore 100+ stunning mehndi designs from around the world.",
+    title: "Mehndi Design Henna — 5000+ Easy Mehndi Designs & Henna Patterns",
+    description: "5000+ easy mehndi designs, mehndi patterns for hands, and henna tattoo ideas for every occasion.",
   },
 };
 
@@ -82,13 +88,13 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              name: "HennaVerse",
-              alternateName: "Mehndi Design Henna",
+              name: "Mehndi Design Henna",
+              alternateName: "MehndiDesignHenna",
               url: "https://www.mehndidesignhenna.com",
-              description: "Explore stunning mehndi designs from India, Pakistan, Arabia, Morocco and beyond. Tutorials, cultural guides, and inspiration for every occasion.",
+              description: "5000+ easy mehndi designs from India, Pakistan, Arabia, Morocco and beyond. Tutorials, cultural guides, and henna inspiration for every occasion.",
               publisher: {
                 "@type": "Organization",
-                name: "HennaVerse",
+                name: "Mehndi Design Henna",
                 logo: {
                   "@type": "ImageObject",
                   url: "https://www.mehndidesignhenna.com/icon.png"

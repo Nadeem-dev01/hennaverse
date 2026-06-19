@@ -8,15 +8,27 @@ import { allDesigns } from "@/data/index";
 import SectionHeading from "@/components/SectionHeading";
 
 export const metadata: Metadata = {
-  title: "Sitemap | HennaVerse",
-  description: "Complete sitemap of HennaVerse — browse all mehndi design categories, occasions, styles, and articles.",
+  title: "Sitemap | Mehndi Design Henna",
+  description: "Complete sitemap of Mehndi Design Henna — browse all mehndi design categories, occasions, styles, and articles.",
   alternates: { canonical: "/sitemap-html" },
+  openGraph: {
+    title: "Sitemap | Mehndi Design Henna",
+    description: "Complete sitemap of Mehndi Design Henna — browse all mehndi design categories, occasions, styles, and articles.",
+    url: "https://www.mehndidesignhenna.com/sitemap-html",
+    siteName: "Mehndi Design Henna",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Sitemap | Mehndi Design Henna",
+    description: "Browse all pages on Mehndi Design Henna.",
+  },
 };
 
 export default function HTMLSitemap() {
   return (
     <div className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto min-h-screen">
-      <SectionHeading title="Sitemap" subtitle="Browse all pages on HennaVerse" />
+      <SectionHeading title="Sitemap" subtitle="Browse all pages on Mehndi Design Henna" />
 
       <div className="mt-10 space-y-10">
         <section>

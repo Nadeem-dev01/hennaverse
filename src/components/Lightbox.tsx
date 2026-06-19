@@ -87,7 +87,7 @@ export default function Lightbox({ design, isOpen, onClose }: LightboxProps) {
     if (navigator.share) {
       try {
         await navigator.share({
-          title: `${title} | HennaVerse`,
+          title: `${title} | Mehndi Design Henna`,
           text: description,
           url: shareUrl,
         });

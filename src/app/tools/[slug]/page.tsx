@@ -23,17 +23,23 @@ export async function generateMetadata({
   if (!tool) return { title: "Not Found" };
 
   return {
-    title: `${tool.title} | HennaVerse`,
+    title: `${tool.title} | Mehndi Design Henna`,
     description: tool.description.slice(0, 160),
     keywords: tool.keywords,
     alternates: {
       canonical: `https://www.mehndidesignhenna.com/tools/${slug}`,
     },
     openGraph: {
-      title: `${tool.title} | HennaVerse`,
+      title: `${tool.title} | Mehndi Design Henna`,
       description: tool.description.slice(0, 160),
       url: `https://www.mehndidesignhenna.com/tools/${slug}`,
       type: "website",
+      siteName: "Mehndi Design Henna",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${tool.title} | Mehndi Design Henna`,
+      description: tool.description.slice(0, 160),
     },
   };
 }
@@ -77,7 +83,30 @@ export default async function ToolPage({
       ? relevantDesigns
       : designs.slice(0, 12);
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.mehndidesignhenna.com" },
+      { "@type": "ListItem", position: 2, name: "Tools", item: "https://www.mehndidesignhenna.com/tools" },
+      { "@type": "ListItem", position: 3, name: tool.title, item: `https://www.mehndidesignhenna.com/tools/${slug}` },
+    ],
+  };
+
+  const faqJsonLd = tool.faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: tool.faqs.map((faq: { q: string; a: string }) => ({
+      "@type": "Question",
+      name: faq.q,
+      acceptedAnswer: { "@type": "Answer", text: faq.a },
+    })),
+  } : null;
+
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      {faqJsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />}
     <div className="min-h-screen pt-24 pb-20">
       {/* Hero */}
       <div
@@ -301,5 +330,6 @@ export default async function ToolPage({
         </div>
       </div>
     </div>
+    </>
   );
 }

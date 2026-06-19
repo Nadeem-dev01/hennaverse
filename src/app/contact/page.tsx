@@ -2,58 +2,68 @@ import { Metadata } from "next";
 import SectionHeading from "@/components/SectionHeading";
 import { Mail, MapPin, Phone } from "lucide-react";
 
+const BASE_URL = "https://www.mehndidesignhenna.com";
+
 export const metadata: Metadata = {
-  title: "Contact Us | HennaVerse",
-  description: "Get in touch with the HennaVerse team for inquiries, feedback, or artist collaborations.",
+  title: "Contact Us | Mehndi Design Henna",
+  description: "Get in touch with Mehndi Design Henna for inquiries, feedback, or artist collaborations. We respond within 24 hours.",
   keywords: [
-    "contact hennaverse",
-    "mehndi design help",
-    "henna art inquiry",
-    "mehndi artist contact",
-    "henna design support",
-    "mehndi website contact",
-    "henna art collaboration",
-    "mehndi feedback",
-    "henna design questions",
-    "mehndi partnership",
-    "contact henna website",
-    "mehndi artist inquiry",
-    "henna gallery contact",
-    "mehndi blog contact",
-    "henna tutorial help",
-    "mehndi design request",
-    "henna art feedback",
-    "mehndi community contact",
-    "henna collaboration",
-    "mehndi sponsorship",
-    "henna artist booking",
-    "mehndi event inquiry",
-    "henna workshop contact",
-    "mehndi class inquiry",
-    "henna art submission",
-    "mehndi design submission",
-    "henna gallery submission",
-    "mehndi content partnership",
-    "henna advertising",
-    "mehndi media inquiry",
-    "henna press contact",
-    "mehndi brand collaboration",
-    "henna influencer contact",
-    "mehndi customer support",
-    "henna help desk",
-    "mehndi question",
-    "henna support team",
-    "mehndi artist directory",
-    "henna business inquiry",
-    "contact mehndi team"
+    "contact mehndi design henna",
+    "henna artist near me",
+    "henna tattoo artist near me",
+    "bridal henna near me",
+    "henna cones near me",
   ],
   alternates: {
     canonical: "/contact",
   },
+  openGraph: {
+    title: "Contact Us | Mehndi Design Henna",
+    description: "Get in touch with Mehndi Design Henna for inquiries, feedback, or artist collaborations.",
+    url: `${BASE_URL}/contact`,
+    siteName: "Mehndi Design Henna",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Contact Us | Mehndi Design Henna",
+    description: "Get in touch with Mehndi Design Henna for inquiries, feedback, or artist collaborations.",
+  },
 };
 
 export default function ContactPage() {
+  const contactPageJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    name: "Contact Mehndi Design Henna",
+    url: `${BASE_URL}/contact`,
+    mainEntity: {
+      "@type": "Organization",
+      name: "Mehndi Design Henna",
+      email: "contact@mehndidesignhenna.com",
+      url: BASE_URL,
+    },
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: BASE_URL },
+      { "@type": "ListItem", position: 2, name: "Contact", item: `${BASE_URL}/contact` },
+    ],
+  };
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactPageJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
     <div className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto min-h-screen">
       <SectionHeading 
         title="Contact Us" 
@@ -165,5 +175,6 @@ export default function ContactPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }

@@ -32,7 +32,7 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
       publishedTime: new Date(blog.date).toISOString(),
       authors: [blog.author],
       url: `${BASE_URL}/blog/${blog.slug}`,
-      siteName: "HennaVerse",
+      siteName: "Mehndi Design Henna",
       ...(blog.imageUrl && {
         images: [{ url: `${BASE_URL}${blog.imageUrl}`, width: 1200, height: 630, alt: blog.title }],
       }),
@@ -72,7 +72,7 @@ export default async function Page(props: { params: Promise<{ slug: string }> })
     dateModified: new Date(blog.date).toISOString(),
     publisher: {
       "@type": "Organization",
-      name: "HennaVerse",
+      name: "Mehndi Design Henna",
       url: BASE_URL,
       logo: {
         "@type": "ImageObject",

@@ -492,7 +492,7 @@ export default function Navbar() {
 
                 <div className="mt-auto pb-8 pt-8">
                   <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-gold/30 to-transparent mb-4" />
-                  <p className="text-xs text-slate-400 text-center">HennaVerse</p>
+                  <p className="text-xs text-slate-400 text-center">Mehndi Design Henna</p>
                 </div>
               </div>
             </motion.div>

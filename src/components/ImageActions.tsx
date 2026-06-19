@@ -47,7 +47,7 @@ export function useImageActions() {
     const shareUrl = `${window.location.origin}${urlPath}`;
     if (navigator.share) {
       try {
-        await navigator.share({ title: `${title} | HennaVerse`, text: description, url: shareUrl });
+        await navigator.share({ title: `${title} | Mehndi Design Henna`, text: description, url: shareUrl });
       } catch { /* user cancelled */ }
     } else {
       try {

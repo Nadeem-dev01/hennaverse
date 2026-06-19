@@ -17,7 +17,7 @@ export const designCategories: DesignCategory[] = [
   {
     "slug": "bridal",
     "title": "Bridal Mehndi Designs",
-    "metaTitle": "Simple Bridal Mehndi Designs & Mehndi Wedding Designs (2026) | HennaVerse",
+    "metaTitle": "Simple Bridal Mehndi Designs & Mehndi Wedding Designs (2026) | Mehndi Design Henna",
     "metaDescription": "Browse simple bridal mehndi designs and mehndi wedding designs for your big day. Tips for booking bridal henna near you, choosing a mehndi dress for the bride, and mehndi decor.",
     "heroImage": "/028a55c2409155d7d41fbce8487f4983.jpg",
     "images": [
@@ -91,7 +91,7 @@ export const designCategories: DesignCategory[] = [
   {
     "slug": "arabic",
     "title": "Arabic Mehndi Designs",
-    "metaTitle": "Easy Arabic Mehndi Designs — Simple Arabic Mehndi Patterns | HennaVerse",
+    "metaTitle": "Easy Arabic Mehndi Designs — Simple Arabic Mehndi Patterns | Mehndi Design Henna",
     "metaDescription": "Browse easy arabic mehndi designs and simple arabic mehndi patterns. Bold florals, flowing vines, and elegant arabic mehndi designs for Eid, weddings, and parties.",
     "heroImage": "/209187262_128030392777627_3176947997626918753_n.avif",
     "images": [
@@ -165,7 +165,7 @@ export const designCategories: DesignCategory[] = [
   {
     "slug": "indian",
     "title": "Indian Mehndi Designs",
-    "metaTitle": "Indian Mehndi Designs — Peacock Mehndi Design & Traditional Patterns | HennaVerse",
+    "metaTitle": "Indian Mehndi Designs — Peacock Mehndi Design & Traditional Patterns | Mehndi Design Henna",
     "metaDescription": "Explore indian mehndi designs featuring peacock mehndi design motifs, paisleys, and dense traditional coverage. Perfect mehndi designs in indian style for weddings and festivals.",
     "heroImage": "/adsadadfa.avif",
     "images": [
@@ -239,7 +239,7 @@ export const designCategories: DesignCategory[] = [
   {
     "slug": "pakistani",
     "title": "Pakistani Mehndi Designs",
-    "metaTitle": "Pakistani Mehndi Design — Elegant Bridal & Eid Henna Patterns | HennaVerse",
+    "metaTitle": "Pakistani Mehndi Design — Elegant Bridal & Eid Henna Patterns | Mehndi Design Henna",
     "metaDescription": "Browse pakistani mehndi design ideas blending Indian density with Arabic elegance. Beautiful patterns for bridal functions, Eid mehndi designs, and festive occasions.",
     "heroImage": "/capp_blog_middle_banner.avif",
     "images": [
@@ -313,7 +313,7 @@ export const designCategories: DesignCategory[] = [
   {
     "slug": "simple",
     "title": "Simple Mehndi Designs",
-    "metaTitle": "Easy Mehndi Designs — Simple Mehndi Designs for Hands | HennaVerse",
+    "metaTitle": "Easy Mehndi Designs — Simple Mehndi Designs for Hands | Mehndi Design Henna",
     "metaDescription": "Browse easy mehndi designs and simple mehndi designs for hands. Very simple mehndi designs, easy and beautiful patterns, and mehndi designs for beginners — quick to apply.",
     "heroImage": "/365441104_795039815441277_9170970207106332793_n.avif",
     "images": [
@@ -387,7 +387,7 @@ export const designCategories: DesignCategory[] = [
   {
     "slug": "back-hand",
     "title": "Back Hand Mehndi Designs",
-    "metaTitle": "Back Hand Mehndi Design — Stylish Back Hand Mehndi Designs | HennaVerse",
+    "metaTitle": "Back Hand Mehndi Design — Stylish Back Hand Mehndi Designs | Mehndi Design Henna",
     "metaDescription": "Browse back hand mehndi design ideas: stylish back hand mehndi designs, mehndi designs for back of hand, and back hand side mehndi designs from simple trails to full coverage.",
     "heroImage": "/front-hand-mehendi-with-bird-motifs.avif",
     "images": [
@@ -461,7 +461,7 @@ export const designCategories: DesignCategory[] = [
   {
     "slug": "front-hand",
     "title": "Front Hand Mehndi Designs",
-    "metaTitle": "Front Hand Mehndi Design — Simple Front Hand Patterns | HennaVerse",
+    "metaTitle": "Front Hand Mehndi Design — Simple Front Hand Patterns | Mehndi Design Henna",
     "metaDescription": "Explore front hand mehndi design ideas including beginner cute simple mehndi designs for front hands and simple mehndi design flower front hand patterns for the darkest stain.",
     "heroImage": "/b02e17fbd25d259f56c2d4275f15d406.avif",
     "images": [
@@ -535,7 +535,7 @@ export const designCategories: DesignCategory[] = [
   {
     "slug": "finger",
     "title": "Finger Mehndi Designs",
-    "metaTitle": "Finger Mehndi Patterns — Mehndi Patterns for Fingers | HennaVerse",
+    "metaTitle": "Finger Mehndi Patterns — Mehndi Patterns for Fingers | Mehndi Design Henna",
     "metaDescription": "Browse finger mehndi patterns and mehndi patterns for fingers: easy simple finger mehndi designs, ring-style patterns, and minimalist trail work for every occasion.",
     "heroImage": "/happy_flashbacks.jpg",
     "images": [
@@ -609,7 +609,7 @@ export const designCategories: DesignCategory[] = [
   {
     "slug": "mandala",
     "title": "Mandala Mehndi Designs",
-    "metaTitle": "Mandala Mehndi Design — Circle Mehndi Design & Round Patterns | HennaVerse",
+    "metaTitle": "Mandala Mehndi Design — Circle Mehndi Design & Round Patterns | Mehndi Design Henna",
     "metaDescription": "Explore mandala mehndi design ideas: circle mehndi designs, mehndi designs in circle layouts, and round design mehndi patterns with beautiful geometric symmetry.",
     "heroImage": "/Snapinsta.app_276984494_1121195125340368_881341424541864188_n_1080.avif",
     "images": [
@@ -683,7 +683,7 @@ export const designCategories: DesignCategory[] = [
   {
     "slug": "minimal",
     "title": "Minimalist Mehndi Designs",
-    "metaTitle": "Minimalist Mehndi Designs — Minimal & Contemporary Mehndi | HennaVerse",
+    "metaTitle": "Minimalist Mehndi Designs — Minimal & Contemporary Mehndi | Mehndi Design Henna",
     "metaDescription": "Browse minimalist mehndi designs and minimal mehndi design ideas. Contemporary mehndi designs with delicate lines, small motifs, and elegant negative space.",
     "heroImage": "/divyaa.avif",
     "images": [
@@ -757,7 +757,7 @@ export const designCategories: DesignCategory[] = [
   {
     "slug": "kids",
     "title": "Kids Mehndi Designs",
-    "metaTitle": "Childrens Mehndi Designs — Kids Mehndi Designs Made Easy | HennaVerse",
+    "metaTitle": "Childrens Mehndi Designs — Kids Mehndi Designs Made Easy | Mehndi Design Henna",
     "metaDescription": "Adorable childrens mehndi designs and kids mehndi designs that are quick and safe. Simple mehndi designs for kids, perfect for Eid, festivals, and parties.",
     "heroImage": "/378483509_6422104351170779_3103479006531588967_n.avif",
     "images": [
@@ -831,7 +831,7 @@ export const designCategories: DesignCategory[] = [
   {
     "slug": "moroccan",
     "title": "Moroccan Mehndi Designs",
-    "metaTitle": "Moroccan Mehndi Designs — Geometric Henna Patterns | HennaVerse",
+    "metaTitle": "Moroccan Mehndi Designs — Geometric Henna Patterns | Mehndi Design Henna",
     "metaDescription": "Explore Moroccan mehndi designs with bold geometric henna patterns, tribal motifs, and diamond shapes rooted in Berber and North African henna traditions.",
     "heroImage": "/374684670_268988695948466_8638183702005369152_n.avif",
     "images": [
@@ -905,7 +905,7 @@ export const designCategories: DesignCategory[] = [
   {
     "slug": "foot",
     "title": "Leg & Feet Mehndi Designs",
-    "metaTitle": "Feet Mehndi Design — Foot Henna Patterns & Leg Mehndi | HennaVerse",
+    "metaTitle": "Feet Mehndi Design — Foot Henna Patterns & Leg Mehndi | Mehndi Design Henna",
     "metaDescription": "Browse feet mehndi design ideas and foot henna patterns: anklet-style feet mehndi patterns, bridal foot henna, and full leg coverage for weddings and festivals.",
     "heroImage": "/375453840_18200985445302002_7696011018198381074_n.avif",
     "images": [
@@ -979,7 +979,7 @@ export const designCategories: DesignCategory[] = [
   {
     "slug": "floral",
     "title": "Floral Mehndi Designs",
-    "metaTitle": "Floral Mehndi Design — Flower Designs for Henna & Lotus Motifs | HennaVerse",
+    "metaTitle": "Floral Mehndi Design — Flower Designs for Henna & Lotus Motifs | Mehndi Design Henna",
     "metaDescription": "Discover floral mehndi design ideas and flower designs for henna: henna flower designs, lotus mehndi designs, roses, and vine patterns — the most loved henna motifs.",
     "heroImage": "/Snapinsta.app_321822369_223661390002933_3544312425646401498_n_1080.jpg",
     "images": [
@@ -1053,7 +1053,7 @@ export const designCategories: DesignCategory[] = [
   {
     "slug": "geometric",
     "title": "Geometric Mehndi Designs",
-    "metaTitle": "Modern Design of Mehndi — Geometric & Contemporary Patterns | HennaVerse",
+    "metaTitle": "Modern Design of Mehndi — Geometric & Contemporary Patterns | Mehndi Design Henna",
     "metaDescription": "Explore the modern design of mehndi: geometric patterns, clean lines, and contemporary mehndi design ideas with triangles, hexagons, and bold symmetry.",
     "heroImage": "/robin_saini.avif",
     "images": [

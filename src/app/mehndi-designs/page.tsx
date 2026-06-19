@@ -6,52 +6,70 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import SectionHeading from "@/components/SectionHeading";
 
 export const metadata: Metadata = {
-  title: "190+ Beautiful Mehndi Designs & Patterns (2025)",
-  description: "Browse our massive collection of henna art organized by style. From bridal to minimal, find the perfect mehndi design for any occasion.",
+  title: "Easy Mehndi Designs — Simple, Arabic, Back Hand and Eid Patterns (2026)",
+  description: "Browse easy mehndi designs and mehndi patterns for hands: simple mehndi designs for hands, easy arabic mehndi designs, back hand mehndi designs, kids mehndi designs, and eid henna patterns.",
   keywords: [
-    "mehndi designs",
-    "henna patterns",
-    "mehndi design collection",
-    "bridal mehndi designs",
-    "arabic mehndi patterns",
-    "indian henna designs",
+    "designs mehndi designs",
     "easy mehndi designs",
-    "simple henna patterns",
-    "mehndi design categories",
-    "henna art styles",
-    "mehndi for weddings",
-    "mehndi for eid",
-    "mehndi for festivals",
-    "latest mehndi designs 2025",
-    "new henna patterns",
-    "beautiful mehndi gallery",
-    "mehndi design inspiration",
-    "henna design ideas",
-    "mehndi by style",
-    "mehndi by occasion",
-    "back hand mehndi designs",
-    "full hand henna",
-    "finger mehndi collection",
+    "easy designs mehndi",
+    "mehndi designs simple",
+    "mehndi patterns for hands",
+    "simple mehndi designs for hands",
+    "easy mehndi patterns for hands",
+    "mehndi design easy and beautiful",
+    "simple and easy designs of mehndi",
+    "beautiful easy mehndi design",
+    "simple easy mehndi design",
+    "very very simple mehndi design",
+    "stylish simple mehndi design",
+    "easy arabic mehndi design",
+    "simple arabic mehndi design",
+    "arabic mehndi patterns",
+    "mehndi design of arabic",
+    "back hand mehndi design",
+    "stylish back hand mehndi designs",
+    "mehndi designs for back of hand",
+    "back hand side mehndi designs",
+    "front hand mehndi design",
+    "finger mehndi patterns",
+    "mehndi patterns for fingers",
+    "childrens mehndi designs",
+    "mehndi designs for childrens",
+    "kids mehndi designs",
+    "simple mehndi designs for kids",
+    "feet mehndi design",
+    "foot henna patterns",
+    "mandala mehndi design",
+    "circle mehndi design",
+    "mehndi designs in circle",
+    "round design mehndi",
+    "floral mehndi design",
+    "flower designs for henna",
     "minimalist mehndi designs",
-    "traditional mehndi hub",
-    "modern henna patterns",
-    "mandala mehndi collection",
-    "geometric henna designs",
-    "floral mehndi patterns",
-    "Pakistani mehndi collection",
-    "Moroccan henna gallery",
-    "Turkish henna designs",
-    "African henna collection",
-    "rajasthani mehndi gallery",
-    "mehndi design download",
-    "free henna designs",
-    "mehndi images hd",
-    "mehndi photo gallery",
-    "henna design categories",
-    "mehndi pattern library"
+    "contemporary mehndi design",
+    "indian mehndi designs",
+    "pakistani mehndi design",
+    "peacock mehndi design",
+    "lotus mehndi design",
+    "mehndi designs for eid",
+    "eid henna patterns",
+    "mehndi wedding designs",
+    "mehndi designs for beginners"
   ],
   alternates: {
     canonical: "/mehndi-designs",
+  },
+  openGraph: {
+    title: "Easy Mehndi Designs — Simple, Arabic, Back Hand and Eid Patterns (2026)",
+    description: "Browse easy mehndi designs and mehndi patterns for hands: simple mehndi designs, easy arabic mehndi, back hand mehndi designs, kids mehndi, and eid henna patterns.",
+    url: "https://www.mehndidesignhenna.com/mehndi-designs",
+    siteName: "Mehndi Design Henna",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Easy Mehndi Designs — Simple, Arabic & Eid Patterns",
+    description: "Browse easy mehndi designs and mehndi patterns for hands across 15 distinct styles.",
   },
 };
 
@@ -62,14 +80,22 @@ export default function MehndiDesignsHubPage() {
     name: "Mehndi Designs Hub",
     description: metadata.description,
     url: "https://www.mehndidesignhenna.com/mehndi-designs",
+    publisher: { "@type": "Organization", name: "Mehndi Design Henna", url: "https://www.mehndidesignhenna.com" },
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.mehndidesignhenna.com" },
+      { "@type": "ListItem", position: 2, name: "Mehndi Designs", item: "https://www.mehndidesignhenna.com/mehndi-designs" },
+    ],
   };
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <div className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto min-h-screen">
         <Breadcrumbs items={[{ label: "Mehndi Designs", href: "/mehndi-designs" }]} />
         

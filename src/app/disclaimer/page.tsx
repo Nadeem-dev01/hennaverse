@@ -2,10 +2,22 @@ import { Metadata } from "next";
 import SectionHeading from "@/components/SectionHeading";
 
 export const metadata: Metadata = {
-  title: "Disclaimer | HennaVerse",
-  description: "Terms of use and disclaimer for HennaVerse.",
+  title: "Disclaimer | Mehndi Design Henna",
+  description: "Terms of use and disclaimer for Mehndi Design Henna.",
   alternates: {
     canonical: "/disclaimer",
+  },
+  openGraph: {
+    title: "Disclaimer | Mehndi Design Henna",
+    description: "Terms of use and disclaimer for Mehndi Design Henna.",
+    url: "https://www.mehndidesignhenna.com/disclaimer",
+    siteName: "Mehndi Design Henna",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Disclaimer | Mehndi Design Henna",
+    description: "Terms of use and disclaimer for Mehndi Design Henna.",
   },
 };
 
@@ -16,7 +28,7 @@ export default function DisclaimerPage() {
       
       <div className="prose prose-invert prose-gold max-w-none mt-12">
         <h2>1. General Information</h2>
-        <p>The information provided on HennaVerse (the "Website") is for general informational and educational purposes only. All information on the Site is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Site.</p>
+        <p>The information provided on Mehndi Design Henna (the "Website") is for general informational and educational purposes only. All information on the Site is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Site.</p>
         
         <h2>2. External Links Disclaimer</h2>
         <p>The Site may contain (or you may be sent through the Site) links to other websites or content belonging to or originating from third parties or links to websites and features in banners or other advertising. Such external links are not investigated, monitored, or checked for accuracy, adequacy, validity, reliability, availability or completeness by us.</p>
@@ -28,10 +40,10 @@ export default function DisclaimerPage() {
         <p>Accordingly, before taking any actions based upon such information, we encourage you to consult with the appropriate professionals. We do not provide any kind of medical advice. THE USE OR RELIANCE OF ANY INFORMATION CONTAINED ON THIS SITE IS SOLELY AT YOUR OWN RISK.</p>
 
         <h2>4. Copyright & Image Usage</h2>
-        <p>The images displayed on HennaVerse are intended for inspiration and educational purposes. Where possible, credit is given to the original photographer or artist. If you are the copyright owner of an image displayed on this site and would like it removed or properly credited, please contact us via our Contact page, and we will address your request promptly.</p>
+        <p>The images displayed on Mehndi Design Henna are intended for inspiration and educational purposes. Where possible, credit is given to the original photographer or artist. If you are the copyright owner of an image displayed on this site and would like it removed or properly credited, please contact us via our Contact page, and we will address your request promptly.</p>
 
         <h2>5. Affiliate & Advertising Disclaimer</h2>
-        <p>This Site uses Google AdSense and may contain affiliate links. If you click on an affiliate link and make a purchase, we may receive a small commission at no extra cost to you. These commissions help support the maintenance of HennaVerse.</p>
+        <p>This Site uses Google AdSense and may contain affiliate links. If you click on an affiliate link and make a purchase, we may receive a small commission at no extra cost to you. These commissions help support the maintenance of Mehndi Design Henna.</p>
       </div>
     </div>
   );

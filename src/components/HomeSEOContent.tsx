@@ -94,9 +94,34 @@ export default function HomeSEOContent() {
           While natural henna is incredibly safe and actually beneficial for the skin, you must be hyper-vigilant against "Black Henna". Natural henna is NEVER black. Black henna contains a toxic chemical called PPD (paraphenylenediamine), which is intended for hair dye, not skin. Applying PPD to the skin can cause severe, lifelong allergic reactions, chemical burns, and permanent scarring. Always ask your artist about their ingredients. Natural henna should smell earthy, like essential oils (eucalyptus, lavender, tea tree), and should only produce a red/brown stain.
         </p>
 
-        <h2 id="modern-trends">Modern Mehndi Trends in 2025</h2>
+        <h2 id="find-artist">Finding a Henna Artist Near You</h2>
         <p>
-          The art form is constantly evolving. In 2025, we are seeing a massive surge in negative space designs, where the blank skin plays just as important a role as the henna itself. Symmetrical mesh-work and delicate vines cascading down a single finger are incredibly popular for bridesmaids. White henna (which is actually a body adhesive/paint, not real henna) continues to be a favorite for parties, offering a striking contrast on deeper skin tones.
+          Searching for a henna artist near me or a henna tattoo artist near you? Start with local bridal salons, South Asian beauty studios, and cultural festivals — most professional artists also take bookings through Instagram portfolios. For weddings, book bridal henna near you at least four to six weeks in advance, and always review the artist&apos;s recent work for stain quality, not just pattern complexity. Expect simple henna tattoos to cost $10–$30, while elaborate bridal packages range from $150 to $500+ depending on coverage. Before your appointment, browse our galleries and save the designs you love — bringing references makes the session faster and the result closer to what you imagined.
+        </p>
+
+        <h2 id="kits-cones">Henna Kits, Cones, Powder and Stencils</h2>
+        <p>
+          Want to apply mehndi yourself? A good henna kit contains natural henna powder, essential oils, and pre-rolled henna cones ready for application. When buying henna cones or a henna tattoo kit, check the ingredient list: only lawsonia inermis (the henna plant), sugar, lemon juice, and essential oils belong in natural paste. Fresh henna powder should be green and earthy-smelling. Beginners can also use henna stencils and mehndi stencils to get crisp patterns without freehand skill — place the stencil, apply paste from the mehndi cone over it, and lift. A henna pen is handy for fine detail work and henna freckles, one of the most popular minimalist trends.
+        </p>
+
+        <h2 id="outfits-decor">What to Wear: Mehndi Outfits and Decor</h2>
+        <p>
+          The mehndi ceremony deserves its own wardrobe. Traditional clothes for mehndi lean toward yellows, greens, and oranges — shades that celebrate the henna itself. Brides often choose a lighter, comfortable mehndi dress with sleeves that roll well above the elbow so wet henna never touches fabric. Pakistani mehndi wear typically pairs a gharara or lehenga with floral jewelry, while guests keep mehndi outfits breezy and festive. For the venue, popular mehndi decor includes marigold garlands, colorful drapes, seating cushions for the application hours, and a decorated swing for the bride.
+        </p>
+
+        <h2 id="hair-brows">Beyond Skin: Henna for Hair and Brows</h2>
+        <p>
+          The same plant behind mehndi art is also a natural colorant. Henna hair dye coats each strand in a protective layer, leaving a rich auburn henna hair color that deepens with every application — mix henna powder for hair with warm water, rest the paste for dye release, and apply for two to four hours. Unlike chemical dyes, henna for hair conditions as it colors. In the beauty world, henna eyebrows and henna eyebrow tint services stain both the brow hairs and the skin beneath, giving fuller-looking brows for up to six weeks. Always patch-test first, and never use "black henna" products containing PPD on hair or skin.
+        </p>
+
+        <h2 id="henna-tattoos">Henna Tattoos: Temporary Art, Real Answers</h2>
+        <p>
+          Henna tattoos are the perfect commitment-free body art — but the questions come up constantly, so here are real answers. Are temporary henna tattoos really temporary? Yes: a natural henna tattoo stains only the top layer of skin and fades completely in one to three weeks. There is no such thing as a permanent henna tattoo; anything marketed as semi-permanent or permanent uses chemical inks, not henna. Wondering how much henna tattoos cost? Small henna tattoos on the wrist or finger run $5–$20, henna tattoos on the hand $20–$60, and custom henna tattoo work is priced by the hour. Henna tattoo removal can&apos;t be instant — the stain must exfoliate away — but gentle scrubbing with oil and warm water speeds it up. And henna is not just for women: henna tattoos for men are a fast-growing trend, with masculine henna tattoos favoring bold geometric bands, dragons, and forearm pieces. Beginners can start with henna hand tattoo templates and a henna tattoo pen before attempting freehand designs from our galleries.
+        </p>
+
+        <h2 id="modern-trends">Modern Mehndi Trends in 2026</h2>
+        <p>
+          The art form is constantly evolving. In 2026, we are seeing a massive surge in negative space designs, where the blank skin plays just as important a role as the henna itself. Symmetrical mesh-work and delicate vines cascading down a single finger are incredibly popular for bridesmaids. White henna (which is actually a body adhesive/paint, not real henna) continues to be a favorite for parties, offering a striking contrast on deeper skin tones.
         </p>
 
         <div className="my-10 relative aspect-[4/3] w-full rounded-2xl overflow-hidden border border-border">

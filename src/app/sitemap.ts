@@ -58,20 +58,22 @@ const bodyPartSlugs = [
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const now = new Date("2026-06-15");
+
   const staticRoutes = [
     "", "/about", "/blog", "/gallery", "/styles", "/tools",
     "/mehndi-designs", "/sitemap-html",
     "/privacy-policy", "/disclaimer", "/contact",
   ].map((route) => ({
     url: `${BASE_URL}${route}`,
-    lastModified: new Date(),
+    lastModified: now,
     changeFrequency: (route === "" ? "daily" : "weekly") as "daily" | "weekly",
     priority: route === "" ? 1.0 : 0.8,
   }));
 
   const categoryRoutes = designCategories.map((c) => ({
     url: `${BASE_URL}/mehndi-designs/${c.slug}`,
-    lastModified: new Date(),
+    lastModified: now,
     changeFrequency: "weekly" as const,
     priority: 0.9,
   }));
@@ -80,49 +82,49 @@ export default function sitemap(): MetadataRoute.Sitemap {
     .filter((s) => !designCategories.some((c) => c.slug === s))
     .map((slug) => ({
       url: `${BASE_URL}/mehndi-designs/${slug}`,
-      lastModified: new Date(),
+      lastModified: now,
       changeFrequency: "weekly" as const,
       priority: 0.9,
     }));
 
   const occasionRoutes = occasionSlugs.map((slug) => ({
     url: `${BASE_URL}/occasions/${slug}`,
-    lastModified: new Date(),
+    lastModified: now,
     changeFrequency: "weekly" as const,
     priority: 0.8,
   }));
 
   const bodyPartRoutes = bodyPartSlugs.map((slug) => ({
     url: `${BASE_URL}/body/${slug}`,
-    lastModified: new Date(),
+    lastModified: now,
     changeFrequency: "weekly" as const,
     priority: 0.8,
   }));
 
   const blogRoutes = blogs.map((blog) => ({
     url: `${BASE_URL}/blog/${blog.slug}`,
-    lastModified: new Date(),
+    lastModified: now,
     changeFrequency: "monthly" as const,
     priority: 0.6,
   }));
 
   const styleRoutes = countries.map((country) => ({
     url: `${BASE_URL}/styles/${country.id}`,
-    lastModified: new Date(),
+    lastModified: now,
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
 
   const toolRoutes = mehndiTools.map((tool) => ({
     url: `${BASE_URL}/tools/${tool.slug}`,
-    lastModified: new Date(),
+    lastModified: now,
     changeFrequency: "monthly" as const,
     priority: 0.9,
   }));
 
   const designRoutes = allDesignSlugs.map((slug) => ({
     url: `${BASE_URL}/designs/${slug}`,
-    lastModified: new Date(),
+    lastModified: now,
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));

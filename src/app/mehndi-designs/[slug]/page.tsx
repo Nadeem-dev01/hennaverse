@@ -22,6 +22,11 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
       description: category.metaDescription,
       images: category.heroImage ? [{ url: category.heroImage }] : [],
     },
+    twitter: {
+      card: "summary_large_image",
+      title: category.metaTitle,
+      description: category.metaDescription,
+    },
   };
 }
 
@@ -50,11 +55,11 @@ export default async function MehndiDesignCategoryPage(props: { params: Promise<
       image: category.heroImage ? [category.heroImage] : [],
       author: {
         "@type": "Organization",
-        name: "HennaVerse",
+        name: "Mehndi Design Henna",
       },
       publisher: {
         "@type": "Organization",
-        name: "HennaVerse",
+        name: "Mehndi Design Henna",
         logo: {
           "@type": "ImageObject",
           url: `${BASE_URL}/icon.png`,
@@ -71,7 +76,16 @@ export default async function MehndiDesignCategoryPage(props: { params: Promise<
         contentUrl: `${BASE_URL}${img.src}`,
         description: img.alt
       }))
-    }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: BASE_URL },
+        { "@type": "ListItem", position: 2, name: "Mehndi Designs", item: `${BASE_URL}/mehndi-designs` },
+        { "@type": "ListItem", position: 3, name: category.title, item: `${BASE_URL}/mehndi-designs/${category.slug}` },
+      ],
+    },
   ];
 
   return (

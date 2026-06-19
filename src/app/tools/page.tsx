@@ -3,65 +3,84 @@ import { mehndiTools, mehndiToolCategories } from "@/data/mehndiTools";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Mehndi Design Tools 2025 | 100+ Henna Generators & Finders",
+  title: "Henna Stencils, Mehndi Stencils & Free Design Tools (2026)",
   description:
-    "Explore 100+ free mehndi design tools — generators, finders, viewers, and AI-powered selectors for Arabic, Bridal, Pakistani, Indian mehndi and more.",
+    "Free henna stencils, mehndi stencils, and 100+ design tools — generators, finders, and AI-powered selectors for easy arabic mehndi designs, back hand mehndi, and eid henna patterns.",
   keywords: [
+    "henna stencils",
+    "mehndi stencils",
+    "mehndi tattoo stencils",
+    "henna stencil tools",
     "mehndi design tools",
     "henna generator",
     "mehndi design generator",
-    "henna finder tool",
-    "mehndi style matcher",
-    "henna design selector",
-    "arabic mehndi generator",
-    "bridal mehndi tool",
-    "pakistani mehndi generator",
-    "indian henna tool",
-    "mehndi design viewer",
-    "henna gallery viewer",
-    "mehndi ai tool",
-    "henna recommendation tool",
-    "mehndi design picker",
-    "free mehndi tools",
-    " online henna tools",
-    "mehndi design explorer",
-    "henna pattern finder",
-    "mehndi occasion matcher",
-    "henna style guide tool",
-    "mehndi difficulty selector",
-    "henna design browser",
-    "mehndi search tool",
-    "henna inspiration tool",
-    "mehndi randomizer",
-    "henna design quiz",
-    "mehndi suggestion tool",
     "free henna generator",
-    "mehndi design maker",
-    "henna pattern creator",
-    "mehndi tool collection",
-    "henna art tools",
-    "mehndi design helper",
-    "henna planning tool",
-    "mehndi preview tool",
-    "henna comparison tool",
-    "mehndi design catalog",
-    "henna tool library",
-    "mehndi design utility"
+    "henna pattern finder",
+    "easy mehndi designs generator",
+    "easy arabic mehndi design tool",
+    "back hand mehndi design finder",
+    "simple mehndi designs for hands tool",
+    "mehndi patterns for hands generator",
+    "eid henna patterns tool",
+    "mehndi designs for eid finder",
+    "kids mehndi designs tool",
+    "childrens mehndi designs finder",
+    "finger mehndi patterns tool",
+    "mandala mehndi design generator",
+    "floral mehndi design tool",
+    "henna cones",
+    "mehndi cone",
+    "henna kit",
+    "henna tattoo kit",
+    "henna stickers",
+    "mehndi stickers",
+    "henna tattoo stickers",
+    "henna pen",
+    "henna tattoo pen",
+    "henna tattoo markers",
+    "henna hand tattoo templates",
+    "henna tattoo stencil",
+    "henna tattoo supplies",
+    "henna tattoo kit near me",
+    "custom henna tattoo",
+    "cute henna designs finder",
+    "easy henna ideas tool",
+    "henna patterns for men finder",
+    "mehndi design photoshoot ideas",
+    "contemporary mehndi design tool",
+    "free mehndi tools",
+    "online henna tools"
   ],
   alternates: {
     canonical: "https://www.mehndidesignhenna.com/tools",
   },
   openGraph: {
-    title: "Mehndi Design Tools 2025 | HennaVerse",
+    title: "Henna Stencils, Mehndi Stencils & Free Design Tools | Mehndi Design Henna",
     description:
-      "100+ free mehndi tools including generators, finders, style matchers, and AI-powered recommendations.",
+      "Free henna stencils, mehndi stencils, and 100+ tools including generators, finders, and AI-powered recommendations.",
     url: "https://www.mehndidesignhenna.com/tools",
     type: "website",
   },
 };
 
+const BASE_URL = "https://www.mehndidesignhenna.com";
+
 export default function ToolsIndexPage() {
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: BASE_URL },
+      { "@type": "ListItem", position: 2, name: "Tools", item: `${BASE_URL}/tools` },
+    ],
+  };
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
     <div className="min-h-screen pt-24 pb-20">
       {/* Hero */}
       <div
@@ -186,7 +205,7 @@ export default function ToolsIndexPage() {
             Your Complete Mehndi Resource
           </h2>
           <p className="text-muted leading-relaxed mb-4">
-            HennaVerse&apos;s Mehndi Tools collection is the most comprehensive set of
+            Mehndi Design Henna&apos;s Mehndi Tools collection is the most comprehensive set of
             free mehndi design resources available online. Whether you are a bride searching
             for the perfect bridal design, an artist seeking fresh inspiration, or a beginner
             starting your mehndi journey — our tools are built for you.
@@ -207,5 +226,6 @@ export default function ToolsIndexPage() {
         </section>
       </div>
     </div>
+    </>
   );
 }
