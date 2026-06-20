@@ -83,19 +83,11 @@ export default function MehndiDesignsHubPage() {
     publisher: { "@type": "Organization", name: "Mehndi Design Henna", url: "https://www.mehndidesignhenna.com" },
   };
 
-  const breadcrumbJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.mehndidesignhenna.com" },
-      { "@type": "ListItem", position: 2, name: "Mehndi Designs", item: "https://www.mehndidesignhenna.com/mehndi-designs" },
-    ],
-  };
+  // Breadcrumb JSON-LD comes from the <Breadcrumbs> component below — no duplicate here.
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <div className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto min-h-screen">
         <Breadcrumbs items={[{ label: "Mehndi Designs", href: "/mehndi-designs" }]} />
         

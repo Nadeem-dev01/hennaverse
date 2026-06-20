@@ -12,10 +12,10 @@ const quickLinks = [
 ];
 
 const styleLinks = [
-  { href: "/mehndi-designs/bridal-mehndi-designs", label: "Bridal Mehndi" },
-  { href: "/mehndi-designs/arabic-mehndi-designs", label: "Arabic Henna" },
-  { href: "/mehndi-designs/simple-mehndi-designs", label: "Simple Designs" },
-  { href: "/mehndi-designs/minimalist-mehndi-designs", label: "Minimalist" },
+  { href: "/mehndi-designs/bridal", label: "Bridal Mehndi" },
+  { href: "/mehndi-designs/arabic", label: "Arabic Henna" },
+  { href: "/mehndi-designs/simple", label: "Simple Designs" },
+  { href: "/mehndi-designs/minimal", label: "Minimalist" },
 ];
 
 function PinterestIcon({ size = 20 }: { size?: number }) {

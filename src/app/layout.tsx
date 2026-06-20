@@ -87,24 +87,36 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "WebSite",
-              name: "Mehndi Design Henna",
-              alternateName: "MehndiDesignHenna",
-              url: "https://www.mehndidesignhenna.com",
-              description: "5000+ easy mehndi designs from India, Pakistan, Arabia, Morocco and beyond. Tutorials, cultural guides, and henna inspiration for every occasion.",
-              publisher: {
-                "@type": "Organization",
-                name: "Mehndi Design Henna",
-                logo: {
-                  "@type": "ImageObject",
-                  url: "https://www.mehndidesignhenna.com/icon.png"
-                }
-              },
-              potentialAction: {
-                "@type": "SearchAction",
-                target: "https://www.mehndidesignhenna.com/gallery?q={search_term_string}",
-                "query-input": "required name=search_term_string"
-              }
+              "@graph": [
+                {
+                  "@type": "Organization",
+                  "@id": "https://www.mehndidesignhenna.com/#organization",
+                  name: "Mehndi Design Henna",
+                  url: "https://www.mehndidesignhenna.com",
+                  logo: {
+                    "@type": "ImageObject",
+                    "@id": "https://www.mehndidesignhenna.com/#logo",
+                    url: "https://www.mehndidesignhenna.com/icon.png",
+                    width: 512,
+                    height: 512,
+                  },
+                  description: "5000+ easy mehndi designs and henna patterns from India, Pakistan, Arabia, Morocco and beyond.",
+                },
+                {
+                  "@type": "WebSite",
+                  "@id": "https://www.mehndidesignhenna.com/#website",
+                  name: "Mehndi Design Henna",
+                  alternateName: "MehndiDesignHenna",
+                  url: "https://www.mehndidesignhenna.com",
+                  description: "5000+ easy mehndi designs from India, Pakistan, Arabia, Morocco and beyond. Tutorials, cultural guides, and henna inspiration for every occasion.",
+                  publisher: { "@id": "https://www.mehndidesignhenna.com/#organization" },
+                  potentialAction: {
+                    "@type": "SearchAction",
+                    target: "https://www.mehndidesignhenna.com/gallery?q={search_term_string}",
+                    "query-input": "required name=search_term_string",
+                  },
+                },
+              ],
             })
           }}
         />

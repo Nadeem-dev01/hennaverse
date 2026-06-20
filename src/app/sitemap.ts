@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 import { blogs } from "@/data/blogs";
 import { countries } from "@/data/countries";
-import { designCategories } from "@/data/designCategories";
+import { categories } from "@/data/taxonomy";
 import { mehndiTools } from "@/data/mehndiTools";
 
 import arabicDesigns from "@/data/designs/arabic.json";
@@ -43,11 +43,6 @@ const allDesignSlugs: string[] = [
   eidDesigns, kidsDesigns,
 ].flat().map((d: any) => d.slug);
 
-const newCategorySlugs = [
-  "gulf", "african", "turkish", "rajasthani", "indonesian",
-  "modern", "traditional", "jewelry", "royal", "full-hand", "eid",
-];
-
 const occasionSlugs = [
   "wedding", "eid", "karva-chauth", "diwali",
   "teej", "engagement", "party", "raksha-bandhan",
@@ -71,21 +66,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: route === "" ? 1.0 : 0.8,
   }));
 
-  const categoryRoutes = designCategories.map((c) => ({
+  const categoryRoutes = categories.map((c) => ({
     url: `${BASE_URL}/mehndi-designs/${c.slug}`,
     lastModified: now,
     changeFrequency: "weekly" as const,
     priority: 0.9,
   }));
-
-  const newCategoryRoutes = newCategorySlugs
-    .filter((s) => !designCategories.some((c) => c.slug === s))
-    .map((slug) => ({
-      url: `${BASE_URL}/mehndi-designs/${slug}`,
-      lastModified: now,
-      changeFrequency: "weekly" as const,
-      priority: 0.9,
-    }));
 
   const occasionRoutes = occasionSlugs.map((slug) => ({
     url: `${BASE_URL}/occasions/${slug}`,
@@ -132,7 +118,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...staticRoutes,
     ...categoryRoutes,
-    ...newCategoryRoutes,
     ...occasionRoutes,
     ...bodyPartRoutes,
     ...blogRoutes,

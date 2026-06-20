@@ -49,7 +49,7 @@ export default function HeroSection() {
             transition={{ delay: 0.3, duration: 0.5 }}
             className="inline-block px-4 py-1.5 mb-6 text-xs font-medium tracking-[0.2em] uppercase text-gold border border-gold/30 rounded-full"
           >
-            100+ Designs from Around the World
+            5000+ Mehndi Designs from Around the World
           </motion.span>
         </motion.div>
 
@@ -59,9 +59,9 @@ export default function HeroSection() {
           transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
           className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[1.1] mb-6"
         >
-          <span className="text-foreground">Discover the</span>
+          <span className="text-foreground">Easy Mehndi Designs</span>
           <br />
-          <span className="text-gradient-gold">Art of Henna</span>
+          <span className="text-gradient-gold">& the Art of Henna</span>
         </motion.h1>
 
         <motion.p

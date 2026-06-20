@@ -61,20 +61,12 @@ export default async function DesignPage(
     datePublished: "2025-01-01",
   };
 
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: BASE_URL },
-      { "@type": "ListItem", position: 2, name: "Designs", item: `${BASE_URL}/gallery` },
-      { "@type": "ListItem", position: 3, name: design.title, item: `${BASE_URL}/designs/${design.slug}` },
-    ],
-  };
-
+  // Breadcrumb JSON-LD is emitted by the <Breadcrumbs> component inside
+  // DesignDetailPage (Home > Mehndi Designs > Category > Title), which matches
+  // the visible trail. Avoid a second, conflicting BreadcrumbList here.
   const schemas = [
     buildImageObjectSchema(design.image),
     creativeWorkSchema,
-    breadcrumbSchema,
     ...(design.faq.length ? [buildFAQSchema(design.faq)] : []),
   ].filter(Boolean);
 

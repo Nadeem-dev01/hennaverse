@@ -139,7 +139,7 @@ export default function Home() {
           <ScrollReveal delay={0.4}>
             <div className="flex justify-center mt-8">
               <Link
-                href="/eidhennaz"
+                href="/mehndi-designs/eid"
                 className="group flex items-center gap-2 bg-gold/10 text-gold font-semibold px-8 py-3 rounded-full hover:bg-gold hover:text-background transition-all hover:shadow-lg hover:shadow-gold/25 border border-gold/30"
               >
                 View All Eid Designs
