@@ -33,7 +33,7 @@ import kidsDesigns from "@/data/designs/kids.json";
 
 const BASE_URL = "https://www.mehndidesignhenna.com";
 
-const allDesignSlugs: string[] = [
+const allDesignEntries: { slug: string; image?: string }[] = [
   arabicDesigns, indianDesigns, pakistaniDesigns, moroccanDesigns,
   gulfDesigns, africanDesigns, turkishDesigns, rajasthaniDesigns,
   indonesianDesigns, bridalDesigns, simpleDesigns, modernDesigns,
@@ -41,7 +41,7 @@ const allDesignSlugs: string[] = [
   geometricDesigns, jewelryDesigns, royalDesigns, fullHandDesigns,
   backHandDesigns, frontHandDesigns, fingerDesigns, footDesigns,
   eidDesigns, kidsDesigns,
-].flat().map((d: any) => d.slug);
+].flat().map((d: any) => ({ slug: d.slug, image: d.image?.src }));
 
 const occasionSlugs = [
   "wedding", "eid", "karva-chauth", "diwali",
@@ -92,6 +92,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: now,
     changeFrequency: "monthly" as const,
     priority: 0.6,
+    ...(blog.imageUrl ? { images: [`${BASE_URL}${blog.imageUrl}`] } : {}),
   }));
 
   const styleRoutes = countries.map((country) => ({
@@ -108,11 +109,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
-  const designRoutes = allDesignSlugs.map((slug) => ({
+  const designRoutes = allDesignEntries.map(({ slug, image }) => ({
     url: `${BASE_URL}/designs/${slug}`,
     lastModified: now,
     changeFrequency: "monthly" as const,
     priority: 0.7,
+    ...(image ? { images: [`${BASE_URL}${image}`] } : {}),
   }));
 
   return [
