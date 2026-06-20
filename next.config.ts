@@ -2,6 +2,12 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
+    // Source images are already AVIF and tiny (~27 KB avg), so the Next.js /
+    // Vercel image optimizer adds no benefit — and once the optimization quota
+    // is exceeded it returns HTTP 402, which broke image display sitewide.
+    // Serve the pre-optimized files directly (they already carry 1-year
+    // immutable cache headers from the headers() config below).
+    unoptimized: true,
     formats: ["image/avif", "image/webp"],
     deviceSizes: [400, 480, 512, 640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
