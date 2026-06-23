@@ -15,10 +15,21 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
+        source: "/:path*",
+        headers: [
+          { key: "X-Content-Type-Options", value: "nosniff" },
+          { key: "X-Frame-Options", value: "DENY" },
+          { key: "Referrer-Policy", value: "origin-when-cross-origin" },
+          { key: "X-XSS-Protection", value: "1; mode=block" },
+          { key: "Strict-Transport-Security", value: "max-age=31536000; includeSubDomains; preload" },
+        ],
+      },
+      {
         source: "/:path*.jpg",
         headers: [
           { key: "Content-Type", value: "image/jpeg" },
           { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+          { key: "X-Robots-Tag", value: "noindex" },
         ],
       },
       {
@@ -26,24 +37,28 @@ const nextConfig: NextConfig = {
         headers: [
           { key: "Content-Type", value: "image/jpeg" },
           { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+          { key: "X-Robots-Tag", value: "noindex" },
         ],
       },
       {
         source: "/:path*.avif",
         headers: [
           { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+          { key: "X-Robots-Tag", value: "noindex" },
         ],
       },
       {
         source: "/:path*.png",
         headers: [
           { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+          { key: "X-Robots-Tag", value: "noindex" },
         ],
       },
       {
         source: "/:path*.webp",
         headers: [
           { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+          { key: "X-Robots-Tag", value: "noindex" },
         ],
       },
     ];

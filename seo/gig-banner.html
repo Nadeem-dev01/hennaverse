@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 100%; height: 100%; overflow: hidden; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 55%, #0f3d2e 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  .wrap { text-align: center; padding: 40px; max-width: 1100px; }
+  .badge {
+    display: inline-block;
+    background: rgba(29, 191, 115, 0.15);
+    border: 1px solid #1dbf73;
+    color: #1dbf73;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    padding: 10px 28px;
+    border-radius: 999px;
+    margin-bottom: 28px;
+    text-transform: uppercase;
+  }
+  h1 {
+    font-size: 84px;
+    font-weight: 800;
+    line-height: 1.05;
+    margin-bottom: 18px;
+  }
+  h1 .accent { color: #1dbf73; }
+  .sub {
+    font-size: 34px;
+    color: #cbd5e1;
+    font-weight: 500;
+    margin-bottom: 38px;
+  }
+  .chips { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+  .chip {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 12px;
+    padding: 14px 26px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #e2e8f0;
+  }
+  .chip span { color: #1dbf73; margin-right: 8px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="badge">Full Stack Web Developer</div>
+    <h1>Modern Websites &amp; <span class="accent">Web Applications</span></h1>
+    <div class="sub">React &bull; Next.js &bull; Node.js &bull; TypeScript &bull; MongoDB</div>
+    <div class="chips">
+      <div class="chip"><span>&#10003;</span>Responsive Design</div>
+      <div class="chip"><span>&#10003;</span>SaaS &amp; Dashboards</div>
+      <div class="chip"><span>&#10003;</span>API &amp; Payments</div>
+      <div class="chip"><span>&#10003;</span>Full Source Code</div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 769" width="1280" height="769">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1530"/>
+      <stop offset="55%" stop-color="#1b1f4a"/>
+      <stop offset="100%" stop-color="#0f4036"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1dbf73"/>
+      <stop offset="100%" stop-color="#3fe6a6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="769" fill="url(#bg)"/>
+  <circle cx="1180" cy="120" r="280" fill="#1dbf73" opacity="0.06"/>
+  <circle cx="80" cy="720" r="220" fill="#3fe6a6" opacity="0.05"/>
+
+  <g font-family="Segoe UI, Arial, sans-serif" text-anchor="middle">
+    <rect x="430" y="80" width="420" height="56" rx="28" fill="none" stroke="#1dbf73" stroke-width="2"/>
+    <text x="640" y="117" font-size="22" font-weight="700" fill="#1dbf73" letter-spacing="6">MERN STACK DEVELOPER</text>
+
+    <text x="640" y="260" font-size="78" font-weight="800" fill="#ffffff">Full Stack Web Apps</text>
+    <text x="640" y="350" font-size="78" font-weight="800" fill="url(#green)">React • Node • MongoDB</text>
+
+    <text x="640" y="420" font-size="30" font-weight="500" fill="#cbd5e1">SaaS · Dashboards · APIs · Authentication · Payments</text>
+
+    <g font-size="24" font-weight="600">
+      <g transform="translate(180,490)">
+        <rect width="290" height="64" rx="12" fill="#ffffff10" stroke="#ffffff20"/>
+        <text x="22" y="40" fill="#1dbf73">✓</text>
+        <text x="50" y="40" fill="#e2e8f0" text-anchor="start">Modern UI / UX</text>
+      </g>
+      <g transform="translate(495,490)">
+        <rect width="290" height="64" rx="12" fill="#ffffff10" stroke="#ffffff20"/>
+        <text x="22" y="40" fill="#1dbf73">✓</text>
+        <text x="50" y="40" fill="#e2e8f0" text-anchor="start">REST &amp; Realtime API</text>
+      </g>
+      <g transform="translate(810,490)">
+        <rect width="290" height="64" rx="12" fill="#ffffff10" stroke="#ffffff20"/>
+        <text x="22" y="40" fill="#1dbf73">✓</text>
+        <text x="50" y="40" fill="#e2e8f0" text-anchor="start">Secure Auth &amp; Roles</text>
+      </g>
+
+      <g transform="translate(335,580)">
+        <rect width="290" height="64" rx="12" fill="#ffffff10" stroke="#ffffff20"/>
+        <text x="22" y="40" fill="#1dbf73">✓</text>
+        <text x="50" y="40" fill="#e2e8f0" text-anchor="start">Stripe &amp; PayPal</text>
+      </g>
+      <g transform="translate(650,580)">
+        <rect width="290" height="64" rx="12" fill="#ffffff10" stroke="#ffffff20"/>
+        <text x="22" y="40" fill="#1dbf73">✓</text>
+        <text x="50" y="40" fill="#e2e8f0" text-anchor="start">Full Source Code</text>
+      </g>
+    </g>
+
+    <text x="640" y="710" font-size="22" font-weight="500" fill="#94a3b8">MongoDB · Express · React · Node.js · Next.js · TypeScript</text>
+  </g>
+</svg>

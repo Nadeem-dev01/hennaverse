@@ -12,6 +12,8 @@ import Newsletter from "@/components/Newsletter";
 import SectionHeading from "@/components/SectionHeading";
 import ScrollReveal from "@/components/ScrollReveal";
 import HomeSEOContent from "@/components/HomeSEOContent";
+import { buildItemListSchema } from "@/lib/schema";
+import { allDesigns } from "@/data/index";
 
 const BASE_URL = "https://www.mehndidesignhenna.com";
 
@@ -99,8 +101,23 @@ export default function Home() {
   const latestBlogs = blogs.slice(0, 3);
   const eidDesigns = designs.filter(design => design.occasion === "Eid").slice(0, 6);
 
+  const itemListSchema = buildItemListSchema(
+    featuredDesigns.map((d) => {
+      const detailed = allDesigns.find((ad) => ad.id === d.id.toString() || ad.title === d.title);
+      return {
+        name: d.title,
+        url: detailed ? `/designs/${detailed.slug}` : `/gallery`,
+        image: d.imageUrl,
+      };
+    })
+  );
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+      />
       <HeroSection />
 
       {/* Featured Designs */}

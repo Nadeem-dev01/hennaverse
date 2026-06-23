@@ -86,6 +86,7 @@ export default async function ToolPage({
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
+    "inLanguage": "en",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: "https://www.mehndidesignhenna.com" },
       { "@type": "ListItem", position: 2, name: "Tools", item: "https://www.mehndidesignhenna.com/tools" },
@@ -96,6 +97,7 @@ export default async function ToolPage({
   const faqJsonLd = tool.faqs.length > 0 ? {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "inLanguage": "en",
     mainEntity: tool.faqs.map((faq: { q: string; a: string }) => ({
       "@type": "Question",
       name: faq.q,

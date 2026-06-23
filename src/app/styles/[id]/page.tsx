@@ -55,6 +55,7 @@ export default async function CountryStylePage(props: { params: Promise<{ id: st
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
+    "inLanguage": "en",
     name: `${country.name} Mehndi Styles`,
     description: country.description,
     url: `${BASE_URL}/styles/${country.id}`,
@@ -64,6 +65,7 @@ export default async function CountryStylePage(props: { params: Promise<{ id: st
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
+    "inLanguage": "en",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: BASE_URL },
       { "@type": "ListItem", position: 2, name: "Styles", item: `${BASE_URL}/styles` },

@@ -4,7 +4,8 @@ export function buildBreadcrumbSchema(items: { name: string; href: string }[]) {
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    itemListElement: [
+    "inLanguage": "en",
+    "itemListElement": [
       {
         "@type": "ListItem",
         position: 1,
@@ -26,7 +27,8 @@ export function buildFAQSchema(faqs: { q: string; a: string }[]) {
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: faqs.map((faq) => ({
+    "inLanguage": "en",
+    "mainEntity": faqs.map((faq) => ({
       "@type": "Question",
       name: faq.q,
       acceptedAnswer: {
@@ -50,13 +52,14 @@ export function buildImageObjectSchema(image: {
   return {
     "@context": "https://schema.org",
     "@type": "ImageObject",
-    contentUrl: `${BASE_URL}${image.src}`,
-    description: image.alt,
-    width: image.width,
-    height: image.height,
-    creditText: image.credit,
+    "inLanguage": "en",
+    "contentUrl": `${BASE_URL}${image.src}`,
+    "description": image.alt,
+    "width": image.width,
+    "height": image.height,
+    "creditText": image.credit,
     ...(image.creditUrl && { creator: { "@type": "Person", name: image.credit, url: image.creditUrl } }),
-    license: image.licenseUrl || image.license,
+    "license": image.licenseUrl || image.license,
   };
 }
 
@@ -64,24 +67,49 @@ export function buildCollectionPageSchema(name: string, description: string, url
   return {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
+    "inLanguage": "en",
     name,
     description,
-    url: `${BASE_URL}${url}`,
+    "url": `${BASE_URL}${url}`,
   };
 }
 
-export function buildArticleSchema(title: string, description: string, image?: string) {
+export function buildArticleSchema(
+  title: string,
+  description: string,
+  image?: string,
+  datePublished?: string,
+  dateModified?: string
+) {
   return {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: title,
+    "inLanguage": "en",
+    "headline": title,
     description,
-    image: image ? [`${BASE_URL}${image}`] : [],
-    author: { "@type": "Organization", name: "Mehndi Design Henna" },
-    publisher: {
+    "image": image ? [`${BASE_URL}${image}`] : [],
+    "author": { "@type": "Organization", name: "Mehndi Design Henna" },
+    "publisher": {
       "@type": "Organization",
       name: "Mehndi Design Henna",
       logo: { "@type": "ImageObject", url: `${BASE_URL}/icon.png` },
     },
+    ...(datePublished && { datePublished }),
+    ...(dateModified && { dateModified }),
+  };
+}
+
+export function buildItemListSchema(items: { name: string; url: string; image?: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "inLanguage": "en",
+    "itemListElement": items.map((item, i) => ({
+      "@type": "ListItem",
+      "position": i + 1,
+      "url": item.url.startsWith("http") ? item.url : `${BASE_URL}${item.url}`,
+      "name": item.name,
+      ...(item.image && { "image": item.image.startsWith("http") ? item.image : `${BASE_URL}${item.image}` }),
+    })),
   };
 }

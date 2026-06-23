@@ -1,0 +1,39 @@
+<svg width="1280" height="769" viewBox="0 0 1280 769" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="55%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f3d2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="769" fill="url(#bg)"/>
+  <circle cx="1180" cy="80" r="220" fill="#1dbf73" opacity="0.07"/>
+  <circle cx="90" cy="700" r="260" fill="#1dbf73" opacity="0.06"/>
+
+  <rect x="465" y="92" width="350" height="52" rx="26" fill="rgba(29,191,115,0.15)" stroke="#1dbf73" stroke-width="2"/>
+  <text x="640" y="126" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="3" fill="#1dbf73" text-anchor="middle">FULL STACK DEVELOPER</text>
+
+  <text x="640" y="250" font-family="Arial, sans-serif" font-size="76" font-weight="800" fill="#ffffff" text-anchor="middle">Modern Websites &amp;</text>
+  <text x="640" y="340" font-family="Arial, sans-serif" font-size="76" font-weight="800" fill="#1dbf73" text-anchor="middle">Web Applications</text>
+
+  <text x="640" y="420" font-family="Arial, sans-serif" font-size="32" font-weight="500" fill="#cbd5e1" text-anchor="middle">React &#8226; Next.js &#8226; Node.js &#8226; TypeScript &#8226; MongoDB</text>
+
+  <g font-family="Arial, sans-serif" font-size="24" font-weight="600">
+    <rect x="170" y="490" width="280" height="62" rx="12" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)"/>
+    <text x="310" y="529" fill="#e2e8f0" text-anchor="middle"><tspan fill="#1dbf73">&#10003; </tspan>Responsive Design</text>
+
+    <rect x="470" y="490" width="280" height="62" rx="12" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)"/>
+    <text x="610" y="529" fill="#e2e8f0" text-anchor="middle"><tspan fill="#1dbf73">&#10003; </tspan>SaaS &amp; Dashboards</text>
+
+    <rect x="770" y="490" width="280" height="62" rx="12" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)"/>
+    <text x="910" y="529" fill="#e2e8f0" text-anchor="middle"><tspan fill="#1dbf73">&#10003; </tspan>API &amp; Payments</text>
+
+    <rect x="320" y="580" width="280" height="62" rx="12" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)"/>
+    <text x="460" y="619" fill="#e2e8f0" text-anchor="middle"><tspan fill="#1dbf73">&#10003; </tspan>Full Source Code</text>
+
+    <rect x="620" y="580" width="280" height="62" rx="12" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)"/>
+    <text x="760" y="619" fill="#e2e8f0" text-anchor="middle"><tspan fill="#1dbf73">&#10003; </tspan>Fast Delivery</text>
+  </g>
+
+  <text x="640" y="715" font-family="Arial, sans-serif" font-size="26" font-weight="600" fill="#94a3b8" text-anchor="middle">Clean Code &#8226; On-Time Delivery &#8226; Post-Delivery Support</text>
+</svg>

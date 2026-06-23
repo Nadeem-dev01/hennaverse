@@ -60,6 +60,7 @@ export default async function Page(props: { params: Promise<{ slug: string }> })
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    "inLanguage": "en",
     headline: blog.title,
     description: blog.excerpt,
     image: blog.imageUrl ? `${BASE_URL}${blog.imageUrl}` : undefined,
@@ -90,6 +91,7 @@ export default async function Page(props: { params: Promise<{ slug: string }> })
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
+    "inLanguage": "en",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: BASE_URL },
       { "@type": "ListItem", position: 2, name: "Blog", item: `${BASE_URL}/blog` },

@@ -20,10 +20,29 @@ export async function generateMetadata(
   const bp = bodyParts.find((b) => b.slug === params.part);
   if (!bp) return { title: "Not Found" };
 
+  const designs = designsByBodyPart.get(bp.slug) ?? [];
+  const firstImage = designs[0]?.image?.src;
+  const ogImages = firstImage ? [{ url: firstImage, width: 800, height: 800, alt: bp.title }] : [];
+
   return {
     title: bp.metaTitle,
     description: bp.metaDescription,
     alternates: { canonical: `/body/${bp.slug}` },
+    openGraph: {
+      title: bp.metaTitle,
+      description: bp.metaDescription,
+      url: `https://www.mehndidesignhenna.com/body/${bp.slug}`,
+      siteName: "Mehndi Design Henna",
+      locale: "en_US",
+      type: "website",
+      images: ogImages,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: bp.metaTitle,
+      description: bp.metaDescription,
+      images: firstImage ? [firstImage] : [],
+    },
   };
 }
 

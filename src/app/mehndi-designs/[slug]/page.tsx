@@ -76,6 +76,7 @@ export default async function MehndiDesignCategoryPage(props: { params: Promise<
       {
         "@context": "https://schema.org",
         "@type": "Article",
+        "inLanguage": "en",
         headline: metaTitle,
         description: metaDescription,
         image: heroImage ? [heroImage] : [],
@@ -89,6 +90,7 @@ export default async function MehndiDesignCategoryPage(props: { params: Promise<
       {
         "@context": "https://schema.org",
         "@type": "ImageGallery",
+        "inLanguage": "en",
         name: `${curated.title} Gallery`,
         description: `A collection of beautiful ${curated.title} images.`,
         image: curated.images.map((img) => ({
@@ -122,6 +124,7 @@ export default async function MehndiDesignCategoryPage(props: { params: Promise<
     {
       "@context": "https://schema.org",
       "@type": "CollectionPage",
+      "inLanguage": "en",
       name: metaTitle,
       description: metaDescription,
       url: `${BASE_URL}/mehndi-designs/${taxo!.slug}`,
@@ -130,6 +133,7 @@ export default async function MehndiDesignCategoryPage(props: { params: Promise<
     {
       "@context": "https://schema.org",
       "@type": "ImageGallery",
+      "inLanguage": "en",
       name: `${taxo!.title} Gallery`,
       description: metaDescription,
       image: designs.slice(0, 30).map((d) => ({

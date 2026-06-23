@@ -53,7 +53,7 @@ const bodyPartSlugs = [
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date("2026-06-15");
+  const now = new Date(); // Use build-time generation timestamp for fresh indexing
 
   const staticRoutes = [
     "", "/about", "/blog", "/gallery", "/styles", "/tools",
