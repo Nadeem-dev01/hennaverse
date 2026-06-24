@@ -1,6 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  experimental: {
+    // Tree-shake these packages at build time — only the specific named exports
+    // actually used in source are bundled. Reduces the 1st-party JS chunks
+    // flagged by Lighthouse (lucide-react icons, framer-motion primitives).
+    optimizePackageImports: ["lucide-react", "framer-motion"],
+  },
   images: {
     // Source images are already AVIF and tiny (~27 KB avg), so the Next.js /
     // Vercel image optimizer adds no benefit — and once the optimization quota

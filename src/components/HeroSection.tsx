@@ -4,6 +4,11 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, BookOpen } from "lucide-react";
 
+// NOTE: The three floating decorative dots below use CSS `animate-float`
+// (a transform-based keyframe) instead of framer-motion's `animate` prop.
+// This keeps the animation on the GPU compositor thread and avoids the
+// Lighthouse "Avoid non-composited animations" warning.
+
 export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -19,21 +24,18 @@ export default function HeroSection() {
       <div className="absolute bottom-32 right-10 w-56 h-56 mandala animate-spin-slow opacity-15 hidden md:block" style={{ animationDirection: "reverse", animationDuration: "30s" }} />
       <div className="absolute top-1/3 right-1/4 w-24 h-24 mandala animate-spin-slow opacity-10 hidden lg:block" style={{ animationDuration: "25s" }} />
 
-      {/* Floating dots */}
-      <motion.div
-        animate={{ y: [-20, 20, -20] }}
-        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-1/4 left-1/4 w-2 h-2 rounded-full bg-gold/30"
+      {/* Floating dots — CSS-only animations (compositor-thread, no JS overhead) */}
+      <div
+        className="absolute top-1/4 left-1/4 w-2 h-2 rounded-full bg-gold/30 animate-float"
+        style={{ animationDuration: '6s' }}
       />
-      <motion.div
-        animate={{ y: [15, -15, 15] }}
-        transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-        className="absolute top-1/3 right-1/3 w-3 h-3 rounded-full bg-purple/20"
+      <div
+        className="absolute top-1/3 right-1/3 w-3 h-3 rounded-full bg-purple/20 animate-float"
+        style={{ animationDuration: '5s', animationDelay: '1s' }}
       />
-      <motion.div
-        animate={{ y: [-10, 25, -10] }}
-        transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-        className="absolute bottom-1/3 left-1/3 w-2 h-2 rounded-full bg-gold-light/20"
+      <div
+        className="absolute bottom-1/3 left-1/3 w-2 h-2 rounded-full bg-gold-light/20 animate-float"
+        style={{ animationDuration: '7s', animationDelay: '2s' }}
       />
 
       {/* Content */}

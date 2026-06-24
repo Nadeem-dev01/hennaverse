@@ -1,7 +1,6 @@
 "use client";
 
-import { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { useRef, useEffect, useState } from "react";
 
 interface ScrollRevealProps {
   children: React.ReactNode;
@@ -10,13 +9,19 @@ interface ScrollRevealProps {
   className?: string;
 }
 
-const directionOffset = {
-  up: { y: 60, x: 0 },
-  down: { y: -60, x: 0 },
-  left: { x: 60, y: 0 },
-  right: { x: -60, y: 0 },
+const directionStyle: Record<string, string> = {
+  up:    "translateY(60px)",
+  down:  "translateY(-60px)",
+  left:  "translateX(60px)",
+  right: "translateX(-60px)",
 };
 
+/**
+ * Reveals children when they scroll into view.
+ * Uses native IntersectionObserver + CSS transitions instead of framer-motion
+ * so that the animation runs on the GPU compositor thread (no main-thread JS
+ * overhead) and framer-motion is not bundled into every page chunk.
+ */
 export default function ScrollReveal({
   children,
   direction = "up",
@@ -24,19 +29,38 @@ export default function ScrollReveal({
   className = "",
 }: ScrollRevealProps) {
   const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once: true, margin: "-80px" });
+  const [visible, setVisible] = useState(false);
 
-  const offset = directionOffset[direction];
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "-80px" }
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
 
   return (
-    <motion.div
+    <div
       ref={ref}
-      initial={{ opacity: 0, ...offset }}
-      animate={isInView ? { opacity: 1, x: 0, y: 0 } : { opacity: 0, ...offset }}
-      transition={{ duration: 0.7, delay, ease: "easeOut" }}
       className={className}
+      style={{
+        opacity: visible ? 1 : 0,
+        transform: visible ? "none" : directionStyle[direction],
+        transition: `opacity 0.7s ease-out ${delay}s, transform 0.7s ease-out ${delay}s`,
+        willChange: "opacity, transform",
+      }}
     >
       {children}
-    </motion.div>
+    </div>
   );
 }

@@ -88,8 +88,11 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-        <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
+        <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
+        {/* Funding Choices (Google consent banner) — 72.5 KiB third-party hit */}
+        <link rel="preconnect" href="https://fundingchoicesmessages.google.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://fundingchoicesmessages.google.com" />
       </head>
       <body className="min-h-screen flex flex-col bg-background text-foreground font-sans">
         <ThirdPartyScripts />

@@ -20,10 +20,11 @@ export default function ThirdPartyScripts() {
     window.addEventListener('touchstart', handleInteraction, { passive: true });
     window.addEventListener('keydown', handleInteraction, { passive: true });
 
-    // Fallback: load after 5 seconds even if no interaction
+    // Fallback: load after 8 seconds even if no interaction (extended to reduce
+    // pressure on the main thread during initial page render)
     const timeoutId = setTimeout(() => {
       setShouldLoad(true);
-    }, 5000);
+    }, 8000);
 
     return () => {
       window.removeEventListener('scroll', handleInteraction);
@@ -38,12 +39,13 @@ export default function ThirdPartyScripts() {
 
   return (
     <>
-      {/* Google tag (gtag.js) */}
+      {/* Google Analytics — lazyOnload: executes in idle time after all page
+          resources have been fetched. Avoids blocking LCP / FCP. */}
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-1JDYJ0QPC4"
-        strategy="afterInteractive"
+        strategy="lazyOnload"
       />
-      <Script id="google-analytics" strategy="afterInteractive">
+      <Script id="google-analytics" strategy="lazyOnload">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
@@ -52,10 +54,11 @@ export default function ThirdPartyScripts() {
         `}
       </Script>
 
-      {/* Google Adsense */}
+      {/* Google AdSense — lazyOnload: lowest-priority strategy, loads after
+          interactive content. Saves ~145 KiB of early main-thread work. */}
       <Script
         id="adsbygoogle-init"
-        strategy="afterInteractive"
+        strategy="lazyOnload"
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8920350773715513"
         crossOrigin="anonymous"
       />
