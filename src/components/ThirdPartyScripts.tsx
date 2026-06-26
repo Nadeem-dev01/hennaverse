@@ -7,30 +7,40 @@ export default function ThirdPartyScripts() {
   const [shouldLoad, setShouldLoad] = useState(false);
 
   useEffect(() => {
-    const handleInteraction = () => {
+    let timeoutId: ReturnType<typeof setTimeout>;
+
+    const load = () => {
       setShouldLoad(true);
-      window.removeEventListener('scroll', handleInteraction);
-      window.removeEventListener('mousemove', handleInteraction);
-      window.removeEventListener('touchstart', handleInteraction);
-      window.removeEventListener('keydown', handleInteraction);
+      window.removeEventListener('scroll', load);
+      window.removeEventListener('mousemove', load);
+      window.removeEventListener('touchstart', load);
+      window.removeEventListener('keydown', load);
+      clearTimeout(timeoutId);
     };
 
-    window.addEventListener('scroll', handleInteraction, { passive: true });
-    window.addEventListener('mousemove', handleInteraction, { passive: true });
-    window.addEventListener('touchstart', handleInteraction, { passive: true });
-    window.addEventListener('keydown', handleInteraction, { passive: true });
+    // Use requestIdleCallback when available for zero-impact loading
+    // Falls back to a 15s timeout (extended from 8s to reduce LCP pressure)
+    const scheduleLoad = () => {
+      if ('requestIdleCallback' in window) {
+        (window as Window & typeof globalThis & { requestIdleCallback: (cb: () => void, opts?: { timeout: number }) => void })
+          .requestIdleCallback(load, { timeout: 15000 });
+      } else {
+        timeoutId = setTimeout(load, 15000);
+      }
+    };
 
-    // Fallback: load after 8 seconds even if no interaction (extended to reduce
-    // pressure on the main thread during initial page render)
-    const timeoutId = setTimeout(() => {
-      setShouldLoad(true);
-    }, 8000);
+    window.addEventListener('scroll', load, { passive: true });
+    window.addEventListener('mousemove', load, { passive: true });
+    window.addEventListener('touchstart', load, { passive: true });
+    window.addEventListener('keydown', load, { passive: true });
+
+    scheduleLoad();
 
     return () => {
-      window.removeEventListener('scroll', handleInteraction);
-      window.removeEventListener('mousemove', handleInteraction);
-      window.removeEventListener('touchstart', handleInteraction);
-      window.removeEventListener('keydown', handleInteraction);
+      window.removeEventListener('scroll', load);
+      window.removeEventListener('mousemove', load);
+      window.removeEventListener('touchstart', load);
+      window.removeEventListener('keydown', load);
       clearTimeout(timeoutId);
     };
   }, []);
@@ -50,7 +60,7 @@ export default function ThirdPartyScripts() {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-1JDYJ0QPC4');
+          gtag('config', 'G-1JDYJ0QPC4', { send_page_view: true });
         `}
       </Script>
 

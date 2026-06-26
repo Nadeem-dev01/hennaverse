@@ -35,7 +35,6 @@ const nextConfig: NextConfig = {
         headers: [
           { key: "Content-Type", value: "image/jpeg" },
           { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
-          { key: "X-Robots-Tag", value: "noindex" },
         ],
       },
       {
@@ -43,28 +42,24 @@ const nextConfig: NextConfig = {
         headers: [
           { key: "Content-Type", value: "image/jpeg" },
           { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
-          { key: "X-Robots-Tag", value: "noindex" },
         ],
       },
       {
         source: "/:path*.avif",
         headers: [
           { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
-          { key: "X-Robots-Tag", value: "noindex" },
         ],
       },
       {
         source: "/:path*.png",
         headers: [
           { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
-          { key: "X-Robots-Tag", value: "noindex" },
         ],
       },
       {
         source: "/:path*.webp",
         headers: [
           { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
-          { key: "X-Robots-Tag", value: "noindex" },
         ],
       },
     ];

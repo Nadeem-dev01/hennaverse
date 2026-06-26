@@ -101,7 +101,7 @@ export default function HomeSEOContent() {
 
         <h2 id="kits-cones">Henna Kits, Cones, Powder and Stencils</h2>
         <p>
-          Want to apply mehndi yourself? A good henna kit contains natural henna powder, essential oils, and pre-rolled henna cones ready for application. When buying henna cones or a henna tattoo kit, check the ingredient list: only lawsonia inermis (the henna plant), sugar, lemon juice, and essential oils belong in natural paste. Fresh henna powder should be green and earthy-smelling. Beginners can also use henna stencils and mehndi stencils to get crisp patterns without freehand skill — place the stencil, apply paste from the mehndi cone over it, and lift. A henna pen is handy for fine detail work and henna freckles, one of the most popular minimalist trends.
+          Want to apply mehndi yourself? A good <strong>DIY henna tattoo kit</strong> contains natural henna powder, essential oils, and pre-rolled henna cones ready for application. When looking for <strong>chemical-free henna cones for sale</strong> or checking <strong>natural henna cone price</strong> ranges, verify the ingredient list: only lawsonia inermis (the henna plant), sugar, lemon juice, and essential oils belong in natural paste. Fresh henna powder should be green and earthy-smelling. Beginners can also buy <strong>reusable henna stencils for hands</strong> and <strong>mehndi sticker stencils online</strong> to get crisp patterns without freehand skill — place the stencil, apply paste from the mehndi cone over it, and lift. A henna pen is handy for fine detail work and henna freckles, one of the most popular minimalist trends.
         </p>
 
         <h2 id="outfits-decor">What to Wear: Mehndi Outfits and Decor</h2>

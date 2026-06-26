@@ -12,6 +12,7 @@ export interface OccasionDef {
   title: string;
   metaTitle: string;
   metaDescription: string;
+  keywords?: string[];
 }
 
 export interface BodyPartDef {
@@ -239,48 +240,56 @@ export const occasions: OccasionDef[] = [
     title: "Wedding Mehndi Designs",
     metaTitle: "Mehndi Wedding Designs — Mehndi Design for Marriage, Outfits & Decor",
     metaDescription: "Explore mehndi wedding designs and mehndi design for marriage ideas: simple bridal mehndi designs, guest patterns, plus mehndi outfit, mehndi dress for bride, and mehndi decor tips.",
+    keywords: ["mehndi wedding designs", "mehndi design for marriage", "simple bridal mehndi designs", "mehndi outfit", "clothes for mehndi", "mehndi dress for bride", "mehndi decor", "bridal henna near me", "mehndi dress", "outfits for mehndi", "pakistani mehndi wear", "mehndi wear"],
   },
   {
     slug: "eid",
     title: "Eid Mehndi Designs",
     metaTitle: "Mehndi Designs for Eid (2026) — Eid Henna Patterns",
     metaDescription: "Discover mehndi designs for eid and eid henna patterns for 2026. Simple eid mehndi designs, arabic styles, and trendy mehndi patterns for eid.",
+    keywords: ["mehndi designs for eid", "eid henna patterns", "eid mehndi design", "mehndi patterns for eid", "simple eid mehndi designs", "eid mehndi designs 2026", "easy eid mehndi", "pakistani mehndi for eid"],
   },
   {
     slug: "karva-chauth",
     title: "Karva Chauth Mehndi Designs",
     metaTitle: "100+ Karva Chauth Mehndi Designs — Traditional Festival Henna Patterns",
     metaDescription: "Find beautiful Karva Chauth mehndi designs featuring moon motifs, couple portraits, and traditional patterns for this special Indian festival.",
+    keywords: ["karva chauth mehndi designs", "karva chauth henna", "karva chauth mehndi simple", "moon mehndi design", "couple mehndi design", "karva chauth mehndi 2026"],
   },
   {
     slug: "diwali",
     title: "Diwali Mehndi Designs",
     metaTitle: "100+ Diwali Mehndi Designs — Festival of Lights Henna Patterns",
     metaDescription: "Browse stunning Diwali mehndi designs featuring diyas, rangoli motifs, and festive patterns perfect for the Festival of Lights celebrations.",
+    keywords: ["diwali mehndi designs", "diwali henna patterns", "diwali mehndi simple", "rangoli mehndi design", "diya mehndi design", "festival mehndi 2026", "diwali mehndi 2026"],
   },
   {
     slug: "teej",
     title: "Teej Mehndi Designs",
     metaTitle: "50+ Teej Mehndi Designs — Monsoon Festival Henna Patterns",
     metaDescription: "Explore traditional Teej mehndi designs with swing motifs and monsoon-inspired patterns for Hariyali Teej and Kajari Teej celebrations.",
+    keywords: ["teej mehndi designs", "hariyali teej mehndi", "kajari teej mehndi", "teej henna patterns", "teej mehndi simple", "teej festival mehndi 2026"],
   },
   {
     slug: "engagement",
     title: "Engagement Mehndi Designs",
     metaTitle: "100+ Engagement Mehndi Designs — Ring Ceremony Henna Patterns",
     metaDescription: "Discover elegant engagement mehndi designs for your ring ceremony. From subtle finger henna to statement hand patterns for the bride-to-be.",
+    keywords: ["engagement mehndi designs", "ring ceremony mehndi", "engagement henna patterns", "mehndi for ring ceremony", "simple engagement mehndi", "bride to be mehndi design", "engagement mehndi 2026"],
   },
   {
     slug: "party",
     title: "Party Mehndi Designs",
     metaTitle: "100+ Party Mehndi Designs — Trendy Henna for Events & Celebrations",
     metaDescription: "Browse trendy party mehndi designs for casual events, birthday celebrations, and social gatherings. Quick-to-apply henna that makes a statement.",
+    keywords: ["party mehndi designs", "mehndi for parties", "birthday mehndi design", "casual henna patterns", "simple party mehndi", "quick mehndi designs", "trendy henna 2026", "cute henna designs"],
   },
   {
     slug: "raksha-bandhan",
     title: "Raksha Bandhan Mehndi Designs",
     metaTitle: "50+ Raksha Bandhan Mehndi Designs — Festive Henna for Sisters",
     metaDescription: "Find beautiful Raksha Bandhan mehndi designs featuring rakhi motifs and festive patterns. Quick and easy henna designs for the bond of siblings.",
+    keywords: ["raksha bandhan mehndi designs", "rakhi mehndi design", "rakshabandhan henna", "mehndi for raksha bandhan", "simple raksha bandhan mehndi", "rakhi henna patterns 2026"],
   },
 ];
 

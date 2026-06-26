@@ -3,7 +3,8 @@ import SectionHeading from "@/components/SectionHeading";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | Mehndi Design Henna",
-  description: "Read the Mehndi Design Henna privacy policy. Learn how we collect, use, and protect your data.",
+  description: "Read the Mehndi Design Henna privacy policy. Learn how we collect, use, and protect your data when you use our mehndi design gallery and henna tools.",
+  robots: { index: false, follow: true },
   alternates: {
     canonical: "/privacy-policy",
   },

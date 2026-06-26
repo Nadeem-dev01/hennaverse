@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, Home, Search, Palette, BookOpen } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Page Not Found | Mehndi Design Henna",
+  description: "The mehndi design or page you were looking for could not be found. Browse our gallery of 5000+ henna designs or explore our blog.",
+  robots: { index: false, follow: true },
+};
 
 export default function NotFound() {
   return (

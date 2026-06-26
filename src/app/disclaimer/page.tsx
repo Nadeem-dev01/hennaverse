@@ -3,13 +3,14 @@ import SectionHeading from "@/components/SectionHeading";
 
 export const metadata: Metadata = {
   title: "Disclaimer | Mehndi Design Henna",
-  description: "Terms of use and disclaimer for Mehndi Design Henna.",
+  description: "Read the Mehndi Design Henna disclaimer and terms of use. Learn about content accuracy, affiliate links, and our editorial policies for mehndi design content.",
+  robots: { index: false, follow: true },
   alternates: {
     canonical: "/disclaimer",
   },
   openGraph: {
     title: "Disclaimer | Mehndi Design Henna",
-    description: "Terms of use and disclaimer for Mehndi Design Henna.",
+    description: "Read the Mehndi Design Henna disclaimer and terms of use.",
     url: "https://www.mehndidesignhenna.com/disclaimer",
     siteName: "Mehndi Design Henna",
     type: "website",
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary",
     title: "Disclaimer | Mehndi Design Henna",
-    description: "Terms of use and disclaimer for Mehndi Design Henna.",
+    description: "Read the Mehndi Design Henna disclaimer and terms of use.",
   },
 };
 

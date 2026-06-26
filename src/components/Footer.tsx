@@ -8,6 +8,7 @@ const quickLinks = [
   { href: "/gallery", label: "Design Gallery" },
   { href: "/blog", label: "Blog" },
   { href: "/styles", label: "Henna Styles" },
+  { href: "/tools", label: "Henna Tools" },
   { href: "/about", label: "About Us" },
 ];
 
@@ -16,6 +17,19 @@ const styleLinks = [
   { href: "/mehndi-designs/arabic", label: "Arabic Henna" },
   { href: "/mehndi-designs/simple", label: "Simple Designs" },
   { href: "/mehndi-designs/minimal", label: "Minimalist" },
+  { href: "/mehndi-designs/back-hand", label: "Back Hand" },
+  { href: "/mehndi-designs/front-hand", label: "Front Hand" },
+  { href: "/mehndi-designs/eid", label: "Eid Mehndi" },
+  { href: "/mehndi-designs/kids", label: "Kids Mehndi" },
+];
+
+const occasionLinks = [
+  { href: "/occasions/wedding", label: "Wedding Mehndi" },
+  { href: "/occasions/eid", label: "Eid Mehndi" },
+  { href: "/occasions/engagement", label: "Engagement" },
+  { href: "/occasions/karva-chauth", label: "Karva Chauth" },
+  { href: "/occasions/diwali", label: "Diwali" },
+  { href: "/occasions/party", label: "Party Mehndi" },
 ];
 
 function PinterestIcon({ size = 20 }: { size?: number }) {
@@ -64,7 +78,7 @@ export default function Footer() {
       <div className="h-[2px] bg-gradient-to-r from-transparent via-gold/50 to-transparent" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block mb-4 outline-none">
@@ -141,6 +155,25 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3">
               {styleLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-muted text-sm hover:text-gold transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Occasions */}
+          <div>
+            <h3 className="font-serif text-lg font-semibold text-foreground mb-4">
+              Occasions
+            </h3>
+            <ul className="space-y-3">
+              {occasionLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}

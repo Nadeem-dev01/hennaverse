@@ -26,6 +26,12 @@ export const metadata: Metadata = {
     "easy mehndi designs",
     "mehndi patterns for hands",
     "mehndi designs simple",
+    "Indo-Arabic fusion",
+    "bracelet mehndi designs",
+    "full hand bridal mehndi",
+    "DIY henna tattoo kit",
+    "chemical-free henna cones",
+    "reusable henna stencils",
     "simple mehndi designs for hands",
     "mehndi design easy and beautiful",
     "easy mehndi patterns for hands",
@@ -85,7 +91,12 @@ export const metadata: Metadata = {
     type: "website",
     url: BASE_URL,
     siteName: "Mehndi Design Henna",
-    images: [{ url: "/Logo_Mehndidesign.png", width: 800, height: 255, alt: "Mehndi Design Henna" }],
+    images: [{
+      url: "/chakra-bridal-front-hand-mehndi-820x1024.avif",
+      width: 820,
+      height: 1024,
+      alt: "Beautiful Bridal Mehndi Design — 5000+ Henna Patterns at MehndiDesignHenna"
+    }],
   },
   twitter: {
     card: "summary_large_image",

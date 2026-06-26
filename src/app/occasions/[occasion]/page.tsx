@@ -7,6 +7,8 @@ import SectionHeading from "@/components/SectionHeading";
 import DesignGrid from "@/components/DesignGrid";
 import { buildCollectionPageSchema } from "@/lib/schema";
 
+const BASE_URL = "https://www.mehndidesignhenna.com";
+
 export const dynamicParams = false;
 
 export function generateStaticParams() {
@@ -27,11 +29,12 @@ export async function generateMetadata(
   return {
     title: occasion.metaTitle,
     description: occasion.metaDescription,
+    keywords: occasion.keywords,
     alternates: { canonical: `/occasions/${occasion.slug}` },
     openGraph: {
       title: occasion.metaTitle,
       description: occasion.metaDescription,
-      url: `https://www.mehndidesignhenna.com/occasions/${occasion.slug}`,
+      url: `${BASE_URL}/occasions/${occasion.slug}`,
       siteName: "Mehndi Design Henna",
       locale: "en_US",
       type: "website",
@@ -56,9 +59,21 @@ export default async function OccasionPage(
   const designs = designsByOccasion.get(occasion.slug) ?? [];
   const schema = buildCollectionPageSchema(occasion.title, occasion.metaDescription, `/occasions/${occasion.slug}`);
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "inLanguage": "en",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: BASE_URL },
+      { "@type": "ListItem", position: 2, name: "Occasions", item: `${BASE_URL}/mehndi-designs` },
+      { "@type": "ListItem", position: 3, name: occasion.title, item: `${BASE_URL}/occasions/${occasion.slug}` },
+    ],
+  };
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <div className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto min-h-screen">
         <Breadcrumbs
           items={[
@@ -69,6 +84,21 @@ export default async function OccasionPage(
         <SectionHeading title={occasion.title} subtitle={occasion.metaDescription} />
 
         <DesignGrid designs={designs} />
+
+        {/* SEO Text Section */}
+        {occasion.keywords && occasion.keywords.length > 0 && (
+          <section className="mt-16 pt-10 border-t border-border">
+            <div className="prose prose-invert prose-gold max-w-none">
+              <h2>About {occasion.title}</h2>
+              <p>
+                {occasion.metaDescription} Browse our curated collection of {designs.length}+ {occasion.title.toLowerCase()} patterns, from traditional and classic to modern and minimalist styles. Whether you are looking for {occasion.keywords.slice(0, 3).join(", ")}, you will find the perfect inspiration here.
+              </p>
+              <p>
+                Each design in this collection has been handpicked to represent the best of henna artistry for {occasion.title.toLowerCase()} occasions. Save your favorites, share with your artist, or use as inspiration for your own mehndi application.
+              </p>
+            </div>
+          </section>
+        )}
       </div>
     </>
   );

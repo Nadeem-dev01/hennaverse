@@ -7,7 +7,7 @@ import CookieBanner from "@/components/CookieBanner";
 import ThirdPartyScripts from "@/components/ThirdPartyScripts";
 
 export const viewport: Viewport = {
-  themeColor: "#7c3ady",
+  themeColor: "#7c3aed",
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
@@ -66,7 +66,12 @@ export const metadata: Metadata = {
     siteName: "Mehndi Design Henna",
     locale: "en_US",
     type: "website",
-    images: [{ url: "/Logo_Mehndidesign.png", width: 800, height: 255, alt: "Mehndi Design Henna" }],
+    images: [{
+      url: "/chakra-bridal-front-hand-mehndi-820x1024.avif",
+      width: 820,
+      height: 1024,
+      alt: "Beautiful Bridal Mehndi Design — Mehndi Design Henna"
+    }],
   },
   twitter: {
     card: "summary_large_image",
@@ -110,9 +115,9 @@ export default function RootLayout({
                   logo: {
                     "@type": "ImageObject",
                     "@id": "https://www.mehndidesignhenna.com/#logo",
-                    url: "https://www.mehndidesignhenna.com/icon.png",
-                    width: 512,
-                    height: 512,
+                    url: "https://www.mehndidesignhenna.com/Logo_Mehndidesign.png",
+                    width: 800,
+                    height: 255,
                   },
                   description: "5000+ easy mehndi designs and henna patterns from India, Pakistan, Arabia, Morocco and beyond.",
                 },

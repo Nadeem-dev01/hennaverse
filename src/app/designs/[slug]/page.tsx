@@ -57,8 +57,23 @@ export default async function DesignPage(
     author: {
       "@type": "Organization",
       name: "Mehndi Design Henna",
+      url: BASE_URL,
     },
-    datePublished: "2025-01-01",
+    publisher: {
+      "@type": "Organization",
+      name: "Mehndi Design Henna",
+      url: BASE_URL,
+      logo: {
+        "@type": "ImageObject",
+        url: `${BASE_URL}/Logo_Mehndidesign.png`,
+        width: 800,
+        height: 255,
+      },
+    },
+    datePublished: "2024-01-01",
+    dateModified: "2026-06-26",
+    keywords: design.tags.join(", "),
+    url: `${BASE_URL}/designs/${design.slug}`,
   };
 
   // Breadcrumb JSON-LD is emitted by the <Breadcrumbs> component inside

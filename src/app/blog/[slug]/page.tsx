@@ -65,19 +65,21 @@ export default async function Page(props: { params: Promise<{ slug: string }> })
     description: blog.excerpt,
     image: blog.imageUrl ? `${BASE_URL}${blog.imageUrl}` : undefined,
     author: {
-      "@type": "Organization",
+      "@type": "Person",
       name: blog.author,
       url: BASE_URL,
     },
     datePublished: new Date(blog.date).toISOString(),
-    dateModified: new Date(blog.date).toISOString(),
+    dateModified: new Date().toISOString(),
     publisher: {
       "@type": "Organization",
       name: "Mehndi Design Henna",
       url: BASE_URL,
       logo: {
         "@type": "ImageObject",
-        url: `${BASE_URL}/icon.png`,
+        url: `${BASE_URL}/Logo_Mehndidesign.png`,
+        width: 800,
+        height: 255,
       },
     },
     mainEntityOfPage: {

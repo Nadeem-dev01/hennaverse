@@ -3,45 +3,13 @@ import { blogs } from "@/data/blogs";
 import { countries } from "@/data/countries";
 import { categories } from "@/data/taxonomy";
 import { mehndiTools } from "@/data/mehndiTools";
-
-import arabicDesigns from "@/data/designs/arabic.json";
-import indianDesigns from "@/data/designs/indian.json";
-import pakistaniDesigns from "@/data/designs/pakistani.json";
-import moroccanDesigns from "@/data/designs/moroccan.json";
-import gulfDesigns from "@/data/designs/gulf.json";
-import africanDesigns from "@/data/designs/african.json";
-import turkishDesigns from "@/data/designs/turkish.json";
-import rajasthaniDesigns from "@/data/designs/rajasthani.json";
-import indonesianDesigns from "@/data/designs/indonesian.json";
-import bridalDesigns from "@/data/designs/bridal.json";
-import simpleDesigns from "@/data/designs/simple.json";
-import modernDesigns from "@/data/designs/modern.json";
-import traditionalDesigns from "@/data/designs/traditional.json";
-import minimalDesigns from "@/data/designs/minimal.json";
-import floralDesigns from "@/data/designs/floral.json";
-import mandalaDesigns from "@/data/designs/mandala.json";
-import geometricDesigns from "@/data/designs/geometric.json";
-import jewelryDesigns from "@/data/designs/jewelry.json";
-import royalDesigns from "@/data/designs/royal.json";
-import fullHandDesigns from "@/data/designs/full-hand.json";
-import backHandDesigns from "@/data/designs/back-hand.json";
-import frontHandDesigns from "@/data/designs/front-hand.json";
-import fingerDesigns from "@/data/designs/finger.json";
-import footDesigns from "@/data/designs/foot.json";
-import eidDesigns from "@/data/designs/eid.json";
-import kidsDesigns from "@/data/designs/kids.json";
+import { allDesigns } from "@/data/index";
 
 const BASE_URL = "https://www.mehndidesignhenna.com";
 
-const allDesignEntries: { slug: string; image?: string }[] = [
-  arabicDesigns, indianDesigns, pakistaniDesigns, moroccanDesigns,
-  gulfDesigns, africanDesigns, turkishDesigns, rajasthaniDesigns,
-  indonesianDesigns, bridalDesigns, simpleDesigns, modernDesigns,
-  traditionalDesigns, minimalDesigns, floralDesigns, mandalaDesigns,
-  geometricDesigns, jewelryDesigns, royalDesigns, fullHandDesigns,
-  backHandDesigns, frontHandDesigns, fingerDesigns, footDesigns,
-  eidDesigns, kidsDesigns,
-].flat().map((d: any) => ({ slug: d.slug, image: d.image?.src }));
+// A real, meaningful "last updated" anchor — update this when you do a major content refresh.
+// Using a hardcoded date (not build-time `new Date()`) avoids Google learning to ignore it.
+const SITE_LAST_UPDATED = new Date("2026-06-26");
 
 const occasionSlugs = [
   "wedding", "eid", "karva-chauth", "diwali",
@@ -53,68 +21,126 @@ const bodyPartSlugs = [
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date(); // Use build-time generation timestamp for fresh indexing
+  // --- Static / evergreen pages ---
+  const staticRoutes: MetadataRoute.Sitemap = [
+    {
+      url: `${BASE_URL}`,
+      lastModified: SITE_LAST_UPDATED,
+      changeFrequency: "daily",
+      priority: 1.0,
+    },
+    {
+      url: `${BASE_URL}/mehndi-designs`,
+      lastModified: SITE_LAST_UPDATED,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
+      url: `${BASE_URL}/gallery`,
+      lastModified: SITE_LAST_UPDATED,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${BASE_URL}/blog`,
+      lastModified: SITE_LAST_UPDATED,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: `${BASE_URL}/tools`,
+      lastModified: SITE_LAST_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${BASE_URL}/styles`,
+      lastModified: SITE_LAST_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.75,
+    },
+    {
+      url: `${BASE_URL}/about`,
+      lastModified: SITE_LAST_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.5,
+    },
+    {
+      url: `${BASE_URL}/contact`,
+      lastModified: SITE_LAST_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.4,
+    },
+    {
+      url: `${BASE_URL}/privacy-policy`,
+      lastModified: SITE_LAST_UPDATED,
+      changeFrequency: "yearly",
+      priority: 0.2,
+    },
+    {
+      url: `${BASE_URL}/disclaimer`,
+      lastModified: SITE_LAST_UPDATED,
+      changeFrequency: "yearly",
+      priority: 0.2,
+    },
+  ];
 
-  const staticRoutes = [
-    "", "/about", "/blog", "/gallery", "/styles", "/tools",
-    "/mehndi-designs", "/sitemap-html",
-    "/privacy-policy", "/disclaimer", "/contact",
-  ].map((route) => ({
-    url: `${BASE_URL}${route}`,
-    lastModified: now,
-    changeFrequency: (route === "" ? "daily" : "weekly") as "daily" | "weekly",
-    priority: route === "" ? 1.0 : 0.8,
-  }));
-
-  const categoryRoutes = categories.map((c) => ({
+  // --- Category pages (high SEO value, priority 0.9) ---
+  const categoryRoutes: MetadataRoute.Sitemap = categories.map((c) => ({
     url: `${BASE_URL}/mehndi-designs/${c.slug}`,
-    lastModified: now,
+    lastModified: SITE_LAST_UPDATED,
     changeFrequency: "weekly" as const,
     priority: 0.9,
   }));
 
-  const occasionRoutes = occasionSlugs.map((slug) => ({
+  // --- Occasion pages ---
+  const occasionRoutes: MetadataRoute.Sitemap = occasionSlugs.map((slug) => ({
     url: `${BASE_URL}/occasions/${slug}`,
-    lastModified: now,
+    lastModified: SITE_LAST_UPDATED,
     changeFrequency: "weekly" as const,
     priority: 0.8,
   }));
 
-  const bodyPartRoutes = bodyPartSlugs.map((slug) => ({
+  // --- Body part pages ---
+  const bodyPartRoutes: MetadataRoute.Sitemap = bodyPartSlugs.map((slug) => ({
     url: `${BASE_URL}/body/${slug}`,
-    lastModified: now,
+    lastModified: SITE_LAST_UPDATED,
     changeFrequency: "weekly" as const,
     priority: 0.8,
   }));
 
-  const blogRoutes = blogs.map((blog) => ({
+  // --- Blog posts — use REAL publish date for accurate lastModified ---
+  const blogRoutes: MetadataRoute.Sitemap = blogs.map((blog) => ({
     url: `${BASE_URL}/blog/${blog.slug}`,
-    lastModified: now,
+    lastModified: new Date(blog.date),
     changeFrequency: "monthly" as const,
-    priority: 0.6,
+    priority: 0.7,
     ...(blog.imageUrl ? { images: [`${BASE_URL}${blog.imageUrl}`] } : {}),
   }));
 
-  const styleRoutes = countries.map((country) => ({
+  // --- Style (country) pages ---
+  const styleRoutes: MetadataRoute.Sitemap = countries.map((country) => ({
     url: `${BASE_URL}/styles/${country.id}`,
-    lastModified: now,
+    lastModified: SITE_LAST_UPDATED,
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
 
-  const toolRoutes = mehndiTools.map((tool) => ({
+  // --- Tool pages ---
+  const toolRoutes: MetadataRoute.Sitemap = mehndiTools.map((tool) => ({
     url: `${BASE_URL}/tools/${tool.slug}`,
-    lastModified: now,
+    lastModified: SITE_LAST_UPDATED,
     changeFrequency: "monthly" as const,
-    priority: 0.9,
+    priority: 0.85,
   }));
 
-  const designRoutes = allDesignEntries.map(({ slug, image }) => ({
-    url: `${BASE_URL}/designs/${slug}`,
-    lastModified: now,
+  // --- Individual design detail pages (with image metadata for Google Images) ---
+  const designRoutes: MetadataRoute.Sitemap = allDesigns.map((design) => ({
+    url: `${BASE_URL}/designs/${design.slug}`,
+    lastModified: SITE_LAST_UPDATED,
     changeFrequency: "monthly" as const,
-    priority: 0.7,
-    ...(image ? { images: [`${BASE_URL}${image}`] } : {}),
+    priority: 0.75,
+    images: [`${BASE_URL}${design.image.src}`],
   }));
 
   return [
