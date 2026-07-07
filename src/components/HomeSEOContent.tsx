@@ -31,7 +31,7 @@ export default function HomeSEOContent() {
 
         <h2 id="bridal">Bridal Mehndi Traditions</h2>
         <p>
-          In many South Asian and Middle Eastern cultures, the Mehndi ceremony is a cornerstone of wedding festivities. It is an event filled with music, dancing, and the coming together of families. The bride's hands and feet are adorned with elaborate patterns that often take hours to apply. Hidden within these complex grids and floral motifs are the initials of the groom, a playful tradition that the groom must find on the wedding night.
+          In many South Asian and Middle Eastern cultures, the Mehndi ceremony is a cornerstone of wedding festivities. It is an event filled with music, dancing, and the coming together of families. The bride&apos;s hands and feet are adorned with elaborate patterns that often take hours to apply. Hidden within these complex grids and floral motifs are the initials of the groom, a playful tradition that the groom must find on the wedding night.
         </p>
 
         <h2 id="styles">Popular Henna Styles Around the World</h2>
@@ -66,13 +66,13 @@ export default function HomeSEOContent() {
         
         <h2 id="aftercare">The Secret to the Darkest Stain: Aftercare</h2>
         <p>
-          The most frequently asked question by henna enthusiasts is: "How do I get my mehndi dark?" The secret lies almost entirely in the aftercare. Natural henna is a slow dye. When the paste is removed, the stain will be bright orange. Over the next 48 hours, it will oxidize and darken to a rich mahogany or coffee brown.
+          The most frequently asked question by henna enthusiasts is: &quot;How do I get my mehndi dark?&quot; The secret lies almost entirely in the aftercare. Natural henna is a slow dye. When the paste is removed, the stain will be bright orange. Over the next 48 hours, it will oxidize and darken to a rich mahogany or coffee brown.
         </p>
         <ol>
           <li><strong>Leave the paste on:</strong> The longer the paste sits on your skin, the better. Aim for a minimum of 4-6 hours, or ideally overnight.</li>
           <li><strong>Seal it:</strong> Dab a mixture of lemon juice and sugar onto the dried henna. This keeps it moist and stuck to your skin.</li>
           <li><strong>Stay warm:</strong> Henna thrives in heat. Keeping your hands warm (safely using a heating pad or drinking hot tea) will encourage a darker stain.</li>
-          <li><strong>Avoid water:</strong> When it's time to remove the paste, gently scrape it off. Do NOT wash it with water for the first 12-24 hours.</li>
+          <li><strong>Avoid water:</strong> When it&apos;s time to remove the paste, gently scrape it off. Do NOT wash it with water for the first 12-24 hours.</li>
           <li><strong>Moisturize:</strong> Protect the stain from water and friction by applying a natural oil or lip balm over it before showering.</li>
         </ol>
 
@@ -91,7 +91,7 @@ export default function HomeSEOContent() {
 
         <h2 id="safety">A Critical Note on Safety: The Dangers of Black Henna</h2>
         <p>
-          While natural henna is incredibly safe and actually beneficial for the skin, you must be hyper-vigilant against "Black Henna". Natural henna is NEVER black. Black henna contains a toxic chemical called PPD (paraphenylenediamine), which is intended for hair dye, not skin. Applying PPD to the skin can cause severe, lifelong allergic reactions, chemical burns, and permanent scarring. Always ask your artist about their ingredients. Natural henna should smell earthy, like essential oils (eucalyptus, lavender, tea tree), and should only produce a red/brown stain.
+          While natural henna is incredibly safe and actually beneficial for the skin, you must be hyper-vigilant against &quot;Black Henna&quot;. Natural henna is NEVER black. Black henna contains a toxic chemical called PPD (paraphenylenediamine), which is intended for hair dye, not skin. Applying PPD to the skin can cause severe, lifelong allergic reactions, chemical burns, and permanent scarring. Always ask your artist about their ingredients. Natural henna should smell earthy, like essential oils (eucalyptus, lavender, tea tree), and should only produce a red/brown stain.
         </p>
 
         <h2 id="find-artist">Finding a Henna Artist Near You</h2>
@@ -111,7 +111,7 @@ export default function HomeSEOContent() {
 
         <h2 id="hair-brows">Beyond Skin: Henna for Hair and Brows</h2>
         <p>
-          The same plant behind mehndi art is also a natural colorant. Henna hair dye coats each strand in a protective layer, leaving a rich auburn henna hair color that deepens with every application — mix henna powder for hair with warm water, rest the paste for dye release, and apply for two to four hours. Unlike chemical dyes, henna for hair conditions as it colors. In the beauty world, henna eyebrows and henna eyebrow tint services stain both the brow hairs and the skin beneath, giving fuller-looking brows for up to six weeks. Always patch-test first, and never use "black henna" products containing PPD on hair or skin.
+          The same plant behind mehndi art is also a natural colorant. Henna hair dye coats each strand in a protective layer, leaving a rich auburn henna hair color that deepens with every application — mix henna powder for hair with warm water, rest the paste for dye release, and apply for two to four hours. Unlike chemical dyes, henna for hair conditions as it colors. In the beauty world, henna eyebrows and henna eyebrow tint services stain both the brow hairs and the skin beneath, giving fuller-looking brows for up to six weeks. Always patch-test first, and never use &quot;black henna&quot; products containing PPD on hair or skin.
         </p>
 
         <h2 id="henna-tattoos">Henna Tattoos: Temporary Art, Real Answers</h2>
