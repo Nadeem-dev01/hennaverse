@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 // Accept designs from both static data and API hook
 interface DesignType {
@@ -45,6 +46,8 @@ export default function DesignCard({ design, index = 0, onClick }: DesignCardPro
   const gradient = gradients[index % gradients.length];
   const [imgError, setImgError] = useState(false);
   const hasRealImage = !!design.imageUrl;
+  const slug = design.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  const designUrl = `/designs/${slug}`;
 
   return (
     <motion.div
@@ -55,9 +58,19 @@ export default function DesignCard({ design, index = 0, onClick }: DesignCardPro
       transition={{ duration: 0.4, delay: (index % 12) * 0.05 }}
       whileHover={{ y: -4, scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
-      onClick={onClick}
-      className="group relative bg-surface rounded-xl border border-border overflow-hidden cursor-pointer transition-all hover:border-gold/40 hover:shadow-lg hover:shadow-gold/5"
+      className="group relative bg-surface rounded-xl border border-border overflow-hidden transition-all hover:border-gold/40 hover:shadow-lg hover:shadow-gold/5"
     >
+      <Link 
+        href={designUrl}
+        onClick={(e) => {
+          if (onClick) {
+            if (e.ctrlKey || e.metaKey || e.button !== 0) return;
+            e.preventDefault();
+            onClick();
+          }
+        }}
+        className="block cursor-pointer h-full"
+      >
       {/* Image area */}
       <div
         className={`relative aspect-[4/3] bg-gradient-to-br ${gradient} overflow-hidden`}
@@ -202,6 +215,7 @@ export default function DesignCard({ design, index = 0, onClick }: DesignCardPro
           )}
         </div>
       </div>
+      </Link>
     </motion.div>
   );
 }
