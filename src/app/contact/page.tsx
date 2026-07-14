@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import SectionHeading from "@/components/SectionHeading";
 import { Mail, MapPin, Phone } from "lucide-react";
+import ContactForm from "@/components/ContactForm";
 
 const BASE_URL = "https://www.mehndidesignhenna.com";
 
@@ -104,75 +105,7 @@ export default function ContactPage() {
         </div>
 
         {/* Contact Form */}
-        <div className="bg-surface p-8 rounded-2xl border border-border">
-          <form className="space-y-6">
-            <div>
-              <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
-                Your Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                className="w-full bg-background border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-purple focus:border-transparent transition-all"
-                placeholder="John Doe"
-                required
-              />
-            </div>
-            
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
-                Email Address
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                className="w-full bg-background border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-purple focus:border-transparent transition-all"
-                placeholder="john@example.com"
-                required
-              />
-            </div>
-
-            <div>
-              <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-2">
-                Subject
-              </label>
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                className="w-full bg-background border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-purple focus:border-transparent transition-all"
-                placeholder="How can we help?"
-                required
-              />
-            </div>
-
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                rows={5}
-                className="w-full bg-background border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-purple focus:border-transparent transition-all resize-none"
-                placeholder="Write your message here..."
-                required
-              ></textarea>
-            </div>
-
-            <button
-              type="button"
-              className="w-full bg-gold hover:bg-gold-light text-black font-semibold py-3 px-6 rounded-lg transition-colors"
-            >
-              Send Message
-            </button>
-            <p className="text-xs text-muted text-center mt-4">
-              By submitting this form, you agree to our Privacy Policy.
-            </p>
-          </form>
-        </div>
+        <ContactForm />
       </div>
     </div>
     </>

@@ -63,7 +63,7 @@ const values = [
 ];
 
 const stats = [
-  { value: "100+", label: "Curated Designs" },
+  { value: "5000+", label: "Curated Designs" },
   { value: "8", label: "Cultural Traditions" },
   { value: "15+", label: "Blog Articles" },
   { value: "∞", label: "Inspiration" },
@@ -74,7 +74,7 @@ const offerings = [
     Icon: Palette,
     title: "Design Gallery",
     description:
-      "Browse 100+ mehndi designs spanning 8 global traditions. Filter by country, style, difficulty, and occasion to find your perfect pattern.",
+      "Browse 5000+ mehndi designs spanning 8 global traditions. Filter by country, style, difficulty, and occasion to find your perfect pattern.",
     href: "/gallery",
     linkText: "Explore Gallery",
   },

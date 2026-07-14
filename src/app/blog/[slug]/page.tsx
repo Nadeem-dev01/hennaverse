@@ -70,7 +70,7 @@ export default async function Page(props: { params: Promise<{ slug: string }> })
       url: BASE_URL,
     },
     datePublished: new Date(blog.date).toISOString(),
-    dateModified: new Date().toISOString(),
+    dateModified: new Date(blog.date).toISOString(),
     publisher: {
       "@type": "Organization",
       name: "Mehndi Design Henna",

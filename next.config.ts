@@ -66,6 +66,11 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // 404 spam and old blog redirects
+      { source: "/:path*.html", destination: "/", permanent: true },
+      { source: "/blog/eid-mehndi-design-:id", destination: "/mehndi-designs/eid", permanent: true },
+      { source: "/blog/bridal-mehndi-design-:id", destination: "/mehndi-designs/bridal", permanent: true },
+      { source: "/blog/karva-chauth-mehndi-inspiration", destination: "/occasions/karva-chauth", permanent: true },
       // Legacy hardcoded page routes
       { source: "/arabic-mehndi", destination: "/mehndi-designs/arabic", permanent: true },
       { source: "/pakistani-mehndi", destination: "/mehndi-designs/pakistani", permanent: true },

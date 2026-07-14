@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import Logo from "@/components/Logo";
 
@@ -71,6 +72,17 @@ function TikTokIcon({ size = 20 }: { size?: number }) {
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const [email, setEmail] = useState("");
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleSubscribe = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (email) {
+      setIsSubmitted(true);
+      setEmail("");
+      setTimeout(() => setIsSubmitted(false), 5000);
+    }
+  };
 
   return (
     <footer className="relative bg-surface">
@@ -191,25 +203,37 @@ export default function Footer() {
             <h3 className="font-serif text-lg font-semibold text-foreground mb-4">
               Newsletter
             </h3>
-            <p className="text-muted text-sm mb-4">
-              Get weekly design inspiration and henna tips delivered to your inbox.
-            </p>
-            <form
-              onSubmit={(e) => e.preventDefault()}
-              className="flex flex-col gap-3"
-            >
-              <input
-                type="email"
-                placeholder="your@email.com"
-                className="bg-background border border-border rounded-lg px-4 py-2.5 text-sm text-foreground placeholder:text-muted focus:border-gold focus:outline-none transition-colors"
-              />
-              <button
-                type="submit"
-                className="bg-gold text-background font-medium text-sm py-2.5 rounded-lg hover:bg-gold-light transition-colors"
-              >
-                Subscribe
-              </button>
-            </form>
+            {isSubmitted ? (
+              <div className="bg-gold/10 border border-gold/20 rounded-xl p-4 text-center">
+                <p className="text-gold text-sm font-semibold">✨ Subscribed Successfully!</p>
+                <p className="text-muted text-xs mt-1">Check your inbox for updates soon.</p>
+              </div>
+            ) : (
+              <>
+                <p className="text-muted text-sm mb-4">
+                  Get weekly design inspiration and henna tips delivered to your inbox.
+                </p>
+                <form
+                  onSubmit={handleSubscribe}
+                  className="flex flex-col gap-3"
+                >
+                  <input
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="your@email.com"
+                    required
+                    className="bg-background border border-border rounded-lg px-4 py-2.5 text-sm text-foreground placeholder:text-muted focus:border-gold focus:outline-none transition-colors"
+                  />
+                  <button
+                    type="submit"
+                    className="bg-gold text-background font-medium text-sm py-2.5 rounded-lg hover:bg-gold-light transition-colors"
+                  >
+                    Subscribe
+                  </button>
+                </form>
+              </>
+            )}
           </div>
         </div>
       </div>

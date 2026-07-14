@@ -83,6 +83,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.2,
     },
+    {
+      url: `${BASE_URL}/sitemap-html`,
+      lastModified: SITE_LAST_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.3,
+    },
+    {
+      url: `${BASE_URL}/try-on`,
+      lastModified: SITE_LAST_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${BASE_URL}/tools/design-finder`,
+      lastModified: SITE_LAST_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
   ];
 
   // --- Category pages (high SEO value, priority 0.9) ---

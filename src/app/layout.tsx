@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
 import ThirdPartyScripts from "@/components/ThirdPartyScripts";
+import ChatbotWidget from "@/components/ChatbotWidget";
 
 export const viewport: Viewport = {
   themeColor: "#7c3aed",
@@ -143,6 +144,7 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <Footer />
         <CookieBanner />
+        <ChatbotWidget />
       </body>
     </html>
   );

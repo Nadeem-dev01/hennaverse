@@ -30,5 +30,43 @@ export const metadata: Metadata = {
 };
 
 export default function DesignFinderPage() {
-  return <DesignFinderClient />;
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "inLanguage": "en",
+    "itemListElement": [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.mehndidesignhenna.com" },
+      { "@type": "ListItem", position: 2, name: "Tools", item: "https://www.mehndidesignhenna.com/tools" },
+      { "@type": "ListItem", position: 3, name: "AI Mehndi Design Finder", item: "https://www.mehndidesignhenna.com/tools/design-finder" }
+    ],
+  };
+
+  const softwareApplicationJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "inLanguage": "en",
+    "name": "AI Mehndi Design Finder",
+    "operatingSystem": "All",
+    "applicationCategory": "DesignApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "description": "Upload a photo of your hand or foot, and our AI-powered Design Finder will analyze the shape and suggest the perfect mehndi designs."
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareApplicationJsonLd) }}
+      />
+      <DesignFinderClient />
+    </>
+  );
 }
