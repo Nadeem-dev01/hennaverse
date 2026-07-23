@@ -44,22 +44,6 @@ export const metadata: Metadata = {
   },
   description:
     "Mehndi Design Henna: 5000+ easy mehndi designs, mehndi patterns for hands, simple arabic mehndi, bridal henna, and eid patterns. Free henna kits, cones & artist guides.",
-  keywords: [
-    "mehndi design henna",
-    "mehndi henna",
-    "easy mehndi designs",
-    "mehndi patterns for hands",
-    "simple mehndi designs for hands",
-    "henna tattoo near me",
-    "henna artist near me",
-    "easy arabic mehndi design",
-    "back hand mehndi design",
-    "eid henna patterns",
-    "bridal mehndi designs",
-    "henna cones",
-    "henna kit",
-    "henna stencils",
-  ],
   openGraph: {
     title: "Mehndi Design Henna — 5000+ Easy Mehndi Designs & Henna Patterns",
     description: "5000+ easy mehndi designs, mehndi patterns for hands, and henna tattoo ideas for every occasion.",

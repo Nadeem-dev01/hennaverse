@@ -5,20 +5,6 @@ export const metadata: Metadata = {
   title: "Virtual Mehndi Try-On Tool | See Henna on Your Hand",
   description:
     "Upload a photo of your hand and try on 100+ beautiful mehndi designs instantly. Adjust, rotate, and preview henna art on your own skin tone before booking an artist.",
-  keywords: [
-    "virtual mehndi try on",
-    "henna try on tool",
-    "hand henna",
-    "henna hand tattoo",
-    "mehndi patterns for hands",
-    "mehndi designs on hands",
-    "henna stencils",
-    "mehndi stencils",
-    "easy mehndi designs",
-    "henna and tattoos",
-    "henna tattoo ideas",
-    "mehndi design photoshoot",
-  ],
   alternates: {
     canonical: "https://www.mehndidesignhenna.com/try-on",
   },
@@ -49,11 +35,28 @@ export default function TryOnPage() {
     ],
   };
 
+  const softwareAppJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Virtual Mehndi Try-On Tool",
+    "operatingSystem": "Web",
+    "applicationCategory": "LifestyleApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareAppJsonLd) }}
       />
       <TryOnClient />
     </>
