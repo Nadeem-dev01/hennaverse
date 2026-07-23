@@ -18,9 +18,9 @@ import { allDesigns } from "@/data/index";
 const BASE_URL = "https://www.mehndidesignhenna.com";
 
 export const metadata: Metadata = {
-  title: "Mehndi Design Henna — 5000+ Easy Mehndi Designs & Patterns for Hands (2026)",
+  title: "5000+ Easy Mehndi Designs for Hands (2026) | Mehndi Henna",
   description:
-    "Mehndi Design Henna: Browse 5000+ easy mehndi designs and mehndi patterns for hands — simple, arabic, bridal, back hand, and eid henna patterns. Plus guides on henna cones, kits, and artists near you.",
+    "Browse 5000+ easy mehndi designs for hands — simple, arabic, bridal, and eid henna patterns. Use our Virtual Try-On tool & find free henna guides!",
   alternates: {
     canonical: "/",
   },
@@ -63,11 +63,38 @@ export default function Home() {
     })
   );
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How long does henna last?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Henna typically lasts between 1 to 3 weeks depending on the quality of the paste, skin type, and how well it is cared for."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I make my mehndi darker?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Leave the paste on for at least 4-6 hours, apply a lemon-sugar mixture to keep it moist, and avoid washing with water for the first 12-24 hours."
+        }
+      }
+    ]
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <HeroSection />
 

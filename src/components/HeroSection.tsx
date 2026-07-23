@@ -13,7 +13,7 @@ export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Animated gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-purple-dark/20 to-background animate-gradient" />
+      <div className="absolute inset-0 bg-gradient-to-br from-background via-purple-dark/20 to-background md:animate-gradient" />
 
       {/* Gold shimmer overlay */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(201,168,76,0.08)_0%,transparent_50%)]" />
@@ -26,15 +26,15 @@ export default function HeroSection() {
 
       {/* Floating dots — CSS-only animations (compositor-thread, no JS overhead) */}
       <div
-        className="absolute top-1/4 left-1/4 w-2 h-2 rounded-full bg-gold/30 animate-float"
+        className="hidden md:block absolute top-1/4 left-1/4 w-2 h-2 rounded-full bg-gold/30 animate-float"
         style={{ animationDuration: '6s' }}
       />
       <div
-        className="absolute top-1/3 right-1/3 w-3 h-3 rounded-full bg-purple/20 animate-float"
+        className="hidden md:block absolute top-1/3 right-1/3 w-3 h-3 rounded-full bg-purple/20 animate-float"
         style={{ animationDuration: '5s', animationDelay: '1s' }}
       />
       <div
-        className="absolute bottom-1/3 left-1/3 w-2 h-2 rounded-full bg-gold-light/20 animate-float"
+        className="hidden md:block absolute bottom-1/3 left-1/3 w-2 h-2 rounded-full bg-gold-light/20 animate-float"
         style={{ animationDuration: '7s', animationDelay: '2s' }}
       />
 
