@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Upload, Camera, Download, RotateCw, Move, ZoomIn, SlidersHorizontal, Image as ImageIcon } from "lucide-react";
 import { designs } from "@/data/designs";
+import Image from "next/image";
 
 export default function TryOnClient() {
   const [handImage, setHandImage] = useState<string | null>(null);
@@ -260,9 +261,11 @@ export default function TryOnClient() {
                         selectedDesign === design.imageUrl ? 'border-gold scale-95 shadow-lg shadow-gold/20' : 'border-border hover:border-gold/50'
                       }`}
                     >
-                      <img 
+                      <Image 
                         src={design.imageUrl} 
                         alt={design.title} 
+                        fill
+                        sizes="200px"
                         className="w-full h-full object-contain p-2"
                       />
                       {selectedDesign === design.imageUrl && (

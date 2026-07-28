@@ -3,9 +3,11 @@
 import { useEffect, useState } from "react";
 import { use } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { blogs } from "@/data/blogs";
 import { designs } from "@/data/designs";
 import BlogCard from "@/components/BlogCard";
+import TableOfContents from "@/components/TableOfContents";
 import { motion } from "framer-motion";
 import {
   ArrowLeft,
@@ -165,15 +167,19 @@ export default function BlogClient({
                   className="aspect-[4/5] bg-surface rounded-2xl relative overflow-hidden group shadow-lg shadow-black/20"
                 >
                   {blog.imageUrl ? (
-                    <img
+                    <Image
                       src={blog.imageUrl}
                       alt={blog.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
                       className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                   ) : (
-                    <img
+                    <Image
                       src={galleryImages[0]}
                       alt={blog.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
                       className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                   )}
@@ -218,7 +224,7 @@ export default function BlogClient({
                       transition={{ delay: 0.3 + (idx * 0.1), duration: 0.5 }}
                       className="aspect-square rounded-xl overflow-hidden shadow-md shadow-black/10 group relative"
                     >
-                      <img src={img} alt="Mehndi inspiration" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                      <Image src={img} alt="Mehndi inspiration" fill sizes="(max-width: 768px) 50vw, 25vw" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                       
                       {/* Action buttons on hover */}
                       <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-2 z-10">
@@ -255,6 +261,8 @@ export default function BlogClient({
                     View Full Gallery
                   </Link>
                 </div>
+
+                <TableOfContents />
               </div>
             </div>
 

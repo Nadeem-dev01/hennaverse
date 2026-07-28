@@ -105,6 +105,11 @@ export default function RootLayout({
                     height: 255,
                   },
                   description: "5000+ easy mehndi designs and henna patterns from India, Pakistan, Arabia, Morocco and beyond.",
+                  sameAs: [
+                    "https://www.pinterest.com/mehndidesignhenna",
+                    "https://www.instagram.com/mehndidesignhenna",
+                    "https://www.facebook.com/mehndidesignhenna"
+                  ]
                 },
                 {
                   "@type": "WebSite",
