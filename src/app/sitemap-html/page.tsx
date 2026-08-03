@@ -122,7 +122,7 @@ export default function HTMLSitemap() {
           <section>
             <h2 className="text-xl font-serif text-gold mb-4">All Designs ({allDesigns.length})</h2>
             <ul className="grid grid-cols-2 sm:grid-cols-3 gap-1 text-sm">
-              {allDesigns.slice(0, 500).map((d) => (
+              {allDesigns.map((d) => (
                 <li key={d.slug}>
                   <Link href={`/designs/${d.slug}`} className="text-muted hover:text-gold transition-colors truncate block">
                     {d.title}
@@ -130,9 +130,6 @@ export default function HTMLSitemap() {
                 </li>
               ))}
             </ul>
-            {allDesigns.length > 500 && (
-              <p className="text-muted text-sm mt-4">And {allDesigns.length - 500} more designs...</p>
-            )}
           </section>
         )}
       </div>

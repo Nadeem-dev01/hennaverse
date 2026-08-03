@@ -126,9 +126,8 @@ export default function Navbar() {
         animate={{ y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          isScrolled ? "shadow-md shadow-black/5" : "backdrop-blur-sm border-b border-gray-200/50"
-        }`}
-        style={{ backgroundColor: "#FCF2E5" }}
+          isScrolled ? "shadow-md shadow-black/40" : "backdrop-blur-sm border-b border-border"
+        } bg-surface`}
       >
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" ref={navRef}>
           <div className="flex items-center justify-between h-16 md:h-20">
@@ -139,7 +138,7 @@ export default function Navbar() {
             {/* Desktop Nav */}
             <div className="hidden lg:flex items-center gap-1 flex-1 justify-center">
               {/* Home */}
-              <Link href="/" className={`px-3 py-2 text-sm font-medium tracking-wide uppercase transition-colors rounded-lg ${pathname === "/" ? "text-gold font-bold" : "text-slate-600 hover:text-black hover:bg-gray-100/60"}`}>
+              <Link href="/" className={`px-3 py-2 text-sm font-medium tracking-wide uppercase transition-colors rounded-lg ${pathname === "/" ? "text-gold font-bold" : "text-muted hover:text-foreground hover:bg-background/80"}`}>
                 Home
               </Link>
 
@@ -148,7 +147,7 @@ export default function Navbar() {
                 <button
                   onClick={() => toggleDropdown("designs")}
                   className={`flex items-center gap-1 px-3 py-2 text-sm font-medium tracking-wide uppercase transition-colors rounded-lg ${
-                    isActive("/mehndi-designs") || isActive("/designs") ? "text-gold font-bold" : "text-slate-600 hover:text-black hover:bg-gray-100/60"
+                    isActive("/mehndi-designs") || isActive("/designs") ? "text-gold font-bold" : "text-muted hover:text-foreground hover:bg-background/80"
                   }`}
                 >
                   Designs
@@ -161,11 +160,10 @@ export default function Navbar() {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 8 }}
                       transition={{ duration: 0.15 }}
-                      className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[720px] border border-gray-100 rounded-2xl shadow-2xl shadow-black/10 overflow-hidden z-50 p-5"
-                      style={{ backgroundColor: "#FCF2E5" }}
+                      className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[720px] border border-border rounded-2xl shadow-2xl shadow-black/40 overflow-hidden z-50 p-5 bg-surface"
                     >
-                      <div className="flex items-center justify-between mb-4 pb-3 border-b border-gray-200/60">
-                        <h3 className="font-serif text-lg font-bold text-slate-900">Mehndi Design Categories</h3>
+                      <div className="flex items-center justify-between mb-4 pb-3 border-b border-border">
+                        <h3 className="font-serif text-lg font-bold text-foreground">Mehndi Design Categories</h3>
                         <Link href="/mehndi-designs" className="text-xs font-medium text-gold hover:underline" onClick={() => setActiveDropdown(null)}>
                           View All 26 Categories →
                         </Link>
@@ -178,9 +176,9 @@ export default function Navbar() {
                               key={item.href}
                               href={item.href}
                               onClick={() => setActiveDropdown(null)}
-                              className="flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-sm text-slate-600 hover:bg-gold/10 hover:text-gold transition-all group"
+                              className="flex items-center gap-2.5 px-3 py-3 rounded-xl text-sm text-muted hover:bg-gold/10 hover:text-gold transition-all group"
                             >
-                              <Icon size={16} className="text-slate-400 group-hover:text-gold transition-colors shrink-0" />
+                              <Icon size={16} className="text-muted group-hover:text-gold transition-colors shrink-0" />
                               {item.label}
                             </Link>
                           );
@@ -196,7 +194,7 @@ export default function Navbar() {
                 <button
                   onClick={() => toggleDropdown("occasions")}
                   className={`flex items-center gap-1 px-3 py-2 text-sm font-medium tracking-wide uppercase transition-colors rounded-lg ${
-                    isActive("/occasions") ? "text-gold font-bold" : "text-slate-600 hover:text-black hover:bg-gray-100/60"
+                    isActive("/occasions") ? "text-gold font-bold" : "text-muted hover:text-foreground hover:bg-background/80"
                   }`}
                 >
                   Occasions
@@ -209,10 +207,9 @@ export default function Navbar() {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 8 }}
                       transition={{ duration: 0.15 }}
-                      className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[320px] border border-gray-100 rounded-2xl shadow-2xl shadow-black/10 overflow-hidden z-50 p-4"
-                      style={{ backgroundColor: "#FCF2E5" }}
+                      className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[320px] border border-border rounded-2xl shadow-2xl shadow-black/40 overflow-hidden z-50 p-4 bg-surface"
                     >
-                      <h3 className="font-serif text-sm font-bold text-slate-900 mb-3 px-2">By Occasion</h3>
+                      <h3 className="font-serif text-sm font-bold text-foreground mb-3 px-2">By Occasion</h3>
                       <div className="grid grid-cols-2 gap-1">
                         {occasionItems.map((item) => {
                           const Icon = item.icon;
@@ -221,9 +218,9 @@ export default function Navbar() {
                               key={item.href}
                               href={item.href}
                               onClick={() => setActiveDropdown(null)}
-                              className="flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-sm text-slate-600 hover:bg-gold/10 hover:text-gold transition-all group"
+                              className="flex items-center gap-2.5 px-3 py-3 rounded-xl text-sm text-muted hover:bg-gold/10 hover:text-gold transition-all group"
                             >
-                              <Icon size={15} className="text-slate-400 group-hover:text-gold transition-colors shrink-0" />
+                              <Icon size={15} className="text-muted group-hover:text-gold transition-colors shrink-0" />
                               {item.label}
                             </Link>
                           );
@@ -239,7 +236,7 @@ export default function Navbar() {
                 <button
                   onClick={() => toggleDropdown("body")}
                   className={`flex items-center gap-1 px-3 py-2 text-sm font-medium tracking-wide uppercase transition-colors rounded-lg ${
-                    isActive("/body") ? "text-gold font-bold" : "text-slate-600 hover:text-black hover:bg-gray-100/60"
+                    isActive("/body") ? "text-gold font-bold" : "text-muted hover:text-foreground hover:bg-background/80"
                   }`}
                 >
                   Body Part
@@ -252,10 +249,9 @@ export default function Navbar() {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 8 }}
                       transition={{ duration: 0.15 }}
-                      className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[260px] border border-gray-100 rounded-2xl shadow-2xl shadow-black/10 overflow-hidden z-50 p-4"
-                      style={{ backgroundColor: "#FCF2E5" }}
+                      className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[260px] border border-border rounded-2xl shadow-2xl shadow-black/40 overflow-hidden z-50 p-4 bg-surface"
                     >
-                      <h3 className="font-serif text-sm font-bold text-slate-900 mb-3 px-2">By Placement</h3>
+                      <h3 className="font-serif text-sm font-bold text-foreground mb-3 px-2">By Placement</h3>
                       {bodyPartItems.map((item) => {
                         const Icon = item.icon;
                         return (
@@ -263,9 +259,9 @@ export default function Navbar() {
                             key={item.href}
                             href={item.href}
                             onClick={() => setActiveDropdown(null)}
-                            className="flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-sm text-slate-600 hover:bg-gold/10 hover:text-gold transition-all group"
+                            className="flex items-center gap-2.5 px-3 py-3 rounded-xl text-sm text-muted hover:bg-gold/10 hover:text-gold transition-all group"
                           >
-                            <Icon size={15} className="text-slate-400 group-hover:text-gold transition-colors shrink-0" />
+                            <Icon size={15} className="text-muted group-hover:text-gold transition-colors shrink-0" />
                             {item.label}
                           </Link>
                         );
@@ -276,12 +272,12 @@ export default function Navbar() {
               </div>
 
               {/* Styles */}
-              <Link href="/styles" className={`px-3 py-2 text-sm font-medium tracking-wide uppercase transition-colors rounded-lg ${isActive("/styles") ? "text-gold font-bold" : "text-slate-600 hover:text-black hover:bg-gray-100/60"}`}>
+              <Link href="/styles" className={`px-3 py-2 text-sm font-medium tracking-wide uppercase transition-colors rounded-lg ${isActive("/styles") ? "text-gold font-bold" : "text-muted hover:text-foreground hover:bg-background/80"}`}>
                 Styles
               </Link>
 
               {/* Blog */}
-              <Link href="/blog" className={`px-3 py-2 text-sm font-medium tracking-wide uppercase transition-colors rounded-lg ${isActive("/blog") ? "text-gold font-bold" : "text-slate-600 hover:text-black hover:bg-gray-100/60"}`}>
+              <Link href="/blog" className={`px-3 py-2 text-sm font-medium tracking-wide uppercase transition-colors rounded-lg ${isActive("/blog") ? "text-gold font-bold" : "text-muted hover:text-foreground hover:bg-background/80"}`}>
                 Blog
               </Link>
 
@@ -290,7 +286,7 @@ export default function Navbar() {
                 <button
                   onClick={() => toggleDropdown("tools")}
                   className={`flex items-center gap-1 px-3 py-2 text-sm font-medium tracking-wide uppercase transition-colors rounded-lg ${
-                    isActive("/tools") ? "text-gold font-bold" : "text-slate-600 hover:text-black hover:bg-gray-100/60"
+                    isActive("/tools") ? "text-gold font-bold" : "text-muted hover:text-foreground hover:bg-background/80"
                   }`}
                 >
                   Tools
@@ -303,13 +299,12 @@ export default function Navbar() {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 8 }}
                       transition={{ duration: 0.15 }}
-                      className="absolute top-full right-0 mt-3 w-[80vw] max-w-5xl border border-gray-100 rounded-2xl shadow-2xl shadow-black/10 overflow-hidden z-50 p-6"
-                      style={{ backgroundColor: "#FCF2E5" }}
+                      className="absolute top-full right-0 mt-3 w-[80vw] max-w-5xl border border-border rounded-2xl shadow-2xl shadow-black/40 overflow-hidden z-50 p-6 bg-surface"
                     >
-                      <div className="flex justify-between items-center mb-5 pb-4 border-b border-gray-200/60">
+                      <div className="flex justify-between items-center mb-5 pb-4 border-b border-border">
                         <div>
-                          <h3 className="font-serif text-xl font-bold text-slate-900">Mehndi Design Tools</h3>
-                          <p className="text-sm text-slate-500 mt-1">100+ free generators, finders, and previews</p>
+                          <h3 className="font-serif text-xl font-bold text-foreground">Mehndi Design Tools</h3>
+                          <p className="text-sm text-muted mt-1">100+ free generators, finders, and previews</p>
                         </div>
                         <Link href="/tools" className="px-5 py-2 bg-gold/10 text-gold hover:bg-gold hover:text-white rounded-lg font-medium transition-colors text-sm" onClick={() => setActiveDropdown(null)}>
                           View All Tools
@@ -321,12 +316,12 @@ export default function Navbar() {
                           if (catTools.length === 0) return null;
                           return (
                             <div key={cat.id}>
-                              <h4 className="flex items-center gap-2 font-semibold text-slate-900 border-b border-gray-200/60 pb-2 mb-2 text-sm">
+                              <h4 className="flex items-center gap-2 font-semibold text-foreground border-b border-border pb-2 mb-2 text-sm">
                                 <span>{cat.emoji}</span>{cat.label}
                               </h4>
                               <div className="flex flex-col gap-1">
                                 {catTools.slice(0, 8).map((tool) => (
-                                  <Link key={tool.slug} href={`/tools/${tool.slug}`} className="text-sm text-slate-600 hover:text-gold hover:translate-x-0.5 transition-all py-1" onClick={() => setActiveDropdown(null)}>
+                                  <Link key={tool.slug} href={`/tools/${tool.slug}`} className="text-sm text-muted hover:text-gold hover:translate-x-0.5 transition-all py-1" onClick={() => setActiveDropdown(null)}>
                                     <span className="opacity-60 mr-1.5 text-xs">{tool.emoji}</span>
                                     {tool.title.replace(/ Generator| Preview| Tool| Finder/g, "")}
                                   </Link>
@@ -355,14 +350,14 @@ export default function Navbar() {
                   placeholder="Search designs..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-48 xl:w-56 pl-10 pr-4 py-2 bg-gray-100/80 border border-transparent rounded-full text-sm focus:outline-none focus:bg-white focus:border-gold/50 focus:ring-2 focus:ring-gold/20 transition-all text-slate-700 placeholder-slate-400 group-hover:bg-gray-100"
+                  className="w-48 xl:w-56 pl-10 pr-4 py-2 bg-background/80 border border-transparent rounded-full text-sm focus:outline-none focus:bg-white focus:border-gold/50 focus:ring-2 focus:ring-gold/20 transition-all text-slate-700 placeholder-muted group-hover:bg-background"
                 />
-                <Search size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 group-hover:text-gold transition-colors" />
+                <Search size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-muted group-hover:text-gold transition-colors" />
               </form>
             </div>
 
             {/* Mobile menu button */}
-            <button onClick={() => setIsMobileOpen(!isMobileOpen)} className="lg:hidden text-slate-800 p-2 hover:text-gold transition-colors ml-4" aria-label="Toggle menu">
+            <button onClick={() => setIsMobileOpen(!isMobileOpen)} className="lg:hidden text-foreground p-2 hover:text-gold transition-colors ml-4" aria-label="Toggle menu">
               {isMobileOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
@@ -379,19 +374,18 @@ export default function Navbar() {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "spring", damping: 25, stiffness: 200 }}
-              className="fixed top-0 right-0 bottom-0 w-80 border-l border-gray-100 z-50 lg:hidden overflow-y-auto"
-              style={{ backgroundColor: "#FCF2E5" }}
+              className="fixed top-0 right-0 bottom-0 w-80 border-l border-border z-50 lg:hidden overflow-y-auto bg-surface"
             >
               <div className="flex flex-col h-full pt-20 px-5">
                 {/* Mobile Search */}
                 <form onSubmit={handleSearch} className="relative mb-5">
-                  <input type="text" placeholder="Search designs..." value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} className="w-full pl-10 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-gold/50 focus:ring-2 focus:ring-gold/20 transition-all text-slate-700 placeholder-slate-400" />
-                  <Search size={18} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400" />
+                  <input type="text" placeholder="Search designs..." value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} className="w-full pl-10 pr-4 py-4 bg-background border border-border rounded-xl text-sm focus:outline-none focus:border-gold/50 focus:ring-2 focus:ring-gold/20 transition-all text-slate-700 placeholder-muted" />
+                  <Search size={18} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-muted" />
                 </form>
 
                 {/* Home */}
-                <Link href="/" className={`flex items-center gap-3 py-3 px-4 rounded-xl text-base font-medium transition-all ${pathname === "/" ? "text-gold bg-gold/5" : "text-slate-600 hover:bg-gray-50"}`}>
-                  <Home size={18} className={pathname === "/" ? "text-gold" : "text-slate-400"} /> Home
+                <Link href="/" className={`flex items-center gap-3 py-4 px-4 rounded-xl text-base font-medium transition-all ${pathname === "/" ? "text-gold bg-gold/5" : "text-muted hover:bg-background"}`}>
+                  <Home size={18} className={pathname === "/" ? "text-gold" : "text-muted"} /> Home
                 </Link>
 
                 {/* Designs Accordion */}
@@ -406,8 +400,8 @@ export default function Navbar() {
                   {categoryItems.map((item) => {
                     const Icon = item.icon;
                     return (
-                      <Link key={item.href} href={item.href} className="flex items-center gap-2 py-2 px-3 text-sm text-slate-600 hover:text-gold transition-colors" onClick={() => setIsMobileOpen(false)}>
-                        <Icon size={14} className="text-slate-400" /> {item.label}
+                      <Link key={item.href} href={item.href} className="flex items-center gap-2 py-2 px-3 text-sm text-muted hover:text-gold transition-colors" onClick={() => setIsMobileOpen(false)}>
+                        <Icon size={14} className="text-muted" /> {item.label}
                       </Link>
                     );
                   })}
@@ -424,8 +418,8 @@ export default function Navbar() {
                   {occasionItems.map((item) => {
                     const Icon = item.icon;
                     return (
-                      <Link key={item.href} href={item.href} className="flex items-center gap-2 py-2 px-3 text-sm text-slate-600 hover:text-gold transition-colors" onClick={() => setIsMobileOpen(false)}>
-                        <Icon size={14} className="text-slate-400" /> {item.label}
+                      <Link key={item.href} href={item.href} className="flex items-center gap-2 py-2 px-3 text-sm text-muted hover:text-gold transition-colors" onClick={() => setIsMobileOpen(false)}>
+                        <Icon size={14} className="text-muted" /> {item.label}
                       </Link>
                     );
                   })}
@@ -442,21 +436,21 @@ export default function Navbar() {
                   {bodyPartItems.map((item) => {
                     const Icon = item.icon;
                     return (
-                      <Link key={item.href} href={item.href} className="flex items-center gap-2 py-2 px-3 text-sm text-slate-600 hover:text-gold transition-colors" onClick={() => setIsMobileOpen(false)}>
-                        <Icon size={14} className="text-slate-400" /> {item.label}
+                      <Link key={item.href} href={item.href} className="flex items-center gap-2 py-2 px-3 text-sm text-muted hover:text-gold transition-colors" onClick={() => setIsMobileOpen(false)}>
+                        <Icon size={14} className="text-muted" /> {item.label}
                       </Link>
                     );
                   })}
                 </MobileAccordion>
 
                 {/* Styles */}
-                <Link href="/styles" className={`flex items-center gap-3 py-3 px-4 rounded-xl text-base font-medium transition-all ${isActive("/styles") ? "text-gold bg-gold/5" : "text-slate-600 hover:bg-gray-50"}`}>
-                  <Globe size={18} className={isActive("/styles") ? "text-gold" : "text-slate-400"} /> Styles
+                <Link href="/styles" className={`flex items-center gap-3 py-4 px-4 rounded-xl text-base font-medium transition-all ${isActive("/styles") ? "text-gold bg-gold/5" : "text-muted hover:bg-background"}`}>
+                  <Globe size={18} className={isActive("/styles") ? "text-gold" : "text-muted"} /> Styles
                 </Link>
 
                 {/* Blog */}
-                <Link href="/blog" className={`flex items-center gap-3 py-3 px-4 rounded-xl text-base font-medium transition-all ${isActive("/blog") ? "text-gold bg-gold/5" : "text-slate-600 hover:bg-gray-50"}`}>
-                  <BookOpen size={18} className={isActive("/blog") ? "text-gold" : "text-slate-400"} /> Blog
+                <Link href="/blog" className={`flex items-center gap-3 py-4 px-4 rounded-xl text-base font-medium transition-all ${isActive("/blog") ? "text-gold bg-gold/5" : "text-muted hover:bg-background"}`}>
+                  <BookOpen size={18} className={isActive("/blog") ? "text-gold" : "text-muted"} /> Blog
                 </Link>
 
                 {/* Tools Accordion */}
@@ -473,9 +467,9 @@ export default function Navbar() {
                     if (!catTools.length) return null;
                     return (
                       <div key={cat.id} className="mt-2">
-                        <p className="text-xs font-bold text-slate-400 uppercase tracking-wider px-3 mb-1">{cat.emoji} {cat.label}</p>
+                        <p className="text-xs font-bold text-muted uppercase tracking-wider px-3 mb-1">{cat.emoji} {cat.label}</p>
                         {catTools.slice(0, 4).map(tool => (
-                          <Link key={tool.slug} href={`/tools/${tool.slug}`} className="block text-sm text-slate-600 py-1.5 px-3 hover:text-gold transition-colors" onClick={() => setIsMobileOpen(false)}>
+                          <Link key={tool.slug} href={`/tools/${tool.slug}`} className="block text-sm text-muted py-1.5 px-3 hover:text-gold transition-colors" onClick={() => setIsMobileOpen(false)}>
                             {tool.title}
                           </Link>
                         ))}
@@ -486,13 +480,13 @@ export default function Navbar() {
                 </MobileAccordion>
 
                 {/* About */}
-                <Link href="/about" className={`flex items-center gap-3 py-3 px-4 rounded-xl text-base font-medium transition-all ${isActive("/about") ? "text-gold bg-gold/5" : "text-slate-600 hover:bg-gray-50"}`}>
-                  <Info size={18} className={isActive("/about") ? "text-gold" : "text-slate-400"} /> About
+                <Link href="/about" className={`flex items-center gap-3 py-4 px-4 rounded-xl text-base font-medium transition-all ${isActive("/about") ? "text-gold bg-gold/5" : "text-muted hover:bg-background"}`}>
+                  <Info size={18} className={isActive("/about") ? "text-gold" : "text-muted"} /> About
                 </Link>
 
                 <div className="mt-auto pb-8 pt-8">
                   <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-gold/30 to-transparent mb-4" />
-                  <p className="text-xs text-slate-400 text-center">Mehndi Design Henna</p>
+                  <p className="text-xs text-muted text-center">Mehndi Design Henna</p>
                 </div>
               </div>
             </motion.div>
@@ -515,10 +509,10 @@ function MobileAccordion({ label, icon, isOpen, onToggle, isActive, children }: 
     <div>
       <button
         onClick={onToggle}
-        className={`w-full flex items-center justify-between py-3 px-4 rounded-xl text-base font-medium transition-all ${isActive ? "text-gold bg-gold/5" : "text-slate-600 hover:bg-gray-50"}`}
+        className={`w-full flex items-center justify-between py-4 px-4 rounded-xl text-base font-medium transition-all ${isActive ? "text-gold bg-gold/5" : "text-muted hover:bg-background"}`}
       >
         <span className="flex items-center gap-3">
-          <span className={isActive ? "text-gold" : "text-slate-400"}>{icon}</span>
+          <span className={isActive ? "text-gold" : "text-muted"}>{icon}</span>
           {label}
         </span>
         <ChevronDown size={16} className={`transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`} />
@@ -532,7 +526,7 @@ function MobileAccordion({ label, icon, isOpen, onToggle, isActive, children }: 
             transition={{ duration: 0.25 }}
             className="overflow-hidden"
           >
-            <div className="bg-gray-50/50 rounded-xl mt-1 mb-2 py-2 px-1 max-h-60 overflow-y-auto">
+            <div className="bg-background/50 rounded-xl mt-1 mb-2 py-2 px-1 max-h-60 overflow-y-auto">
               {children}
             </div>
           </motion.div>

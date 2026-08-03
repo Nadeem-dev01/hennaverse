@@ -51,7 +51,6 @@ export default function DesignCard({ design, index = 0, onClick }: DesignCardPro
 
   return (
     <motion.div
-      layout
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 20 }}
@@ -194,22 +193,22 @@ export default function DesignCard({ design, index = 0, onClick }: DesignCardPro
         <h3 className="font-serif text-lg font-semibold text-foreground group-hover:text-gold transition-colors mb-1 line-clamp-1">
           {design.title}
         </h3>
-        <p className="text-muted text-xs mb-3">
+        <p className="text-muted text-sm mb-4">
           {design.style} • {design.occasion}
         </p>
 
         {/* Tags */}
-        <div className="flex flex-wrap gap-1.5">
+        <div className="flex flex-wrap gap-2">
           {design.tags.slice(0, 3).map((tag) => (
             <span
               key={tag}
-              className="px-2 py-0.5 text-[10px] font-medium rounded-full bg-purple/10 text-purple border border-purple/20"
+              className="px-2.5 py-0.5 text-xs font-medium rounded-full bg-purple/10 text-purple border border-purple/20"
             >
               {tag}
             </span>
           ))}
           {design.tags.length > 3 && (
-            <span className="px-2 py-0.5 text-[10px] text-muted">
+            <span className="px-2.5 py-0.5 text-xs text-muted">
               +{design.tags.length - 3}
             </span>
           )}
