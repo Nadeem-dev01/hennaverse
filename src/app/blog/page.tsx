@@ -81,6 +81,9 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: "/blog",
+    types: {
+      "application/rss+xml": `${BASE_URL}/feed.xml`,
+    },
   },
   openGraph: {
     title: "Henna Guides: How Long Does Henna Last, Henna Kits, Removal and More",

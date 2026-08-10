@@ -161,11 +161,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     images: [`${BASE_URL}${design.image.src}`],
   }));
 
+  // --- Blog category pages ---
+  const blogCategories = Array.from(new Set(blogs.map((b) => b.category)));
+  const blogCategoryRoutes: MetadataRoute.Sitemap = blogCategories.map((cat) => ({
+    url: `${BASE_URL}/blog/category/${cat.toLowerCase().replace(/\s+/g, "-")}`,
+    lastModified: SITE_LAST_UPDATED,
+    changeFrequency: "weekly" as const,
+    priority: 0.75,
+  }));
+
   return [
     ...staticRoutes,
     ...categoryRoutes,
     ...occasionRoutes,
     ...bodyPartRoutes,
+    ...blogCategoryRoutes,
     ...blogRoutes,
     ...styleRoutes,
     ...toolRoutes,

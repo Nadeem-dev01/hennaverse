@@ -83,9 +83,19 @@ export default function BlogCard({
               <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground group-hover:text-gold transition-colors mb-3 line-clamp-2">
                 {blog.title}
               </h2>
-              <p className="text-muted text-sm leading-relaxed line-clamp-3">
+              <p className="text-muted text-sm leading-relaxed line-clamp-3 mb-4">
                 {blog.excerpt}
               </p>
+              <div className="flex items-center gap-4 text-xs text-muted/80 pt-2 border-t border-border/40">
+                <span className="flex items-center gap-1">
+                  <Calendar size={13} className="text-gold" />
+                  {blog.date}
+                </span>
+                <span className="flex items-center gap-1">
+                  <Clock size={13} className="text-gold" />
+                  {blog.readTime}
+                </span>
+              </div>
             </div>
           </div>
         </motion.article>
@@ -100,7 +110,7 @@ export default function BlogCard({
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, delay: (index % 6) * 0.1 }}
         whileHover={{ y: -6 }}
-        className="group h-full bg-surface rounded-xl border border-border overflow-hidden hover:border-gold/30 hover:shadow-lg hover:shadow-gold/5 transition-all"
+        className="group h-full flex flex-col bg-surface rounded-xl border border-border overflow-hidden hover:border-gold/30 hover:shadow-lg hover:shadow-gold/5 transition-all"
       >
         {/* Image */}
         <div className={`aspect-[16/10] bg-gradient-to-br ${gradient} relative overflow-hidden`}>
@@ -127,13 +137,25 @@ export default function BlogCard({
         </div>
 
         {/* Content */}
-        <div className="p-5">
-          <h3 className="font-serif text-lg font-semibold text-foreground group-hover:text-gold transition-colors mb-2 line-clamp-2">
-            {blog.title}
-          </h3>
-          <p className="text-muted text-sm leading-relaxed line-clamp-2">
-            {blog.excerpt}
-          </p>
+        <div className="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <h3 className="font-serif text-lg font-semibold text-foreground group-hover:text-gold transition-colors mb-2 line-clamp-2">
+              {blog.title}
+            </h3>
+            <p className="text-muted text-sm leading-relaxed line-clamp-2 mb-4">
+              {blog.excerpt}
+            </p>
+          </div>
+          <div className="flex items-center gap-4 text-xs text-muted/80 pt-3 border-t border-border/40 mt-auto">
+            <span className="flex items-center gap-1">
+              <Calendar size={12} className="text-gold" />
+              {blog.date}
+            </span>
+            <span className="flex items-center gap-1">
+              <Clock size={12} className="text-gold" />
+              {blog.readTime}
+            </span>
+          </div>
         </div>
       </motion.article>
     </Link>

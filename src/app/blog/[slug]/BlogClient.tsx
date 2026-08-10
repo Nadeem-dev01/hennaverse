@@ -1,25 +1,25 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { use } from "react";
+import { useEffect, useState, use } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { blogs } from "@/data/blogs";
 import { designs } from "@/data/designs";
 import BlogCard from "@/components/BlogCard";
 import TableOfContents from "@/components/TableOfContents";
+import SocialShare from "@/components/SocialShare";
+import AuthorBio from "@/components/AuthorBio";
+import { getRelatedPosts, getPrevAndNextPosts } from "@/lib/blog";
 import { motion } from "framer-motion";
 import {
   ArrowLeft,
+  ArrowRight,
   Calendar,
   Clock,
   User,
   Share2,
   Download,
-  Link as LinkIcon,
 } from "lucide-react";
-
-
 
 export default function BlogClient({
   params,
@@ -102,27 +102,23 @@ export default function BlogClient({
     );
   }
 
+  const relatedPosts = getRelatedPosts(blog.slug, blog.category, blog.country, blog.tags, 3);
+  const { prev: prevPost, next: nextPost } = getPrevAndNextPosts(blog.slug);
 
-
-  const relatedPosts = blogs
-    .filter(
-      (b) =>
-        b.slug !== slug &&
-        (b.category === blog.category || b.country === blog.country)
-    )
-    .slice(0, 3);
-    
   // Get some relevant images for the left sidebar gallery
   const galleryImages = designs
-    .filter(d => 
-       d.country.toLowerCase() === blog.country.toLowerCase() || 
-       blog.title.toLowerCase().includes(d.style.toLowerCase())
+    .filter(
+      (d) =>
+        d.country.toLowerCase() === blog.country.toLowerCase() ||
+        blog.title.toLowerCase().includes(d.style.toLowerCase())
     )
     .slice(0, 4)
-    .map(d => d.imageUrl);
-    
+    .map((d) => d.imageUrl);
+
   if (galleryImages.length < 4) {
-    galleryImages.push(...designs.slice(0, 4 - galleryImages.length).map(d => d.imageUrl));
+    galleryImages.push(
+      ...designs.slice(0, 4 - galleryImages.length).map((d) => d.imageUrl)
+    );
   }
 
   return (
@@ -137,7 +133,6 @@ export default function BlogClient({
 
       <article className="min-h-screen pt-24 pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          
           {/* Back link */}
           <motion.div
             initial={{ opacity: 0, x: -10 }}
@@ -154,11 +149,9 @@ export default function BlogClient({
           </motion.div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
-            
-            {/* LEFT SIDE: Image Gallery (Stacks on top on mobile, sticky on desktop) */}
+            {/* LEFT SIDE: Image Gallery */}
             <div className="lg:col-span-5 order-2 lg:order-1">
               <div className="sticky top-28 flex flex-col gap-4">
-                
                 {/* Main Hero Image */}
                 <motion.div
                   initial={{ opacity: 0, scale: 0.95 }}
@@ -166,41 +159,38 @@ export default function BlogClient({
                   transition={{ delay: 0.2, duration: 0.5 }}
                   className="aspect-[4/5] bg-surface rounded-2xl relative overflow-hidden group shadow-lg shadow-black/20"
                 >
-                  {blog.imageUrl ? (
-                    <Image
-                      src={blog.imageUrl}
-                      alt={blog.title}
-                      fill
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    />
-                  ) : (
-                    <Image
-                      src={galleryImages[0]}
-                      alt={blog.title}
-                      fill
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    />
-                  )}
+                  <Image
+                    src={blog.imageUrl || galleryImages[0]}
+                    alt={blog.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-60" />
-                  
+
                   {/* Action buttons on hover */}
                   <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-4 z-10">
                     <div className="w-full flex justify-end gap-2">
                       <button
-                        onClick={() => handleDownload(blog.imageUrl || galleryImages[0], blog.title)}
+                        onClick={() =>
+                          handleDownload(
+                            blog.imageUrl || galleryImages[0],
+                            blog.title
+                          )
+                        }
                         className="p-2.5 rounded-lg bg-surface/90 hover:bg-gold text-foreground hover:text-background transition-all duration-300 cursor-pointer shadow-md"
                         title="Download Image"
                       >
                         <Download size={18} />
                       </button>
                       <button
-                        onClick={() => handleShare(
-                          blog.title,
-                          blog.excerpt,
-                          `/blog/${blog.slug}`
-                        )}
+                        onClick={() =>
+                          handleShare(
+                            blog.title,
+                            blog.excerpt,
+                            `/blog/${blog.slug}`
+                          )
+                        }
                         className="p-2.5 rounded-lg bg-surface/90 hover:bg-gold text-foreground hover:text-background transition-all duration-300 cursor-pointer shadow-md"
                         title="Share Link"
                       >
@@ -208,8 +198,12 @@ export default function BlogClient({
                       </button>
                     </div>
                     <div className="text-left">
-                      <span className="text-xs text-gold font-medium uppercase tracking-wider block mb-1">{blog.category}</span>
-                      <span className="text-sm font-semibold text-white line-clamp-2">{blog.title}</span>
+                      <span className="text-xs text-gold font-medium uppercase tracking-wider block mb-1">
+                        {blog.category}
+                      </span>
+                      <span className="text-sm font-semibold text-white line-clamp-2">
+                        {blog.title}
+                      </span>
                     </div>
                   </div>
                 </motion.div>
@@ -217,47 +211,66 @@ export default function BlogClient({
                 {/* Additional Images Grid */}
                 <div className="grid grid-cols-2 gap-4">
                   {galleryImages.slice(1, 3).map((img, idx) => (
-                    <motion.div 
+                    <motion.div
                       key={idx}
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: 0.3 + (idx * 0.1), duration: 0.5 }}
+                      transition={{ delay: 0.3 + idx * 0.1, duration: 0.5 }}
                       className="aspect-square rounded-xl overflow-hidden shadow-md shadow-black/10 group relative"
                     >
-                      <Image src={img} alt="Mehndi inspiration" fill sizes="(max-width: 768px) 50vw, 25vw" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-                      
+                      <Image
+                        src={img}
+                        alt="Mehndi inspiration"
+                        fill
+                        sizes="(max-width: 768px) 50vw, 25vw"
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      />
+
                       {/* Action buttons on hover */}
                       <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-2 z-10">
                         <div className="w-full flex justify-end gap-1.5">
                           <button
-                            onClick={() => handleDownload(img, `inspiration-${idx + 1}`)}
+                            onClick={() =>
+                              handleDownload(img, `inspiration-${idx + 1}`)
+                            }
                             className="p-1.5 rounded-lg bg-surface/90 hover:bg-gold text-foreground hover:text-background transition-all duration-300 cursor-pointer shadow-sm"
                             title="Download Image"
                           >
                             <Download size={14} />
                           </button>
                           <button
-                            onClick={() => handleShare(
-                              `Mehndi Inspiration #${idx + 1}`,
-                              "Look at this gorgeous mehndi design inspiration!",
-                              `/blog/${blog.slug}`
-                            )}
+                            onClick={() =>
+                              handleShare(
+                                `Mehndi Inspiration #${idx + 1}`,
+                                "Look at this gorgeous mehndi design inspiration!",
+                                `/blog/${blog.slug}`
+                              )
+                            }
                             className="p-1.5 rounded-lg bg-surface/90 hover:bg-gold text-foreground hover:text-background transition-all duration-300 cursor-pointer shadow-sm"
                             title="Share Link"
                           >
                             <Share2 size={14} />
                           </button>
                         </div>
-                        <span className="text-[10px] text-white/80 font-medium">Mehndi Design</span>
+                        <span className="text-[10px] text-white/80 font-medium">
+                          Mehndi Design
+                        </span>
                       </div>
                     </motion.div>
                   ))}
                 </div>
 
                 <div className="bg-surface/50 border border-border rounded-xl p-5 mt-2">
-                  <h3 className="font-serif text-lg font-bold text-gold mb-2">Looking for more?</h3>
-                  <p className="text-sm text-muted mb-4">Explore our gallery for thousands of high-quality mehndi designs and inspirations.</p>
-                  <Link href="/gallery" className="text-sm font-semibold text-white bg-gold/90 px-4 py-2 rounded-lg hover:bg-gold transition-colors inline-block text-center w-full">
+                  <h3 className="font-serif text-lg font-bold text-gold mb-2">
+                    Looking for more?
+                  </h3>
+                  <p className="text-sm text-muted mb-4">
+                    Explore our gallery for thousands of high-quality mehndi designs and inspirations.
+                  </p>
+                  <Link
+                    href="/gallery"
+                    className="text-sm font-semibold text-white bg-gold/90 px-4 py-2 rounded-lg hover:bg-gold transition-colors inline-block text-center w-full"
+                  >
                     View Full Gallery
                   </Link>
                 </div>
@@ -274,9 +287,12 @@ export default function BlogClient({
                 transition={{ duration: 0.6 }}
                 className="mb-8"
               >
-                <span className="inline-block px-3 py-1 text-xs font-medium bg-purple/20 text-purple rounded-full mb-4">
+                <Link
+                  href={`/blog/category/${blog.category.toLowerCase().replace(/\s+/g, "-")}`}
+                  className="inline-block px-3 py-1 text-xs font-medium bg-purple/20 text-purple hover:bg-purple/30 transition-colors rounded-full mb-4"
+                >
                   {blog.category}
-                </span>
+                </Link>
                 <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-foreground leading-tight mb-6">
                   {blog.title}
                 </h1>
@@ -300,7 +316,7 @@ export default function BlogClient({
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.6 }}
-                className="prose prose-invert prose-gold max-w-none mb-12
+                className="prose prose-invert prose-gold max-w-none mb-8
                   [&_h2]:font-serif [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-foreground [&_h2]:mt-10 [&_h2]:mb-4 [&_h2]:border-b [&_h2]:border-border [&_h2]:pb-2
                   [&_h3]:font-serif [&_h3]:text-xl [&_h3]:font-semibold [&_h3]:text-foreground [&_h3]:mt-8 [&_h3]:mb-3
                   [&_p]:text-foreground/80 [&_p]:leading-relaxed [&_p]:mb-5 [&_p]:text-lg
@@ -315,7 +331,7 @@ export default function BlogClient({
               />
 
               {/* Tags */}
-              <div className="flex flex-wrap gap-2 mb-12 pt-6 border-t border-border">
+              <div className="flex flex-wrap gap-2 mb-6 pt-6 border-t border-border">
                 {blog.tags.map((tag) => (
                   <span
                     key={tag}
@@ -324,6 +340,49 @@ export default function BlogClient({
                     #{tag}
                   </span>
                 ))}
+              </div>
+
+              {/* Social Share Bar */}
+              <SocialShare
+                title={blog.title}
+                excerpt={blog.excerpt}
+                urlPath={`/blog/${blog.slug}`}
+              />
+
+              {/* Author Bio Box */}
+              <AuthorBio name={blog.author} />
+
+              {/* Previous & Next Article Navigation */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-8">
+                {prevPost ? (
+                  <Link
+                    href={`/blog/${prevPost.slug}`}
+                    className="p-4 rounded-xl bg-surface/60 border border-border/40 hover:border-gold/40 transition-all flex flex-col group"
+                  >
+                    <span className="text-xs text-muted flex items-center gap-1 mb-1">
+                      <ArrowLeft size={12} className="text-gold group-hover:-translate-x-1 transition-transform" />
+                      Previous Article
+                    </span>
+                    <span className="font-serif text-sm font-semibold text-foreground group-hover:text-gold transition-colors line-clamp-2">
+                      {prevPost.title}
+                    </span>
+                  </Link>
+                ) : <div />}
+
+                {nextPost && (
+                  <Link
+                    href={`/blog/${nextPost.slug}`}
+                    className="p-4 rounded-xl bg-surface/60 border border-border/40 hover:border-gold/40 transition-all flex flex-col text-right group ml-auto w-full"
+                  >
+                    <span className="text-xs text-muted flex items-center justify-end gap-1 mb-1">
+                      Next Article
+                      <ArrowRight size={12} className="text-gold group-hover:translate-x-1 transition-transform" />
+                    </span>
+                    <span className="font-serif text-sm font-semibold text-foreground group-hover:text-gold transition-colors line-clamp-2">
+                      {nextPost.title}
+                    </span>
+                  </Link>
+                )}
               </div>
             </div>
           </div>

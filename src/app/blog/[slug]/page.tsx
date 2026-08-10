@@ -2,6 +2,8 @@ import { blogs } from "@/data/blogs";
 import BlogClient from "./BlogClient";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { extractFAQsFromContent } from "@/lib/blog";
+import { buildFAQSchema } from "@/lib/schema";
 
 const BASE_URL = "https://www.mehndidesignhenna.com";
 
@@ -57,6 +59,9 @@ export default async function Page(props: { params: Promise<{ slug: string }> })
     notFound();
   }
 
+  const extractedFaqs = extractFAQsFromContent(blog.content);
+  const faqJsonLd = buildFAQSchema(extractedFaqs);
+
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -111,6 +116,12 @@ export default async function Page(props: { params: Promise<{ slug: string }> })
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
       <BlogClient params={props.params} />
     </>
   );
