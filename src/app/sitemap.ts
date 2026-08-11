@@ -20,7 +20,16 @@ const bodyPartSlugs = [
   "front-hand", "back-hand", "full-hand", "finger", "foot", "arm",
 ];
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export async function generateSitemaps() {
+  const numDesignSitemaps = Math.ceil(allDesigns.length / 1000);
+  const sitemaps = [{ id: 0 }];
+  for (let i = 0; i < numDesignSitemaps; i++) {
+    sitemaps.push({ id: i + 1 });
+  }
+  return sitemaps;
+}
+
+export default function sitemap({ id }: { id: number }): MetadataRoute.Sitemap {
   // --- Static / evergreen pages ---
   const staticRoutes: MetadataRoute.Sitemap = [
     {
@@ -152,15 +161,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
-  // --- Individual design detail pages (with image metadata for Google Images) ---
-  const designRoutes: MetadataRoute.Sitemap = allDesigns.map((design) => ({
-    url: `${BASE_URL}/designs/${design.slug}`,
-    lastModified: SITE_LAST_UPDATED,
-    changeFrequency: "monthly" as const,
-    priority: 0.75,
-    images: [`${BASE_URL}${design.image.src}`],
-  }));
-
   // --- Blog category pages ---
   const blogCategories = Array.from(new Set(blogs.map((b) => b.category)));
   const blogCategoryRoutes: MetadataRoute.Sitemap = blogCategories.map((cat) => ({
@@ -170,15 +170,33 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }));
 
-  return [
-    ...staticRoutes,
-    ...categoryRoutes,
-    ...occasionRoutes,
-    ...bodyPartRoutes,
-    ...blogCategoryRoutes,
-    ...blogRoutes,
-    ...styleRoutes,
-    ...toolRoutes,
-    ...designRoutes,
-  ];
+  // If id is 0, return the core site pages
+  if (id === 0) {
+    return [
+      ...staticRoutes,
+      ...categoryRoutes,
+      ...occasionRoutes,
+      ...bodyPartRoutes,
+      ...blogCategoryRoutes,
+      ...blogRoutes,
+      ...styleRoutes,
+      ...toolRoutes,
+    ];
+  }
+
+  // If id > 0, return the corresponding chunk of individual design pages
+  const chunkIndex = id - 1;
+  const start = chunkIndex * 1000;
+  const end = start + 1000;
+  const designsChunk = allDesigns.slice(start, end);
+
+  const designRoutes: MetadataRoute.Sitemap = designsChunk.map((design) => ({
+    url: `${BASE_URL}/designs/${design.slug}`,
+    lastModified: SITE_LAST_UPDATED,
+    changeFrequency: "monthly" as const,
+    priority: 0.75,
+    images: [`${BASE_URL}${design.image.src}`],
+  }));
+
+  return designRoutes;
 }

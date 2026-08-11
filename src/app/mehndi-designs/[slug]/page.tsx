@@ -22,8 +22,15 @@ export function generateStaticParams() {
   return allCategorySlugs.map((slug) => ({ slug }));
 }
 
-export async function generateMetadata(props: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+export async function generateMetadata(
+  props: { 
+    params: Promise<{ slug: string }>;
+    searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+  }
+): Promise<Metadata> {
   const params = await props.params;
+  const searchParams = await props.searchParams;
+  
   const curated = designCategories.find((c) => c.slug === params.slug);
   const taxo = categories.find((c) => c.slug === params.slug);
 
@@ -32,29 +39,40 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
   if (!metaTitle) return { title: "Not Found" };
 
   const heroImage = curated?.heroImage;
+  const page = searchParams.page ? parseInt(searchParams.page as string, 10) : 1;
+  const canonicalUrl = page > 1 
+    ? `/mehndi-designs/${params.slug}?page=${page}` 
+    : `/mehndi-designs/${params.slug}`;
 
   return {
-    title: metaTitle,
+    title: page > 1 ? `${metaTitle} - Page ${page}` : metaTitle,
     description: metaDescription,
     keywords: taxo?.keywords,
     alternates: {
-      canonical: `/mehndi-designs/${params.slug}`,
+      canonical: canonicalUrl,
     },
     openGraph: {
-      title: metaTitle,
+      title: page > 1 ? `${metaTitle} - Page ${page}` : metaTitle,
       description: metaDescription,
       images: heroImage ? [{ url: heroImage }] : [],
     },
     twitter: {
       card: "summary_large_image",
-      title: metaTitle,
+      title: page > 1 ? `${metaTitle} - Page ${page}` : metaTitle,
       description: metaDescription,
     },
   };
 }
 
-export default async function MehndiDesignCategoryPage(props: { params: Promise<{ slug: string }> }) {
+export default async function MehndiDesignCategoryPage(
+  props: { 
+    params: Promise<{ slug: string }>;
+    searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+  }
+) {
   const params = await props.params;
+  const searchParams = await props.searchParams;
+  
   const curated = designCategories.find((c) => c.slug === params.slug);
   const taxo = categories.find((c) => c.slug === params.slug);
 
@@ -65,6 +83,8 @@ export default async function MehndiDesignCategoryPage(props: { params: Promise<
   const metaTitle = curated?.metaTitle ?? taxo!.metaTitle;
   const metaDescription = curated?.metaDescription ?? taxo!.metaDescription;
   const heroImage = curated?.heroImage;
+  const page = searchParams.page ? parseInt(searchParams.page as string, 10) : 1;
+  const currentPage = isNaN(page) || page < 1 ? 1 : page;
 
   // Breadcrumb JSON-LD is emitted by the <Breadcrumbs> component inside
   // CategoryPage / CategoryDesignsPage, matching the visible trail — so we
@@ -147,7 +167,12 @@ export default async function MehndiDesignCategoryPage(props: { params: Promise<
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <CategoryDesignsPage category={taxo!} designs={designs} related={related} />
+      <CategoryDesignsPage 
+        category={taxo!} 
+        designs={designs} 
+        related={related} 
+        currentPage={currentPage}
+      />
     </>
   );
 }

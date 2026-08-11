@@ -6,18 +6,31 @@ import Breadcrumbs from "./Breadcrumbs";
 import TableOfContents from "./TableOfContents";
 import DesignGrid from "./DesignGrid";
 import AdSlot from "./AdSlot";
+import Pagination from "./Pagination";
+
+const DESIGNS_PER_PAGE = 48;
 
 export default function CategoryDesignsPage({
   category,
   designs,
   related,
+  currentPage = 1,
 }: {
   category: CategoryDef;
   designs: Design[];
   related: { slug: string; title: string }[];
+  currentPage?: number;
 }) {
-  const hero = designs[0]?.image;
   const total = designs.length;
+  
+  // Calculate pagination
+  const totalPages = Math.ceil(total / DESIGNS_PER_PAGE);
+  const safePage = Math.max(1, Math.min(currentPage, totalPages));
+  const startIndex = (safePage - 1) * DESIGNS_PER_PAGE;
+  const paginatedDesigns = designs.slice(startIndex, startIndex + DESIGNS_PER_PAGE);
+  
+  // Always use the first design of the entire collection for the hero image to ensure consistency
+  const hero = designs[0]?.image;
 
   return (
     <div className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto min-h-screen">
@@ -41,7 +54,7 @@ export default function CategoryDesignsPage({
 
           <AdSlot adSlot="header-slot" />
 
-          {hero && (
+          {hero && safePage === 1 && (
             <div className="relative w-full aspect-video rounded-2xl overflow-hidden my-10 border border-border">
               <Image
                 src={hero.src}
@@ -55,23 +68,36 @@ export default function CategoryDesignsPage({
             </div>
           )}
 
-          <section className="prose prose-invert prose-gold max-w-none mb-10">
-            <h2 id="about">About {category.title}</h2>
-            <p>
-              Explore our collection of {total}+ {category.title.toLowerCase()}, hand-picked
-              for every skill level and occasion. Whether you want a quick, simple look or
-              an elaborate full-coverage pattern, each design below links to a detailed page
-              with a high-resolution image, step-by-step inspiration, and frequently asked
-              questions. Tap any design to view it full size, then download or share it.
-            </p>
-          </section>
+          {safePage === 1 && (
+            <section className="prose prose-invert prose-gold max-w-none mb-10">
+              <h2 id="about">About {category.title}</h2>
+              <p>
+                Explore our collection of {total}+ {category.title.toLowerCase()}, hand-picked
+                for every skill level and occasion. Whether you want a quick, simple look or
+                an elaborate full-coverage pattern, each design below links to a detailed page
+                with a high-resolution image, step-by-step inspiration, and frequently asked
+                questions. Tap any design to view it full size, then download or share it.
+              </p>
+            </section>
+          )}
 
           <section id="gallery">
             <h2 className="text-3xl font-serif text-gold mb-2 border-b border-border pb-4">
-              {category.title} Gallery
+              {category.title} Gallery {safePage > 1 && `- Page ${safePage}`}
             </h2>
-            <p className="text-muted text-sm mt-3">{total} designs in this collection</p>
-            <DesignGrid designs={designs} />
+            <p className="text-muted text-sm mt-3">
+              Showing {startIndex + 1}-{Math.min(startIndex + DESIGNS_PER_PAGE, total)} of {total} designs in this collection
+            </p>
+            
+            <DesignGrid designs={paginatedDesigns} />
+            
+            {totalPages > 1 && (
+              <Pagination 
+                currentPage={safePage} 
+                totalPages={totalPages} 
+                basePath={`/mehndi-designs/${category.slug}`} 
+              />
+            )}
           </section>
 
           <AdSlot adSlot="footer-slot" className="mt-12" />
