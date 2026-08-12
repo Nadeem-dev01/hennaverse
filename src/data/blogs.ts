@@ -368,5 +368,222 @@ export const blogs: BlogPost[] = [
   ],
   "content": "<p class=\"lead mb-8 text-xl text-muted\">Choosing a mehndi design is not only about finding a beautiful pattern. The right design should also match the occasion, your outfit, the amount of time available, and your personal style.</p>\n\n<p>A heavy bridal pattern can look stunning at a wedding, but it may not be the best choice for a casual gathering or Eid celebration. Similarly, a small minimalist design can be perfect for everyday wear but may feel too simple for a traditional bridal event.</p>\n\n<p>In this guide, we will explain how to choose the right mehndi design for different occasions and how to find a pattern that suits your hand, outfit and personal style.</p>\n\n<h2>1. Choose a Design According to the Occasion</h2>\n<p>The first thing to consider is where you are going to wear the mehndi. Different occasions call for different levels of detail.</p>\n<p>For example:</p>\n<ul>\n  <li>Weddings usually suit detailed and fuller designs.</li>\n  <li>Eid is perfect for elegant and medium-detail patterns.</li>\n  <li>Parties can work well with modern or minimalist designs.</li>\n  <li>Everyday mehndi is usually better with simple patterns.</li>\n  <li>Engagements can combine traditional details with modern elements.</li>\n</ul>\n<p>Thinking about the occasion before choosing a design can help you avoid selecting a pattern that is too heavy or too simple.</p>\n\n<h2>2. Mehndi Designs for Weddings</h2>\n<p>Wedding mehndi is usually more detailed than everyday mehndi.</p>\n<p>Brides often choose designs that cover a large portion of the hands and sometimes extend toward the arms. Popular elements include flowers, paisleys, leaves, mandalas, peacocks, jaal patterns and detailed finger work.</p>\n<p>If you are choosing a bridal design, consider how much time your mehndi artist has available. A highly detailed design can take several hours to complete.</p>\n<p>You can explore our <a href=\"/mehndi-designs/bridal\">Bridal Mehndi Designs</a> collection for inspiration before choosing your pattern.</p>\n\n<h2>3. Mehndi Designs for Eid</h2>\n<p>Eid is a great occasion for medium-detail mehndi designs.</p>\n<p>You do not always need a full bridal-style pattern. Floral vines, Arabic-inspired patterns, finger designs, small mandalas and elegant palm motifs can create a beautiful look without covering the entire hand.</p>\n<p>For Eid, choose a design that complements your clothes rather than competing with them.</p>\n<p>For example, if your outfit already has heavy embroidery, a lighter mehndi pattern can create a more balanced appearance.</p>\n\n<h2>4. Mehndi Designs for Parties</h2>\n<p>Party mehndi gives you more freedom to experiment.</p>\n<p>You can choose modern designs with:</p>\n<ul>\n  <li>Fine lines</li>\n  <li>Negative space</li>\n  <li>Small flowers</li>\n  <li>Geometric shapes</li>\n  <li>Minimal finger patterns</li>\n  <li>Single-stroke vines</li>\n  <li>Contemporary motifs</li>\n</ul>\n<p>A small design on the back of the hand or fingers can look particularly elegant with modern outfits.</p>\n<p>You can also experiment with a combination of traditional and contemporary elements.</p>\n\n<h2>5. Simple Mehndi for Everyday Wear</h2>\n<p>If you want mehndi for everyday use, choose a design that is quick and comfortable to apply.</p>\n<p>Simple floral patterns, small leaves, dots, curved lines and minimal finger decorations are good choices.</p>\n<p>You do not need to cover your entire hand to create an attractive mehndi look.</p>\n<p>A small central motif combined with a few delicate lines can create a clean and elegant appearance.</p>\n<p>If you are new to applying mehndi, start with simple designs and gradually move toward more detailed patterns.</p>\n<p>You can also read our previous guide, <a href=\"/blog/simple-mehndi-designs-for-beginners\">25 Simple Mehndi Designs for Beginners</a>, for beginner-friendly inspiration.</p>\n\n<h2>6. Arabic Mehndi for an Elegant Look</h2>\n<p>Arabic mehndi is popular because it often uses bold flowers, flowing vines and open spaces.</p>\n<p>Instead of covering the entire hand with dense details, Arabic-inspired designs usually allow areas of skin to remain visible.</p>\n<p>This makes the design look elegant while also making it easier to apply than some highly detailed full-hand patterns.</p>\n<p>Arabic-inspired mehndi can work especially well for weddings, Eid, parties and other celebrations.</p>\n<p>When choosing an Arabic pattern, look for a clear flow from one motif to another rather than trying to fill every empty space.</p>\n\n<h2>7. Pakistani Mehndi for Traditional Occasions</h2>\n<p>Pakistani mehndi often combines detailed traditional patterns with floral, geometric and Arabic-inspired elements.</p>\n<p>These designs can be suitable for weddings, Eid, engagement celebrations and other cultural occasions.</p>\n<p>If you prefer a design with more detail but still want a combination of different styles, Pakistani mehndi can be a good option.</p>\n<p>Our <a href=\"/mehndi-designs/pakistani\">Pakistani Mehndi Designs</a> collection contains different patterns that can help you compare traditional styles and find inspiration.</p>\n\n<h2>8. Minimalist Mehndi for a Modern Style</h2>\n<p>Minimalist mehndi is ideal if you prefer something delicate and contemporary.</p>\n<p>Instead of covering the whole hand, minimalist designs may focus on one or two areas.</p>\n<p>Common ideas include:</p>\n<ul>\n  <li>Small flowers</li>\n  <li>Thin vines</li>\n  <li>Tiny leaves</li>\n  <li>Finger rings</li>\n  <li>Geometric lines</li>\n  <li>Small mandalas</li>\n  <li>Fine dots</li>\n</ul>\n<p>Khafif mehndi is another style worth exploring if you like delicate patterns and plenty of open space.</p>\n<p>Our <a href=\"/tools/khafif-mehndi-generator\">Khafif Mehndi Generator</a> can help you explore light and minimalist henna ideas.</p>\n\n<h2>9. Consider Your Hand Size and Shape</h2>\n<p>The same design can look different on different hands.</p>\n<p>If you have smaller hands, extremely dense designs may make the pattern look crowded. A design with open spaces and clear motifs can create a more balanced appearance.</p>\n<p>For longer hands, vertical vines and flowing patterns can work beautifully.</p>\n<p>Finger designs can also be adjusted according to finger length and hand shape.</p>\n<p>The goal is not to copy a design exactly. A good mehndi artist can adjust the size and placement of the motifs to suit your hand.</p>\n\n<h2>10. Match Your Mehndi With Your Outfit</h2>\n<p>Your mehndi and outfit do not need to match perfectly, but they should look harmonious together.</p>\n<p>If your clothes have heavy embroidery, consider a slightly simpler mehndi design.</p>\n<p>If your outfit is simple, you can use mehndi as a stronger decorative element.</p>\n<p>For colorful traditional outfits, floral and classic mehndi patterns can work beautifully.</p>\n<p>For modern outfits, minimalist or geometric patterns may create a cleaner appearance.</p>\n\n<h2>11. Think About How Much Time You Have</h2>\n<p>Time is another important factor.</p>\n<p>A simple design may take only a short time, while a detailed bridal pattern can take several hours.</p>\n<p>Before selecting a design, ask yourself:</p>\n<ul>\n  <li>How much time do I have before the event?</li>\n</ul>\n<p>If you are attending an event in a few hours, choose a simpler pattern.</p>\n<p>If you have plenty of time, you can consider a more detailed design.</p>\n<p>This is especially important for bridal mehndi because intricate patterns require patience from both the artist and the person receiving the mehndi.</p>\n\n<h2>12. Use Our Mehndi Design Collection for Inspiration</h2>\n<p>If you are still unsure which style is right for you, start by browsing different designs.</p>\n<p>Instead of searching for only one keyword, compare several styles and notice which patterns you naturally prefer.</p>\n<p>Our Mehndi Design collection includes patterns from different styles and traditions.</p>\n<p>You can also use our <a href=\"/tools/mehndi-search-tool\">Mehndi Search Tool</a> to find designs by style, occasion, placement and other characteristics.</p>\n<p>This makes it easier to narrow down your options before choosing a final design.</p>\n\n<h2>Frequently Asked Questions (FAQs)</h2>\n<div itemscope itemprop=\"mainEntity\" itemtype=\"https://schema.org/Question\">\n  <h3 itemprop=\"name\">Which mehndi design is best for beginners?</h3>\n  <div itemscope itemprop=\"acceptedAnswer\" itemtype=\"https://schema.org/Answer\">\n    <p itemprop=\"text\">Simple floral, leafy, minimal and basic Arabic-inspired patterns are usually easier for beginners because they do not require extremely detailed line work.</p>\n  </div>\n</div>\n<div itemscope itemprop=\"mainEntity\" itemtype=\"https://schema.org/Question\">\n  <h3 itemprop=\"name\">Which mehndi is best for a wedding?</h3>\n  <div itemscope itemprop=\"acceptedAnswer\" itemtype=\"https://schema.org/Answer\">\n    <p itemprop=\"text\">Bridal mehndi is the traditional choice for weddings. Detailed floral, paisley, jaal, mandala and full-hand patterns are popular options.</p>\n  </div>\n</div>\n<div itemscope itemprop=\"mainEntity\" itemtype=\"https://schema.org/Question\">\n  <h3 itemprop=\"name\">Is Arabic mehndi suitable for Eid?</h3>\n  <div itemscope itemprop=\"acceptedAnswer\" itemtype=\"https://schema.org/Answer\">\n    <p itemprop=\"text\">Yes. Arabic-inspired designs can be an excellent choice for Eid because they can look elegant without requiring the dense coverage of some bridal designs.</p>\n  </div>\n</div>\n<div itemscope itemprop=\"mainEntity\" itemtype=\"https://schema.org/Question\">\n  <h3 itemprop=\"name\">Is minimalist mehndi good for parties?</h3>\n  <div itemscope itemprop=\"acceptedAnswer\" itemtype=\"https://schema.org/Answer\">\n    <p itemprop=\"text\">Yes. Minimalist mehndi can work very well for modern parties, especially when you want a delicate and contemporary appearance.</p>\n  </div>\n</div>\n<div itemscope itemprop=\"mainEntity\" itemtype=\"https://schema.org/Question\">\n  <h3 itemprop=\"name\">How do I choose between a simple and detailed design?</h3>\n  <div itemscope itemprop=\"acceptedAnswer\" itemtype=\"https://schema.org/Answer\">\n    <p itemprop=\"text\">Consider the occasion, available time, your outfit and your personal preference. Choose a simple design for quick application and everyday use, and a detailed design when you want a more traditional or dramatic appearance.</p>\n  </div>\n</div>\n\n<h2>Final Thoughts</h2>\n<p>The best mehndi design is not necessarily the most complicated one. It is the design that matches your occasion, personal style and available time.</p>\n<p>For weddings, you can explore detailed bridal patterns. For Eid and parties, medium-detail or Arabic-inspired designs can create an elegant appearance. For everyday use, simple and minimalist patterns are often more practical.</p>\n<p>Before your next mehndi session, compare a few different styles and save the designs you like. This will make it easier for you or your mehndi artist to create a pattern that suits your hands and your occasion.</p>"
 }
+, {
+  slug: "arabic-mehndi-designs",
+  title: "Arabic Mehndi Designs: 25 Elegant Ideas for Weddings, Eid & Parties",
+  excerpt: "Discover 25 elegant Arabic mehndi designs for weddings, Eid, parties and everyday wear, with tips for choosing simple, modern and stylish patterns.",
+  author: "Mehndi Design Henna Editorial Team",
+  date: "2026-08-12",
+  readTime: "9 min read",
+  category: "Arabic Mehndi Designs",
+  country: "Arabian Peninsula",
+  imageUrl: "/eid-1000.jpeg",
+  tags: [
+    "arabic mehndi designs",
+    "arabic mehndi",
+    "eid mehndi",
+    "wedding mehndi",
+    "party mehndi",
+    "minimalist mehndi",
+    "simple mehndi"
+  ],
+  content: `<p class="lead mb-8 text-xl text-muted">Arabic mehndi designs are loved for their elegant flow, open spaces, bold floral patterns and graceful appearance. Unlike heavily filled patterns, Arabic-style mehndi often uses flowers, leaves, vines and curved trails to create a design that looks beautiful without covering every part of the hand.</p>
+
+<p>Whether you are preparing for a wedding, Eid celebration, family gathering or a special party, an Arabic mehndi design can be adapted to match your outfit, event and personal style.</p>
+
+<p>In this guide, we will explore 25 Arabic mehndi design ideas, how to choose the right pattern, where to place it, and how to make a simple design look more attractive.</p>
+
+<h2>What Is an Arabic Mehndi Design?</h2>
+<p>Arabic mehndi is generally recognized by its flowing composition and strong floral or leafy elements. Designs often move diagonally across the hand or arm instead of filling the entire surface.</p>
+
+<p>Common elements include:</p>
+<ul>
+  <li>Large flowers</li>
+  <li>Curved leaves</li>
+  <li>Long vines</li>
+  <li>Paisley motifs</li>
+  <li>Dots and fine details</li>
+  <li>Open spaces between motifs</li>
+  <li>Bold outlines with delicate interior patterns</li>
+</ul>
+
+<p>The result is usually a modern and elegant appearance that works well for both casual and formal occasions.</p>
+
+<h2>25 Arabic Mehndi Design Ideas</h2>
+
+<h3>1. Simple Arabic Floral Trail</h3>
+<p>A floral trail running from the wrist toward the index finger is an excellent choice for beginners. Keep the flowers slightly larger and leave enough open space around them.</p>
+
+<h3>2. Arabic Back Hand Design</h3>
+<p>For a stylish back-hand look, use a diagonal vine with two or three flowers. Add small leaves between the flowers to connect the composition.</p>
+
+<h3>3. Minimal Arabic Mehndi</h3>
+<p>Minimal mehndi is perfect if you want something elegant without a heavily decorated hand. A small flower, curved vine and a few dots can create a beautiful result.</p>
+
+<h3>4. Arabic Finger Mehndi</h3>
+<p>Decorate one or two fingers with tiny leaves, lines and dots while keeping the rest of the hand mostly open. This style works especially well for simple events.</p>
+
+<h3>5. Arabic Wrist Bracelet Design</h3>
+<p>Create a bracelet-like pattern around the wrist and extend a small floral trail toward the hand. This gives the design a jewelry-inspired appearance.</p>
+
+<h3>6. Arabic Rose Mehndi</h3>
+<p>A large rose surrounded by leaves can become the main focal point of the design. Keep the remaining area simple so the flower stands out.</p>
+
+<h3>7. Arabic Paisley Design</h3>
+<p>Paisley motifs can be combined with leaves and flowers to create a traditional yet modern Arabic composition.</p>
+
+<h3>8. Diagonal Arabic Mehndi</h3>
+<p>A diagonal arrangement is one of the easiest ways to create the characteristic flowing look. Start near one corner of the hand and gradually move toward the opposite side.</p>
+
+<h3>9. Arabic Mandala Combination</h3>
+<p>A small mandala can be placed near the center of the hand and connected to an Arabic floral trail.</p>
+
+<h3>10. Arabic Leafy Vine</h3>
+<p>If you prefer a design without large flowers, use a long curved vine decorated with pointed leaves. It is simple, clean and easy to customize.</p>
+
+<h3>11. Arabic Eid Mehndi</h3>
+<p>For Eid, choose a medium-detail design with flowers, leaves and small dots. It provides a festive appearance without becoming too heavy.</p>
+
+<h3>12. Arabic Party Mehndi</h3>
+<p>A stylish party design can use one bold flower with a few curved leaves and decorative dots. This is a good option when you want a fashionable but quick application.</p>
+
+<h3>13. Arabic Bridal Side Design</h3>
+<p>Brides who prefer open-space patterns can combine a larger floral motif with detailed leaves and paisleys. For a more elaborate bridal look, the design can extend from the hand toward the forearm.</p>
+
+<h3>14. Arabic Rose and Leaf Trail</h3>
+<p>Combine three small roses with a curved leafy branch. Keep the flowers connected rather than placing them randomly.</p>
+
+<h3>15. Arabic Finger and Wrist Combination</h3>
+<p>Decorate the fingers with small matching patterns and connect them visually to a wrist bracelet.</p>
+
+<h3>16. Modern Arabic Mehndi</h3>
+<p>Use clean lines, large flowers and fewer details for a contemporary look. This style is especially suitable for people who prefer minimal decoration.</p>
+
+<h3>17. Arabic Peacock Detail</h3>
+<p>A small peacock motif can be added as the focal point of a larger floral composition. Surround it with leaves rather than filling the entire hand.</p>
+
+<h3>18. Arabic Foot Mehndi</h3>
+<p>Arabic patterns can also look beautiful on the feet. A curved floral trail across the top of the foot can create a delicate and elegant appearance.</p>
+
+<h3>19. Arabic Half-Hand Design</h3>
+<p>Cover only part of the hand with a flowing floral composition. This is useful when you want a noticeable design while keeping the rest of the hand open.</p>
+
+<h3>20. Arabic Mehndi With Negative Space</h3>
+<p>Negative space is one of the easiest ways to make a design look modern. Instead of filling every area, intentionally leave clean spaces around the main motifs.</p>
+
+<h3>21. Arabic Bridal Rose and Paisley</h3>
+<p>For a wedding, combine a large rose, one or two paisleys and several detailed leaves. This creates more visual depth while retaining the Arabic flow.</p>
+
+<h3>22. Arabic Simple Finger Bands</h3>
+<p>Small bands around the fingers can be paired with a tiny floral trail on the back of the hand.</p>
+
+<h3>23. Arabic Floral Cuff</h3>
+<p>Create a wider decorative band around the wrist and connect it to a long vine. This gives the appearance of a henna bracelet.</p>
+
+<h3>24. Arabic Minimalist Vines</h3>
+<p>For everyday wear, choose one thin vine with a few leaves and dots. It is quick to apply and easy to maintain.</p>
+
+<h3>25. Arabic Full Back-Hand Composition</h3>
+<p>For a more detailed event design, combine flowers, paisleys, leaves, dots and curved lines across the back of the hand while preserving some open areas.</p>
+
+<h2>How to Choose the Right Arabic Mehndi Design</h2>
+<p>Choosing a design is easier when you consider the occasion first.</p>
+
+<h3>For Weddings</h3>
+<p>Wedding mehndi can be more detailed and decorative. You can choose larger floral motifs, paisleys, peacocks and extended patterns.</p>
+<p>If you want a more traditional Pakistani bridal style, explore our <a href="/mehndi-designs/pakistani">Pakistani Mehndi Designs</a> collection.</p>
+<p>For more guidance on selecting patterns for specific events, see our guide on <a href="/blog/how-to-choose-mehndi-design-for-occasion">how to choose the right mehndi design for your occasion</a>.</p>
+
+<h3>For Eid</h3>
+<p>Eid designs usually work well when they are attractive but not excessively complicated. Medium-detail Arabic flowers, vines and leafy trails are good options.</p>
+
+<h3>For Parties</h3>
+<p>For a party, a modern Arabic design with bold flowers and clean negative space can complement both traditional and western outfits.</p>
+
+<h3>For Everyday Wear</h3>
+<p>Choose a small floral trail, finger pattern or minimalist vine. These designs take less time and are easy to refresh.</p>
+
+<h2>Arabic vs. Pakistani Mehndi Designs</h2>
+<p>Arabic and Pakistani mehndi can overlap in their use of flowers, leaves and traditional motifs, but their overall compositions can look different.</p>
+<p>Arabic designs often emphasize flowing trails, larger motifs and open spaces. Pakistani designs can be more detailed and may use denser compositions with intricate patterns.</p>
+<p>There is no single rule that says a design must belong to only one style. Many modern mehndi artists combine elements from different traditions to create a personalized look.</p>
+<p>You can explore more styles in our <a href="/mehndi-designs/pakistani">Pakistani Mehndi Designs</a> collection.</p>
+
+<h2>Tips for Making Arabic Mehndi Look Beautiful</h2>
+<h3>Keep the Composition Balanced</h3>
+<p>Avoid placing every motif in the same size. Combine one or two larger flowers with smaller leaves and dots.</p>
+
+<h3>Use Open Space</h3>
+<p>Open areas help the main motifs stand out. A completely filled hand is not always necessary for an attractive design.</p>
+
+<h3>Follow a Natural Flow</h3>
+<p>Instead of placing flowers randomly, connect them with curved stems or vines.</p>
+
+<h3>Match the Design to Your Outfit</h3>
+<p>A simple outfit can work with a more detailed design, while an already heavily decorated outfit may look better with a cleaner mehndi pattern.</p>
+
+<h3>Practice the Main Motifs</h3>
+<p>If you are a beginner, practice flowers, leaves, paisleys and curved lines separately before combining them.</p>
+<p>For more beginner-friendly inspiration, read our guide <a href="/blog/simple-mehndi-designs-for-beginners">25 Simple Mehndi Designs for Beginners</a>.</p>
+
+<h2>How Long Does an Arabic Mehndi Design Take?</h2>
+<p>The application time depends on the size and complexity of the pattern.</p>
+<p>A small minimalist design may take only a short time, while a detailed bridal composition can take considerably longer. If you are preparing for an important event, choose your design in advance and allow enough time for application and drying.</p>
+
+<h2>A Note About Henna Safety</h2>
+<p>When choosing mehndi, pay attention to the product and ingredients being used.</p>
+<p>The U.S. Food and Drug Administration notes that products marketed as “black henna” may contain additional dyes such as hair-dye ingredients, and it has received reports of allergic reactions and skin problems associated with some temporary tattoos and henna products.</p>
+<p>For this reason, avoid assuming that every product labeled “black henna” is the same as traditional henna. If you have concerns about a product or your skin, seek appropriate professional advice.</p>
+
+<h2>Frequently Asked Questions</h2>
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">What is the easiest Arabic mehndi design for beginners?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">A simple floral vine is one of the easiest options. Start with one large flower, add curved leaves and finish with small dots.</p>
+  </div>
+</div>
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Are Arabic mehndi designs good for weddings?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Yes. Arabic designs can be adapted for weddings by adding more detailed flowers, paisleys, peacocks and extended patterns.</p>
+  </div>
+</div>
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Are Arabic mehndi designs suitable for Eid?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Yes. Medium-detail floral and leafy patterns are especially suitable for Eid because they can look festive without requiring an extremely dense design.</p>
+  </div>
+</div>
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Can Arabic mehndi be used on feet?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Yes. Flowing floral trails and bracelet-style patterns can be adapted beautifully for the feet.</p>
+  </div>
+</div>
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">What makes Arabic mehndi different?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">The flowing composition, larger floral motifs, diagonal movement and use of open space are common characteristics of Arabic-style mehndi.</p>
+  </div>
+</div>
+
+<h2>Final Thoughts</h2>
+<p>Arabic mehndi designs offer a flexible combination of elegance, simplicity and traditional beauty. From a small finger pattern to an elaborate bridal composition, the style can be adjusted for almost any occasion.</p>
+<p>The best design is not necessarily the most complicated one. Choose a pattern that matches your event, outfit, available time and personal preference.</p>
+<p>Explore different designs, practice the basic motifs and use open space to create a balanced composition. Whether you are looking for a simple Eid pattern, a party design or a more detailed wedding look, Arabic mehndi gives you plenty of creative possibilities.</p>
+
+<h2>Explore more Mehndi Designs:</h2>
+<ul>
+  <li><a href="/mehndi-designs/pakistani">Pakistani Mehndi Designs</a></li>
+  <li><a href="/blog/simple-mehndi-designs-for-beginners">Simple Mehndi Designs for Beginners</a></li>
+  <li><a href="/">Mehndi Design Home</a></li>
+  <li><a href="/tools/mehndi-search-tool">Mehndi Search Tool</a></li>
+  <li><a href="/tools/khafif-mehndi-generator">Khafif Mehndi Generator</a></li>
+</ul>
+
+<h2>Recommended Reference</h2>
+<p>For additional information about henna and temporary tattoos, readers can consult the U.S. Food and Drug Administration's consumer guidance on henna and temporary tattoos.</p>`
+}
 ];
+
 

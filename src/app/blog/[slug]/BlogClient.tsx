@@ -9,6 +9,7 @@ import BlogCard from "@/components/BlogCard";
 import TableOfContents from "@/components/TableOfContents";
 import SocialShare from "@/components/SocialShare";
 import AuthorBio from "@/components/AuthorBio";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { getRelatedPosts, getPrevAndNextPosts } from "@/lib/blog";
 import { motion } from "framer-motion";
 import {
@@ -133,15 +134,21 @@ export default function BlogClient({
 
       <article className="min-h-screen pt-24 pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          {/* Back link */}
+          {/* Breadcrumb & Back link */}
           <motion.div
             initial={{ opacity: 0, x: -10 }}
             animate={{ opacity: 1, x: 0 }}
-            className="mb-8 max-w-4xl mx-auto lg:max-w-none"
+            className="mb-8 max-w-4xl mx-auto lg:max-w-none flex flex-wrap items-center justify-between gap-4"
           >
+            <Breadcrumbs
+              items={[
+                { label: "Blog", href: "/blog" },
+                { label: blog.title, href: `/blog/${blog.slug}` },
+              ]}
+            />
             <Link
               href="/blog"
-              className="inline-flex items-center gap-2 text-muted hover:text-gold transition-colors text-sm"
+              className="inline-flex items-center gap-2 text-muted hover:text-gold transition-colors text-sm mb-6"
             >
               <ArrowLeft size={16} />
               Back to Blog
