@@ -4,6 +4,7 @@ import { designs } from "@/data/designs";
 import DesignCard from "@/components/DesignCard";
 import SectionHeading from "@/components/SectionHeading";
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 const BASE_URL = "https://www.mehndidesignhenna.com";
@@ -114,13 +115,28 @@ export default async function CountryStylePage(props: { params: Promise<{ id: st
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <main className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto min-h-screen">
       <div className="mb-16">
-        <div className="text-6xl mb-4">{country.flag}</div>
-        <h1 className="text-4xl md:text-5xl font-serif font-bold text-gold mb-6">
-          {country.name} Mehndi Styles
-        </h1>
-        <p className="text-xl text-foreground mb-8 max-w-3xl leading-relaxed">
-          {country.description}
-        </p>
+        <div className="flex flex-col md:flex-row gap-8 items-start mb-8">
+          <div className="flex-1">
+            <div className="text-6xl mb-4">{country.flag}</div>
+            <h1 className="text-4xl md:text-5xl font-serif font-bold text-gold mb-6">
+              {country.h1Title || `${country.name} Mehndi Styles`}
+            </h1>
+            <p className="text-xl text-foreground mb-6 max-w-3xl leading-relaxed">
+              {country.description}
+            </p>
+          </div>
+          {country.heroImage && (
+            <div className="w-full md:w-1/3 shrink-0 rounded-2xl overflow-hidden shadow-lg border border-border/40 relative aspect-square md:aspect-[4/5]">
+              <Image 
+                src={country.heroImage} 
+                alt={`${country.name} henna design`}
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+          )}
+        </div>
 
         <div className="bg-surface border border-border p-8 rounded-2xl max-w-4xl">
           <h2 className="text-2xl font-serif text-gold mb-4">Cultural Traditions</h2>
@@ -137,13 +153,25 @@ export default async function CountryStylePage(props: { params: Promise<{ id: st
 
           {/* Internal contextual link to the matching design category page */}
           {linkedCategory && (
-            <p className="text-muted text-sm">
+            <p className="text-muted text-sm mt-4">
               Browse the full gallery:{" "}
               <Link
                 href={`/mehndi-designs/${linkedCategory.slug}`}
                 className="text-gold underline underline-offset-2 hover:text-gold/80 transition-colors"
               >
                 {linkedCategory.label}
+              </Link>
+            </p>
+          )}
+
+          {country.id === 'turkey' && (
+            <p className="text-muted text-sm mt-2">
+              Learn more about the traditions:{" "}
+              <Link
+                href="/blog/turkish-henna-night-kina-gecesi-traditions"
+                className="text-gold underline underline-offset-2 hover:text-gold/80 transition-colors"
+              >
+                Turkish Henna Night (Kına Gecesi)
               </Link>
             </p>
           )}

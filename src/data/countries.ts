@@ -12,6 +12,8 @@ export interface CountryStyle {
   seoTitle?: string;
   /** Optional SEO-only meta description override. */
   seoDescription?: string;
+  /** Optional H1 title override for the page. */
+  h1Title?: string;
 }
 
 export const countries: CountryStyle[] = [
@@ -72,29 +74,33 @@ export const countries: CountryStyle[] = [
     name: 'Turkey',
     flag: '🇹🇷',
     description:
-      'Turkish henna tradition is centred around the beloved Kına Gecesi (Henna Night), a deeply emotional pre-wedding ceremony unique to Turkish culture. While Turkish henna designs tend to be simpler than their South Asian counterparts, the cultural ceremony surrounding their application is among the most elaborate in the world. Modern Turkish henna artists are now blending Ottoman-inspired florals with contemporary aesthetics.',
+      'Turkish henna tradition is centred around the beloved Kına Gecesi (Henna Night), a deeply emotional pre-wedding ceremony unique to Turkish culture. While Turkish henna designs tend to be simpler than their South Asian counterparts, the cultural ceremony surrounding their application is among the most elaborate in the world. Modern Turkish henna artists are now blending Ottoman-inspired florals with contemporary aesthetics to create beautiful henna Turkey is known for.',
     styles: ['Ottoman Floral', 'Kına Gecesi Traditional', 'Turkish Contemporary', 'Tulip Motif', 'Anatolian Folk'],
     designCount: 10,
     heroImage: '/images/countries/turkey-hero.jpg',
     traditions:
       'The Kına Gecesi is held the night before the wedding, where the bride wears a velvet dress and veil while female relatives apply henna to her palms. The ceremony involves emotional songs that make the bride cry, and a gold coin is placed in the bride\'s closed, hennaed palm. It is a farewell celebration from the bride\'s family.',
     famousFor: 'The emotional Kına Gecesi ceremony and Ottoman tulip-inspired henna motifs.',
+    seoTitle: '100+ Turkish Henna Designs — Ottoman & Kına Gecesi Patterns',
+    seoDescription: 'Explore beautiful Turkish henna designs and learn about the emotional Kına Gecesi ceremony. Traditional Ottoman henna Turkey is famous for.',
+    h1Title: 'Turkish Henna Designs',
   },
   {
     id: 'indonesia',
     name: 'Indonesia',
     flag: '🇮🇩',
     description:
-      'Indonesian henna art reflects the rich cultural tapestry of the archipelago, blending Javanese, Balinese, and Malay influences with Islamic geometric traditions. Henna in Indonesia is closely associated with wedding rituals across various ethnic groups, particularly in Java and Sumatra. Indonesian designs often feature a harmonious mix of floral, paisley, and local batik-inspired motifs that create a uniquely Southeast Asian aesthetic.',
+      'Indonesian henna art reflects the rich cultural tapestry of the archipelago, blending Javanese, Balinese, and Malay influences with Islamic geometric traditions. The beautiful Indonesia mehndi design is closely associated with wedding rituals across various ethnic groups, particularly in Java and Sumatra. Indonesian henna designs often feature a harmonious mix of floral, paisley, and local batik-inspired motifs that create a uniquely Southeast Asian aesthetic, setting these Indonesian mehndi patterns apart.',
     styles: ['Javanese', 'Balinese', 'Malay-Indonesian', 'Batik-Inspired', 'Sumatran'],
     designCount: 10,
     heroImage: '/images/countries/indonesia-hero.jpg',
     traditions:
-      'In Javanese weddings, henna is applied during the "Midodareni" ceremony the night before the wedding. Balinese Hindu traditions also incorporate henna as part of temple ceremonies and blessings. Across the Indonesian archipelago, henna is used to celebrate Maulid (Prophet\'s birthday) and Eid festivities.',
+      'In Javanese weddings, Indonesian henna is applied during the "Midodareni" ceremony the night before the wedding. Balinese Hindu traditions also incorporate henna as part of temple ceremonies and blessings. Across the Indonesian archipelago, henna is used to celebrate Maulid (Prophet\'s birthday) and Eid festivities.',
     famousFor: 'Batik-inspired henna patterns blending Javanese artistry with Islamic geometric motifs.',
     seoTitle: 'Indonesian Henna Designs — Javanese, Balinese & Batik Mehndi Patterns',
     seoDescription:
       'Explore beautiful Indonesian henna designs featuring batik-inspired motifs, Javanese floral patterns, and Balinese geometric art. Discover Indonesia mehndi traditions for weddings, Eid, and the Midodareni ceremony.',
+    h1Title: 'Indonesian Henna Designs & Mehndi Patterns',
   },
   {
     id: 'sudan-africa',
