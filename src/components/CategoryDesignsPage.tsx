@@ -10,6 +10,17 @@ import Pagination from "./Pagination";
 
 const DESIGNS_PER_PAGE = 48;
 
+// Maps taxonomy region → styles/[id] country page for cross-linking
+const REGION_TO_STYLE_PAGE: Record<string, { id: string; label: string }> = {
+  indonesia: { id: "indonesia", label: "Indonesian Henna Cultural Traditions" },
+  india: { id: "india", label: "Indian Mehndi Cultural Traditions" },
+  pakistan: { id: "pakistan", label: "Pakistani Mehndi Cultural Traditions" },
+  gulf: { id: "arabia", label: "Arabic Mehndi Cultural Traditions" },
+  morocco: { id: "morocco", label: "Moroccan Henna Cultural Traditions" },
+  turkey: { id: "turkey", label: "Turkish Henna Cultural Traditions" },
+  africa: { id: "sudan-africa", label: "African Henna Cultural Traditions" },
+};
+
 export default function CategoryDesignsPage({
   category,
   designs,
@@ -78,6 +89,17 @@ export default function CategoryDesignsPage({
                 with a high-resolution image, step-by-step inspiration, and frequently asked
                 questions. Tap any design to view it full size, then download or share it.
               </p>
+              {category.region && REGION_TO_STYLE_PAGE[category.region] && (
+                <p className="text-sm">
+                  Learn about the cultural history behind these designs:{" "}
+                  <Link
+                    href={`/styles/${REGION_TO_STYLE_PAGE[category.region].id}`}
+                    className="text-gold underline underline-offset-2 hover:text-gold/80 transition-colors"
+                  >
+                    {REGION_TO_STYLE_PAGE[category.region].label}
+                  </Link>
+                </p>
+              )}
             </section>
           )}
 

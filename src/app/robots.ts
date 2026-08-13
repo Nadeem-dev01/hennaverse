@@ -36,6 +36,5 @@ export default function robots(): MetadataRoute.Robots {
       },
     ],
     sitemap: 'https://www.mehndidesignhenna.com/sitemap.xml',
-    host: 'https://www.mehndidesignhenna.com',
   };
 }

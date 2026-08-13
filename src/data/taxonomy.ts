@@ -101,10 +101,10 @@ export const categories: CategoryDef[] = [
   {
     slug: "indonesian",
     title: "Indonesian Henna Designs",
-    metaTitle: "50+ Indonesian Henna Designs — Batik-Inspired Mehndi Patterns",
-    metaDescription: "Explore unique Indonesian henna designs featuring batik-inspired motifs, bold lines, and nature elements popular in Javanese and Malay wedding traditions.",
+    metaTitle: "Indonesian Henna Designs — Javanese, Balinese & Batik Mehndi Patterns",
+    metaDescription: "Browse beautiful Indonesian henna designs featuring batik-inspired motifs, Javanese floral patterns, and Balinese geometric art. Explore Indonesia mehndi traditions for weddings, Eid, and the Midodareni ceremony.",
     region: "indonesia",
-    keywords: ["indonesian henna designs", "indonesian mehndi", "batik henna"],
+    keywords: ["indonesian henna", "indonesian henna designs", "indonesia mehndi designs", "indonesian mehndi patterns", "javanese henna", "balinese henna", "batik henna designs", "indonesian mehndi"],
   },
 
   // Style-based categories

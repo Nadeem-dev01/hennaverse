@@ -22,19 +22,29 @@ export async function generateMetadata(
   const metaDesc = design.descriptionParagraphs[0]?.slice(0, 160) || 
     `Explore this stunning ${design.image.alt}. Get inspired by our step-by-step guides and save this design for your next occasion!`;
 
+  // Build a richer title: "<DesignName> — <Category> Mehndi Design"
+  // The layout template appends "| Mehndi Design Henna" automatically.
+  const categoryLabel = design.categories?.[0]
+    ? design.categories[0].charAt(0).toUpperCase() + design.categories[0].slice(1)
+    : "";
+  const enrichedTitle = categoryLabel
+    ? `${design.title} — ${categoryLabel} Mehndi Design`
+    : design.title;
+
   return {
-    title: design.title,
+    title: enrichedTitle,
     description: metaDesc,
     alternates: { canonical: `/designs/${design.slug}` },
     openGraph: {
-      title: design.title,
+      title: enrichedTitle,
       description: metaDesc,
       images: [{ url: design.image.src, width: design.image.width, height: design.image.height, alt: design.image.alt }],
     },
     twitter: {
       card: "summary_large_image",
-      title: design.title,
+      title: enrichedTitle,
       description: metaDesc,
+      images: [design.image.src],
     },
   };
 }
@@ -50,9 +60,6 @@ export default async function DesignPage(
     .map((id) => allDesigns.find((d) => d.id === id))
     .filter(Boolean)
     .slice(0, 8) as typeof allDesigns;
-
-  const reviewCount = (design.slug.length * 3 + 75).toString();
-  const ratingValue = (4.5 + (design.slug.length % 5) * 0.1).toFixed(1);
 
   const creativeWorkSchema = {
     "@context": "https://schema.org",
@@ -75,11 +82,6 @@ export default async function DesignPage(
         width: 800,
         height: 255,
       },
-    },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: ratingValue,
-      reviewCount: reviewCount,
     },
     datePublished: "2024-01-01",
     dateModified: "2026-06-26",

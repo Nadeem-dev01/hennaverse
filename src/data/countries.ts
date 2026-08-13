@@ -8,6 +8,10 @@ export interface CountryStyle {
   heroImage: string;
   traditions: string;
   famousFor: string;
+  /** Optional SEO-only title override (does not appear on the page visually). */
+  seoTitle?: string;
+  /** Optional SEO-only meta description override. */
+  seoDescription?: string;
 }
 
 export const countries: CountryStyle[] = [
@@ -88,6 +92,9 @@ export const countries: CountryStyle[] = [
     traditions:
       'In Javanese weddings, henna is applied during the "Midodareni" ceremony the night before the wedding. Balinese Hindu traditions also incorporate henna as part of temple ceremonies and blessings. Across the Indonesian archipelago, henna is used to celebrate Maulid (Prophet\'s birthday) and Eid festivities.',
     famousFor: 'Batik-inspired henna patterns blending Javanese artistry with Islamic geometric motifs.',
+    seoTitle: 'Indonesian Henna Designs — Javanese, Balinese & Batik Mehndi Patterns',
+    seoDescription:
+      'Explore beautiful Indonesian henna designs featuring batik-inspired motifs, Javanese floral patterns, and Balinese geometric art. Discover Indonesia mehndi traditions for weddings, Eid, and the Midodareni ceremony.',
   },
   {
     id: 'sudan-africa',

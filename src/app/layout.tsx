@@ -62,6 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Mehndi Design Henna — 5000+ Easy Mehndi Designs & Henna Patterns",
     description: "5000+ easy mehndi designs, mehndi patterns for hands, and henna tattoo ideas for every occasion.",
+    images: ["/chakra-bridal-front-hand-mehndi-820x1024.avif"],
   },
 };
 

@@ -3,31 +3,59 @@ import { countries } from "@/data/countries";
 import { designs } from "@/data/designs";
 import DesignCard from "@/components/DesignCard";
 import SectionHeading from "@/components/SectionHeading";
+import Link from "next/link";
 import type { Metadata } from "next";
 
 const BASE_URL = "https://www.mehndidesignhenna.com";
+
+// Mapping from country id → related mehndi-designs category slug (for internal linking)
+const CATEGORY_LINK_MAP: Record<string, { slug: string; label: string }> = {
+  indonesia: { slug: "indonesian", label: "Indonesian Henna Designs" },
+  india: { slug: "indian", label: "Indian Mehndi Designs" },
+  pakistan: { slug: "pakistani", label: "Pakistani Mehndi Designs" },
+  arabia: { slug: "arabic", label: "Arabic Mehndi Designs" },
+  morocco: { slug: "moroccan", label: "Moroccan Henna Designs" },
+  turkey: { slug: "turkish", label: "Turkish Henna Designs" },
+  "sudan-africa": { slug: "african", label: "African Henna Designs" },
+};
 
 export async function generateMetadata(props: { params: Promise<{ id: string }> }): Promise<Metadata> {
   const params = await props.params;
   const country = countries.find((c) => c.id === params.id);
   if (!country) return { title: "Not Found" };
-  
+
+  // Use per-country SEO overrides when available (e.g. Indonesia optimised for "indonesian henna")
+  const metaTitle = country.seoTitle ?? `${country.name} Mehndi Styles — Traditional Henna Patterns and Designs`;
+  const metaDescription = country.seoDescription ?? country.description;
+
+  // Build keyword list — include both "henna" and "mehndi" variants for the country
+  const nameLC = country.name.toLowerCase();
+  const keywords = [
+    `${nameLC} henna`,
+    `${nameLC} henna designs`,
+    `${nameLC} mehndi`,
+    `${nameLC} mehndi designs`,
+    `${nameLC} mehndi patterns`,
+    "henna designs",
+    "mehndi styles",
+  ];
+
   return {
-    title: `${country.name} Mehndi Styles — Traditional Henna Patterns and Designs`,
-    description: country.description,
-    keywords: [`${country.name.toLowerCase()} mehndi`, `${country.name.toLowerCase()} henna`, "mehndi styles", "henna designs", "mehndi patterns"],
+    title: metaTitle,
+    description: metaDescription,
+    keywords,
     alternates: { canonical: `/styles/${country.id}` },
     openGraph: {
-      title: `${country.name} Mehndi Styles`,
-      description: country.description,
+      title: metaTitle,
+      description: metaDescription,
       type: "website",
       url: `${BASE_URL}/styles/${country.id}`,
       siteName: "Mehndi Design Henna",
     },
     twitter: {
       card: "summary_large_image",
-      title: `${country.name} Mehndi Styles | Mehndi Design Henna`,
-      description: country.description,
+      title: metaTitle,
+      description: metaDescription,
     },
   };
 }
@@ -41,7 +69,7 @@ export function generateStaticParams() {
 export default async function CountryStylePage(props: { params: Promise<{ id: string }> }) {
   const params = await props.params;
   const country = countries.find((c) => c.id === params.id);
-  
+
   if (!country) {
     notFound();
   }
@@ -52,12 +80,16 @@ export default async function CountryStylePage(props: { params: Promise<{ id: st
     return cn.includes(dc) || dc.includes(cn);
   });
 
+  // Use per-country SEO title/description for schema too
+  const metaTitle = country.seoTitle ?? `${country.name} Mehndi Styles — Traditional Henna Patterns and Designs`;
+  const metaDescription = country.seoDescription ?? country.description;
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "inLanguage": "en",
-    name: `${country.name} Mehndi Styles`,
-    description: country.description,
+    name: metaTitle,
+    description: metaDescription,
     url: `${BASE_URL}/styles/${country.id}`,
     publisher: { "@type": "Organization", name: "Mehndi Design Henna", url: BASE_URL },
   };
@@ -73,6 +105,9 @@ export default async function CountryStylePage(props: { params: Promise<{ id: st
     ],
   };
 
+  // Linked category page (internal linking)
+  const linkedCategory = CATEGORY_LINK_MAP[country.id];
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
@@ -86,27 +121,40 @@ export default async function CountryStylePage(props: { params: Promise<{ id: st
         <p className="text-xl text-foreground mb-8 max-w-3xl leading-relaxed">
           {country.description}
         </p>
-        
+
         <div className="bg-surface border border-border p-8 rounded-2xl max-w-4xl">
           <h2 className="text-2xl font-serif text-gold mb-4">Cultural Traditions</h2>
           <p className="text-muted leading-relaxed mb-6">{country.traditions}</p>
-          
+
           <h3 className="text-lg font-semibold text-foreground mb-3">Popular Styles:</h3>
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2 mb-6">
             {country.styles.map((style) => (
               <span key={style} className="px-3 py-1 bg-purple/10 text-purple border border-purple/20 rounded-full text-sm">
                 {style}
               </span>
             ))}
           </div>
+
+          {/* Internal contextual link to the matching design category page */}
+          {linkedCategory && (
+            <p className="text-muted text-sm">
+              Browse the full gallery:{" "}
+              <Link
+                href={`/mehndi-designs/${linkedCategory.slug}`}
+                className="text-gold underline underline-offset-2 hover:text-gold/80 transition-colors"
+              >
+                {linkedCategory.label}
+              </Link>
+            </p>
+          )}
         </div>
       </div>
 
-      <SectionHeading 
-        title={`${country.name} Designs`} 
+      <SectionHeading
+        title={`${country.name} Designs`}
         subtitle={`Browse our collection of ${countryDesigns.length} authentic designs`}
       />
-      
+
       {countryDesigns.length > 0 ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {countryDesigns.map((design, index) => (
