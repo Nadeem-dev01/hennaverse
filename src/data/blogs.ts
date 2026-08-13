@@ -10,9 +10,270 @@ export interface BlogPost {
   country: string;
   imageUrl: string;
   tags: string[];
+  metaTitle?: string;
+  metaDescription?: string;
 }
 
 export const blogs: BlogPost[] = [
+  {
+    slug: "asian-henna-designs",
+    title: "25 Asian Henna Designs: Beautiful Ideas for Weddings, Festivals & Celebrations",
+    excerpt: "Explore 25 beautiful Asian henna designs inspired by South Asian, Middle Eastern and modern styles. Find elegant ideas for weddings, festivals and special occasions.",
+    metaTitle: "25 Asian Henna Designs | Beautiful Ideas for Weddings & Festivals",
+    metaDescription: "Explore 25 beautiful Asian henna designs inspired by South Asian, Middle Eastern and modern styles. Find elegant ideas for weddings, festivals and special occasions.",
+    author: "Mehndi Design Henna Editorial Team",
+    date: "2026-08-13",
+    readTime: "9 min read",
+    category: "Henna Designs",
+    country: "Asia",
+    imageUrl: "/asian-henna-floral-paisley-design.jpg",
+    tags: [
+      "asian henna designs",
+      "asian mehndi",
+      "henna designs",
+      "wedding mehndi",
+      "eid mehndi",
+      "festival henna",
+      "floral henna"
+    ],
+    content: `<p class="lead mb-8 text-xl text-muted">Asian henna designs are admired for their rich variety, artistic patterns and cultural inspiration. Across Asia, henna and mehndi styles can include detailed floral motifs, paisleys, elegant vines, geometric elements, bridal patterns and modern minimalist artwork.</p>
+
+<p>Some Asian-inspired designs are highly detailed and traditional, while others use clean lines, open spaces and simple floral elements. This variety makes Asian henna suitable for many occasions, including weddings, Eid celebrations, parties, festivals and everyday wear.</p>
+
+<p>In this guide, explore <strong>25 beautiful Asian henna design ideas</strong> and discover styles that can inspire your next mehndi look.</p>
+
+<div class="my-6">
+  <img src="/asian-henna-floral-paisley-design.jpg" alt="Asian henna design with floral and paisley patterns" class="rounded-2xl w-full object-cover shadow-lg border border-border/40" />
+</div>
+
+<h2>What Makes Asian Henna Designs Special?</h2>
+<p>Asian henna designs can combine inspiration from different artistic traditions and regional styles. Common elements include:</p>
+
+<ul>
+  <li>Floral patterns</li>
+  <li>Paisley motifs</li>
+  <li>Leaves and vines</li>
+  <li>Detailed finger patterns</li>
+  <li>Mandala-inspired shapes</li>
+  <li>Bracelet and jewelry-style designs</li>
+  <li>Geometric details</li>
+  <li>Open-space modern patterns</li>
+  <li>Detailed bridal compositions</li>
+</ul>
+
+<p>The best Asian henna design depends on the occasion, placement and amount of detail you prefer.</p>
+
+<h2>1. Classic Floral Asian Henna Design</h2>
+<p>Large and small flowers can be connected with leaves and curved vines to create a balanced design.</p>
+<p>This style works beautifully on the palm or back of the hand and can be adapted for weddings, Eid and parties.</p>
+
+<h2>2. Indian-Inspired Detailed Henna</h2>
+<p>Indian-inspired henna often uses detailed patterns and decorative elements across a larger area of the hand.</p>
+<p>You can combine flowers, paisleys, curved lines and finger details for a rich and elegant appearance.</p>
+
+<h2>3. Pakistani-Inspired Bridal Mehndi</h2>
+<p>Pakistani-inspired bridal mehndi can include intricate floral motifs, paisleys and detailed decorative patterns.</p>
+<p>For wedding events, the design can extend from the hands toward the wrists or forearms.</p>
+<p>Explore more related ideas in our <a href="/mehndi-designs/pakistani">Pakistani Mehndi Designs</a> collection.</p>
+
+<div class="my-6">
+  <img src="/elegant-full-hand-asian-mehndi-design.jpg" alt="elegant full hand Asian mehndi design" class="rounded-2xl w-full object-cover shadow-lg border border-border/40" />
+</div>
+
+<h2>4. Modern Asian Floral Mehndi</h2>
+<p>Modern Asian floral designs focus on clean composition rather than covering every part of the hand.</p>
+<p>Use one or two main flowers, smaller leaves and open spaces for an elegant contemporary look.</p>
+
+<h2>5. Minimal Asian Henna Design</h2>
+<p>A minimal design is ideal when you want a stylish look without too much detail.</p>
+<p>Try a small flower with a thin leafy vine and a few decorative dots.</p>
+
+<h2>6. Asian Back Hand Henna</h2>
+<p>The back of the hand is perfect for displaying a flowing floral composition.</p>
+<p>Start near the wrist and create a diagonal trail toward the fingers using flowers and leaves.</p>
+
+<h2>7. Asian Palm Henna Design</h2>
+<p>Palm designs can be more detailed and symmetrical.</p>
+<p>A central floral motif surrounded by leaves, dots and smaller decorative elements can create a beautiful result.</p>
+
+<h2>8. Paisley and Floral Combination</h2>
+<p>Paisleys are one of the most versatile motifs in henna design.</p>
+<p>Combine one large paisley with flowers and curved leaves to create a traditional yet elegant Asian-inspired pattern.</p>
+
+<h2>9. Asian Mandala Henna</h2>
+<p>A circular mandala-inspired pattern can become the centerpiece of the hand.</p>
+<p>Add small floral details around it or leave open space for a clean and balanced appearance.</p>
+
+<h2>10. Asian Leaf Vine Design</h2>
+<p>For a simple and graceful style, create a long curved vine decorated with pointed leaves.</p>
+<p>This design is suitable for beginners and can be customized for different occasions.</p>
+
+<h2>11. Elegant Wedding Henna</h2>
+<p>Wedding henna can combine larger motifs with smaller decorative details.</p>
+<p>Use flowers, paisleys and detailed fingers to create a more special and festive appearance. For brides seeking complete inspiration, see our <a href="/mehndi-designs/bridal">Bridal Mehndi Designs</a>.</p>
+
+<h2>12. Asian Eid Henna Design</h2>
+<p>For Eid, choose a medium-detail pattern that looks festive but does not require excessive coverage.</p>
+<p>Floral trails, leafy vines and small decorative dots are excellent choices.</p>
+
+<h2>13. Party-Style Asian Henna</h2>
+<p>For a party, choose a fashionable design with bold flowers and modern open spaces.</p>
+<p>A half-hand pattern can create an attractive look while remaining quick to apply.</p>
+
+<h2>14. Asian Bracelet Henna Design</h2>
+<p>Create a decorative band around the wrist that resembles a bracelet.</p>
+<p>Connect it with a small floral or leafy pattern extending toward the hand.</p>
+
+<h2>15. Finger Detail Henna</h2>
+<p>Finger patterns can make a simple design look more complete.</p>
+<p>Use small leaves, dots, curved lines or decorative bands while keeping the rest of the hand open.</p>
+
+<h2>16. Full-Hand Asian Henna Design</h2>
+<p>A full-hand design can include multiple motifs while maintaining a balanced composition.</p>
+<p>Use larger patterns as focal points and connect them naturally with vines and smaller details.</p>
+
+<h2>17. Asian Foot Henna Design</h2>
+<p>Henna designs can also look beautiful on the feet.</p>
+<p>A floral trail across the top of the foot or a decorative ankle pattern can create an elegant look for weddings and celebrations.</p>
+
+<h2>18. Geometric Asian Henna</h2>
+<p>Modern designs can include simple geometric elements such as lines, diamonds and repeated shapes.</p>
+<p>Combine these details with flowers or leaves for a creative fusion style.</p>
+
+<h2>19. Lotus-Inspired Henna Design</h2>
+<p>The lotus is a beautiful floral motif that can be adapted into many henna compositions.</p>
+<p>Use a central lotus-inspired flower with leaves and fine details for an elegant artistic design.</p>
+
+<div class="my-6">
+  <img src="/lotus-inspired-asian-henna-pattern.jpg" alt="lotus inspired henna pattern" class="rounded-2xl w-full object-cover shadow-lg border border-border/40" />
+</div>
+
+<h2>20. Jewelry-Style Asian Henna</h2>
+<p>Jewelry-inspired henna can resemble rings, bracelets and hand chains.</p>
+<p>Connect a wrist pattern with delicate lines toward the fingers and add small decorative motifs.</p>
+
+<h2>21. Half-Hand Asian Mehndi</h2>
+<p>A half-hand design covers only part of the palm or back of the hand.</p>
+<p>This is a great option for people who want a noticeable design without the application time required for a full-hand pattern.</p>
+
+<h2>22. Modern Open-Space Henna</h2>
+<p>Open space can make even a simple design look stylish.</p>
+<p>Instead of filling every area, leave clean spaces between the main flowers, vines and decorative elements.</p>
+
+<h2>23. Floral Cuff Henna Design</h2>
+<p>Create a wider floral band around the wrist like a decorative cuff.</p>
+<p>Extend a few leaves or thin vines toward the hand for a complete and elegant composition.</p>
+
+<h2>24. Detailed Asian Bridal Henna</h2>
+<p>For a more elaborate bridal appearance, combine multiple elements such as flowers, paisleys, leaves and detailed finger patterns.</p>
+<p>The design can extend toward the forearm depending on the bride's preferred style.</p>
+
+<h2>25. Asian-Inspired Fusion Henna</h2>
+<p>A fusion design allows you to combine different elements into one personalized pattern.</p>
+<p>For example, you can use detailed floral work, a paisley motif, modern geometric accents and open spaces to create a unique design.</p>
+
+<div class="my-6">
+  <img src="/modern-asian-fusion-henna-design.jpg" alt="modern Asian fusion henna design" class="rounded-2xl w-full object-cover shadow-lg border border-border/40" />
+</div>
+
+<h2>How to Choose the Right Asian Henna Design</h2>
+
+<h3>Choose According to the Occasion</h3>
+<p>For weddings, you may prefer a detailed design with more decorative elements.</p>
+<p>For Eid, medium-detail floral patterns often provide a festive and elegant appearance.</p>
+<p>For parties and everyday wear, minimal and modern designs may be more practical.</p>
+
+<h3>Consider Your Preferred Placement</h3>
+<p>Back-hand designs are excellent for floral trails and open-space compositions.</p>
+<p>Palm designs can work well with symmetrical motifs and detailed patterns.</p>
+<p>Foot and wrist designs are also beautiful options for special occasions.</p>
+
+<h3>Match the Design to Your Outfit</h3>
+<p>A heavily decorated outfit may pair well with a simpler mehndi design.</p>
+<p>If your outfit is simple, a more detailed pattern can become an attractive part of your overall look.</p>
+
+<h2>Asian Henna Styles and Inspiration</h2>
+<p>Asian henna offers many possibilities because designs can be inspired by different regional traditions and modern artistic trends.</p>
+
+<h3>Pakistani-Inspired Styles</h3>
+<p>These designs can feature detailed patterns, floral elements, paisleys and decorative bridal compositions.</p>
+<p>Explore our <a href="/mehndi-designs/pakistani">Pakistani Mehndi Designs</a> page for more inspiration.</p>
+
+<h3>Arabic-Inspired Styles</h3>
+<p>Arabic-style designs are often known for flowing floral trails, larger motifs and elegant open spaces.</p>
+<p>Read our complete guide: <a href="/blog/arabic-mehndi-designs">Arabic Mehndi Designs: 25 Elegant Ideas for Weddings, Eid &amp; Parties</a>.</p>
+
+<h3>Simple Styles for Beginners</h3>
+<p>If you are new to mehndi, start with basic flowers, leaves, vines and dots before attempting more detailed designs.</p>
+<p>You can also read: <a href="/blog/simple-mehndi-designs-for-beginners">25 Simple Mehndi Designs for Beginners</a>.</p>
+
+<h2>Tips for Creating Beautiful Asian Henna Designs</h2>
+
+<h3>Keep the Pattern Balanced</h3>
+<p>Combine larger motifs with smaller details instead of making every element the same size.</p>
+
+<h3>Use Natural Flow</h3>
+<p>Connect flowers and motifs with curved stems and vines.</p>
+
+<h3>Do Not Overcrowd the Design</h3>
+<p>Leaving open space can help important motifs stand out.</p>
+
+<h3>Practice Basic Motifs</h3>
+<p>Practice flowers, leaves, paisleys and curved lines separately before creating a complete design.</p>
+
+<h3>Choose a Suitable Level of Detail</h3>
+<p>Select a simple design when you have limited time and a more detailed design for special events.</p>
+
+<h2>Frequently Asked Questions</h2>
+
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">What are Asian henna designs?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Asian henna designs are a broad collection of henna and mehndi styles inspired by artistic traditions and modern design trends across Asian cultures. They can include floral motifs, paisleys, vines, detailed patterns and minimalist designs.</p>
+  </div>
+</div>
+
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Are Asian henna designs good for weddings?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Yes. Asian henna designs can be adapted for weddings by using detailed floral patterns, paisleys, bridal elements and extended hand or forearm designs.</p>
+  </div>
+</div>
+
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">What is the easiest Asian henna design for beginners?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">A simple floral vine is a good starting point. Begin with one flower, add a few leaves and connect them with a curved line.</p>
+  </div>
+</div>
+
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Can Asian henna designs be used for Eid?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Yes. Floral, leafy and medium-detail designs are popular options for Eid celebrations.</p>
+  </div>
+</div>
+
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">What should I choose for a modern Asian henna look?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Choose a design with clean lines, bold floral motifs and open spaces for a modern and elegant appearance.</p>
+  </div>
+</div>
+
+<h2>Final Thoughts</h2>
+<p>Asian henna designs offer a wide range of beautiful possibilities, from simple floral trails to detailed bridal compositions. You can choose traditional-inspired patterns, modern minimalist designs or a personalized fusion style based on your occasion and personal preference.</p>
+<p>Whether you are preparing for a wedding, Eid, party or another celebration, the best henna design is one that feels comfortable, matches your outfit and suits the amount of detail you enjoy.</p>
+<p>Explore different styles, practice the basic motifs and experiment with flowers, leaves, paisleys and open spaces to discover the Asian henna design that inspires you most.</p>
+
+<h2>Explore More Mehndi Designs</h2>
+<ul>
+  <li><a href="/blog/arabic-mehndi-designs">Arabic Mehndi Designs</a></li>
+  <li><a href="/blog/simple-mehndi-designs-for-beginners">Simple Mehndi Designs for Beginners</a></li>
+  <li><a href="/mehndi-designs/pakistani">Pakistani Mehndi Designs</a></li>
+  <li><a href="/">Explore All Mehndi Designs</a></li>
+</ul>`
+  },
   {
     "slug": "the-complete-guide-to-indian-mehndi-styles",
     "title": "Indian Mehndi Styles: Traditional Rajasthani, Mughal and Bridal Designs",

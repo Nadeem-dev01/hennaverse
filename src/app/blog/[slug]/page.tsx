@@ -21,15 +21,18 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
     return { title: "Post Not Found" };
   }
 
+  const titleText = blog.metaTitle || blog.title;
+  const descriptionText = blog.metaDescription || blog.excerpt;
+
   return {
-    title: blog.title,
-    description: blog.excerpt,
+    title: blog.metaTitle ? { absolute: blog.metaTitle } : titleText,
+    description: descriptionText,
     alternates: {
       canonical: `/blog/${blog.slug}`,
     },
     openGraph: {
-      title: blog.title,
-      description: blog.excerpt,
+      title: titleText,
+      description: descriptionText,
       type: "article",
       publishedTime: new Date(blog.date).toISOString(),
       authors: [blog.author],
@@ -43,8 +46,8 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
     },
     twitter: {
       card: "summary_large_image",
-      title: blog.title,
-      description: blog.excerpt,
+      title: titleText,
+      description: descriptionText,
       ...(blog.imageUrl && { images: [`${BASE_URL}${blog.imageUrl}`] }),
     },
     keywords: blog.tags,
