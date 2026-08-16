@@ -71,6 +71,11 @@ const nextConfig: NextConfig = {
       { source: "/blog/eid-mehndi-design-:id", destination: "/mehndi-designs/eid", permanent: true },
       { source: "/blog/bridal-mehndi-design-:id", destination: "/mehndi-designs/bridal", permanent: true },
       { source: "/blog/karva-chauth-mehndi-inspiration", destination: "/occasions/karva-chauth", permanent: true },
+      // Short-slug URLs indexed by Google that resolve to 404 (noindex) — redirect
+      // to the correct canonical long-form slugs so Googlebot gets a 301 and
+      // follows to the real article (which has robots: index=true, canonical, etc.).
+      { source: "/blog/indian-mehndi-styles", destination: "/blog/the-complete-guide-to-indian-mehndi-styles", permanent: true },
+      { source: "/blog/pakistani-bridal-mehndi", destination: "/blog/pakistani-bridal-mehndi-traditions-modern-trends", permanent: true },
       // Legacy hardcoded page routes
       { source: "/arabic-mehndi", destination: "/mehndi-designs/arabic", permanent: true },
       { source: "/pakistani-mehndi", destination: "/mehndi-designs/pakistani", permanent: true },
