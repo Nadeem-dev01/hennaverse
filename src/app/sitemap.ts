@@ -45,7 +45,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${BASE_URL}/blog`,
       lastModified: SITE_LAST_UPDATED,
       changeFrequency: "weekly",
-      priority: 0.85,
+      priority: 0.9,
     },
     {
       url: `${BASE_URL}/tools`,
@@ -132,7 +132,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${BASE_URL}/blog/${blog.slug}`,
     lastModified: new Date(blog.date),
     changeFrequency: "monthly" as const,
-    priority: 0.7,
+    priority: 0.9,
     ...(blog.imageUrl ? { images: [`${BASE_URL}${blog.imageUrl}`] } : {}),
   }));
 
@@ -149,7 +149,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${BASE_URL}/tools/${tool.slug}`,
     lastModified: SITE_LAST_UPDATED,
     changeFrequency: "monthly" as const,
-    priority: 0.85,
+    priority: 0.5,
   }));
 
   // --- Blog category pages ---
@@ -158,7 +158,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${BASE_URL}/blog/category/${cat.toLowerCase().replace(/\s+/g, "-")}`,
     lastModified: SITE_LAST_UPDATED,
     changeFrequency: "weekly" as const,
-    priority: 0.75,
+    priority: 0.8,
   }));
 
   return [
