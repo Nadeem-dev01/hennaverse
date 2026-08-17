@@ -119,8 +119,8 @@ export default function BlogCard({
               src={blog.imageUrl} 
               alt={blog.title} 
               fill
-              priority={index < 3}
-              quality={60}
+              loading="lazy"
+              quality={65}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
               className="object-cover group-hover:scale-105 transition-transform duration-500" 
             />

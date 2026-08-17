@@ -84,6 +84,13 @@ export default function RootLayout({
         {/* Funding Choices (Google consent banner) — 72.5 KiB third-party hit */}
         <link rel="preconnect" href="https://fundingchoicesmessages.google.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://fundingchoicesmessages.google.com" />
+        {/* Preload the LCP blog-card image (first above-the-fold blog post) */}
+        <link
+          rel="preload"
+          as="image"
+          href="/asian-henna-floral-paisley-design.avif"
+          type="image/avif"
+        />
       </head>
       <body className="min-h-screen flex flex-col bg-background text-foreground font-sans">
         <ThirdPartyScripts />
@@ -101,7 +108,7 @@ export default function RootLayout({
                   logo: {
                     "@type": "ImageObject",
                     "@id": "https://www.mehndidesignhenna.com/#logo",
-                    url: "https://www.mehndidesignhenna.com/Logo_Mehndidesign.png",
+                    url: "https://www.mehndidesignhenna.com/Logo_Mehndidesign.webp",
                     width: 800,
                     height: 255,
                   },

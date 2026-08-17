@@ -84,6 +84,7 @@ export function DownloadButton({ imageUrl, title, size = "md" }: { imageUrl: str
       onClick={onClick}
       className={`flex items-center justify-center bg-gold text-black font-medium hover:bg-gold-light transition-all duration-300 cursor-pointer shadow-lg shadow-gold/20 hover:shadow-gold/40 ${sizeClasses}`}
       title="Download as JPG"
+      aria-label="Download design as JPG"
     >
       {downloading ? (
         <Check size={size === "sm" ? 14 : 18} className="text-black" />
@@ -118,6 +119,7 @@ export function ShareButton({ title, description, urlPath, size = "md" }: { titl
       onClick={onClick}
       className={`flex items-center justify-center border border-border text-foreground hover:border-gold hover:text-gold transition-all duration-300 cursor-pointer ${sizeClasses}`}
       title="Share Design"
+      aria-label="Share this design"
     >
       {copied ? (
         <Check size={size === "sm" ? 14 : 18} className="text-green-400" />

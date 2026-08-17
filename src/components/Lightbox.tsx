@@ -248,6 +248,7 @@ export default function Lightbox({ design, isOpen, onClose }: LightboxProps) {
                     onClick={() => handleCopyLink()}
                     className="p-2.5 rounded-lg bg-surface border border-border hover:border-gold/50 text-muted hover:text-gold transition-all duration-300 cursor-pointer"
                     title={copied ? "Copied!" : "Copy Link"}
+                    aria-label={copied ? "Link copied" : "Copy link to clipboard"}
                   >
                     {copied ? <Check size={18} className="text-emerald-500" /> : <Copy size={18} />}
                   </button>

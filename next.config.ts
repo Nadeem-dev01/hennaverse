@@ -47,6 +47,7 @@ const nextConfig: NextConfig = {
       {
         source: "/:path*.avif",
         headers: [
+          { key: "Content-Type", value: "image/avif" },
           { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
         ],
       },
@@ -59,6 +60,7 @@ const nextConfig: NextConfig = {
       {
         source: "/:path*.webp",
         headers: [
+          { key: "Content-Type", value: "image/webp" },
           { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
         ],
       },
