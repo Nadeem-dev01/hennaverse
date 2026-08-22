@@ -57,14 +57,21 @@ export const metadata: Metadata = {
     "online henna tools"
   ],
   alternates: {
-    canonical: "https://www.mehndidesignhenna.com/tools",
+    canonical: "/tools",
   },
   openGraph: {
     title: "Henna Stencils, Mehndi Stencils & Free Design Tools | Mehndi Design Henna",
     description:
-      "Free henna stencils, mehndi stencils, and 100+ tools including generators, finders, and AI-powered recommendations.",
-    url: "https://www.mehndidesignhenna.com/tools",
+      "Free henna stencils, mehndi stencils, and 100+ design tools — generators, finders, and AI-powered selectors for easy arabic mehndi designs, back hand mehndi, and eid henna patterns.",
+    url: "/tools",
     type: "website",
+    siteName: "Mehndi Design Henna",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Henna Stencils, Mehndi Stencils & Free Design Tools | Mehndi Design Henna",
+    description:
+      "Free henna stencils, mehndi stencils, and 100+ design tools — generators, finders, and AI-powered selectors for easy arabic mehndi designs, back hand mehndi, and eid henna patterns.",
   },
 };
 

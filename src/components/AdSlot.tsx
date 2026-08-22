@@ -16,12 +16,12 @@ export default function AdSlot({ adSlot, adFormat = "auto", className = "" }: Ad
       if (typeof window !== "undefined") {
         const insElement = adRef.current?.querySelector("ins");
         if (insElement && !insElement.getAttribute("data-adsbygoogle-status")) {
-          // @ts-ignore
+          // @ts-expect-error - Google AdSense global array
           (window.adsbygoogle = window.adsbygoogle || []).push({});
         }
       }
-    } catch (err: any) {
-      if (err.message && err.message.includes("already have ads")) {
+    } catch (err: unknown) {
+      if (err instanceof Error && err.message.includes("already have ads")) {
         // Ignore duplicate push error in React Strict Mode
       } else {
         console.error("AdSense error", err);

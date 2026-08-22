@@ -134,6 +134,7 @@ export function useDesigns(options: UseDesignsOptions = {}) {
   }, [buildUrl, pagination, loadingMore]);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     fetchDesigns();
   }, [fetchDesigns]);
 

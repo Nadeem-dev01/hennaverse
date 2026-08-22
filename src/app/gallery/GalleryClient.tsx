@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, useCallback, useEffect, useRef } from "react";
+import { useState, useMemo, useCallback, useEffect } from "react";
 import { designs as staticDesigns } from "@/data/designs";
 import { countries } from "@/data/countries";
 import { useDesigns, type Design } from "@/hooks/useDesigns";
@@ -35,8 +35,6 @@ export default function GalleryClient() {
   const [searchValue, setSearchValue] = useState("");
   const [debouncedSearch, setDebouncedSearch] = useState("");
   const [selectedDesign, setSelectedDesign] = useState<Design | null>(null);
-  const [useAPI, setUseAPI] = useState(true);
-  const observerRef = useRef<HTMLDivElement>(null);
 
   // Debounce search input
   useEffect(() => {
@@ -60,12 +58,9 @@ export default function GalleryClient() {
     limit: INITIAL_COUNT,
   });
 
-  // Fallback to static data if API fails
-  useEffect(() => {
-    if (error) {
-      setUseAPI(false);
-    }
-  }, [error]);
+  // Fallback to static data if API fails — derived directly from error to avoid
+  // calling setState synchronously inside a useEffect (react-hooks/set-state-in-effect).
+  const useAPI = !error;
 
   // Static data filter (fallback)
   const filteredStaticDesigns = useMemo(() => {

@@ -10,6 +10,7 @@ export default function CookieBanner() {
   useEffect(() => {
     const consent = localStorage.getItem("cookieConsent");
     if (!consent) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setShow(true);
     }
   }, []);
@@ -29,7 +30,7 @@ export default function CookieBanner() {
         <div className="flex-1">
           <h3 className="text-lg font-serif font-bold text-gold mb-2">We value your privacy</h3>
           <p className="text-sm text-muted">
-            We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies. Read our <Link href="/privacy-policy" className="text-gold hover:underline">Privacy Policy</Link> for more details.
+            We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking &quot;Accept All&quot;, you consent to our use of cookies. Read our <Link href="/privacy-policy" className="text-gold hover:underline">Privacy Policy</Link> for more details.
           </p>
         </div>
         

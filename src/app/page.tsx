@@ -25,9 +25,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Mehndi Design Henna — 5000+ Easy Mehndi Designs & Patterns for Hands",
+    title: "5000+ Easy Mehndi Designs for Hands (2026) | Mehndi Henna",
     description:
-      "5000+ easy mehndi designs and mehndi patterns for hands — simple, arabic, bridal, back hand, and eid henna patterns, plus henna cone and kit guides.",
+      "Browse 5000+ easy mehndi designs for hands — simple, arabic, bridal, and eid henna patterns. Use our Virtual Try-On tool & find free henna guides!",
     type: "website",
     url: BASE_URL,
     siteName: "Mehndi Design Henna",
@@ -40,8 +40,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mehndi Design Henna — 5000+ Easy Mehndi Designs & Patterns for Hands",
-    description: "5000+ easy mehndi designs, mehndi patterns for hands, eid henna patterns, and henna tattoo ideas.",
+    title: "5000+ Easy Mehndi Designs for Hands (2026) | Mehndi Henna",
+    description: "Browse 5000+ easy mehndi designs for hands — simple, arabic, bridal, and eid henna patterns. Use our Virtual Try-On tool & find free henna guides!",
   },
 };
 

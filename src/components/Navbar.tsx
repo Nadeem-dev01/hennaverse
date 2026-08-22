@@ -6,13 +6,13 @@ import { usePathname, useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Menu, X, ChevronDown, Search,
-  Home, Image, BookOpen, Globe, Info,
+  Home, Image as ImageIcon, BookOpen, Globe, Info,
   Wrench, Sparkles, Crown, Flower2, Circle,
   Diamond, Hand, Fingerprint, Footprints,
   Baby, Star, Moon, Heart, Gem,
   Triangle, Palette, Layers, Hexagon, Wand2,
-  CalendarHeart, PartyPopper, Gift, Sun, Ribbon,
-  Users, Clock,
+  CalendarHeart, PartyPopper, Sun, Ribbon,
+  Users,
 } from "lucide-react";
 import Logo from "@/components/Logo";
 import { mehndiTools, mehndiToolCategories } from "@/data/mehndiTools";
@@ -84,11 +84,14 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  useEffect(() => {
+  const [prevPathname, setPrevPathname] = useState(pathname);
+
+  if (pathname !== prevPathname) {
+    setPrevPathname(pathname);
     setIsMobileOpen(false);
     setActiveDropdown(null);
     setMobileExpanded(null);
-  }, [pathname]);
+  }
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
@@ -391,7 +394,7 @@ export default function Navbar() {
                 {/* Designs Accordion */}
                 <MobileAccordion
                   label="Designs"
-                  icon={<Image size={18} />}
+                  icon={<ImageIcon size={18} />}
                   isOpen={mobileExpanded === "designs"}
                   onToggle={() => toggleMobileSection("designs")}
                   isActive={isActive("/mehndi-designs") || isActive("/designs")}

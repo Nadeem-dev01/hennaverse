@@ -23,22 +23,22 @@ export async function generateMetadata({
   if (!tool) return { title: "Not Found" };
 
   return {
-    title: `${tool.title} | Mehndi Design Henna`,
+    title: `${tool.tagline} - ${tool.title} | Mehndi Design Henna`,
     description: tool.description.slice(0, 160),
     keywords: tool.keywords,
     alternates: {
-      canonical: `https://www.mehndidesignhenna.com/tools/${slug}`,
+      canonical: `/tools/${slug}`,
     },
     openGraph: {
-      title: `${tool.title} | Mehndi Design Henna`,
+      title: `${tool.tagline} - ${tool.title} | Mehndi Design Henna`,
       description: tool.description.slice(0, 160),
-      url: `https://www.mehndidesignhenna.com/tools/${slug}`,
+      url: `/tools/${slug}`,
       type: "website",
       siteName: "Mehndi Design Henna",
     },
     twitter: {
       card: "summary_large_image",
-      title: `${tool.title} | Mehndi Design Henna`,
+      title: `${tool.tagline} - ${tool.title} | Mehndi Design Henna`,
       description: tool.description.slice(0, 160),
     },
   };

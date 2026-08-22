@@ -29,6 +29,8 @@ export const countries: CountryStyle[] = [
     traditions:
       'In Indian culture, mehndi is applied during weddings as a symbol of love and prosperity. The darkness of the bride\'s henna is believed to predict the strength of the marriage. Festivals like Karva Chauth, Teej, and Diwali also see widespread mehndi application.',
     famousFor: 'Full-hand bridal coverage with hidden groom motifs and mirror-image symmetry.',
+    seoTitle: 'Indian Mehndi Designs — Royal Rajasthani & Traditional Mehndi Patterns',
+    seoDescription: 'Explore exquisite Indian mehndi designs featuring intricate Rajasthani, Mughal, and South Indian patterns. Perfect bridal and festival henna inspiration.',
   },
   {
     id: 'pakistan',
@@ -42,6 +44,8 @@ export const countries: CountryStyle[] = [
     traditions:
       'The Mehndi Night (Raat ki Mehndi) is one of the most anticipated events in a Pakistani wedding, featuring folk songs, dholki beats, and communal henna application. Yellow and green are the signature colours of the celebration. Eid-ul-Fitr and Eid-ul-Adha also see widespread mehndi traditions across all ages.',
     famousFor: 'Dense full-arm bridal mehndi with tikki (circular medallion) centrepieces and intricate filling.',
+    seoTitle: 'Pakistani Mehndi Designs — Elegant Bridal & Eid Mehndi Patterns',
+    seoDescription: 'Discover elegant Pakistani mehndi designs blending dense bridal coverage with Arabic-inspired geometric and floral motifs. Perfect for weddings and Eid.',
   },
   {
     id: 'arabia',
@@ -55,6 +59,8 @@ export const countries: CountryStyle[] = [
     traditions:
       'Henna is deeply rooted in Gulf culture, applied before weddings, during Eid celebrations, and at social gatherings called "henna parties." In many Gulf countries, professional henna artists are invited to apply elaborate designs on the bride and her guests. The tradition of applying henna on Thursday evenings is still practised widely.',
     famousFor: 'Bold, free-flowing floral trails with dramatic negative space and thick outlines.',
+    seoTitle: 'Arabic Mehndi Designs — Bold Khaleeji & Simple Arabic Henna Patterns',
+    seoDescription: 'Browse bold, flowing Arabic mehndi designs featuring Khaleeji styles, floral vines, and elegant negative space from Saudi Arabia, UAE, and the Gulf.',
   },
   {
     id: 'morocco',
@@ -68,6 +74,8 @@ export const countries: CountryStyle[] = [
     traditions:
       'In Moroccan weddings, the "Henna Night" or "Laylat al-Henna" is a separate ceremony where the bride\'s hands and feet are decorated while guests celebrate with music and sweets. Berber women also use henna for protective purposes, believing it wards off the evil eye. Henna is applied during religious holidays, births, and circumcision ceremonies.',
     famousFor: 'Sharp geometric patterns inspired by Berber tribal symbols and Islamic tilework.',
+    seoTitle: 'Moroccan Henna Designs — Authentic Geometric & Berber Henna Patterns',
+    seoDescription: 'Explore authentic Moroccan henna designs with striking geometric Berber patterns, tribal motifs, and intricate diamond lattice grids.',
   },
   {
     id: 'turkey',
@@ -114,6 +122,8 @@ export const countries: CountryStyle[] = [
     traditions:
       'In Sudanese weddings, the "Jirtig" ceremony involves days of henna application and celebration with the bride\'s female relatives. Somali brides have henna applied during the "Shaash Saar" ceremony. Across East Africa, henna is a communal activity that strengthens bonds between women and marks important life transitions.',
     famousFor: 'Jet-black henna stains with bold geometric and tribal patterns covering large body areas.',
+    seoTitle: 'African Henna Designs — Bold Sudanese & Somali Henna Patterns',
+    seoDescription: 'Discover bold African henna designs featuring striking Sudanese bridal henna, Somali tribal patterns, and distinctive black henna geometric art.',
   },
   {
     id: 'western-fusion',
@@ -127,5 +137,7 @@ export const countries: CountryStyle[] = [
     traditions:
       'Western henna culture has grown from music festivals like Coachella and bohemian lifestyle movements, evolving into a mainstream body-art form. Henna bars and pop-up studios are now common at weddings, corporate events, and street markets worldwide. The focus is on self-expression and personal style rather than adherence to any single cultural tradition.',
     famousFor: 'Minimalist finger designs, geometric cuffs, and festival-ready boho patterns.',
+    seoTitle: 'Western & Fusion Henna — Minimalist & Modern Mehndi Designs',
+    seoDescription: 'Browse modern Western fusion henna featuring minimalist finger designs, geometric cuffs, bohemian festival patterns, and contemporary mehndi art.',
   },
 ];

@@ -246,7 +246,7 @@ export default function AboutPage() {
               </li>
               <li className="flex items-start">
                 <div className="w-1.5 h-1.5 rounded-full bg-purple mt-2 mr-3 shrink-0" />
-                <p><strong>Safety Conscious:</strong> We rigorously promote natural henna and actively warn against dangerous chemical alternatives like "Black Henna".</p>
+                <p><strong>Safety Conscious:</strong> We rigorously promote natural henna and actively warn against dangerous chemical alternatives like &quot;Black Henna&quot;.</p>
               </li>
             </ul>
           </div>

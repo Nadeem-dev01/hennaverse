@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { bodyParts } from "@/data/taxonomy";
 import { designsByBodyPart } from "@/data/index";
@@ -129,11 +130,11 @@ export default async function BodyPartPage(
             </p>
             <p>
               Browse our full library of{" "}
-              <a href="/mehndi-designs">mehndi designs</a> to discover more styles, or explore
+              <Link href="/mehndi-designs" className="text-gold underline underline-offset-2 hover:text-gold/80 transition-colors">mehndi designs</Link> to discover more styles, or explore
               designs by occasion such as{" "}
-              <a href="/occasions/wedding">wedding mehndi</a>,{" "}
-              <a href="/occasions/eid">Eid mehndi</a>, and{" "}
-              <a href="/occasions/engagement">engagement mehndi</a>.
+              <Link href="/occasions/wedding" className="text-gold underline underline-offset-2 hover:text-gold/80 transition-colors">wedding mehndi</Link>,{" "}
+              <Link href="/occasions/eid" className="text-gold underline underline-offset-2 hover:text-gold/80 transition-colors">Eid mehndi</Link>, and{" "}
+              <Link href="/occasions/engagement" className="text-gold underline underline-offset-2 hover:text-gold/80 transition-colors">engagement mehndi</Link>.
             </p>
           </div>
         </section>

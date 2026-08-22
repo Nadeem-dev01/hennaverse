@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   description:
     "Upload a photo of your hand and try on 100+ beautiful mehndi designs instantly. Adjust, rotate, and preview henna art on your own skin tone before booking an artist.",
   alternates: {
-    canonical: "https://www.mehndidesignhenna.com/try-on",
+    canonical: "/try-on",
   },
   openGraph: {
     title: "Virtual Mehndi Try-On Tool | Mehndi Design Henna",
     description:
       "Try on mehndi designs virtually! Upload your hand photo and preview 100+ stunning henna patterns instantly.",
-    url: "https://www.mehndidesignhenna.com/try-on",
+    url: "/try-on",
     type: "website",
     siteName: "Mehndi Design Henna",
   },

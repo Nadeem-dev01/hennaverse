@@ -65,7 +65,7 @@ export default async function OccasionPage(
     "inLanguage": "en",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: BASE_URL },
-      { "@type": "ListItem", position: 2, name: "Occasions", item: `${BASE_URL}/mehndi-designs` },
+      { "@type": "ListItem", position: 2, name: "Mehndi Designs", item: `${BASE_URL}/mehndi-designs` },
       { "@type": "ListItem", position: 3, name: occasion.title, item: `${BASE_URL}/occasions/${occasion.slug}` },
     ],
   };
@@ -77,7 +77,7 @@ export default async function OccasionPage(
       <div className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto min-h-screen">
         <Breadcrumbs
           items={[
-            { label: "Occasions", href: "/mehndi-designs" },
+            { label: "Mehndi Designs", href: "/mehndi-designs" },
             { label: occasion.title, href: `/occasions/${occasion.slug}` },
           ]}
         />

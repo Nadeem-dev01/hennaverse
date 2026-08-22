@@ -18,13 +18,13 @@ export const metadata: Metadata = {
     "henna match maker"
   ],
   alternates: {
-    canonical: "https://www.mehndidesignhenna.com/tools/design-finder",
+    canonical: "/tools/design-finder",
   },
   openGraph: {
     title: "AI Mehndi Design Finder | Mehndi Design Henna",
     description:
       "Upload a photo of your hand and let our AI suggest the perfect mehndi designs tailored for you.",
-    url: "https://www.mehndidesignhenna.com/tools/design-finder",
+    url: "/tools/design-finder",
     type: "website",
   },
 };

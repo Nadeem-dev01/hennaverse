@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import SectionHeading from "@/components/SectionHeading";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import ContactForm from "@/components/ContactForm";
 
 const BASE_URL = "https://www.mehndidesignhenna.com";

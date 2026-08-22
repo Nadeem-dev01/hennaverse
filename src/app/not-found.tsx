@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowLeft, Home, Search, Palette, BookOpen } from "lucide-react";
+import { Home, Search } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Page Not Found | Mehndi Design Henna",
