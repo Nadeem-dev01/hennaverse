@@ -3,7 +3,8 @@ import { blogs } from "@/data/blogs";
 import { countries } from "@/data/countries";
 import { categories } from "@/data/taxonomy";
 import { mehndiTools } from "@/data/mehndiTools";
-
+import { designCategories } from "@/data/designCategories";
+import { allDesigns } from "@/data/index";
 const BASE_URL = "https://www.mehndidesignhenna.com";
 
 // A real, meaningful "last updated" anchor — update this when you do a major
@@ -104,11 +105,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   // --- Category pages (high SEO value, priority 0.9) ---
-  const categoryRoutes: MetadataRoute.Sitemap = categories.map((c) => ({
-    url: `${BASE_URL}/mehndi-designs/${c.slug}`,
+  const allCategorySlugs = Array.from(
+    new Set([
+      ...categories.map((c) => c.slug),
+      ...designCategories.map((c) => c.slug),
+    ])
+  );
+
+  const unifiedCategoryRoutes: MetadataRoute.Sitemap = allCategorySlugs.map((slug) => ({
+    url: `${BASE_URL}/mehndi-designs/${slug}`,
     lastModified: SITE_LAST_UPDATED,
     changeFrequency: "weekly" as const,
     priority: 0.9,
+  }));
+
+  // --- Individual Design Pages ---
+  const designRoutes: MetadataRoute.Sitemap = allDesigns.map((design) => ({
+    url: `${BASE_URL}/designs/${design.slug}`,
+    lastModified: SITE_LAST_UPDATED,
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
   }));
 
   // --- Occasion pages ---
@@ -163,12 +179,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     ...staticRoutes,
-    ...categoryRoutes,
+    ...unifiedCategoryRoutes,
     ...occasionRoutes,
     ...bodyPartRoutes,
     ...blogCategoryRoutes,
     ...blogRoutes,
     ...styleRoutes,
     ...toolRoutes,
+    ...designRoutes,
   ];
 }

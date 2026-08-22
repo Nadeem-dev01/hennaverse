@@ -14,21 +14,21 @@ export function generateBlogLongContent(title: string, category: string, primary
     <p>Welcome to our deep dive into <strong>${title}</strong>. As henna enthusiasts, we know that every style, technique, and tradition has a story to tell. Whether you are preparing for a grand celebration or simply looking to expand your artistic repertoire, this guide will walk you through the fascinating topic of ${category.toLowerCase()}.</p>
     
     <div class="my-10 relative aspect-[16/9] w-full rounded-2xl overflow-hidden border border-border">
-      <img src="${images[0]}" alt="Henna style" class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+      <img src="${images[0]}" alt="Front hand mehndi with flower motifs and intricate meshwork fill" class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
     </div>
 
     <h2 id="core-concepts">The Art and Tradition</h2>
     <p>${fillerChunk}</p>
 
     <div class="my-10 relative aspect-[4/3] w-full rounded-2xl overflow-hidden border border-border">
-      <img src="${images[1]}" alt="Minimalist henna style" class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+      <img src="${images[1]}" alt="Minimalist back hand mehndi with clean lines and negative space" class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
     </div>
 
     <h2 id="conclusion">Final Thoughts</h2>
     <p>We hope this exploration of <strong>${title}</strong> has inspired you. The world of henna is vast and welcoming. Keep practicing, keep exploring, and remember that every line you draw is a continuation of a beautiful, ancient human tradition.</p>
 
     <div class="my-10 relative aspect-[4/3] w-full rounded-2xl overflow-hidden border border-border">
-      <img src="${images[2]}" alt="Dotwork henna technique" class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+      <img src="${images[2]}" alt="Front hand mehndi design featuring bird motifs and paisley accents" class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
     </div>
   `;
 }

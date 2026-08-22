@@ -107,7 +107,7 @@ export default function MehndiDesignsHubPage() {
                 {cat.heroImage ? (
                   <Image
                     src={cat.heroImage}
-                    alt={cat.title}
+                    alt={`${cat.title} — browse henna designs`}
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     quality={60}

@@ -129,7 +129,7 @@ export default async function CountryStylePage(props: { params: Promise<{ id: st
             <div className="w-full md:w-1/3 shrink-0 rounded-2xl overflow-hidden shadow-lg border border-border/40 relative aspect-square md:aspect-[4/5]">
               <Image 
                 src={country.heroImage} 
-                alt={`${country.name} henna design`}
+                alt={`${country.name} mehndi style — traditional henna designs`}
                 fill
                 className="object-cover"
                 priority

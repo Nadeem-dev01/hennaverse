@@ -19,7 +19,7 @@ export default function HomeSEOContent() {
         <div className="my-10 relative aspect-[4/3] w-full rounded-2xl overflow-hidden border border-border">
           <Image 
             src="/chakra-bridal-front-hand-mehndi-820x1024.avif" 
-            alt="Intricate bridal henna design showing cultural significance"
+            alt="Chakra-inspired bridal front hand mehndi with intricate mandala and floral motifs"
             fill
             quality={60}
             sizes="(max-width: 768px) 100vw, 800px"
@@ -49,7 +49,7 @@ export default function HomeSEOContent() {
         <div className="my-10 relative aspect-[4/3] w-full rounded-2xl overflow-hidden border border-border">
           <Image 
             src="/minimalistic-back-hand-mehendi-with-vines-819x1024.avif" 
-            alt="Minimalist modern henna design"
+            alt="Minimalist back hand mehndi with delicate vine trail and negative space"
             fill
             quality={60}
             sizes="(max-width: 768px) 100vw, 800px"
@@ -79,7 +79,7 @@ export default function HomeSEOContent() {
         <div className="my-10 relative aspect-[4/3] w-full rounded-2xl overflow-hidden border border-border">
           <Image 
             src="/elephant-grid-back-hand-mehendi-819x1024.avif" 
-            alt="Elephant motifs in traditional Indian Mehndi"
+            alt="Traditional Indian back hand mehndi with elephant motifs in a geometric grid pattern"
             fill
             quality={60}
             sizes="(max-width: 768px) 100vw, 800px"
@@ -127,7 +127,7 @@ export default function HomeSEOContent() {
         <div className="my-10 relative aspect-[4/3] w-full rounded-2xl overflow-hidden border border-border">
           <Image 
             src="/sunflower-back-hand-mehendi-819x1024.avif" 
-            alt="Modern sunflower henna trend"
+            alt="Sunflower mehndi design on back hand with petal detailing and vine accents"
             fill
             quality={60}
             sizes="(max-width: 768px) 100vw, 800px"

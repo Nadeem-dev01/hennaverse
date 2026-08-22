@@ -34,7 +34,7 @@ export default function CategoryPage({ category }: { category: DesignCategory })
             <div className="relative w-full aspect-video rounded-2xl overflow-hidden mb-12 border border-border">
               <Image
                 src={category.heroImage}
-                alt={category.title}
+                alt={`${category.title} — featured henna design example`}
                 fill
                 quality={60}
                 sizes="(max-width: 1200px) 100vw, 1200px"

@@ -23,6 +23,10 @@ export const metadata: Metadata = {
     title: "Sitemap | Mehndi Design Henna",
     description: "Browse all pages on Mehndi Design Henna.",
   },
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 export default function HTMLSitemap() {
