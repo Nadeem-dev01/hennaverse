@@ -1,7 +1,6 @@
 "use client";
 
-import { useState, useMemo, useCallback, useEffect } from "react";
-import { designs as staticDesigns } from "@/data/designs";
+import { useState, useCallback, useEffect, useMemo } from "react";
 import { countries } from "@/data/countries";
 import { useDesigns, type Design } from "@/hooks/useDesigns";
 import DesignCard from "@/components/DesignCard";
@@ -44,10 +43,9 @@ export default function GalleryClient() {
 
   // Supabase API hook
   const {
-    designs: apiDesigns,
+    designs,
     loading,
     loadingMore,
-    error,
     pagination,
     loadMore,
   } = useDesigns({
@@ -58,55 +56,12 @@ export default function GalleryClient() {
     limit: INITIAL_COUNT,
   });
 
-  // Fallback to static data if API fails — derived directly from error to avoid
-  // calling setState synchronously inside a useEffect (react-hooks/set-state-in-effect).
-  const useAPI = !error;
-
-  // Static data filter (fallback)
-  const filteredStaticDesigns = useMemo(() => {
-    if (useAPI) return [];
-    return staticDesigns.filter((design) => {
-      const matchesSearch =
-        !searchValue ||
-        design.title.toLowerCase().includes(searchValue.toLowerCase()) ||
-        design.tags.some((t) =>
-          t.toLowerCase().includes(searchValue.toLowerCase())
-        );
-      const matchesCountry =
-        !activeFilters.Country ||
-        activeFilters.Country === "All" ||
-        design.country.includes(activeFilters.Country);
-      const matchesStyle =
-        !activeFilters.Style ||
-        activeFilters.Style === "All" ||
-        design.style === activeFilters.Style;
-      const matchesDifficulty =
-        !activeFilters.Difficulty ||
-        activeFilters.Difficulty === "All" ||
-        design.difficulty === activeFilters.Difficulty;
-
-      return matchesSearch && matchesCountry && matchesStyle && matchesDifficulty;
-    });
-  }, [activeFilters, searchValue, useAPI]);
-
-  // Select the active designs list
-  const designs: Design[] = useAPI
-    ? apiDesigns
-    : filteredStaticDesigns.map((d) => ({
-        ...d,
-        views: undefined,
-        likes: undefined,
-        photographer: undefined,
-      }));
-
-  const totalCount = useAPI
-    ? (pagination?.total || designs.length)
-    : filteredStaticDesigns.length;
+  const totalCount = pagination?.total || designs.length;
 
   // Infinite scroll with Intersection Observer
   const lastCardRef = useCallback(
     (node: HTMLDivElement | null) => {
-      if (!useAPI || loadingMore || !pagination?.hasMore) return;
+      if (loadingMore || !pagination?.hasMore) return;
       const observer = new IntersectionObserver(
         (entries) => {
           if (entries[0].isIntersecting) {
@@ -118,7 +73,7 @@ export default function GalleryClient() {
       if (node) observer.observe(node);
       return () => observer.disconnect();
     },
-    [useAPI, loadingMore, pagination, loadMore]
+    [loadingMore, pagination, loadMore]
   );
 
   const countryNames = useMemo(
@@ -126,13 +81,10 @@ export default function GalleryClient() {
     []
   );
   const styles = useMemo(
-    () => [...new Set(staticDesigns.map((d) => d.style))],
+    () => [...new Set(countries.flatMap((c) => c.styles))].sort(),
     []
   );
-  const difficulties = useMemo(
-    () => [...new Set(staticDesigns.map((d) => d.difficulty))],
-    []
-  );
+  const difficulties = ["Easy", "Medium", "Hard", "Expert"];
 
   const filters = [
     { label: "Country", options: countryNames },
@@ -147,17 +99,6 @@ export default function GalleryClient() {
         subtitle={`${totalCount} stunning mehndi designs to explore`}
       />
 
-      {/* Data source indicator */}
-      <div className="flex items-center justify-center gap-2 mb-6">
-        <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium ${
-          useAPI 
-            ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/20' 
-            : 'bg-amber-500/10 text-amber-400 border border-amber-500/20'
-        }`}>
-          <span className={`w-1.5 h-1.5 rounded-full ${useAPI ? 'bg-emerald-400' : 'bg-amber-400'} animate-pulse`} />
-          {useAPI ? '🔥 Live from Supabase' : '📦 Static Data (Offline Mode)'}
-        </span>
-      </div>
 
       <FilterBar
         filters={filters}
@@ -233,7 +174,7 @@ export default function GalleryClient() {
       )}
 
       {/* Show total info */}
-      {!loading && pagination && useAPI && (
+      {!loading && pagination && (
         <div className="text-center mt-8 text-muted text-sm">
           Showing {designs.length} of {pagination.total} designs
           {pagination.hasMore && " • Scroll down to load more"}

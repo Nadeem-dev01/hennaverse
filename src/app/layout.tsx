@@ -3,9 +3,12 @@ import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import CookieBanner from "@/components/CookieBanner";
 import ThirdPartyScripts from "@/components/ThirdPartyScripts";
-import ChatbotWidget from "@/components/ChatbotWidget";
+import dynamic from 'next/dynamic';
+
+const ChatbotWidget = dynamic(() => import('@/components/ChatbotWidget'));
+
+const CookieBanner = dynamic(() => import('@/components/CookieBanner'));
 
 export const viewport: Viewport = {
   themeColor: "#7c3aed",
