@@ -259,38 +259,20 @@ export default async function ToolPage({
           </h2>
           <p className="text-muted leading-relaxed mb-4">
             {tool.description} Whether you are a seasoned mehndi artist or just
-            beginning your henna journey, {tool.title.toLowerCase()} offers
-            something unique and beautiful for every occasion and skill level.
+            beginning your henna journey, incorporating the right tools can
+            elevate your technique and help you achieve stunning results.
           </p>
           <p className="text-muted leading-relaxed mb-4">
-            The art of mehndi has been practiced for over 5,000 years across
-            South Asia, the Middle East, and North Africa. Each regional
-            tradition has developed its own distinctive style, motifs, and
-            techniques. Today, mehndi has evolved into a globally celebrated art
-            form that bridges ancient tradition with contemporary aesthetics.
-          </p>
-          <p className="text-muted leading-relaxed mb-4">
-            When choosing a mehndi design, consider the occasion, your personal
-            style, the placement on your body, and how much time you have for
-            both application and drying. Natural henna paste — made from dried
-            henna leaves — is always the safest choice. The stain develops over
-            24-48 hours, reaching its richest color before gradually fading over
-            1-3 weeks.
-          </p>
-          <p className="text-muted leading-relaxed mb-4">
-            To care for your mehndi: leave the paste on as long as possible (6-8
-            hours for best results), apply a sugar-lemon solution to keep it
-            moist, stay warm (heat deepens the stain), and avoid water for at
-            least 12 hours after removing the dried paste. Regular moisturizing
-            with natural oils extends the life of your stain.
+            Mastering {tool.title.toLowerCase()} requires practice and patience. 
+            We recommend starting with simpler patterns before moving on to 
+            more intricate designs. Review our quick tips and FAQs above to get 
+            the most out of your experience and avoid common beginner mistakes.
           </p>
           <p className="text-muted leading-relaxed">
-            Our{" "}
-            <span className="text-gold font-semibold">{tool.title}</span>{" "}
-            collection is curated from talented artists worldwide, ensuring you
-            have access to the finest, most inspiring mehndi designs available.
-            Explore, save your favorites, and create the perfect look for your
-            next special occasion.
+            Browse our featured designs to see what is possible, and save your 
+            favorites to practice later. With the right approach,{" "}
+            <span className="text-gold font-semibold">{tool.title.toLowerCase()}</span>{" "}
+            will quickly become an essential part of your mehndi kit.
           </p>
         </section>
 

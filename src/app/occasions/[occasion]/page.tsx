@@ -91,10 +91,10 @@ export default async function OccasionPage(
             <div className="prose prose-invert prose-gold max-w-none">
               <h2>About {occasion.title}</h2>
               <p>
-                {occasion.metaDescription} Browse our curated collection of {designs.length}+ {occasion.title.toLowerCase()} patterns, from traditional and classic to modern and minimalist styles. Whether you are looking for {occasion.keywords.slice(0, 3).join(", ")}, you will find the perfect inspiration here.
+                {occasion.metaDescription} Whether you are looking for {occasion.keywords.slice(0, 3).join(", ")}, or something entirely unique, this collection offers a variety of inspiration.
               </p>
               <p>
-                Each design in this collection has been handpicked to represent the best of henna artistry for {occasion.title.toLowerCase()} occasions. Save your favorites, share with your artist, or use as inspiration for your own mehndi application.
+                Save your favorite {occasion.title.toLowerCase()} designs to share with your artist, or use them as a reference for your own mehndi application.
               </p>
             </div>
           </section>

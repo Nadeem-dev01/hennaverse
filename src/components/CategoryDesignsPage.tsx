@@ -83,11 +83,7 @@ export default function CategoryDesignsPage({
             <section className="prose prose-invert prose-gold max-w-none mb-10">
               <h2 id="about">About {category.title}</h2>
               <p>
-                Explore our collection of {total}+ {category.title.toLowerCase()}, hand-picked
-                for every skill level and occasion. Whether you want a quick, simple look or
-                an elaborate full-coverage pattern, each design below links to a detailed page
-                with a high-resolution image, step-by-step inspiration, and frequently asked
-                questions. Tap any design to view it full size, then download or share it.
+                Explore {total}+ {category.title.toLowerCase()} below. Tap any design to view it full size, read step-by-step details, and save or share your favorites.
               </p>
               {category.region && REGION_TO_STYLE_PAGE[category.region] && (
                 <p className="text-sm">
