@@ -86,16 +86,11 @@ export default async function OccasionPage(
         <DesignGrid designs={designs} />
 
         {/* SEO Text Section */}
-        {occasion.keywords && occasion.keywords.length > 0 && (
+        {occasion.description && (
           <section className="mt-16 pt-10 border-t border-border">
             <div className="prose prose-invert prose-gold max-w-none">
-              <h2>About {occasion.title}</h2>
-              <p>
-                {occasion.metaDescription} Whether you are looking for {occasion.keywords.slice(0, 3).join(", ")}, or something entirely unique, this collection offers a variety of inspiration.
-              </p>
-              <p>
-                Save your favorite {occasion.title.toLowerCase()} designs to share with your artist, or use them as a reference for your own mehndi application.
-              </p>
+              <h2 id="about">About {occasion.title}</h2>
+              <p>{occasion.description}</p>
             </div>
           </section>
         )}

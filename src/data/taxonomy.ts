@@ -1,4 +1,5 @@
 export interface CategoryDef {
+  description?: string;
   slug: string;
   title: string;
   metaTitle: string;
@@ -8,6 +9,7 @@ export interface CategoryDef {
 }
 
 export interface OccasionDef {
+  description?: string;
   slug: string;
   title: string;
   metaTitle: string;
@@ -16,6 +18,7 @@ export interface OccasionDef {
 }
 
 export interface BodyPartDef {
+  description?: string;
   slug: string;
   title: string;
   metaTitle: string;
@@ -39,6 +42,7 @@ export const categories: CategoryDef[] = [
     title: "Arabic Mehndi Designs",
     metaTitle: "Easy Arabic Mehndi Design — Simple Arabic Mehndi Patterns",
     metaDescription: "Browse easy arabic mehndi designs and simple arabic mehndi patterns with bold florals and free-flowing vines. Perfect arabic mehndi patterns for Eid and weddings.",
+    description: "Arabic mehndi is defined by its free-flowing vines, large floral motifs, and generous use of negative space. Unlike dense Indian styles, Arabic patterns are typically applied diagonally across the hand, creating an elegant, asymmetrical look that is both striking and quick to apply.",
     region: "gulf",
     keywords: ["easy arabic mehndi design", "simple arabic mehndi design", "arabic mehndi patterns", "mehndi design of arabic", "arabic mehndi easy designs"],
   },
@@ -47,6 +51,7 @@ export const categories: CategoryDef[] = [
     title: "Indian Mehndi Designs",
     metaTitle: "Indian Mehndi Designs — Peacock Mehndi Design & Traditional Patterns",
     metaDescription: "Discover indian mehndi designs featuring peacock mehndi design motifs, paisleys, and dense traditional coverage. Ideal mehndi designs in indian style for weddings and festivals.",
+    description: "Indian mehndi is characterized by dense, intricate patterns that often cover the entire hand and arm. Classic motifs include peacocks, paisleys (mango shapes), lotus flowers, and hidden initials, making it the preferred style for elaborate bridal adornment.",
     region: "india",
     keywords: ["indian mehndi designs", "mehndi designs in indian", "peacock mehndi design", "lotus mehndi design"],
   },
@@ -55,6 +60,7 @@ export const categories: CategoryDef[] = [
     title: "Pakistani Mehndi Designs",
     metaTitle: "Pakistani Mehndi Design — Elegant Bridal & Eid Patterns",
     metaDescription: "Browse pakistani mehndi design ideas blending Indian density with Arabic elegance. Popular for bridal functions, eid mehndi designs, and festive occasions.",
+    description: "Pakistani mehndi represents a beautiful fusion of Arabic elegance and Indian intricacy. It often features dense geometric fillings and floral motifs, striking a perfect balance between full-coverage bridal intensity and modern, flowing aesthetics.",
     region: "pakistan",
     keywords: ["pakistani mehndi design", "pakistani mehndi designs", "pakistani mehndi for eid"],
   },
@@ -63,6 +69,7 @@ export const categories: CategoryDef[] = [
     title: "Moroccan Henna Designs",
     metaTitle: "150+ Moroccan Henna Designs — Geometric Berber Patterns",
     metaDescription: "Explore authentic Moroccan henna designs featuring bold geometric patterns, tribal motifs, and diamond shapes rooted in Berber and North African traditions.",
+    description: "Moroccan henna is deeply rooted in Berber traditions, distinguished by its bold geometric patterns, diamond shapes, and tribal symbols. These architectural designs avoid floral curves in favor of sharp, symbolic symmetry.",
     region: "morocco",
     keywords: ["moroccan henna designs", "moroccan henna simple", "moroccan henna meanings"],
   },
@@ -71,6 +78,7 @@ export const categories: CategoryDef[] = [
     title: "Gulf Style Mehndi Designs",
     metaTitle: "150+ Gulf Style Mehndi Designs — Khaleeji Henna Patterns",
     metaDescription: "Discover elegant Gulf style mehndi designs (Khaleeji henna) known for bold flowers, thick outlines, and dramatic spacing popular in UAE, Saudi Arabia, and Qatar.",
+    description: "Gulf or Khaleeji mehndi is known for its dramatic elegance, featuring very thick outlines, bold open florals, and extensive negative space. It often mimics the look of jewelry and is highly popular across the UAE, Saudi Arabia, and Qatar.",
     region: "gulf",
     keywords: ["gulf style mehndi designs", "khaleeji henna", "gulf mehndi simple", "gulf arabic mehndi"],
   },
@@ -79,6 +87,7 @@ export const categories: CategoryDef[] = [
     title: "African Henna Designs",
     metaTitle: "100+ African Henna Designs — West African, Sudanese & Somali Patterns",
     metaDescription: "Explore diverse African henna designs including West African, Sudanese, and Somali styles featuring bold geometric shapes, tribal motifs, and cultural symbolism.",
+    description: "African henna traditions, particularly from West Africa and Sudan, are celebrated for their bold, thick lines and striking black henna stains. The designs frequently incorporate tribal geometric shapes and large, statement-making motifs.",
     region: "africa",
     keywords: ["african henna designs", "west african henna", "sudanese henna", "somali henna"],
   },
@@ -87,6 +96,7 @@ export const categories: CategoryDef[] = [
     title: "Turkish Henna Designs",
     metaTitle: "100+ Turkish Henna Designs — Ottoman-Inspired Mehndi Patterns",
     metaDescription: "Browse beautiful Turkish henna designs blending Ottoman-inspired motifs with modern aesthetics. Popular for Turkish henna night ceremonies and celebrations.",
+    description: "Turkish henna focuses on elegant, minimalist floral motifs often inspired by Ottoman art, such as tulips and carnations. It is central to the emotional Kına Gecesi (Henna Night) ceremony preceding traditional Turkish weddings.",
     region: "turkey",
     keywords: ["turkish henna designs", "turkish mehndi", "turkish henna ceremony", "turkish mehndi for bride"],
   },
@@ -95,6 +105,7 @@ export const categories: CategoryDef[] = [
     title: "Rajasthani Mehndi Designs",
     metaTitle: "150+ Rajasthani Mehndi Designs — Royal Marwari Henna Patterns",
     metaDescription: "Discover exquisite Rajasthani mehndi designs known for mirror-image symmetry, peacock motifs, and the densest coverage in Indian henna art traditions.",
+    description: "Rajasthani mehndi is arguably the most intricate and dense henna style in the world. Famous for its mirror-image symmetry across both hands, it often depicts entire royal processions, bride-and-groom figures, and palace arches.",
     region: "india",
     keywords: ["rajasthani mehndi designs", "marwari mehndi", "rajasthani bridal mehndi"],
   },
@@ -103,6 +114,7 @@ export const categories: CategoryDef[] = [
     title: "Indonesian Henna Designs",
     metaTitle: "Indonesian Henna Designs — Javanese, Balinese & Batik Mehndi Patterns",
     metaDescription: "Browse beautiful Indonesian henna designs featuring batik-inspired motifs, Javanese floral patterns, and Balinese geometric art. Explore Indonesia mehndi traditions for weddings, Eid, and the Midodareni ceremony.",
+    description: "Indonesian henna beautifully incorporates local cultural elements like Batik patterns and Javanese florals. Used prominently in the Midodareni ceremony, it blends Southeast Asian artistry with Islamic geometric influences.",
     region: "indonesia",
     keywords: ["indonesian henna", "indonesian henna designs", "indonesia mehndi designs", "indonesian mehndi patterns", "javanese henna", "balinese henna", "batik henna designs", "indonesian mehndi"],
   },
@@ -113,6 +125,7 @@ export const categories: CategoryDef[] = [
     title: "Bridal Mehndi Designs",
     metaTitle: "Simple Bridal Mehndi Designs — Mehndi Wedding Designs (2026)",
     metaDescription: "Explore simple bridal mehndi designs and mehndi wedding designs for your big day. Find the perfect mehndi design for marriage, plus bridal henna booking and mehndi dress tips.",
+    description: "Bridal mehndi represents the pinnacle of henna art, featuring the most elaborate and deeply personal designs. Traditional bridal patterns often incorporate the couple's love story, wedding dates, and dense auspicious motifs covering the arms and legs.",
     keywords: ["simple bridal mehndi designs", "mehndi wedding designs", "mehndi design for marriage", "bridal henna near me", "mehndi dress for bride", "mehndi outfit", "clothes for mehndi", "mehndi decor"],
   },
   {
@@ -120,6 +133,7 @@ export const categories: CategoryDef[] = [
     title: "Simple Mehndi Designs",
     metaTitle: "Easy Mehndi Designs — Simple Mehndi Designs for Hands",
     metaDescription: "Browse easy mehndi designs and simple mehndi designs for hands. Mehndi designs for beginners — easy and beautiful patterns for everyday and festive looks.",
+    description: "Simple mehndi designs are perfect for beginners or those seeking a quick, minimalist look. Featuring basic trails, scattered florals, or subtle finger details, these patterns offer beauty without the time commitment of full-coverage henna.",
     keywords: ["easy mehndi designs", "mehndi designs simple", "simple mehndi designs for hands", "mehndi design easy and beautiful", "simple easy mehndi design", "very very simple mehndi design", "mehndi designs for beginners"],
   },
   {
@@ -127,6 +141,7 @@ export const categories: CategoryDef[] = [
     title: "Modern Mehndi Designs",
     metaTitle: "Modern Design of Mehndi — Contemporary Mehndi Design Ideas",
     metaDescription: "Discover the modern design of mehndi: contemporary mehndi designs blending traditional henna art with fusion styles, minimalism, and innovative patterns.",
+    description: "Modern mehndi blends traditional henna techniques with contemporary aesthetics. This style frequently incorporates negative space, abstract geometric shapes, mandala halves, and fusion elements tailored for Western or unconventional outfits.",
     keywords: ["modern design of mehndi", "modern mehndi design", "contemporary mehndi design", "new style mehndi"],
   },
   {
@@ -134,6 +149,7 @@ export const categories: CategoryDef[] = [
     title: "Traditional Mehndi Designs",
     metaTitle: "200+ Traditional Mehndi Designs — Classic Henna Patterns",
     metaDescription: "Explore authentic traditional mehndi designs preserving classic henna motifs from across cultures. Timeless patterns featuring paisleys, florals, and mandala art.",
+    description: "Traditional mehndi preserves the classic motifs passed down through generations. Featuring timeless paisleys, intricate netting (jaal), and classic mandalas, these designs honor the cultural heritage of henna art.",
     keywords: ["traditional mehndi designs", "classic henna", "traditional henna patterns"],
   },
   {
@@ -141,6 +157,7 @@ export const categories: CategoryDef[] = [
     title: "Minimal Mehndi Designs",
     metaTitle: "Minimalist Mehndi Designs — Minimal Mehndi Design Ideas",
     metaDescription: "Browse minimalist mehndi designs and minimal mehndi design ideas for a subtle, sophisticated look. Delicate lines, small motifs, and elegant negative space.",
+    description: "Minimalist mehndi is the art of understatement. By focusing on delicate fine lines, tiny focal points, and abundant open skin, minimal henna offers a chic, sophisticated look popular among modern brides and casual wearers alike.",
     keywords: ["minimalist mehndi designs", "minimal mehndi design", "minimal mehndi designs", "contemporary mehndi design"],
   },
   {
@@ -148,6 +165,7 @@ export const categories: CategoryDef[] = [
     title: "Floral Mehndi Designs",
     metaTitle: "Floral Mehndi Design — Flower Designs for Henna",
     metaDescription: "Discover floral mehndi design ideas and flower designs for henna: henna flower designs, lotus mehndi designs, roses, and vine patterns loved worldwide.",
+    description: "Floral mehndi is universally beloved, utilizing roses, lotuses, and abstract blossoms as the core design elements. These versatile motifs can be styled into flowing vines or dense centerpieces for a romantic, feminine aesthetic.",
     keywords: ["floral mehndi design", "flower designs for henna", "henna flower designs", "lotus mehndi design", "floral design henna"],
   },
   {
@@ -155,6 +173,7 @@ export const categories: CategoryDef[] = [
     title: "Mandala Mehndi Designs",
     metaTitle: "Mandala Mehndi Design — Circle Mehndi Design & Round Patterns",
     metaDescription: "Explore mandala mehndi design ideas: circle mehndi designs, mehndi designs in circle layouts, and round design mehndi patterns for back hand and palm.",
+    description: "Mandala mehndi centers around perfectly symmetrical, circular patterns applied to the back or palm of the hand. Rooted in sacred geometry, mandalas represent the universe and create a mesmerizing focal point.",
     keywords: ["mandala mehndi design", "circle mehndi design", "mehndi designs in circle", "round design mehndi", "mehndi designs with circles"],
   },
   {
@@ -162,6 +181,7 @@ export const categories: CategoryDef[] = [
     title: "Geometric Mehndi Designs",
     metaTitle: "100+ Geometric Mehndi Designs — Angular & Symmetric Henna Patterns",
     metaDescription: "Browse striking geometric mehndi designs featuring clean lines, triangles, hexagons, and mathematical precision for a bold, contemporary henna look.",
+    description: "Geometric mehndi moves away from natural floral curves in favor of sharp lines, triangles, squares, and lattice grids. This highly contemporary style offers a striking, architectural approach to body art.",
     keywords: ["geometric mehndi designs", "geometric henna", "angular mehndi"],
   },
   {
@@ -169,6 +189,7 @@ export const categories: CategoryDef[] = [
     title: "Jewelry Style Mehndi Designs",
     metaTitle: "100+ Jewelry Style Mehndi Designs — Hathphool & Ornamental Henna",
     metaDescription: "Discover jewelry-inspired mehndi designs mimicking rings, bracelets, and hathphool ornaments. Elegant chain patterns and ornamental henna art for a royal look.",
+    description: "Jewelry-style mehndi mimics the appearance of physical adornments like rings, bracelets, and hathphool (hand chains). It is a delicate, elegant style that seamlessly complements actual jewelry worn for special occasions.",
     keywords: ["jewelry mehndi designs", "jewellery henna", "hathphool mehndi", "ornamental mehndi"],
   },
   {
@@ -176,6 +197,7 @@ export const categories: CategoryDef[] = [
     title: "Royal Mehndi Designs",
     metaTitle: "100+ Royal Mehndi Designs — Mughal & Regal Henna Patterns",
     metaDescription: "Explore majestic royal mehndi designs inspired by Mughal art, palace motifs, elephants, and peacocks. Grand henna patterns fit for queens and brides.",
+    description: "Royal mehndi draws inspiration from Mughal and Rajput palace architecture, featuring majestic elephants, peacocks, jharokha (window) arches, and regal portraits fit for a queen.",
     keywords: ["royal mehndi designs", "mughal mehndi", "regal henna", "palace mehndi"],
   },
 
@@ -185,6 +207,7 @@ export const categories: CategoryDef[] = [
     title: "Full Hand Mehndi Designs",
     metaTitle: "200+ Full Hand Mehndi Designs — Complete Front & Back Henna Patterns",
     metaDescription: "Browse breathtaking full hand mehndi designs with complete coverage from fingertips to wrist. Stunning bridal and festive henna patterns for maximum impact.",
+    description: "Full-hand mehndi provides complete coverage from the fingertips down to the wrists or forearms. It is the ultimate statement piece for weddings and major festivals, allowing for maximum artistic detail.",
     keywords: ["full hand mehndi designs", "full hand henna", "complete hand mehndi"],
   },
   {
@@ -192,6 +215,7 @@ export const categories: CategoryDef[] = [
     title: "Back Hand Mehndi Designs",
     metaTitle: "Back Hand Mehndi Design — Stylish Back Hand Mehndi Designs",
     metaDescription: "Discover back hand mehndi design ideas: stylish back hand mehndi designs, mehndi designs for back of hand, and back hand side mehndi designs.",
+    description: "Back-hand mehndi is designed specifically for the dorsal side of the hand, the most visible area in photos. It often utilizes central mandalas, jewelry chains, or elegant Arabic trails that extend down the fingers.",
     keywords: ["back hand mehndi design", "stylish back hand mehndi designs", "mehndi designs for back of hand", "back hand side mehndi designs", "backside hand mehndi design"],
   },
   {
@@ -199,6 +223,7 @@ export const categories: CategoryDef[] = [
     title: "Front Hand Mehndi Designs",
     metaTitle: "Front Hand Mehndi Design — Simple Front Hand Patterns",
     metaDescription: "Explore front hand mehndi design ideas: beginner cute simple mehndi designs for front hands and palm mehndi designs known for the darkest stain.",
+    description: "Front-hand (palm) mehndi benefits from the warmest part of the hand, typically yielding the darkest henna stain. Designs here range from intricate Indian jaal to bold central focal points.",
     keywords: ["front hand mehndi design", "beginner cute simple mehndi designs for front hands", "simple mehndi design flower front hand", "palm mehndi design"],
   },
   {
@@ -206,6 +231,7 @@ export const categories: CategoryDef[] = [
     title: "Finger Mehndi Designs",
     metaTitle: "Finger Mehndi Patterns — Mehndi Patterns for Fingers",
     metaDescription: "Browse finger mehndi patterns and mehndi patterns for fingers: easy simple finger mehndi designs, ring styles, and minimalist trail work.",
+    description: "Finger mehndi isolates the design to the digits, ranging from simple ring-like bands to intricate lacy glove effects. It is a highly popular choice for a subtle, modern aesthetic.",
     keywords: ["finger mehndi patterns", "mehndi patterns for fingers", "easy simple finger mehndi design", "finger mehndi designs"],
   },
   {
@@ -213,6 +239,7 @@ export const categories: CategoryDef[] = [
     title: "Foot Mehndi Designs",
     metaTitle: "Feet Mehndi Design — Foot Henna Patterns",
     metaDescription: "Discover feet mehndi design ideas and foot henna patterns: anklet-style feet mehndi patterns, bridal foot henna, and full foot coverage designs.",
+    description: "Foot and leg mehndi designs range from delicate anklet patterns to full bridal coverage up to the knees. They often mirror the hand designs, utilizing bold lines to ensure a rich stain on thicker skin.",
     keywords: ["feet mehndi design", "foot henna patterns", "feet mehndi patterns", "foot mehndi designs", "bridal foot mehndi"],
   },
 
@@ -222,6 +249,7 @@ export const categories: CategoryDef[] = [
     title: "Eid Mehndi Designs",
     metaTitle: "Mehndi Designs for Eid — Eid Henna Patterns (2026)",
     metaDescription: "Browse mehndi designs for eid and eid henna patterns for 2026. Simple eid mehndi designs and mehndi patterns for eid ul-Fitr and Eid ul-Adha.",
+    description: "Eid mehndi is an essential part of the Chaand Raat (Night of the Moon) celebrations. The designs are typically elegant and fast-flowing, allowing families to celebrate together while preparing for the holiday.",
     keywords: ["mehndi designs for eid", "eid henna patterns", "eid mehndi design", "mehndi patterns for eid", "mehndi eid designs"],
   },
   {
@@ -229,6 +257,7 @@ export const categories: CategoryDef[] = [
     title: "Kids Mehndi Designs",
     metaTitle: "Childrens Mehndi Designs — Kids Mehndi Designs Made Easy",
     metaDescription: "Find adorable childrens mehndi designs and kids mehndi designs that are quick and safe. Simple mehndi designs for kids — perfect for Eid and festivals.",
+    description: "Kids mehndi focuses on simple, quick-to-apply, and adorable patterns that won't smudge easily. Popular motifs include small flowers, butterflies, stars, and basic mandalas tailored for small hands.",
     keywords: ["childrens mehndi designs", "mehndi designs for childrens", "kids mehndi designs", "simple mehndi designs for kids"],
   },
 ];
@@ -240,6 +269,7 @@ export const occasions: OccasionDef[] = [
     title: "Wedding Mehndi Designs",
     metaTitle: "Mehndi Wedding Designs — Mehndi Design for Marriage, Outfits & Decor",
     metaDescription: "Explore mehndi wedding designs and mehndi design for marriage ideas: simple bridal mehndi designs, guest patterns, plus mehndi outfit, mehndi dress for bride, and mehndi decor tips.",
+    description: "Wedding mehndi encompasses both the intricate bridal application and the festive designs worn by guests. It is a symbol of joy, beauty, and spiritual awakening for the marriage journey ahead.",
     keywords: ["mehndi wedding designs", "mehndi design for marriage", "simple bridal mehndi designs", "mehndi outfit", "clothes for mehndi", "mehndi dress for bride", "mehndi decor", "bridal henna near me", "mehndi dress", "outfits for mehndi", "pakistani mehndi wear", "mehndi wear"],
   },
   {
@@ -247,6 +277,7 @@ export const occasions: OccasionDef[] = [
     title: "Eid Mehndi Designs",
     metaTitle: "Mehndi Designs for Eid (2026) — Eid Henna Patterns",
     metaDescription: "Discover mehndi designs for eid and eid henna patterns for 2026. Simple eid mehndi designs, arabic styles, and trendy mehndi patterns for eid.",
+    description: "Eid mehndi is an essential part of the Chaand Raat (Night of the Moon) celebrations. The designs are typically elegant and fast-flowing, allowing families to celebrate together while preparing for the holiday.",
     keywords: ["mehndi designs for eid", "eid henna patterns", "eid mehndi design", "mehndi patterns for eid", "simple eid mehndi designs", "eid mehndi designs 2026", "easy eid mehndi", "pakistani mehndi for eid"],
   },
   {
@@ -254,6 +285,7 @@ export const occasions: OccasionDef[] = [
     title: "Karva Chauth Mehndi Designs",
     metaTitle: "100+ Karva Chauth Mehndi Designs — Traditional Festival Henna Patterns",
     metaDescription: "Find beautiful Karva Chauth mehndi designs featuring moon motifs, couple portraits, and traditional patterns for this special Indian festival.",
+    description: "Karva Chauth mehndi holds deep traditional significance for married Hindu women. The designs frequently feature romantic motifs, sieve and moon illustrations, and depictions of marital devotion.",
     keywords: ["karva chauth mehndi designs", "karva chauth henna", "karva chauth mehndi simple", "moon mehndi design", "couple mehndi design", "karva chauth mehndi 2026"],
   },
   {
@@ -261,6 +293,7 @@ export const occasions: OccasionDef[] = [
     title: "Diwali Mehndi Designs",
     metaTitle: "100+ Diwali Mehndi Designs — Festival of Lights Henna Patterns",
     metaDescription: "Browse stunning Diwali mehndi designs featuring diyas, rangoli motifs, and festive patterns perfect for the Festival of Lights celebrations.",
+    description: "Diwali mehndi celebrates the Festival of Lights with bright, joyful patterns. Common motifs include diyas (oil lamps), rangoli geometry, and auspicious symbols that welcome prosperity.",
     keywords: ["diwali mehndi designs", "diwali henna patterns", "diwali mehndi simple", "rangoli mehndi design", "diya mehndi design", "festival mehndi 2026", "diwali mehndi 2026"],
   },
   {
@@ -268,6 +301,7 @@ export const occasions: OccasionDef[] = [
     title: "Teej Mehndi Designs",
     metaTitle: "50+ Teej Mehndi Designs — Monsoon Festival Henna Patterns",
     metaDescription: "Explore traditional Teej mehndi designs with swing motifs and monsoon-inspired patterns for Hariyali Teej and Kajari Teej celebrations.",
+    description: "Teej mehndi welcomes the monsoon season and celebrates the union of Shiva and Parvati. The henna patterns often incorporate motifs of rain, swings, and lush floral blooms.",
     keywords: ["teej mehndi designs", "hariyali teej mehndi", "kajari teej mehndi", "teej henna patterns", "teej mehndi simple", "teej festival mehndi 2026"],
   },
   {
@@ -275,6 +309,7 @@ export const occasions: OccasionDef[] = [
     title: "Engagement Mehndi Designs",
     metaTitle: "100+ Engagement Mehndi Designs — Ring Ceremony Henna Patterns",
     metaDescription: "Discover elegant engagement mehndi designs for your ring ceremony. From subtle finger henna to statement hand patterns for the bride-to-be.",
+    description: "Engagement mehndi is typically lighter than bridal henna, focusing on elegant statement pieces like jewelry-style patterns or back-hand mandalas that highlight the new ring.",
     keywords: ["engagement mehndi designs", "ring ceremony mehndi", "engagement henna patterns", "mehndi for ring ceremony", "simple engagement mehndi", "bride to be mehndi design", "engagement mehndi 2026"],
   },
   {
@@ -282,6 +317,7 @@ export const occasions: OccasionDef[] = [
     title: "Party Mehndi Designs",
     metaTitle: "100+ Party Mehndi Designs — Trendy Henna for Events & Celebrations",
     metaDescription: "Browse trendy party mehndi designs for casual events, birthday celebrations, and social gatherings. Quick-to-apply henna that makes a statement.",
+    description: "Party mehndi consists of trendy, quick-application designs perfect for birthdays, baby showers, or casual get-togethers. The focus is on fun, contemporary style rather than heavy tradition.",
     keywords: ["party mehndi designs", "mehndi for parties", "birthday mehndi design", "casual henna patterns", "simple party mehndi", "quick mehndi designs", "trendy henna 2026", "cute henna designs"],
   },
   {
@@ -289,6 +325,7 @@ export const occasions: OccasionDef[] = [
     title: "Raksha Bandhan Mehndi Designs",
     metaTitle: "50+ Raksha Bandhan Mehndi Designs — Festive Henna for Sisters",
     metaDescription: "Find beautiful Raksha Bandhan mehndi designs featuring rakhi motifs and festive patterns. Quick and easy henna designs for the bond of siblings.",
+    description: "Raksha Bandhan mehndi celebrates the sibling bond. The designs are usually simple, sweet, and applied quickly as part of the festive family gathering.",
     keywords: ["raksha bandhan mehndi designs", "rakhi mehndi design", "rakshabandhan henna", "mehndi for raksha bandhan", "simple raksha bandhan mehndi", "rakhi henna patterns 2026"],
   },
 ];
@@ -300,30 +337,35 @@ export const bodyParts: BodyPartDef[] = [
     title: "Front Hand Mehndi Designs",
     metaTitle: "Front Hand Mehndi Design — Palm Mehndi Patterns",
     metaDescription: "Explore front hand mehndi design ideas and palm mehndi designs, including beginner cute simple mehndi designs for front hands for the darkest stain.",
+    description: "Front-hand (palm) mehndi benefits from the warmest part of the hand, typically yielding the darkest henna stain. Designs here range from intricate Indian jaal to bold central focal points.",
   },
   {
     slug: "back-hand",
     title: "Back Hand Mehndi Designs",
     metaTitle: "Back Hand Mehndi Design — Mehndi Designs for Back of Hand",
     metaDescription: "Discover back hand mehndi design ideas and mehndi designs for back of hand: stylish back hand mehndi designs from simple trails to full coverage.",
+    description: "Back-hand mehndi is designed specifically for the dorsal side of the hand, the most visible area in photos. It often utilizes central mandalas, jewelry chains, or elegant Arabic trails that extend down the fingers.",
   },
   {
     slug: "full-hand",
     title: "Full Hand Mehndi Designs",
     metaTitle: "200+ Full Hand Mehndi Designs — Complete Hand Coverage Henna",
     metaDescription: "Browse full hand mehndi designs with complete front and back coverage from fingertips to wrist for maximum impact.",
+    description: "Full-hand mehndi provides complete coverage from the fingertips down to the wrists or forearms. It is the ultimate statement piece for weddings and major festivals, allowing for maximum artistic detail.",
   },
   {
     slug: "finger",
     title: "Finger Mehndi Designs",
     metaTitle: "Finger Mehndi Patterns — Mehndi Patterns for Fingers",
     metaDescription: "Browse finger mehndi patterns and mehndi patterns for fingers, including easy simple finger mehndi designs and minimalist ring styles.",
+    description: "Finger mehndi isolates the design to the digits, ranging from simple ring-like bands to intricate lacy glove effects. It is a highly popular choice for a subtle, modern aesthetic.",
   },
   {
     slug: "foot",
     title: "Foot & Leg Mehndi Designs",
     metaTitle: "Feet Mehndi Design — Foot Henna Patterns",
     metaDescription: "Discover feet mehndi design ideas and foot henna patterns, from anklet-style feet mehndi patterns to full leg coverage.",
+    description: "Foot and leg mehndi designs range from delicate anklet patterns to full bridal coverage up to the knees. They often mirror the hand designs, utilizing bold lines to ensure a rich stain on thicker skin.",
   },
   {
     slug: "arm",

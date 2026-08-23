@@ -44,6 +44,13 @@ export default function CategoryPage({ category }: { category: DesignCategory })
             </div>
           )}
 
+          {category.description && (
+            <section className="prose prose-invert prose-gold max-w-none mb-10">
+              <h2 id="about">About {category.title}</h2>
+              <p>{category.description}</p>
+            </section>
+          )}
+
           <AdSlot adSlot="footer-slot" className="mt-12" />
 
           <section className="mt-16" id="gallery">

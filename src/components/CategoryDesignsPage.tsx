@@ -79,14 +79,12 @@ export default function CategoryDesignsPage({
             </div>
           )}
 
-          {safePage === 1 && (
+          {safePage === 1 && category.description && (
             <section className="prose prose-invert prose-gold max-w-none mb-10">
               <h2 id="about">About {category.title}</h2>
-              <p>
-                Explore {total}+ {category.title.toLowerCase()} below. Tap any design to view it full size, read step-by-step details, and save or share your favorites.
-              </p>
+              <p>{category.description}</p>
               {category.region && REGION_TO_STYLE_PAGE[category.region] && (
-                <p className="text-sm">
+                <p className="text-sm mt-4">
                   Learn about the cultural history behind these designs:{" "}
                   <Link
                     href={`/styles/${REGION_TO_STYLE_PAGE[category.region].id}`}
