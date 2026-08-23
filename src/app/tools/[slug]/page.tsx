@@ -252,29 +252,6 @@ export default async function ToolPage({
           </div>
         </section>
 
-        {/* SEO Rich Content */}
-        <section className="max-w-3xl mx-auto mb-20 prose prose-invert">
-          <h2 className="font-serif text-2xl font-bold text-foreground mb-4">
-            Everything You Need to Know About {tool.title}
-          </h2>
-          <p className="text-muted leading-relaxed mb-4">
-            {tool.description} Whether you are a seasoned mehndi artist or just
-            beginning your henna journey, incorporating the right tools can
-            elevate your technique and help you achieve stunning results.
-          </p>
-          <p className="text-muted leading-relaxed mb-4">
-            Mastering {tool.title.toLowerCase()} requires practice and patience. 
-            We recommend starting with simpler patterns before moving on to 
-            more intricate designs. Review our quick tips and FAQs above to get 
-            the most out of your experience and avoid common beginner mistakes.
-          </p>
-          <p className="text-muted leading-relaxed">
-            Browse our featured designs to see what is possible, and save your 
-            favorites to practice later. With the right approach,{" "}
-            <span className="text-gold font-semibold">{tool.title.toLowerCase()}</span>{" "}
-            will quickly become an essential part of your mehndi kit.
-          </p>
-        </section>
 
         {/* Related Tools */}
         {related.length > 0 && (
