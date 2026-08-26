@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { designs } from "@/data/designs";
 import { blogs } from "@/data/blogs";
 import { countries } from "@/data/countries";
@@ -18,14 +18,14 @@ import { allDesigns } from "@/data/index";
 const BASE_URL = "https://www.mehndidesignhenna.com";
 
 export const metadata: Metadata = {
-  title: "5000+ Easy Mehndi Designs for Hands (2026) | Mehndi Henna",
+  title: "Mehndi Design Henna — 5000+ Henna Designs, Virtual Try-On & Free Guides",
   description:
     "Browse 5000+ easy mehndi designs for hands — simple, arabic, bridal, and eid henna patterns. Use our Virtual Try-On tool & find free henna guides!",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "5000+ Easy Mehndi Designs for Hands (2026) | Mehndi Henna",
+    title: "Mehndi Design Henna — 5000+ Henna Designs, Virtual Try-On & Free Guides",
     description:
       "Browse 5000+ easy mehndi designs for hands — simple, arabic, bridal, and eid henna patterns. Use our Virtual Try-On tool & find free henna guides!",
     type: "website",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "5000+ Easy Mehndi Designs for Hands (2026) | Mehndi Henna",
+    title: "Mehndi Design Henna — 5000+ Henna Designs, Virtual Try-On & Free Guides",
     description: "Browse 5000+ easy mehndi designs for hands — simple, arabic, bridal, and eid henna patterns. Use our Virtual Try-On tool & find free henna guides!",
   },
 };

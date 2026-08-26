@@ -89,11 +89,7 @@ export default function ToolsIndexPage() {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
-      />
-    <div className="min-h-screen pt-24 pb-20">
+          <div className="min-h-screen pt-24 pb-20">
       {/* Hero */}
       <div
         style={{

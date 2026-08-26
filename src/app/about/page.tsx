@@ -118,8 +118,7 @@ export default function AboutPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
-      <main className="min-h-screen">
+            <main className="min-h-screen">
       {/* Hero */}
       <section className="relative pt-36 pb-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
         {/* Background glows */}

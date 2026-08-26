@@ -1,4 +1,4 @@
-export interface BlogPost {
+﻿export interface BlogPost {
   slug: string;
   title: string;
   excerpt: string;
@@ -418,7 +418,7 @@ export const blogs: BlogPost[] = [
   },
   {
     "slug": "easy-mehndi-designs-for-beginners",
-    "title": "Easy Mehndi Designs for Beginners: A Step-by-Step Tutorial",
+    "title": "How to Draw Easy Mehndi Designs: Step-by-Step Tutorial for Beginners",
     "metaTitle": "Easy Mehndi Designs for Beginners | Simple Henna Tutorials",
     "metaDescription": "Learn how to draw easy mehndi designs step-by-step. Discover simple henna designs and patterns that beginners can easily practice at home.",
     "excerpt": "Applying henna doesn't have to be complicated. Learn the basic elements of mehndi art and discover how to create beautiful, easy mehndi designs with our step-by-step beginner's tutorial.",
@@ -454,7 +454,7 @@ export const blogs: BlogPost[] = [
   },
   {
     "slug": "bridal-mehndi-guide-choosing-the-perfect-design",
-    "title": "Bridal Mehndi Guide: How to Choose the Perfect Wedding Henna Design",
+    "title": "Bridal Mehndi Planning Guide: How to Choose Your Wedding Henna Design & Book an Artist",
     "excerpt": "An in-depth, comprehensive look at Bridal Mehndi Guide: How to Choose the Perfect Wedding Henna Design. Discover the history, techniques, and modern trends shaping this beautiful art form.",
     "content": "<h2>Bridal Mehndi Guide: How to Choose the Perfect Wedding Henna Design</h2>\n<p>Choosing the right bridal mehndi design is an important part of your wedding preparations. Whether you prefer full-coverage traditional patterns or modern minimalist elements, your bridal henna should perfectly complement your outfit and personal style.</p>\n\n<div class=\"my-8 p-6 rounded-2xl bg-gold/5 border border-gold/20 flex gap-4 items-start\">\n  <div class=\"text-2xl text-gold mt-1\">💡</div>\n  <div>\n    <h4 class=\"font-serif text-lg font-bold text-foreground mb-1\">Essential Henna Knowledge</h4>\n    <p class=\"text-muted text-sm leading-relaxed mb-3\">To read about the chemistry of henna, essential oil terp selections, hand-rolled cone application techniques, historical civilizational roots, and black henna safety warnings, explore our master guide.</p>\n    <a href=\"/blog/ultimate-henna-guide\" class=\"text-gold font-semibold text-sm hover:underline inline-flex items-center gap-1\">Read The Ultimate Henna Guide &rarr;</a>\n  </div>\n</div>\n\n<h2>Final Thoughts</h2>\n<p>Your bridal mehndi is a reflection of your personality on your special day. Take your time exploring different styles and artists to find the perfect design that you will cherish in your wedding photos forever.</p>",
     "author": "Mehndi Design Henna Editorial Team",
@@ -594,7 +594,7 @@ export const blogs: BlogPost[] = [
   },
   {
     "slug": "simple-mehndi-designs-for-beginners",
-    "title": "25 Simple Mehndi Designs for Beginners",
+    "title": "25 Easy Mehndi Design Ideas You Can Try at Home (Beginner-Friendly)",
     "excerpt": "Mehndi is a beautiful way to decorate your hands. Discover 25 easy mehndi designs and simple henna patterns that beginners can try at home for weddings and festivals.",
     "author": "Mehndi Design Henna Editorial Team",
     "date": "2026-08-10",
@@ -636,8 +636,8 @@ export const blogs: BlogPost[] = [
 }
 , {
   slug: "arabic-mehndi-designs",
-  title: "Arabic Mehndi Designs: 25 Elegant Ideas for Weddings, Eid & Parties",
-  excerpt: "Discover 25 elegant Arabic mehndi designs for weddings, Eid, parties and everyday wear, with tips for choosing simple, modern and stylish patterns.",
+  title: "25 Arabic Mehndi Design Ideas: Elegant Inspiration for Weddings, Eid & Parties",
+  excerpt: "Explore 25 elegant Arabic mehndi design ideas for weddings, Eid, parties and everyday wear. Inspiration for simple, bold, and modern Arabic henna styles.",
   author: "Mehndi Design Henna Editorial Team",
   date: "2026-08-12",
   readTime: "9 min read",

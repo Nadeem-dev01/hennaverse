@@ -1,4 +1,4 @@
-export interface CategoryDef {
+﻿export interface CategoryDef {
   description?: string;
   slug: string;
   title: string;
@@ -131,8 +131,8 @@ export const categories: CategoryDef[] = [
   {
     slug: "simple",
     title: "Simple Mehndi Designs",
-    metaTitle: "Easy Mehndi Designs — Simple Mehndi Designs for Hands",
-    metaDescription: "Browse easy mehndi designs and simple mehndi designs for hands. Mehndi designs for beginners — easy and beautiful patterns for everyday and festive looks.",
+    metaTitle: "Simple Mehndi Designs Gallery — 200+ Easy Patterns for Hands (2026)",
+    metaDescription: "Browse 200+ simple mehndi designs for hands. From single-flower trails to subtle finger details — easy henna patterns for everyday wear, Eid, and festive occasions.",
     description: "Simple mehndi designs are perfect for beginners or those seeking a quick, minimalist look. Featuring basic trails, scattered florals, or subtle finger details, these patterns offer beauty without the time commitment of full-coverage henna.",
     keywords: ["easy mehndi designs", "mehndi designs simple", "simple mehndi designs for hands", "mehndi design easy and beautiful", "simple easy mehndi design", "very very simple mehndi design", "mehndi designs for beginners"],
   },
@@ -275,8 +275,8 @@ export const occasions: OccasionDef[] = [
   {
     slug: "eid",
     title: "Eid Mehndi Designs",
-    metaTitle: "Mehndi Designs for Eid (2026) — Eid Henna Patterns",
-    metaDescription: "Discover mehndi designs for eid and eid henna patterns for 2026. Simple eid mehndi designs, arabic styles, and trendy mehndi patterns for eid.",
+    metaTitle: "Eid Mehndi Night Guide — Designs, Traditions & Chaand Raat Tips (2026)",
+    metaDescription: "Plan your Eid mehndi night with the right designs and cultural traditions. Browse eid henna patterns, simple eid mehndi designs, and arabic-style Chaand Raat patterns for Eid ul-Fitr and Eid ul-Adha.",
     description: "Eid mehndi is an essential part of the Chaand Raat (Night of the Moon) celebrations. The designs are typically elegant and fast-flowing, allowing families to celebrate together while preparing for the holiday.",
     keywords: ["mehndi designs for eid", "eid henna patterns", "eid mehndi design", "mehndi patterns for eid", "simple eid mehndi designs", "eid mehndi designs 2026", "easy eid mehndi", "pakistani mehndi for eid"],
   },

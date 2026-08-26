@@ -1,4 +1,4 @@
-export interface CategoryImage {
+﻿export interface CategoryImage {
   src: string;
   alt: string;
   title: string;
@@ -318,8 +318,8 @@ export const designCategories: DesignCategory[] = [
   {
     "slug": "simple",
     "title": "Simple Mehndi Designs",
-    "metaTitle": "Easy Mehndi Designs — Simple Mehndi Designs for Hands | Mehndi Design Henna",
-    "metaDescription": "Browse easy mehndi designs and simple mehndi designs for hands. Very simple mehndi designs, easy and beautiful patterns, and mehndi designs for beginners — quick to apply.",
+    "metaTitle": "Simple Mehndi Designs Gallery — 200+ Easy Patterns for Hands (2026) | Mehndi Design Henna",
+    "metaDescription": "Browse 200+ simple mehndi designs for hands. From single-flower trails to subtle finger details — easy henna patterns for everyday wear, Eid, and festive occasions.",
     "description": "Simple mehndi designs are perfect for beginners or those seeking a quick, minimalist look. Featuring basic trails, scattered florals, or subtle finger details, these patterns offer beauty without the time commitment of full-coverage henna.",
     "heroImage": "/365441104_795039815441277_9170970207106332793_n.avif",
     "images": [
