@@ -83,6 +83,30 @@ export default async function ToolPage({
       ? relevantDesigns
       : designs.slice(0, 12);
 
+  // Match a specific taxonomy category for better internal linking
+  const taxonomyTerms = [
+    "arabic", "indian", "pakistani", "moroccan", "gulf", "african", "turkish", 
+    "rajasthani", "indonesian", "bridal", "simple", "modern", "traditional", 
+    "minimal", "floral", "mandala", "geometric", "jewelry", "royal", "kids"
+  ];
+  const occasionTerms = [
+    "wedding", "eid", "karva-chauth", "diwali", "teej", "engagement", "raksha-bandhan", "party"
+  ];
+  
+  const matchedTaxonomy = taxonomyTerms.find(t => slug.includes(t));
+  const matchedOccasion = occasionTerms.find(t => slug.includes(t));
+  
+  let targetHref = "/gallery";
+  let targetLabel = "View Full Gallery";
+  
+  if (matchedTaxonomy) {
+    targetHref = `/mehndi-designs/${matchedTaxonomy}`;
+    targetLabel = `Explore All ${matchedTaxonomy.charAt(0).toUpperCase() + matchedTaxonomy.slice(1)} Designs`;
+  } else if (matchedOccasion) {
+    targetHref = `/occasions/${matchedOccasion}`;
+    targetLabel = `Explore All ${matchedOccasion.charAt(0).toUpperCase() + matchedOccasion.slice(1)} Designs`;
+  }
+
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -197,10 +221,10 @@ export default async function ToolPage({
           </div>
           <div className="text-center mt-10">
             <Link
-              href="/gallery"
+              href={targetHref}
               className="inline-flex items-center gap-2 px-8 py-3.5 bg-gold text-white font-semibold rounded-xl hover:bg-gold/90 transition-all duration-200 shadow-lg shadow-gold/20"
             >
-              View Full Gallery →
+              {targetLabel} →
             </Link>
           </div>
         </section>

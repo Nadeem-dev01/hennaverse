@@ -1,6 +1,7 @@
 import AdSlot from "@/components/AdSlot";
 import SectionHeading from "@/components/SectionHeading";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HomeSEOContent() {
   return (
@@ -31,7 +32,7 @@ export default function HomeSEOContent() {
 
         <h2 id="bridal">Bridal Mehndi Traditions</h2>
         <p>
-          In many South Asian and Middle Eastern cultures, the Mehndi ceremony is a cornerstone of wedding festivities. It is an event filled with music, dancing, and the coming together of families. The bride&apos;s hands and feet are adorned with elaborate patterns that often take hours to apply. Hidden within these complex grids and floral motifs are the initials of the groom, a playful tradition that the groom must find on the wedding night.
+          In many South Asian and Middle Eastern cultures, the <Link href="/occasions/wedding" className="text-gold hover:underline font-bold">Mehndi ceremony</Link> is a cornerstone of wedding festivities. It is an event filled with music, dancing, and the coming together of families. The bride&apos;s hands and feet are adorned with elaborate patterns that often take hours to apply. Hidden within these complex grids and floral motifs are the initials of the groom, a playful tradition that the groom must find on the wedding night.
         </p>
 
         <h2 id="styles">Popular Henna Styles Around the World</h2>
@@ -39,11 +40,11 @@ export default function HomeSEOContent() {
           As henna traveled across the world, it adapted to the artistic sensibilities of different cultures. Today, we categorize these into several distinct styles:
         </p>
         <ul>
-          <li><strong>Indian Mehndi:</strong> Characterized by highly dense, intricate patterns that cover the entire hand and arm. Motifs include peacocks, mangoes (paisley), and complex mandalas.</li>
-          <li><strong>Arabic Mehndi:</strong> Known for its bold, flowing, and spaced-out designs. It heavily features large floral patterns, vines, and leaves, often leaving significant negative space on the skin.</li>
-          <li><strong>Pakistani Mehndi:</strong> A beautiful fusion of Indian intricacy and Arabic boldness. It often includes precise geometric patterns mixed with delicate shading.</li>
-          <li><strong>Moroccan Mehndi:</strong> Strictly geometric. You will rarely find floral patterns here. Instead, it relies on diamonds, squares, and straight lines, reflecting Berber traditions.</li>
-          <li><strong>Western/Minimalist:</strong> A modern take focusing on symmetry, tiny details, and placement. Often restricted to just the fingers or the center of the palm.</li>
+          <li><Link href="/mehndi-designs/indian" className="text-gold hover:underline font-bold">Indian Mehndi:</Link> Characterized by highly dense, intricate patterns that cover the entire hand and arm. Motifs include peacocks, mangoes (paisley), and complex mandalas.</li>
+          <li><Link href="/mehndi-designs/arabic" className="text-gold hover:underline font-bold">Arabic Mehndi:</Link> Known for its bold, flowing, and spaced-out designs. It heavily features large floral patterns, vines, and leaves, often leaving significant negative space on the skin.</li>
+          <li><Link href="/mehndi-designs/pakistani" className="text-gold hover:underline font-bold">Pakistani Mehndi:</Link> A beautiful fusion of Indian intricacy and Arabic boldness. It often includes precise geometric patterns mixed with delicate shading.</li>
+          <li><Link href="/mehndi-designs/moroccan" className="text-gold hover:underline font-bold">Moroccan Mehndi:</Link> Strictly geometric. You will rarely find floral patterns here. Instead, it relies on diamonds, squares, and straight lines, reflecting Berber traditions.</li>
+          <li><Link href="/mehndi-designs/minimal" className="text-gold hover:underline font-bold">Western/Minimalist:</Link> A modern take focusing on symmetry, tiny details, and placement. Often restricted to just the fingers or the center of the palm.</li>
         </ul>
 
         <div className="my-10 relative aspect-[4/3] w-full rounded-2xl overflow-hidden border border-border">
