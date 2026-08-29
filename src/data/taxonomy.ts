@@ -6,6 +6,7 @@
   metaDescription: string;
   region?: string;
   keywords: string[];
+  relatedLinks?: { href: string; label: string }[];
 }
 
 export interface OccasionDef {
@@ -15,6 +16,7 @@ export interface OccasionDef {
   metaTitle: string;
   metaDescription: string;
   keywords?: string[];
+  relatedLinks?: { href: string; label: string }[];
 }
 
 export interface BodyPartDef {
@@ -23,6 +25,7 @@ export interface BodyPartDef {
   title: string;
   metaTitle: string;
   metaDescription: string;
+  relatedLinks?: { href: string; label: string }[];
 }
 
 export interface ComboDef {
@@ -32,6 +35,7 @@ export interface ComboDef {
   minDesigns: number;
   metaTitle: string;
   metaDescription: string;
+  relatedLinks?: { href: string; label: string }[];
 }
 
 // --- 26 Categories ---
@@ -54,6 +58,10 @@ export const categories: CategoryDef[] = [
     description: "Indian mehndi is characterized by dense, intricate patterns that often cover the entire hand and arm. Classic motifs include peacocks, paisleys (mango shapes), lotus flowers, and hidden initials, making it the preferred style for elaborate bridal adornment.",
     region: "india",
     keywords: ["indian mehndi designs", "mehndi designs in indian", "peacock mehndi design", "lotus mehndi design"],
+    relatedLinks: [
+      { href: "/blog/the-complete-guide-to-indian-mehndi-styles", label: "Read our Complete Guide to Indian Mehndi" },
+      { href: "/tools/indian-mehndi-generator", label: "Try the Indian Mehndi Generator" }
+    ],
   },
   {
     slug: "pakistani",
@@ -63,6 +71,10 @@ export const categories: CategoryDef[] = [
     description: "Pakistani mehndi represents a beautiful fusion of Arabic elegance and Indian intricacy. It often features dense geometric fillings and floral motifs, striking a perfect balance between full-coverage bridal intensity and modern, flowing aesthetics.",
     region: "pakistan",
     keywords: ["pakistani mehndi design", "pakistani mehndi designs", "pakistani mehndi for eid"],
+    relatedLinks: [
+      { href: "/blog/pakistani-mehndi-designs-guide", label: "Read our Guide to Pakistani Mehndi" },
+      { href: "/tools/pakistani-mehndi-generator", label: "Try the Pakistani Mehndi Generator" }
+    ],
   },
   {
     slug: "moroccan",
@@ -216,6 +228,9 @@ export const categories: CategoryDef[] = [
     metaTitle: "Back Hand Mehndi Design — Stylish Back Hand Mehndi Designs",
     metaDescription: "Discover back hand mehndi design ideas: stylish back hand mehndi designs, mehndi designs for back of hand, and back hand side mehndi designs.",
     description: "Back-hand mehndi is designed specifically for the dorsal side of the hand, the most visible area in photos. It often utilizes central mandalas, jewelry chains, or elegant Arabic trails that extend down the fingers.",
+    relatedLinks: [
+      { href: "/tools/back-hand-mehndi-generator", label: "Try the Back Hand Mehndi Generator" }
+    ],
     keywords: ["back hand mehndi design", "stylish back hand mehndi designs", "mehndi designs for back of hand", "back hand side mehndi designs", "backside hand mehndi design"],
   },
   {
@@ -224,6 +239,9 @@ export const categories: CategoryDef[] = [
     metaTitle: "Front Hand Mehndi Design — Simple Front Hand Patterns",
     metaDescription: "Explore front hand mehndi design ideas: beginner cute simple mehndi designs for front hands and palm mehndi designs known for the darkest stain.",
     description: "Front-hand (palm) mehndi benefits from the warmest part of the hand, typically yielding the darkest henna stain. Designs here range from intricate Indian jaal to bold central focal points.",
+    relatedLinks: [
+      { href: "/tools/front-hand-mehndi-generator", label: "Try the Front Hand Mehndi Generator" }
+    ],
     keywords: ["front hand mehndi design", "beginner cute simple mehndi designs for front hands", "simple mehndi design flower front hand", "palm mehndi design"],
   },
   {
@@ -338,6 +356,9 @@ export const bodyParts: BodyPartDef[] = [
     metaTitle: "Front Hand Mehndi Design — Palm Mehndi Patterns",
     metaDescription: "Explore front hand mehndi design ideas and palm mehndi designs, including beginner cute simple mehndi designs for front hands for the darkest stain.",
     description: "Front-hand (palm) mehndi benefits from the warmest part of the hand, typically yielding the darkest henna stain. Designs here range from intricate Indian jaal to bold central focal points.",
+    relatedLinks: [
+      { href: "/tools/front-hand-mehndi-generator", label: "Try the Front Hand Mehndi Generator" }
+    ],
   },
   {
     slug: "back-hand",
@@ -345,6 +366,9 @@ export const bodyParts: BodyPartDef[] = [
     metaTitle: "Back Hand Mehndi Design — Mehndi Designs for Back of Hand",
     metaDescription: "Discover back hand mehndi design ideas and mehndi designs for back of hand: stylish back hand mehndi designs from simple trails to full coverage.",
     description: "Back-hand mehndi is designed specifically for the dorsal side of the hand, the most visible area in photos. It often utilizes central mandalas, jewelry chains, or elegant Arabic trails that extend down the fingers.",
+    relatedLinks: [
+      { href: "/tools/back-hand-mehndi-generator", label: "Try the Back Hand Mehndi Generator" }
+    ],
   },
   {
     slug: "full-hand",

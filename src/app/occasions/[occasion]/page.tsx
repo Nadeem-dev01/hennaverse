@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { occasions } from "@/data/taxonomy";
 import { designsByOccasion } from "@/data/index";
@@ -84,6 +85,7 @@ export default async function OccasionPage(
 
         <DesignGrid designs={designs} />
 
+
         {/* SEO Text Section */}
         {occasion.description && (
           <section className="mt-16 pt-10 border-t border-border">
@@ -91,6 +93,21 @@ export default async function OccasionPage(
               <h2 id="about">About {occasion.title}</h2>
               <p>{occasion.description}</p>
             </div>
+          </section>
+        )}
+
+        {occasion.relatedLinks && occasion.relatedLinks.length > 0 && (
+          <section className="mt-10 p-6 bg-surface border border-border rounded-xl">
+            <h3 className="text-lg font-serif text-gold mb-4">Related Guides & Tools</h3>
+            <ul className="flex flex-col gap-3">
+              {occasion.relatedLinks.map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className="flex items-center gap-2 text-muted hover:text-gold transition-colors">
+                    <span className="text-gold opacity-50">→</span> {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </section>
         )}
       </div>

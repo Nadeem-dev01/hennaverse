@@ -205,7 +205,7 @@ export const blogs: BlogPost[] = [
 
 <h3>Simple Styles for Beginners</h3>
 <p>If you are new to mehndi, start with basic flowers, leaves, vines and dots before attempting more detailed designs.</p>
-<p>You can also read: <a href="/blog/simple-mehndi-designs-for-beginners">25 <a href='/mehndi-designs/simple'>Simple Mehndi</a> Designs for Beginners</a>.</p>
+<p>You can also read: <a href=\"/blog/simple-mehndi-designs-for-beginners\">25 Simple Mehndi Designs for Beginners</a>.</p>
 
 <h2>Tips for Creating Beautiful Asian Henna Designs</h2>
 
@@ -843,7 +843,7 @@ export const blogs: BlogPost[] = [
   <li><a href="/mehndi-designs/pakistani">Pakistani Mehndi Designs</a></li>
   <li><a href="/blog/simple-mehndi-designs-for-beginners">Simple Mehndi Designs for Beginners</a></li>
   <li><a href="/">Mehndi Design Home</a></li>
-  <li><a href="/tools/mehndi-search-tool"><a href='/tools/design-finder'>Mehndi Search Tool</a></a></li>
+  <li><a href=\"/tools/design-finder\">Mehndi Search Tool</a></li>
   <li><a href="/tools/khafif-mehndi-generator">Khafif Mehndi Generator</a></li>
 </ul>
 
@@ -1185,7 +1185,7 @@ export const blogs: BlogPost[] = [
   <li><a href="/blog/arabic-mehndi-designs">Arabic Mehndi Designs Guide</a></li>
   <li><a href="/blog/simple-mehndi-designs-for-beginners">Simple Mehndi Designs for Beginners</a></li>
   <li><a href="/blog/how-to-choose-mehndi-design-for-occasion">How to Choose the Right Mehndi Design</a></li>
-  <li><a href="/tools/mehndi-search-tool">Browse Designs with the <a href='/tools/design-finder'>Mehndi Search Tool</a></a></li>
+  <li>Browse Designs with the <a href="/tools/design-finder">Mehndi Search Tool</a></li>
   <li><a href="/tools/khafif-mehndi-generator">Explore Light Patterns with the Khafif Mehndi Generator</a></li>
   <li><a href="/">Back to Mehndi Design Henna Home</a></li>
 </ul>`
@@ -1303,7 +1303,7 @@ export const blogs: BlogPost[] = [
 <h2>Chinese Mehndi vs Traditional Mehndi</h2>
 <p>Chinese-inspired mehndi is best understood as a creative fusion style rather than a separate traditional form of mehndi. Traditional mehndi designs from South Asia often feature recognizable regional patterns, dense compositions and established motifs.</p>
 <p>Chinese-inspired designs borrow visual ideas such as floral arrangements, flowing ornamental lines and symbolic imagery while still being created using traditional henna techniques and paste. That combination gives artists plenty of room to experiment.</p>
-<p>For contrast, see our guides on <a href="/blog/arabic-mehndi-designs"><a href='/mehndi-designs/arabic'>Arabic mehndi</a> designs</a> and <a href="/blog/asian-henna-designs">Asian henna designs</a>, which follow different compositional principles.</p>
+<p>For contrast, see our guides on <a href=\"/blog/arabic-mehndi-designs\">Arabic mehndi designs</a> and <a href="/blog/asian-henna-designs">Asian henna designs</a>, which follow different compositional principles.</p>
 
 <h2>Tips for Creating a Beautiful Design</h2>
 
@@ -1356,7 +1356,7 @@ export const blogs: BlogPost[] = [
 <ul>
   <li><a href="/blog/arabic-mehndi-designs">Arabic Mehndi Designs</a></li>
   <li><a href="/blog/asian-henna-designs">Asian Henna Designs</a></li>
-  <li><a href="/blog/pakistani-mehndi-designs-guide"><a href='/mehndi-designs/pakistani'>Pakistani Mehndi</a> Designs Guide</a></li>
+  <li><a href=\"/blog/pakistani-mehndi-designs-guide\">Pakistani Mehndi Designs Guide</a></li>
   <li><a href="/mehndi-designs/bridal">Bridal Mehndi Designs</a></li>
   <li><a href="/mehndi-designs/floral">Floral Mehndi Designs</a></li>
   <li><a href="/mehndi-designs/minimal">Minimal Mehndi Designs</a></li>

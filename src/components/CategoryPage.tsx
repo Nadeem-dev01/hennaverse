@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import Breadcrumbs from "./Breadcrumbs";
 import TableOfContents from "./TableOfContents";
 import AdSlot from "./AdSlot";
@@ -48,6 +49,21 @@ export default function CategoryPage({ category }: { category: DesignCategory })
             <section className="prose prose-invert prose-gold max-w-none mb-10">
               <h2 id="about">About {category.title}</h2>
               <p>{category.description}</p>
+            </section>
+          )}
+
+          {category.relatedLinks && category.relatedLinks.length > 0 && (
+            <section className="mb-10 p-6 bg-surface border border-border rounded-xl">
+              <h3 className="text-lg font-serif text-gold mb-4">Related Guides & Tools</h3>
+              <ul className="flex flex-col gap-3">
+                {category.relatedLinks.map((link) => (
+                  <li key={link.href}>
+                    <Link href={link.href} className="flex items-center gap-2 text-muted hover:text-gold transition-colors">
+                      <span className="text-gold opacity-50">?</span> {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </section>
           )}
 
