@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     url: BASE_URL,
     siteName: "Mehndi Design Henna",
     images: [{
-      url: "/chakra-bridal-front-hand-mehndi-820x1024.avif",
+      url: "https://www.mehndidesignhenna.com/chakra-bridal-front-hand-mehndi-820x1024.avif",
       width: 820,
       height: 1024,
       alt: "Beautiful Bridal Mehndi Design — 5000+ Henna Patterns at MehndiDesignHenna"

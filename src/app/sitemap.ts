@@ -123,9 +123,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const designRoutes: MetadataRoute.Sitemap = allDesigns.map((design) => ({
     url: `${BASE_URL}/designs/${design.slug}`,
     lastModified: SITE_LAST_UPDATED,
-    changeFrequency: "monthly" as const,
-    priority: 0.6,
-  }));
+    changeFrequency: "monthly" as const, priority: 0.6, images: [`${BASE_URL}${design.image.src}`] }));
 
   // --- Occasion pages ---
   const occasionRoutes: MetadataRoute.Sitemap = occasionSlugs.map((slug) => ({

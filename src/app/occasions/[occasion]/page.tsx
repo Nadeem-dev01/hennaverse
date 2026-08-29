@@ -25,7 +25,7 @@ export async function generateMetadata(
 
   const designs = designsByOccasion.get(occasion.slug) ?? [];
   const firstImage = designs[0]?.image?.src;
-  const ogImages = firstImage ? [{ url: firstImage, width: 800, height: 800, alt: occasion.title }] : [];
+  const ogImages = firstImage ? [{ url: `${BASE_URL}${firstImage}`, width: 800, height: 800, alt: occasion.title }] : [];
 
   return {
     title: occasion.metaTitle,
@@ -45,7 +45,7 @@ export async function generateMetadata(
       card: "summary_large_image",
       title: occasion.metaTitle,
       description: occasion.metaDescription,
-      images: firstImage ? [firstImage] : [],
+      images: firstImage ? [`${BASE_URL}${firstImage}`] : [],
     },
   };
 }

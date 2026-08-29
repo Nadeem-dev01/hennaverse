@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
     images: [{
-      url: "/chakra-bridal-front-hand-mehndi-820x1024.avif",
+      url: "https://www.mehndidesignhenna.com/chakra-bridal-front-hand-mehndi-820x1024.avif",
       width: 820,
       height: 1024,
       alt: "Beautiful Bridal Mehndi Design — Mehndi Design Henna"

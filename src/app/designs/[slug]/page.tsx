@@ -38,13 +38,13 @@ export async function generateMetadata(
     openGraph: {
       title: enrichedTitle,
       description: metaDesc,
-      images: [{ url: design.image.src, width: design.image.width, height: design.image.height, alt: design.image.alt }],
+      images: [{ url: `${BASE_URL}${design.image.src}`, width: design.image.width, height: design.image.height, alt: design.image.alt }],
     },
     twitter: {
       card: "summary_large_image",
       title: enrichedTitle,
       description: metaDesc,
-      images: [design.image.src],
+      images: [`${BASE_URL}${design.image.src}`],
     },
   };
 }

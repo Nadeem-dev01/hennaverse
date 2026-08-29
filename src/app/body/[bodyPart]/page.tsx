@@ -26,7 +26,7 @@ export async function generateMetadata(
   const designs = designsByBodyPart.get(bodyPart.slug) ?? [];
   const firstImage = designs[0]?.image?.src;
   const ogImages = firstImage
-    ? [{ url: firstImage, width: 800, height: 800, alt: bodyPart.title }]
+    ? [{ url: `${BASE_URL}${firstImage}`, width: 800, height: 800, alt: bodyPart.title }]
     : [];
 
   return {
@@ -46,7 +46,7 @@ export async function generateMetadata(
       card: "summary_large_image",
       title: bodyPart.metaTitle,
       description: bodyPart.metaDescription,
-      images: firstImage ? [firstImage] : [],
+      images: firstImage ? [`${BASE_URL}${firstImage}`] : [],
     },
   };
 }
