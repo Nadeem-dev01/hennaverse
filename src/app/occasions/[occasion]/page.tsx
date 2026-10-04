@@ -6,9 +6,17 @@ import { designsByOccasion } from "@/data/index";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import SectionHeading from "@/components/SectionHeading";
 import DesignGrid from "@/components/DesignGrid";
+import Pagination from "@/components/Pagination";
 import { buildCollectionPageSchema } from "@/lib/schema";
 
 const BASE_URL = "https://www.mehndidesignhenna.com";
+
+const DESIGNS_PER_PAGE = 48;
+
+function parsePage(value: string | string[] | undefined) {
+  const page = typeof value === "string" ? parseInt(value, 10) : 1;
+  return isNaN(page) || page < 1 ? 1 : page;
+}
 
 export const dynamicParams = false;
 
@@ -17,9 +25,13 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata(
-  props: { params: Promise<{ occasion: string }> }
+  props: {
+    params: Promise<{ occasion: string }>;
+    searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+  }
 ): Promise<Metadata> {
   const params = await props.params;
+  const page = parsePage((await props.searchParams).page);
   const occasion = occasions.find((o) => o.slug === params.occasion);
   if (!occasion) return { title: "Not Found" };
 
@@ -28,10 +40,14 @@ export async function generateMetadata(
   const ogImages = firstImage ? [{ url: `${BASE_URL}${firstImage}`, width: 800, height: 800, alt: occasion.title }] : [];
 
   return {
-    title: occasion.metaTitle,
+    title: page > 1 ? `${occasion.metaTitle} - Page ${page}` : occasion.metaTitle,
     description: occasion.metaDescription,
     keywords: occasion.keywords,
-    alternates: { canonical: `/occasions/${occasion.slug}` },
+    // An occasion with no designs yet is an empty page — keep it out of the index.
+    ...(designs.length === 0 && { robots: { index: false, follow: true } }),
+    alternates: {
+      canonical: page > 1 ? `/occasions/${occasion.slug}?page=${page}` : `/occasions/${occasion.slug}`,
+    },
     openGraph: {
       title: occasion.metaTitle,
       description: occasion.metaDescription,
@@ -51,13 +67,20 @@ export async function generateMetadata(
 }
 
 export default async function OccasionPage(
-  props: { params: Promise<{ occasion: string }> }
+  props: {
+    params: Promise<{ occasion: string }>;
+    searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+  }
 ) {
   const params = await props.params;
+  const currentPage = parsePage((await props.searchParams).page);
   const occasion = occasions.find((o) => o.slug === params.occasion);
   if (!occasion) notFound();
 
   const designs = designsByOccasion.get(occasion.slug) ?? [];
+  const totalPages = Math.max(1, Math.ceil(designs.length / DESIGNS_PER_PAGE));
+  const safePage = Math.min(currentPage, totalPages);
+  const pageDesigns = designs.slice((safePage - 1) * DESIGNS_PER_PAGE, safePage * DESIGNS_PER_PAGE);
   const schema = buildCollectionPageSchema(occasion.title, occasion.metaDescription, `/occasions/${occasion.slug}`);
 
   const breadcrumbJsonLd = {
@@ -81,9 +104,10 @@ export default async function OccasionPage(
             { label: occasion.title, href: `/occasions/${occasion.slug}` },
           ]}
         />
-        <SectionHeading title={occasion.title} subtitle={occasion.metaDescription} />
+        <SectionHeading as="h1" title={occasion.title} subtitle={occasion.metaDescription} />
 
-        <DesignGrid designs={designs} />
+        <DesignGrid designs={pageDesigns} />
+        <Pagination currentPage={safePage} totalPages={totalPages} basePath={`/occasions/${occasion.slug}`} />
 
 
         {/* SEO Text Section */}

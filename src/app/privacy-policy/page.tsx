@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import SectionHeading from "@/components/SectionHeading";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Mehndi Design Henna",
+  title: "Privacy Policy",
   description: "Read the Mehndi Design Henna privacy policy. Learn how we collect, use, and protect your data when you use our mehndi design gallery and henna tools.",
   robots: { index: false, follow: true },
   alternates: {
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 export default function PrivacyPolicyPage() {
   return (
     <div className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto min-h-screen">
-      <SectionHeading title="Privacy Policy" subtitle="Last Updated: May 22, 2026" />
+      <SectionHeading as="h1" title="Privacy Policy" subtitle="Last Updated: May 22, 2026" />
       
       <div className="prose prose-invert prose-gold max-w-none mt-12">
         <h2>1. Information We Collect</h2>

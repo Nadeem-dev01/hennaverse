@@ -6,7 +6,7 @@ import ContactForm from "@/components/ContactForm";
 const BASE_URL = "https://www.mehndidesignhenna.com";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Mehndi Design Henna",
+  title: "Contact Us",
   description: "Get in touch with Mehndi Design Henna for inquiries, feedback, or artist collaborations. We respond within 24 hours.",
   keywords: [
     "contact mehndi design henna",
@@ -63,6 +63,7 @@ export default function ContactPage() {
       />
           <div className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto min-h-screen">
       <SectionHeading 
+        as="h1"
         title="Contact Us" 
         subtitle="We'd love to hear from you! Reach out for inquiries, feedback, or collaborations." 
       />

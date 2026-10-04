@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import SectionHeading from "@/components/SectionHeading";
 
 export const metadata: Metadata = {
-  title: "Disclaimer | Mehndi Design Henna",
+  title: "Disclaimer",
   description: "Read the Mehndi Design Henna disclaimer and terms of use. Learn about content accuracy, affiliate links, and our editorial policies for mehndi design content.",
   robots: { index: false, follow: true },
   alternates: {
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 export default function DisclaimerPage() {
   return (
     <div className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto min-h-screen">
-      <SectionHeading title="Disclaimer & Terms of Use" subtitle="Last Updated: May 22, 2026" />
+      <SectionHeading as="h1" title="Disclaimer & Terms of Use" subtitle="Last Updated: May 22, 2026" />
       
       <div className="prose prose-invert prose-gold max-w-none mt-12">
         <h2>1. General Information</h2>

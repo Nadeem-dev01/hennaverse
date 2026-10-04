@@ -60,7 +60,7 @@ export async function POST(req: Request) {
             responseText += `\nIf these aren't quite right, try searching our [Gallery](/gallery)!`;
           } else {
             // 5. Fallback
-            responseText = "I'm not exactly sure what you're looking for, but we have over 5000+ designs! Try browsing our [Gallery](/gallery) or checking out our [Categories](/mehndi-designs) for inspiration. You can also ask me for 'bridal designs' or 'arabic henna'.";
+            responseText = "I'm not exactly sure what you're looking for, but we have over 350 designs! Try browsing our [Gallery](/gallery) or checking out our [Categories](/mehndi-designs) for inspiration. You can also ask me for 'bridal designs' or 'arabic henna'.";
           }
         }
       }

@@ -74,7 +74,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Mehndi Design Gallery | Mehndi Design Henna",
     description:
-      "Browse 5000+ stunning mehndi designs from India, Pakistan, Arabia, Morocco and beyond. Filter by country, style, difficulty, and occasion.",
+      "Browse 350+ stunning mehndi designs from India, Pakistan, Arabia, Morocco and beyond. Filter by country, style, difficulty, and occasion.",
     type: "website",
     url: `${BASE_URL}/gallery`,
     siteName: "Mehndi Design Henna",
@@ -83,7 +83,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Mehndi Design Gallery | Mehndi Design Henna",
-    description: "Browse 5000+ stunning mehndi designs from around the world.",
+    description: "Browse 350+ stunning mehndi designs from around the world.",
   },
 };
 

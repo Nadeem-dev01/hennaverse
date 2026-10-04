@@ -7,7 +7,7 @@ export default function robots(): MetadataRoute.Robots {
         // Googlebot: full access to all content pages and images
         userAgent: 'Googlebot',
         allow: '/',
-        disallow: ['/api/', '/_next/'],
+        disallow: ['/api/'],
       },
       {
         // Googlebot image crawler: allow all images for Google Images indexing
@@ -23,16 +23,13 @@ export default function robots(): MetadataRoute.Robots {
         // Bingbot: full access
         userAgent: 'Bingbot',
         allow: '/',
-        disallow: ['/api/', '/_next/'],
+        disallow: ['/api/'],
       },
       {
         // All other bots: standard rules — block internals only
         userAgent: '*',
         allow: '/',
-        disallow: [
-          '/api/',
-          '/_next/',
-        ],
+        disallow: ['/api/'],
       },
     ],
     sitemap: 'https://www.mehndidesignhenna.com/sitemap.xml',

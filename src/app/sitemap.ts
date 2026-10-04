@@ -4,13 +4,13 @@ import { countries } from "@/data/countries";
 import { categories } from "@/data/taxonomy";
 import { mehndiTools } from "@/data/mehndiTools";
 import { designCategories } from "@/data/designCategories";
-import { allDesigns } from "@/data/index";
+import { allDesigns, designsByOccasion } from "@/data/index";
 const BASE_URL = "https://www.mehndidesignhenna.com";
 
 // A real, meaningful "last updated" anchor — update this when you do a major
 // content refresh. Using a hardcoded date (not build-time `new Date()`) avoids
 // Google learning to ignore it.
-const SITE_LAST_UPDATED = new Date("2026-06-26");
+const SITE_LAST_UPDATED = new Date("2026-10-03");
 
 const occasionSlugs = [
   "wedding", "eid", "karva-chauth", "diwali",
@@ -84,24 +84,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.4,
     },
-    {
-      url: `${BASE_URL}/privacy-policy`,
-      lastModified: SITE_LAST_UPDATED,
-      changeFrequency: "yearly",
-      priority: 0.2,
-    },
-    {
-      url: `${BASE_URL}/disclaimer`,
-      lastModified: SITE_LAST_UPDATED,
-      changeFrequency: "yearly",
-      priority: 0.2,
-    },
-    {
-      url: `${BASE_URL}/sitemap-html`,
-      lastModified: SITE_LAST_UPDATED,
-      changeFrequency: "monthly",
-      priority: 0.3,
-    },
+    // /privacy-policy, /disclaimer and /sitemap-html are noindex, so they are
+    // intentionally left out (Search Console flags "Submitted URL marked noindex").
   ];
 
   // --- Category pages (high SEO value, priority 0.9) ---
@@ -126,7 +110,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "monthly" as const, priority: 0.6, images: [`${BASE_URL}${design.image.src}`] }));
 
   // --- Occasion pages ---
-  const occasionRoutes: MetadataRoute.Sitemap = occasionSlugs.map((slug) => ({
+  const occasionRoutes: MetadataRoute.Sitemap = occasionSlugs
+    .filter((slug) => (designsByOccasion.get(slug)?.length ?? 0) > 0)
+    .map((slug) => ({
     url: `${BASE_URL}/occasions/${slug}`,
     lastModified: SITE_LAST_UPDATED,
     changeFrequency: "weekly" as const,

@@ -32,7 +32,7 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.mehndidesignhenna.com"),
   title: {
-    default: "Mehndi Design Henna — 5000+ Easy Mehndi Designs & Henna Patterns",
+    default: "Mehndi Design Henna — 350+ Easy Mehndi Designs & Henna Patterns",
     template: "%s | Mehndi Design Henna",
   },
   icons: {
@@ -46,27 +46,27 @@ export const metadata: Metadata = {
     ]
   },
   description:
-    "Mehndi Design Henna: 5000+ easy mehndi designs, mehndi patterns for hands, simple arabic mehndi, bridal henna, and eid patterns. Free henna kits, cones & artist guides.",
+    "Mehndi Design Henna: 350+ easy mehndi designs, mehndi patterns for hands, simple arabic mehndi, bridal henna, and eid patterns. Free henna kits, cones & artist guides.",
   openGraph: {
-    title: "Mehndi Design Henna — 5000+ Easy Mehndi Designs & Henna Patterns",
-    description: "5000+ easy mehndi designs, mehndi patterns for hands, and henna tattoo ideas for every occasion.",
+    title: "Mehndi Design Henna — 350+ Easy Mehndi Designs & Henna Patterns",
+    description: "350+ easy mehndi designs, mehndi patterns for hands, and henna tattoo ideas for every occasion.",
     url: "https://www.mehndidesignhenna.com",
     siteName: "Mehndi Design Henna",
     locale: "en_US",
     type: "website",
     images: [{
-      url: "https://www.mehndidesignhenna.com/chakra-bridal-front-hand-mehndi-820x1024.avif",
-      width: 820,
-      height: 1024,
+      url: "https://www.mehndidesignhenna.com/og-default.jpg",
+      width: 1200,
+      height: 630,
       alt: "Beautiful Bridal Mehndi Design — Mehndi Design Henna"
     }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@nadeemstack",
-    title: "Mehndi Design Henna — 5000+ Easy Mehndi Designs & Henna Patterns",
-    description: "5000+ easy mehndi designs, mehndi patterns for hands, and henna tattoo ideas for every occasion.",
-    images: ["/chakra-bridal-front-hand-mehndi-820x1024.avif"],
+    title: "Mehndi Design Henna — 350+ Easy Mehndi Designs & Henna Patterns",
+    description: "350+ easy mehndi designs, mehndi patterns for hands, and henna tattoo ideas for every occasion.",
+    images: ["/og-default.jpg"],
   },
 };
 
@@ -88,13 +88,6 @@ export default function RootLayout({
         {/* Funding Choices (Google consent banner) — 72.5 KiB third-party hit */}
         <link rel="preconnect" href="https://fundingchoicesmessages.google.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://fundingchoicesmessages.google.com" />
-        {/* Preload the LCP blog-card image (first above-the-fold blog post) */}
-        <link
-          rel="preload"
-          as="image"
-          href="/asian-henna-floral-paisley-design.avif"
-          type="image/avif"
-        />
       </head>
       <body className="min-h-screen flex flex-col bg-background text-foreground font-sans">
         <ThirdPartyScripts />
@@ -116,7 +109,7 @@ export default function RootLayout({
                     width: 800,
                     height: 255,
                   },
-                  description: "5000+ easy mehndi designs and henna patterns from India, Pakistan, Arabia, Morocco and beyond.",
+                  description: "350+ easy mehndi designs and henna patterns from India, Pakistan, Arabia, Morocco and beyond.",
                   sameAs: [
                     "https://www.pinterest.com/mehndidesignhenna",
                     "https://www.instagram.com/mehndidesignhenna",
@@ -129,7 +122,7 @@ export default function RootLayout({
                   name: "Mehndi Design Henna",
                   alternateName: "MehndiDesignHenna",
                   url: "https://www.mehndidesignhenna.com",
-                  description: "5000+ easy mehndi designs from India, Pakistan, Arabia, Morocco and beyond. Tutorials, cultural guides, and henna inspiration for every occasion.",
+                  description: "350+ easy mehndi designs from India, Pakistan, Arabia, Morocco and beyond. Tutorials, cultural guides, and henna inspiration for every occasion.",
                   publisher: { "@id": "https://www.mehndidesignhenna.com/#organization" },
                   potentialAction: {
                     "@type": "SearchAction",

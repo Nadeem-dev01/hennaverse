@@ -11,6 +11,8 @@ function escapeXml(unsafe: string): string {
     .replace(/'/g, "&apos;");
 }
 
+export const dynamic = "force-static";
+
 export async function GET() {
   const allBlogs = getAllBlogs();
 

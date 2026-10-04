@@ -18,16 +18,16 @@ import { allDesigns } from "@/data/index";
 const BASE_URL = "https://www.mehndidesignhenna.com";
 
 export const metadata: Metadata = {
-  title: "Mehndi Design Henna — 5000+ Henna Designs, Virtual Try-On & Free Guides",
+  title: "Mehndi Design Henna — 350+ Henna Designs, Virtual Try-On & Free Guides",
   description:
-    "Browse 5000+ easy mehndi designs for hands — simple, arabic, bridal, and eid henna patterns. Use our Virtual Try-On tool & find free henna guides!",
+    "Browse 350+ easy mehndi designs for hands — simple, arabic, bridal, and eid henna patterns. Use our Virtual Try-On tool & find free henna guides!",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Mehndi Design Henna — 5000+ Henna Designs, Virtual Try-On & Free Guides",
+    title: "Mehndi Design Henna — 350+ Henna Designs, Virtual Try-On & Free Guides",
     description:
-      "Browse 5000+ easy mehndi designs for hands — simple, arabic, bridal, and eid henna patterns. Use our Virtual Try-On tool & find free henna guides!",
+      "Browse 350+ easy mehndi designs for hands — simple, arabic, bridal, and eid henna patterns. Use our Virtual Try-On tool & find free henna guides!",
     type: "website",
     url: BASE_URL,
     siteName: "Mehndi Design Henna",
@@ -35,13 +35,13 @@ export const metadata: Metadata = {
       url: "https://www.mehndidesignhenna.com/chakra-bridal-front-hand-mehndi-820x1024.avif",
       width: 820,
       height: 1024,
-      alt: "Beautiful Bridal Mehndi Design — 5000+ Henna Patterns at MehndiDesignHenna"
+      alt: "Beautiful Bridal Mehndi Design — 350+ Henna Patterns at MehndiDesignHenna"
     }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mehndi Design Henna — 5000+ Henna Designs, Virtual Try-On & Free Guides",
-    description: "Browse 5000+ easy mehndi designs for hands — simple, arabic, bridal, and eid henna patterns. Use our Virtual Try-On tool & find free henna guides!",
+    title: "Mehndi Design Henna — 350+ Henna Designs, Virtual Try-On & Free Guides",
+    description: "Browse 350+ easy mehndi designs for hands — simple, arabic, bridal, and eid henna patterns. Use our Virtual Try-On tool & find free henna guides!",
   },
 };
 

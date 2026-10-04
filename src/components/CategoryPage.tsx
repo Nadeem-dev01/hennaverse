@@ -8,7 +8,13 @@ import AdSlot from "./AdSlot";
 import { ImageOverlayActions } from "./ImageActions";
 import { DesignCategory } from "@/data/designCategories";
 
-export default function CategoryPage({ category }: { category: DesignCategory }) {
+export default function CategoryPage({
+  category,
+  children,
+}: {
+  category: DesignCategory;
+  children?: React.ReactNode;
+}) {
   return (
     <div className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto min-h-screen">
       <Breadcrumbs
@@ -19,7 +25,7 @@ export default function CategoryPage({ category }: { category: DesignCategory })
       />
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-        <main className="lg:col-span-8">
+        <div className="lg:col-span-8">
           <header className="mb-10">
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-gold mb-6">
               {category.title}
@@ -28,8 +34,6 @@ export default function CategoryPage({ category }: { category: DesignCategory })
               {category.metaDescription}
             </p>
           </header>
-
-          <AdSlot adSlot="header-slot" />
 
           {category.heroImage && (
             <div className="relative w-full aspect-video rounded-2xl overflow-hidden mb-12 border border-border">
@@ -45,6 +49,8 @@ export default function CategoryPage({ category }: { category: DesignCategory })
             </div>
           )}
 
+          <AdSlot adSlot="header-slot" />
+
           {category.description && (
             <section className="prose prose-invert prose-gold max-w-none mb-10">
               <h2 id="about">About {category.title}</h2>
@@ -59,7 +65,7 @@ export default function CategoryPage({ category }: { category: DesignCategory })
                 {category.relatedLinks.map((link) => (
                   <li key={link.href}>
                     <Link href={link.href} className="flex items-center gap-2 text-muted hover:text-gold transition-colors">
-                      <span className="text-gold opacity-50">?</span> {link.label}
+                      <span className="text-gold opacity-50">→</span> {link.label}
                     </Link>
                   </li>
                 ))}
@@ -94,7 +100,9 @@ export default function CategoryPage({ category }: { category: DesignCategory })
               ))}
             </div>
           </section>
-        </main>
+
+          {children}
+        </div>
 
         <aside className="lg:col-span-4 hidden lg:block space-y-8">
           <TableOfContents />

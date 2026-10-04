@@ -1,12 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
-import type { Design } from "@/data/types";
+import type { Design, DesignFAQ } from "@/data/types";
 import type { CategoryDef } from "@/data/taxonomy";
 import Breadcrumbs from "./Breadcrumbs";
 import TableOfContents from "./TableOfContents";
 import DesignGrid from "./DesignGrid";
 import AdSlot from "./AdSlot";
 import Pagination from "./Pagination";
+import FAQAccordion from "./FAQAccordion";
 
 const DESIGNS_PER_PAGE = 48;
 
@@ -26,11 +27,13 @@ export default function CategoryDesignsPage({
   designs,
   related,
   currentPage = 1,
+  faq = [],
 }: {
   category: CategoryDef;
   designs: Design[];
   related: { slug: string; title: string }[];
   currentPage?: number;
+  faq?: DesignFAQ[];
 }) {
   const total = designs.length;
   
@@ -63,8 +66,6 @@ export default function CategoryDesignsPage({
             </p>
           </header>
 
-          <AdSlot adSlot="header-slot" />
-
           {hero && safePage === 1 && (
             <div className="relative w-full aspect-video rounded-2xl overflow-hidden my-10 border border-border">
               <Image
@@ -78,6 +79,8 @@ export default function CategoryDesignsPage({
               />
             </div>
           )}
+
+          <AdSlot adSlot="header-slot" />
 
           {safePage === 1 && category.description && (
             <section className="prose prose-invert prose-gold max-w-none mb-10">
@@ -130,6 +133,8 @@ export default function CategoryDesignsPage({
               />
             )}
           </section>
+
+          <FAQAccordion items={faq} />
 
           <AdSlot adSlot="footer-slot" className="mt-12" />
 

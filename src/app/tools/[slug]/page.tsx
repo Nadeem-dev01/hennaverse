@@ -23,7 +23,7 @@ export async function generateMetadata({
   if (!tool) return { title: "Not Found" };
 
   return {
-    title: `${tool.tagline} - ${tool.title} | Mehndi Design Henna`,
+    title: `${tool.tagline} - ${tool.title}`,
     description: tool.description.slice(0, 160),
     keywords: tool.keywords,
     alternates: {

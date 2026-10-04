@@ -51,7 +51,7 @@ export default function HeroSection() {
             transition={{ delay: 0.3, duration: 0.5 }}
             className="inline-block px-4 py-1.5 mb-6 text-xs font-medium tracking-[0.2em] uppercase text-gold border border-gold/30 rounded-full"
           >
-            5000+ Mehndi Designs from Around the World
+            350+ Mehndi Designs from Around the World
           </motion.span>
         </motion.div>
 

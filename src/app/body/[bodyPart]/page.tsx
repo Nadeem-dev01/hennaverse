@@ -6,9 +6,17 @@ import { designsByBodyPart } from "@/data/index";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import SectionHeading from "@/components/SectionHeading";
 import DesignGrid from "@/components/DesignGrid";
+import Pagination from "@/components/Pagination";
 import { buildCollectionPageSchema } from "@/lib/schema";
 
 const BASE_URL = "https://www.mehndidesignhenna.com";
+
+const DESIGNS_PER_PAGE = 48;
+
+function parsePage(value: string | string[] | undefined) {
+  const page = typeof value === "string" ? parseInt(value, 10) : 1;
+  return isNaN(page) || page < 1 ? 1 : page;
+}
 
 export const dynamicParams = false;
 
@@ -17,9 +25,13 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata(
-  props: { params: Promise<{ bodyPart: string }> }
+  props: {
+    params: Promise<{ bodyPart: string }>;
+    searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+  }
 ): Promise<Metadata> {
   const params = await props.params;
+  const page = parsePage((await props.searchParams).page);
   const bodyPart = bodyParts.find((bp) => bp.slug === params.bodyPart);
   if (!bodyPart) return { title: "Not Found" };
 
@@ -30,9 +42,11 @@ export async function generateMetadata(
     : [];
 
   return {
-    title: bodyPart.metaTitle,
+    title: page > 1 ? `${bodyPart.metaTitle} - Page ${page}` : bodyPart.metaTitle,
     description: bodyPart.metaDescription,
-    alternates: { canonical: `/body/${bodyPart.slug}` },
+    alternates: {
+      canonical: page > 1 ? `/body/${bodyPart.slug}?page=${page}` : `/body/${bodyPart.slug}`,
+    },
     openGraph: {
       title: bodyPart.metaTitle,
       description: bodyPart.metaDescription,
@@ -52,13 +66,20 @@ export async function generateMetadata(
 }
 
 export default async function BodyPartPage(
-  props: { params: Promise<{ bodyPart: string }> }
+  props: {
+    params: Promise<{ bodyPart: string }>;
+    searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+  }
 ) {
   const params = await props.params;
+  const currentPage = parsePage((await props.searchParams).page);
   const bodyPart = bodyParts.find((bp) => bp.slug === params.bodyPart);
   if (!bodyPart) notFound();
 
   const designs = designsByBodyPart.get(bodyPart.slug) ?? [];
+  const totalPages = Math.max(1, Math.ceil(designs.length / DESIGNS_PER_PAGE));
+  const safePage = Math.min(currentPage, totalPages);
+  const pageDesigns = designs.slice((safePage - 1) * DESIGNS_PER_PAGE, safePage * DESIGNS_PER_PAGE);
 
   const schema = buildCollectionPageSchema(
     bodyPart.title,
@@ -106,12 +127,16 @@ export default async function BodyPartPage(
         />
 
         <SectionHeading
+          as="h1"
           title={bodyPart.title}
           subtitle={bodyPart.metaDescription}
         />
 
         {designs.length > 0 ? (
-          <DesignGrid designs={designs} />
+          <>
+            <DesignGrid designs={pageDesigns} />
+            <Pagination currentPage={safePage} totalPages={totalPages} basePath={`/body/${bodyPart.slug}`} />
+          </>
         ) : (
           <div className="text-center py-20 text-muted">
             <p className="text-lg">No designs found for this body part yet. Check back soon!</p>

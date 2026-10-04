@@ -5,6 +5,11 @@ import { categories } from "@/data/taxonomy";
 import { designsByCategory } from "@/data/index";
 import CategoryPage from "@/components/CategoryPage";
 import CategoryDesignsPage from "@/components/CategoryDesignsPage";
+import DesignGrid from "@/components/DesignGrid";
+import Pagination from "@/components/Pagination";
+import FAQAccordion from "@/components/FAQAccordion";
+import { buildFAQSchema } from "@/lib/schema";
+import type { DesignFAQ } from "@/data/types";
 
 const BASE_URL = "https://www.mehndidesignhenna.com";
 
@@ -15,6 +20,8 @@ const allCategorySlugs = Array.from(
     ...categories.map((c) => c.slug),
   ])
 );
+
+const DESIGNS_PER_PAGE = 48;
 
 export const dynamicParams = false;
 
@@ -34,12 +41,15 @@ export async function generateMetadata(
   const curated = designCategories.find((c) => c.slug === params.slug);
   const taxo = categories.find((c) => c.slug === params.slug);
 
-  const metaTitle = curated?.metaTitle ?? taxo?.metaTitle;
+  // The root layout title template appends "| Mehndi Design Henna" — strip it
+  // from curated metaTitles so the brand is not repeated twice.
+  const metaTitle = (curated?.metaTitle ?? taxo?.metaTitle)?.replace(/\s*\|\s*Mehndi Design Henna\s*$/, "");
   const metaDescription = curated?.metaDescription ?? taxo?.metaDescription;
   if (!metaTitle) return { title: "Not Found" };
 
   const heroImage = curated?.heroImage;
-  const page = searchParams.page ? parseInt(searchParams.page as string, 10) : 1;
+  const parsedPage = searchParams.page ? parseInt(searchParams.page as string, 10) : 1;
+  const page = isNaN(parsedPage) || parsedPage < 1 ? 1 : parsedPage;
   const canonicalUrl = page > 1 
     ? `/mehndi-designs/${params.slug}?page=${page}` 
     : `/mehndi-designs/${params.slug}`;
@@ -86,12 +96,24 @@ export default async function MehndiDesignCategoryPage(
   const page = searchParams.page ? parseInt(searchParams.page as string, 10) : 1;
   const currentPage = isNaN(page) || page < 1 ? 1 : page;
 
+  // Category FAQ from the factbank (only some categories have one), shown on page 1.
+  const factbank = await import(`@/data/factbanks/${params.slug}.json`).catch(() => null);
+  const faq: DesignFAQ[] = currentPage === 1 ? factbank?.default?.faqPool ?? [] : [];
+  const faqSchema = faq.length ? buildFAQSchema(faq) : null;
+
   // Breadcrumb JSON-LD is emitted by the <Breadcrumbs> component inside
   // CategoryPage / CategoryDesignsPage, matching the visible trail — so we
   // intentionally do NOT add a second BreadcrumbList here.
 
   // Curated categories keep their existing rich, hand-built page.
   if (curated) {
+    // Link the curated landing page into the full design dataset so the
+    // individual /designs/ pages in this category are crawlable from it.
+    const curatedDesigns = designsByCategory.get(curated.slug) ?? [];
+    const curatedTotalPages = Math.max(1, Math.ceil(curatedDesigns.length / DESIGNS_PER_PAGE));
+    const curatedPage = Math.min(currentPage, curatedTotalPages);
+    const curatedStart = (curatedPage - 1) * DESIGNS_PER_PAGE;
+
     const jsonLd = [
       {
         "@context": "https://schema.org",
@@ -99,12 +121,12 @@ export default async function MehndiDesignCategoryPage(
         "inLanguage": "en",
         headline: metaTitle,
         description: metaDescription,
-        image: heroImage ? [heroImage] : [],
+        image: heroImage ? [`${BASE_URL}${heroImage}`] : [],
         author: { "@type": "Organization", name: "Mehndi Design Henna" },
         publisher: {
           "@type": "Organization",
           name: "Mehndi Design Henna",
-          logo: { "@type": "ImageObject", url: `${BASE_URL}/icon.png` },
+          logo: { "@type": "ImageObject", url: `${BASE_URL}/Logo_Mehndidesign.png` },
         },
       },
       {
@@ -124,7 +146,28 @@ export default async function MehndiDesignCategoryPage(
     return (
       <>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-        <CategoryPage category={curated} />
+        {faqSchema && (
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        )}
+        <CategoryPage category={curated}>
+          {curatedDesigns.length > 0 && (
+            <section className="mt-16" id="all-designs">
+              <h2 className="text-3xl font-serif text-gold mb-2 border-b border-border pb-4">
+                All {curated.title} {curatedPage > 1 && `- Page ${curatedPage}`}
+              </h2>
+              <p className="text-muted text-sm mt-3">
+                Showing {curatedStart + 1}-{Math.min(curatedStart + DESIGNS_PER_PAGE, curatedDesigns.length)} of {curatedDesigns.length} designs in this collection
+              </p>
+              <DesignGrid designs={curatedDesigns.slice(curatedStart, curatedStart + DESIGNS_PER_PAGE)} />
+              <Pagination
+                currentPage={curatedPage}
+                totalPages={curatedTotalPages}
+                basePath={`/mehndi-designs/${curated.slug}`}
+              />
+            </section>
+          )}
+          <FAQAccordion items={faq} />
+        </CategoryPage>
       </>
     );
   }
@@ -167,11 +210,15 @@ export default async function MehndiDesignCategoryPage(
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      {faqSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      )}
       <CategoryDesignsPage 
         category={taxo!} 
         designs={designs} 
         related={related} 
         currentPage={currentPage}
+        faq={faq}
       />
     </>
   );

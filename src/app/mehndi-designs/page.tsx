@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { designCategories } from "@/data/designCategories";
+import { categories, occasions, bodyParts } from "@/data/taxonomy";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import SectionHeading from "@/components/SectionHeading";
 
@@ -74,6 +75,11 @@ export const metadata: Metadata = {
 };
 
 export default function MehndiDesignsHubPage() {
+  // Taxonomy categories without a curated card above — linked as chips so
+  // every category page is reachable from the hub.
+  const curatedSlugs = new Set(designCategories.map((c) => c.slug));
+  const moreCategories = categories.filter((c) => !curatedSlugs.has(c.slug));
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
@@ -92,8 +98,9 @@ export default function MehndiDesignsHubPage() {
         <Breadcrumbs items={[{ label: "Mehndi Designs", href: "/mehndi-designs" }]} />
         
         <SectionHeading 
+          as="h1"
           title="Explore Mehndi Designs" 
-          subtitle="Find inspiration across 15 distinct styles, from traditional bridal to modern minimal patterns."
+          subtitle={`Find inspiration across ${categories.length} distinct styles, from traditional bridal to modern minimal patterns.`}
         />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
@@ -133,6 +140,51 @@ export default function MehndiDesignsHubPage() {
             </Link>
           ))}
         </div>
+
+        <section className="mt-16">
+          <h2 className="text-2xl font-serif text-gold mb-4">More Mehndi Styles</h2>
+          <div className="flex flex-wrap gap-2">
+            {moreCategories.map((c) => (
+              <Link
+                key={c.slug}
+                href={`/mehndi-designs/${c.slug}`}
+                className="px-4 py-2 text-sm rounded-full bg-surface text-foreground border border-border hover:border-gold/50 hover:text-gold transition-colors"
+              >
+                {c.title}
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-16">
+          <h2 className="text-2xl font-serif text-gold mb-4">Mehndi Designs by Occasion</h2>
+          <div className="flex flex-wrap gap-2">
+            {occasions.map((c) => (
+              <Link
+                key={c.slug}
+                href={`/occasions/${c.slug}`}
+                className="px-4 py-2 text-sm rounded-full bg-surface text-foreground border border-border hover:border-gold/50 hover:text-gold transition-colors"
+              >
+                {c.title}
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-16">
+          <h2 className="text-2xl font-serif text-gold mb-4">Mehndi Designs by Body Part</h2>
+          <div className="flex flex-wrap gap-2">
+            {bodyParts.map((c) => (
+              <Link
+                key={c.slug}
+                href={`/body/${c.slug}`}
+                className="px-4 py-2 text-sm rounded-full bg-surface text-foreground border border-border hover:border-gold/50 hover:text-gold transition-colors"
+              >
+                {c.title}
+              </Link>
+            ))}
+          </div>
+        </section>
       </div>
     </>
   );

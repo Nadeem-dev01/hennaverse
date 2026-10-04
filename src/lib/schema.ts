@@ -92,7 +92,7 @@ export function buildArticleSchema(
     "publisher": {
       "@type": "Organization",
       name: "Mehndi Design Henna",
-      logo: { "@type": "ImageObject", url: `${BASE_URL}/icon.png` },
+      logo: { "@type": "ImageObject", url: `${BASE_URL}/Logo_Mehndidesign.png` },
     },
     ...(datePublished && { datePublished }),
     ...(dateModified && { dateModified }),

@@ -13,7 +13,7 @@ export default function Pagination({
   if (totalPages <= 1) return null;
 
   const createPageUrl = (page: number) => {
-    return `${basePath}?page=${page}`;
+    return page === 1 ? basePath : `${basePath}?page=${page}`;
   };
 
   const getVisiblePages = () => {

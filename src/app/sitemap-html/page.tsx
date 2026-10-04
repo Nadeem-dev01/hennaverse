@@ -8,7 +8,7 @@ import { allDesigns } from "@/data/index";
 import SectionHeading from "@/components/SectionHeading";
 
 export const metadata: Metadata = {
-  title: "Sitemap | Mehndi Design Henna",
+  title: "Sitemap",
   description: "Complete sitemap of Mehndi Design Henna — browse all mehndi design categories, occasions, styles, and articles.",
   alternates: { canonical: "/sitemap-html" },
   openGraph: {
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 export default function HTMLSitemap() {
   return (
     <div className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto min-h-screen">
-      <SectionHeading title="Sitemap" subtitle="Browse all pages on Mehndi Design Henna" />
+      <SectionHeading as="h1" title="Sitemap" subtitle="Browse all pages on Mehndi Design Henna" />
 
       <div className="mt-10 space-y-10">
         <section>

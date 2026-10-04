@@ -3,8 +3,8 @@ import Link from "next/link";
 import { Home, Search } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Page Not Found | Mehndi Design Henna",
-  description: "The mehndi design or page you were looking for could not be found. Browse our gallery of 5000+ henna designs or explore our blog.",
+  title: "Page Not Found",
+  description: "The mehndi design or page you were looking for could not be found. Browse our gallery of 350+ henna designs or explore our blog.",
   robots: { index: false, follow: true },
 };
 

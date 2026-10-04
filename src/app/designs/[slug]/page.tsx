@@ -84,7 +84,7 @@ export default async function DesignPage(
       },
     },
     datePublished: "2024-01-01",
-    dateModified: "2026-06-26",
+    dateModified: "2026-10-03",
     keywords: design.tags.join(", "),
     url: `${BASE_URL}/designs/${design.slug}`,
   };

@@ -95,6 +95,7 @@ export default function GalleryClient() {
   return (
     <div className="min-h-screen pt-24 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <SectionHeading
+        as="h1"
         title="Design Gallery"
         subtitle={`${totalCount} stunning mehndi designs to explore`}
       />
