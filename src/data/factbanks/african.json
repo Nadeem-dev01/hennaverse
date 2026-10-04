@@ -1,6 +1,35 @@
 {
-  "culturalBackground": [],
-  "motifs": [],
-  "applicationTips": [],
-  "faqPool": []
+  "culturalBackground": [
+    "Henna has been worn across North, West and East Africa for centuries, with distinct styles in countries such as Sudan, Mali, Mauritania and Somalia.",
+    "In Sudan, henna is closely tied to weddings, and brides traditionally wear bold, dark designs on both hands and feet.",
+    "In Mali and Mauritania, artists often lay thin strips of tape on the skin and apply henna over them, which leaves crisp geometric lines when the tape is removed.",
+    "In Hausa-speaking communities of Nigeria and Niger, henna is known as lalle and is worn for weddings and festivals."
+  ],
+  "motifs": [
+    "bold geometric bands",
+    "triangles and chevrons",
+    "straight-line grids",
+    "solid-filled fingertips",
+    "dots and dashes",
+    "broad leaf shapes"
+  ],
+  "applicationTips": [
+    "Bold African-style designs need a thicker line, so cut the cone tip slightly wider than you would for fine work.",
+    "For solid filled areas, apply an even layer of paste; thin patches stain lighter than the rest.",
+    "Use strips of tape or a stencil to keep long straight edges clean."
+  ],
+  "faqPool": [
+    {
+      "q": "What makes African henna designs different?",
+      "a": "They favour bold lines, solid fills and geometric shapes over the fine floral detail common in Indian mehndi, and the look varies a lot between regions."
+    },
+    {
+      "q": "How is the tape technique used in West African henna?",
+      "a": "Thin strips of tape are placed on the skin in a pattern, henna is applied over the whole area, and the tape is removed after the paste dries to reveal sharp unstained lines."
+    },
+    {
+      "q": "Is African henna only worn at weddings?",
+      "a": "No. It is also worn for Eid, naming ceremonies and other family celebrations, usually in simpler designs than bridal henna."
+    }
+  ]
 }

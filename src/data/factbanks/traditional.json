@@ -1,6 +1,35 @@
 {
-  "culturalBackground": [],
-  "motifs": [],
-  "applicationTips": [],
-  "faqPool": []
+  "culturalBackground": [
+    "Henna comes from the plant Lawsonia inermis, and its leaves have been used to dye skin, hair and nails for thousands of years.",
+    "The practice is shared across South Asia, the Middle East and North Africa.",
+    "The dye in henna, lawsone, binds to keratin in the skin, which is why the stain lasts until the skin sheds.",
+    "Traditional South Asian motifs include the paisley (also called ambi or mango), the peacock and the lotus."
+  ],
+  "motifs": [
+    "paisley (ambi)",
+    "peacocks",
+    "lotus",
+    "jaal (net)",
+    "round tikki",
+    "vines and leaves"
+  ],
+  "applicationTips": [
+    "Use fresh natural henna paste; old or chemical cones give a weak or unsafe stain.",
+    "Traditional designs are dense, so work in sections and keep the lines close.",
+    "Seal the dried paste with lemon and sugar to keep it on the skin longer."
+  ],
+  "faqPool": [
+    {
+      "q": "What plant does mehndi come from?",
+      "a": "It is made from the dried, powdered leaves of the henna plant, Lawsonia inermis."
+    },
+    {
+      "q": "What are traditional mehndi motifs?",
+      "a": "Paisleys, peacocks, lotuses, net fills and round tikki mandalas are the classic South Asian motifs."
+    },
+    {
+      "q": "Why is mehndi applied at weddings?",
+      "a": "It is a long-standing sign of celebration and good wishes for the bride in South Asian, Middle Eastern and North African cultures."
+    }
+  ]
 }

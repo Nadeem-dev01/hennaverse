@@ -1,6 +1,35 @@
 {
-  "culturalBackground": [],
-  "motifs": [],
-  "applicationTips": [],
-  "faqPool": []
+  "culturalBackground": [
+    "In South Asian and many Arab weddings, the bride's feet are decorated with henna along with her hands.",
+    "The soles of the feet, like the palms, have thick skin and take a very dark stain.",
+    "Common layouts include an anklet-style band, a trail from the toes to the ankle, and a mandala on the top of the foot.",
+    "The top of the foot stains lighter than the sole because the skin there is thinner."
+  ],
+  "motifs": [
+    "anklet bands",
+    "toe caps",
+    "toe-to-ankle trails",
+    "top-of-foot mandala",
+    "paisleys",
+    "leafy borders"
+  ],
+  "applicationTips": [
+    "Sit with the foot supported on a stool so you can keep still for the whole application.",
+    "Do not walk until the paste is fully dry; keep slippers and a towel within reach before you start.",
+    "Exfoliate the feet a day before, since dry skin sheds quickly and takes the stain with it."
+  ],
+  "faqPool": [
+    {
+      "q": "Does mehndi stain darker on feet?",
+      "a": "On the soles, yes. The thick skin there stains as dark as the palms. The top of the foot stains lighter."
+    },
+    {
+      "q": "How long should foot mehndi dry before walking?",
+      "a": "Wait until the paste is completely dry, usually 30 to 45 minutes, and then walk carefully in open slippers."
+    },
+    {
+      "q": "Is foot mehndi only for brides?",
+      "a": "No. Simple anklet-style and toe designs are popular for festivals and summer as well."
+    }
+  ]
 }

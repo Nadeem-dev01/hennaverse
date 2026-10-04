@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { blogs } from "@/data/blogs";
 import { designs } from "@/data/designs";
+import { categories } from "@/data/taxonomy";
 import BlogCard from "@/components/BlogCard";
 import TableOfContents from "@/components/TableOfContents";
 import SocialShare from "@/components/SocialShare";
@@ -104,6 +105,16 @@ export default function BlogClient({
   }
 
   const relatedPosts = getRelatedPosts(blog.slug, blog.category, blog.country, blog.tags, 3);
+
+  // Categories named in the title, category or tags; popular ones fill the rest.
+  const blogText = `${blog.title} ${blog.category} ${blog.tags.join(" ")}`.toLowerCase();
+  const popularSlugs = ["bridal", "arabic", "simple", "eid", "back-hand", "front-hand"];
+  const relatedCategories = [
+    ...categories.filter((c) => blogText.includes(c.slug.replace(/-/g, " "))),
+    ...categories.filter((c) => popularSlugs.includes(c.slug)),
+  ]
+    .filter((c, i, all) => all.findIndex((o) => o.slug === c.slug) === i)
+    .slice(0, 6);
   const { prev: prevPost, next: nextPost } = getPrevAndNextPosts(blog.slug);
 
   // Get some relevant images for the left sidebar gallery
@@ -393,6 +404,24 @@ export default function BlogClient({
               </div>
             </div>
           </div>
+
+          {/* Design collections that match this article */}
+          <section className="mt-16 pt-12 border-t border-border">
+            <h2 className="font-serif text-2xl font-bold text-foreground mb-6 text-center">
+              Browse Related Mehndi Designs
+            </h2>
+            <div className="flex flex-wrap justify-center gap-2">
+              {relatedCategories.map((c) => (
+                <Link
+                  key={c.slug}
+                  href={`/mehndi-designs/${c.slug}`}
+                  className="px-4 py-2 text-sm rounded-full bg-surface text-foreground border border-border hover:border-gold/50 hover:text-gold transition-colors"
+                >
+                  {c.title}
+                </Link>
+              ))}
+            </div>
+          </section>
 
           {/* Bottom: Related posts */}
           {relatedPosts.length > 0 && (

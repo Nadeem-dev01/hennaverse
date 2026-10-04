@@ -1,105 +1,71 @@
 "use client";
 
-import { useState, useCallback, useEffect, useMemo } from "react";
-import { countries } from "@/data/countries";
-import { useDesigns, type Design } from "@/hooks/useDesigns";
-import DesignCard from "@/components/DesignCard";
+import { useEffect, useMemo, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
 import FilterBar from "@/components/FilterBar";
-import Lightbox from "@/components/Lightbox";
 import SectionHeading from "@/components/SectionHeading";
-import { motion, AnimatePresence } from "framer-motion";
 
-const INITIAL_COUNT = 24;
+const PAGE_SIZE = 24;
 
-// Skeleton loading card
-function SkeletonCard() {
-  return (
-    <div className="bg-surface rounded-xl border border-border overflow-hidden animate-pulse">
-      <div className="aspect-[4/3] bg-gradient-to-br from-surface via-border to-surface" />
-      <div className="p-4 space-y-3">
-        <div className="h-5 bg-border rounded w-3/4" />
-        <div className="h-3 bg-border rounded w-1/2" />
-        <div className="flex gap-1.5">
-          <div className="h-4 w-14 bg-border rounded-full" />
-          <div className="h-4 w-12 bg-border rounded-full" />
-          <div className="h-4 w-16 bg-border rounded-full" />
-        </div>
-      </div>
-    </div>
-  );
+export interface GalleryItem {
+  slug: string;
+  title: string;
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+  category: string;
+  bodyPart: string;
+  difficulty: string;
 }
 
-export default function GalleryClient() {
+const difficulties = ["Easy", "Medium", "Hard", "Expert"];
+
+// Designs arrive as props from the server page, so the first screen of cards
+// (and their links to /designs/…) is in the initial HTML for crawlers.
+// Filtering and "load more" then run entirely in the browser.
+export default function GalleryClient({ designs }: { designs: GalleryItem[] }) {
   const [activeFilters, setActiveFilters] = useState<Record<string, string>>({});
   const [searchValue, setSearchValue] = useState("");
-  const [debouncedSearch, setDebouncedSearch] = useState("");
-  const [selectedDesign, setSelectedDesign] = useState<Design | null>(null);
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
 
-  // Debounce search input
+  const filters = useMemo(
+    () => [
+      { label: "Style", options: [...new Set(designs.map((d) => d.category))].sort() },
+      { label: "Body Part", options: [...new Set(designs.map((d) => d.bodyPart))].sort() },
+      { label: "Difficulty", options: difficulties },
+    ],
+    [designs]
+  );
+
+  const filtered = useMemo(() => {
+    const isActive = (value?: string) => !!value && value !== "All";
+    const query = searchValue.trim().toLowerCase();
+    return designs.filter(
+      (d) =>
+        (!isActive(activeFilters.Style) || d.category === activeFilters.Style) &&
+        (!isActive(activeFilters["Body Part"]) || d.bodyPart === activeFilters["Body Part"]) &&
+        (!isActive(activeFilters.Difficulty) || d.difficulty === activeFilters.Difficulty) &&
+        (!query || d.title.toLowerCase().includes(query))
+    );
+  }, [designs, activeFilters, searchValue]);
+
+  // A new filter or search starts again from the first page of results.
   useEffect(() => {
-    const timer = setTimeout(() => setDebouncedSearch(searchValue), 300);
-    return () => clearTimeout(timer);
-  }, [searchValue]);
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setVisibleCount(PAGE_SIZE);
+  }, [activeFilters, searchValue]);
 
-  // Supabase API hook
-  const {
-    designs,
-    loading,
-    loadingMore,
-    pagination,
-    loadMore,
-  } = useDesigns({
-    country: activeFilters.Country,
-    style: activeFilters.Style,
-    difficulty: activeFilters.Difficulty,
-    search: debouncedSearch,
-    limit: INITIAL_COUNT,
-  });
-
-  const totalCount = pagination?.total || designs.length;
-
-  // Infinite scroll with Intersection Observer
-  const lastCardRef = useCallback(
-    (node: HTMLDivElement | null) => {
-      if (loadingMore || !pagination?.hasMore) return;
-      const observer = new IntersectionObserver(
-        (entries) => {
-          if (entries[0].isIntersecting) {
-            loadMore();
-          }
-        },
-        { threshold: 0.1 }
-      );
-      if (node) observer.observe(node);
-      return () => observer.disconnect();
-    },
-    [loadingMore, pagination, loadMore]
-  );
-
-  const countryNames = useMemo(
-    () => [...new Set(countries.map((c) => c.name))],
-    []
-  );
-  const styles = useMemo(
-    () => [...new Set(countries.flatMap((c) => c.styles))].sort(),
-    []
-  );
-  const difficulties = ["Easy", "Medium", "Hard", "Expert"];
-
-  const filters = [
-    { label: "Country", options: countryNames },
-    { label: "Style", options: styles },
-    { label: "Difficulty", options: difficulties },
-  ];
+  const visible = filtered.slice(0, visibleCount);
 
   return (
     <div className="min-h-screen pt-24 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <SectionHeading
         as="h1"
         title="Design Gallery"
-        subtitle={`${totalCount} stunning mehndi designs to explore`}
+        subtitle={`${designs.length} mehndi designs to explore`}
       />
-
 
       <FilterBar
         filters={filters}
@@ -109,57 +75,38 @@ export default function GalleryClient() {
         }
         searchValue={searchValue}
         onSearchChange={setSearchValue}
-        searchPlaceholder="Search designs by name or tag..."
+        searchPlaceholder="Search designs by name..."
       />
 
-      {/* Loading state */}
-      {loading && (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {Array.from({ length: 12 }).map((_, i) => (
-            <SkeletonCard key={i} />
-          ))}
-        </div>
-      )}
-
-      {/* Designs grid */}
-      {!loading && (
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={JSON.stringify(activeFilters) + debouncedSearch}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.3 }}
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+        {visible.map((d, index) => (
+          <Link
+            key={d.slug}
+            href={`/designs/${d.slug}`}
+            className="group bg-surface rounded-xl border border-border overflow-hidden transition-colors hover:border-gold/50"
           >
-            {designs.map((design, index) => (
-              <div
-                key={design.id}
-                ref={index === designs.length - 1 ? lastCardRef : undefined}
-              >
-                <DesignCard
-                  design={design}
-                  index={index}
-                  onClick={() => setSelectedDesign(design)}
-                />
-              </div>
-            ))}
-          </motion.div>
-        </AnimatePresence>
-      )}
+            <div className="relative aspect-square overflow-hidden">
+              <Image
+                src={d.src}
+                alt={d.alt}
+                width={d.width}
+                height={d.height}
+                priority={index < 4}
+                sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+            <div className="p-3">
+              <h2 className="text-sm font-medium text-foreground line-clamp-2">{d.title}</h2>
+              <p className="mt-1 text-xs text-muted">
+                {d.category} · {d.difficulty}
+              </p>
+            </div>
+          </Link>
+        ))}
+      </div>
 
-      {/* Loading more indicator */}
-      {loadingMore && (
-        <div className="flex items-center justify-center py-8">
-          <div className="flex items-center gap-3 text-gold">
-            <div className="w-5 h-5 border-2 border-gold/30 border-t-gold rounded-full animate-spin" />
-            <span className="text-sm font-medium">Loading more designs...</span>
-          </div>
-        </div>
-      )}
-
-      {/* No results */}
-      {!loading && designs.length === 0 && (
+      {filtered.length === 0 && (
         <div className="text-center py-20">
           <p className="text-muted text-lg">No designs found matching your filters.</p>
           <button
@@ -174,19 +121,21 @@ export default function GalleryClient() {
         </div>
       )}
 
-      {/* Show total info */}
-      {!loading && pagination && (
-        <div className="text-center mt-8 text-muted text-sm">
-          Showing {designs.length} of {pagination.total} designs
-          {pagination.hasMore && " • Scroll down to load more"}
+      {filtered.length > 0 && (
+        <div className="text-center mt-10">
+          <p className="text-muted text-sm">
+            Showing {visible.length} of {filtered.length} designs
+          </p>
+          {visible.length < filtered.length && (
+            <button
+              onClick={() => setVisibleCount((count) => count + PAGE_SIZE)}
+              className="mt-4 px-6 py-3 rounded-full border border-gold/50 text-gold hover:bg-gold hover:text-white transition-colors text-sm font-medium"
+            >
+              Load more designs
+            </button>
+          )}
         </div>
       )}
-
-      <Lightbox
-        design={selectedDesign}
-        isOpen={!!selectedDesign}
-        onClose={() => setSelectedDesign(null)}
-      />
     </div>
   );
 }

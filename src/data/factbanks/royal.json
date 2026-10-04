@@ -1,6 +1,35 @@
 {
-  "culturalBackground": [],
-  "motifs": [],
-  "applicationTips": [],
-  "faqPool": []
+  "culturalBackground": [
+    "Royal mehndi draws on motifs from Mughal art and architecture, such as domes, arches and formal floral panels.",
+    "Designs often show a bride and groom, a palanquin (doli) or elephants in a wedding procession.",
+    "The style uses dense coverage and is mainly chosen for bridal mehndi.",
+    "Arched window frames, known as jharokha, are often used to frame the figures."
+  ],
+  "motifs": [
+    "domes and arches",
+    "bride and groom portraits",
+    "palanquin (doli)",
+    "elephants",
+    "formal floral panels",
+    "jharokha frames"
+  ],
+  "applicationTips": [
+    "Sketch the main figures first and build the borders around them.",
+    "Book an experienced artist for portrait work; faces are the hardest part of this style.",
+    "Allow several hours for both hands and feet."
+  ],
+  "faqPool": [
+    {
+      "q": "What is royal mehndi?",
+      "a": "It is a bridal style with Mughal-inspired architecture, formal florals and figures such as the bride, groom and a wedding procession."
+    },
+    {
+      "q": "Is royal mehndi suitable for guests?",
+      "a": "It is usually reserved for the bride. Guests tend to choose lighter designs."
+    },
+    {
+      "q": "How long does a royal bridal design take?",
+      "a": "Expect several hours for both hands, and longer if the feet are included."
+    }
+  ]
 }

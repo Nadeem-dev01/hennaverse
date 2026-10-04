@@ -1,6 +1,35 @@
 {
-  "culturalBackground": [],
-  "motifs": [],
-  "applicationTips": [],
-  "faqPool": []
+  "culturalBackground": [
+    "Moroccan and other North African henna traditions rely on lines, diamonds and triangles rather than flowers.",
+    "Geometric pattern is central to Islamic art, which favours repeating, non-figurative designs.",
+    "Modern minimal mehndi often uses geometric shapes with plenty of bare skin around them.",
+    "Symmetry is what makes a geometric design work, so spacing matters more than detail."
+  ],
+  "motifs": [
+    "diamonds",
+    "triangles",
+    "chevrons",
+    "checkered grids",
+    "parallel lines",
+    "dotted borders"
+  ],
+  "applicationTips": [
+    "Mark light guide dots first so the lines stay evenly spaced.",
+    "Draw straight lines in one steady pull instead of several short strokes.",
+    "Keep line thickness consistent; uneven lines stand out more in geometric work than in florals."
+  ],
+  "faqPool": [
+    {
+      "q": "Where do geometric mehndi designs come from?",
+      "a": "They are strongest in Moroccan and North African henna, and are now also common in modern minimal styles everywhere."
+    },
+    {
+      "q": "Are geometric designs harder than floral ones?",
+      "a": "The shapes are simple, but they need straighter lines and more even spacing, so mistakes are easier to see."
+    },
+    {
+      "q": "Can geometric and floral mehndi be combined?",
+      "a": "Yes. A geometric band or grid next to a floral motif is a common modern combination."
+    }
+  ]
 }

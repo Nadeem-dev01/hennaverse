@@ -1,6 +1,35 @@
 {
-  "culturalBackground": [],
-  "motifs": [],
-  "applicationTips": [],
-  "faqPool": []
+  "culturalBackground": [
+    "Flowers are among the most common motifs in every henna tradition, from Indian and Pakistani mehndi to Arabic and Gulf styles.",
+    "The lotus is a frequent motif in South Asian designs, where it is associated with purity and beauty.",
+    "Large roses with shaded petals are a signature of Arabic and Gulf-style henna.",
+    "Vines and leaves are used to connect separate flowers into one flowing design."
+  ],
+  "motifs": [
+    "roses",
+    "lotus blooms",
+    "five-petal flowers",
+    "leafy vines",
+    "buds",
+    "petal-ring mandalas"
+  ],
+  "applicationTips": [
+    "Draw the centre of each flower first, then build the petals outward so the spacing stays even.",
+    "For shaded petals, drag a little paste inward from the outline while it is still wet.",
+    "Vary the size of the flowers; one large bloom with smaller ones around it looks more balanced than many of the same size."
+  ],
+  "faqPool": [
+    {
+      "q": "Which flowers are used most in mehndi designs?",
+      "a": "Roses, lotuses and simple five-petal flowers are the most common, usually joined by vines and leaves."
+    },
+    {
+      "q": "Are floral mehndi designs good for beginners?",
+      "a": "Yes. A flower is built from simple curves and dots, so floral trails are one of the first designs most people learn."
+    },
+    {
+      "q": "What is shading in floral mehndi?",
+      "a": "Shading means dragging a thin layer of paste inside a petal so it stains lighter than the outline, which gives the flower depth."
+    }
+  ]
 }

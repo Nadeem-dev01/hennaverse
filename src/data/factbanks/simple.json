@@ -1,6 +1,35 @@
 {
-  "culturalBackground": [],
-  "motifs": [],
-  "applicationTips": [],
-  "faqPool": []
+  "culturalBackground": [
+    "Simple mehndi is built from basic elements: dots, lines, petals, leaves and vines.",
+    "A single trail across the hand or a small motif on the palm is the most common layout.",
+    "It is the best starting point for beginners because every shape is easy to repeat.",
+    "Most simple designs can be finished in 10 to 20 minutes."
+  ],
+  "motifs": [
+    "dots",
+    "petals",
+    "leaves",
+    "single vines",
+    "small flowers",
+    "finger lines"
+  ],
+  "applicationTips": [
+    "Practise each shape on paper before moving to skin.",
+    "Squeeze the cone with steady, light pressure and let the paste fall onto the skin instead of dragging the tip.",
+    "Fix small mistakes at once with a cotton bud before the paste stains."
+  ],
+  "faqPool": [
+    {
+      "q": "Which mehndi design is best for beginners?",
+      "a": "A single floral vine from the index finger towards the wrist. It uses only petals, leaves and dots."
+    },
+    {
+      "q": "How long does a simple mehndi design take?",
+      "a": "About 10 to 20 minutes per hand."
+    },
+    {
+      "q": "Can simple mehndi be worn to a wedding?",
+      "a": "Yes. A neat simple design on the back of the hand suits guests well."
+    }
+  ]
 }

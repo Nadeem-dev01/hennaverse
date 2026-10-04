@@ -1,6 +1,35 @@
 {
-  "culturalBackground": [],
-  "motifs": [],
-  "applicationTips": [],
-  "faqPool": []
+  "culturalBackground": [
+    "In South Asia, mehndi is traditionally applied on Chaand Raat, the night before Eid, when the new moon is sighted.",
+    "Mehndi is worn for both Eid al-Fitr and Eid al-Adha as part of dressing up for the celebration.",
+    "On Chaand Raat, women and girls gather at home or visit market stalls where artists apply quick designs late into the night.",
+    "Because many people get their mehndi done in one evening, Eid designs are usually quicker and lighter than bridal ones."
+  ],
+  "motifs": [
+    "crescent moon and star",
+    "florals",
+    "paisleys",
+    "trailing vines",
+    "round tikki mandala",
+    "decorated fingertips"
+  ],
+  "applicationTips": [
+    "Apply Eid mehndi the evening before so the stain has time to darken by morning.",
+    "Choose a design you can finish in one sitting; a single trail or tikki takes 15 to 30 minutes per hand.",
+    "Keep the paste on overnight if you can, wrapping the hand loosely so the design does not smudge while you sleep."
+  ],
+  "faqPool": [
+    {
+      "q": "When should I apply mehndi for Eid?",
+      "a": "Apply it the night before Eid. The stain is lightest when the paste comes off and darkens over the next day."
+    },
+    {
+      "q": "What is Chaand Raat?",
+      "a": "It is the night the new moon is sighted before Eid. In South Asia it is a festive evening of shopping, bangles and mehndi."
+    },
+    {
+      "q": "Which mehndi designs are popular for Eid?",
+      "a": "Arabic-style trails, round tikki designs and simple florals are popular because they look festive and are quick to apply."
+    }
+  ]
 }

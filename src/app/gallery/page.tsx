@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import GalleryClient from "./GalleryClient";
-import { designs } from "@/data/designs";
+import { allDesigns } from "@/data/index";
 
 const BASE_URL = "https://www.mehndidesignhenna.com";
 
 export const metadata: Metadata = {
   title: "Mehndi Patterns for Hands: Easy, Cute and Simple Henna Designs Gallery",
   description:
-    "Browse mehndi patterns for hands and cute henna designs: easy mehndi designs, simple arabic mehndi, back hand mehndi designs, kids mehndi designs, and henna patterns for men. Filter by style, difficulty, and occasion.",
+    "Browse mehndi patterns for hands: easy, simple Arabic, back hand and kids mehndi designs. Filter by style, body part and difficulty.",
     keywords: [
     "mehndi patterns for hands",
     "easy mehndi designs",
@@ -87,7 +87,21 @@ export const metadata: Metadata = {
   },
 };
 
+const titleCase = (value: string) => value.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+
 export default function Page() {
+  const galleryItems = allDesigns.map((d) => ({
+    slug: d.slug,
+    title: d.title,
+    src: d.image.src,
+    alt: d.image.alt,
+    width: d.image.width,
+    height: d.image.height,
+    category: titleCase(d.category),
+    bodyPart: titleCase(d.bodyPart ?? "hand"),
+    difficulty: d.difficulty,
+  }));
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ImageGallery",
@@ -100,9 +114,9 @@ export default function Page() {
       name: "Mehndi Design Henna",
       url: BASE_URL,
     },
-    image: designs.slice(0, 10).map((d) => ({
+    image: allDesigns.slice(0, 10).map((d) => ({
       "@type": "ImageObject",
-      url: `${BASE_URL}${d.imageUrl}`,
+      url: `${BASE_URL}${d.image.src}`,
       caption: d.title,
     })),
   };
@@ -122,7 +136,7 @@ export default function Page() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-            <GalleryClient />
+            <GalleryClient designs={galleryItems} />
     </>
   );
 }

@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { designs } from "@/data/designs";
 import DesignCard from "@/components/DesignCard";
+import { designHrefForImage } from "@/data/index";
 import {
   mehndiTools,
   getToolBySlug,
@@ -215,7 +216,7 @@ export default async function ToolPage({
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {displayDesigns.map((design, idx) => (
-              <DesignCard key={design.id} design={design} index={idx} />
+              <DesignCard key={design.id} design={design} index={idx} href={designHrefForImage(design.imageUrl)} />
             ))}
           </div>
           <div className="text-center mt-10">

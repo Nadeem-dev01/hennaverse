@@ -8,7 +8,7 @@ const BASE_URL = "https://www.mehndidesignhenna.com";
 export const metadata: Metadata = {
   title: "Mehndi Styles Around the World: Indian, Arabic, Moroccan and More",
   description:
-    "Discover unique henna and mehndi styles from India, Pakistan, Arabia, Morocco, Turkey, Indonesia, Africa, and Western fusion traditions. Explore regional patterns and cultural heritage.",
+    "Henna and mehndi styles from India, Pakistan, Arabia, Morocco, Turkey, Indonesia and Africa. Explore regional patterns and their history.",
     keywords: [
     "indian mehndi designs",
     "easy arabic mehndi design",

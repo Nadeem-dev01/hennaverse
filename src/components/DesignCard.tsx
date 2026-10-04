@@ -25,6 +25,8 @@ interface DesignCardProps {
   design: DesignType;
   index?: number;
   onClick?: () => void;
+  // Destination of the card link. Defaults to the gallery.
+  href?: string;
 }
 
 const difficultyColor: Record<string, string> = {
@@ -42,12 +44,11 @@ const gradients = [
   "from-purple/15 via-surface to-gold/15",
 ];
 
-export default function DesignCard({ design, index = 0, onClick }: DesignCardProps) {
+export default function DesignCard({ design, index = 0, onClick, href = "/gallery" }: DesignCardProps) {
   const gradient = gradients[index % gradients.length];
   const [imgError, setImgError] = useState(false);
   const hasRealImage = !!design.imageUrl;
-  const slug = design.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
-  const designUrl = `/designs/${slug}`;
+  const designUrl = href;
 
   return (
     <motion.div

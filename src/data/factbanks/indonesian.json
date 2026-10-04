@@ -1,6 +1,35 @@
 {
-  "culturalBackground": [],
-  "motifs": [],
-  "applicationTips": [],
-  "faqPool": []
+  "culturalBackground": [
+    "In Indonesia, henna is commonly called pacar or inai.",
+    "Malam Bainai is a pre-wedding henna night in the Minangkabau tradition of West Sumatra.",
+    "The traditional practice is to stain the bride's fingertips and nails red, not to draw fine patterns.",
+    "Modern Indonesian bridal henna often borrows Arabic and Indian layouts and is sometimes done in white body paint, which is not true henna."
+  ],
+  "motifs": [
+    "stained fingertips",
+    "delicate florals",
+    "lace-like patterns",
+    "leafy vines",
+    "small mandalas",
+    "dot borders"
+  ],
+  "applicationTips": [
+    "For the traditional look, cover the fingertips and nails with a thick, even layer of paste.",
+    "Keep modern lace-style designs fine and light, with thin lines and small motifs.",
+    "White henna is a body paint that sits on the skin; it does not stain and washes off within days."
+  ],
+  "faqPool": [
+    {
+      "q": "What is Malam Bainai?",
+      "a": "It is the henna night held before a Minangkabau wedding in West Sumatra, when henna is applied to the bride's nails and fingertips."
+    },
+    {
+      "q": "Is white henna real henna?",
+      "a": "No. It is a cosmetic body paint or adhesive. Real henna always stains in shades of orange to reddish brown."
+    },
+    {
+      "q": "What does Indonesian bridal henna look like today?",
+      "a": "Many brides choose fine, lace-like designs on the back of the hand and fingers, often inspired by Arabic and Indian styles."
+    }
+  ]
 }

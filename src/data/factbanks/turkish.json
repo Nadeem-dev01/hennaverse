@@ -1,6 +1,35 @@
 {
-  "culturalBackground": [],
-  "motifs": [],
-  "applicationTips": [],
-  "faqPool": []
+  "culturalBackground": [
+    "In Turkey, the henna night before a wedding is called kına gecesi.",
+    "Traditionally, a round patch of henna is placed in the bride's palm, often with a gold coin, and the hand is wrapped in red cloth.",
+    "The bride usually wears a red veil during the ceremony.",
+    "Traditional Turkish henna is simple, a circle in the palm or stained fingertips, while modern designs borrow tulip and carnation motifs from Ottoman art."
+  ],
+  "motifs": [
+    "palm circle",
+    "stained fingertips",
+    "tulips",
+    "carnations",
+    "crescents",
+    "scrolling vines"
+  ],
+  "applicationTips": [
+    "For the traditional palm circle, press a thick, even round of paste into the centre of the palm.",
+    "Wrap the hand in cloth to keep the paste warm and in place.",
+    "For Ottoman-inspired patterns, keep the tulip shapes long and slim."
+  ],
+  "faqPool": [
+    {
+      "q": "What is kına gecesi?",
+      "a": "It is the Turkish henna night, held before the wedding, when henna is placed in the bride's palm among family and friends."
+    },
+    {
+      "q": "What does traditional Turkish henna look like?",
+      "a": "It is usually a solid circle in the palm or stained fingertips, not a fine pattern."
+    },
+    {
+      "q": "Which motifs are used in modern Turkish henna?",
+      "a": "Tulips and carnations, taken from Ottoman tile and textile art, are the most common."
+    }
+  ]
 }

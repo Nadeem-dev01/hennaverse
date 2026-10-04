@@ -8,6 +8,7 @@ import SectionHeading from "@/components/SectionHeading";
 import DesignGrid from "@/components/DesignGrid";
 import Pagination from "@/components/Pagination";
 import { buildCollectionPageSchema } from "@/lib/schema";
+import { clampDescription } from "@/lib/seo";
 
 const BASE_URL = "https://www.mehndidesignhenna.com";
 
@@ -43,7 +44,7 @@ export async function generateMetadata(
 
   return {
     title: page > 1 ? `${bodyPart.metaTitle} - Page ${page}` : bodyPart.metaTitle,
-    description: bodyPart.metaDescription,
+    description: clampDescription(bodyPart.metaDescription),
     alternates: {
       canonical: page > 1 ? `/body/${bodyPart.slug}?page=${page}` : `/body/${bodyPart.slug}`,
     },

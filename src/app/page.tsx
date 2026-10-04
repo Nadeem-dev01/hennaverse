@@ -13,7 +13,7 @@ import SectionHeading from "@/components/SectionHeading";
 import ScrollReveal from "@/components/ScrollReveal";
 import HomeSEOContent from "@/components/HomeSEOContent";
 import { buildItemListSchema } from "@/lib/schema";
-import { allDesigns } from "@/data/index";
+import { designHrefForImage } from "@/data/index";
 
 const BASE_URL = "https://www.mehndidesignhenna.com";
 
@@ -53,14 +53,11 @@ export default function Home() {
   const eidDesigns = designs.filter(design => design.occasion === "Eid").slice(0, 6);
 
   const itemListSchema = buildItemListSchema(
-    featuredDesigns.map((d) => {
-      const detailed = allDesigns.find((ad) => ad.id === d.id.toString() || ad.title === d.title);
-      return {
-        name: d.title,
-        url: detailed ? `/designs/${detailed.slug}` : `/gallery`,
-        image: d.imageUrl,
-      };
-    })
+    featuredDesigns.map((d) => ({
+      name: d.title,
+      url: designHrefForImage(d.imageUrl),
+      image: d.imageUrl,
+    }))
   );
 
   const faqSchema = {
@@ -109,7 +106,7 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {featuredDesigns.map((design, index) => (
             <ScrollReveal key={design.id} delay={index * 0.1}>
-              <DesignCard design={design} index={index} />
+              <DesignCard design={design} index={index} href={designHrefForImage(design.imageUrl)} />
             </ScrollReveal>
           ))}
         </div>
@@ -127,7 +124,7 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
             {eidDesigns.map((design, index) => (
               <ScrollReveal key={`eid-${design.id}`} delay={index * 0.1}>
-                <DesignCard design={design} index={index + 2} />
+                <DesignCard design={design} index={index + 2} href={designHrefForImage(design.imageUrl)} />
               </ScrollReveal>
             ))}
           </div>

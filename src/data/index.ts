@@ -86,3 +86,11 @@ for (const d of allDesigns) {
     designsByBodyPart.set(d.bodyPart, arr);
   }
 }
+
+// Legacy card grids (home, styles, tools) only know an image URL. Map it to the
+// design page for that photo; fall back to the gallery when there is none.
+const designSlugByImage = new Map(allDesigns.map((d) => [d.image.src, d.slug]));
+export function designHrefForImage(imageUrl: string): string {
+  const slug = designSlugByImage.get(imageUrl);
+  return slug ? `/designs/${slug}` : "/gallery";
+}

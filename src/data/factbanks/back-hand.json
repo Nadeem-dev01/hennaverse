@@ -1,6 +1,35 @@
 {
-  "culturalBackground": [],
-  "motifs": [],
-  "applicationTips": [],
-  "faqPool": []
+  "culturalBackground": [
+    "The back of the hand is the most visible placement for mehndi because it shows whenever the hands are at rest.",
+    "Arabic-style trails that run diagonally from the index finger to the wrist are one of the most popular back-hand layouts.",
+    "Skin on the back of the hand is thinner than on the palm, so the stain is lighter and fades sooner.",
+    "Jewelry-style designs that imitate a hathphool, a ring-and-bracelet hand ornament, are usually drawn on the back of the hand."
+  ],
+  "motifs": [
+    "diagonal floral trails",
+    "central mandala",
+    "finger caps",
+    "wrist cuffs",
+    "chain and dot links",
+    "leafy vines"
+  ],
+  "applicationTips": [
+    "Rest the hand flat on a cushion so the skin is taut and the lines stay even.",
+    "Start at the fingers and work towards the wrist so your own hand never drags through wet paste.",
+    "Leave the paste on longer than you would on the palm, because back-hand skin takes the stain more slowly."
+  ],
+  "faqPool": [
+    {
+      "q": "Why is my back-hand mehndi lighter than my palm?",
+      "a": "The palm has thicker skin, which holds more dye. The back of the hand is thinner, so the stain is lighter and fades faster."
+    },
+    {
+      "q": "Which design suits the back of the hand?",
+      "a": "Diagonal trails, a single mandala with decorated fingers, and jewelry-style patterns all work well because they follow the natural lines of the hand."
+    },
+    {
+      "q": "How long does back-hand mehndi last?",
+      "a": "Usually about one to two weeks, a little less than the palm, since the back of the hand is washed and exposed more."
+    }
+  ]
 }

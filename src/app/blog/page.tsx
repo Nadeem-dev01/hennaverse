@@ -6,7 +6,7 @@ const BASE_URL = "https://www.mehndidesignhenna.com";
 export const metadata: Metadata = {
   title: "Henna Guides: How Long Does Henna Last, Henna Kits, Removal and More",
   description:
-    "Answers to every henna question: how long does henna last, how to remove henna, how long does henna take to dry, what henna is made of, henna vs mehndi, plus henna kit, cone, and powder guides.",
+    "Henna guides: how long henna lasts, how to remove it, drying time, what it is made of, plus henna kit, cone and powder advice.",
     keywords: [
     "how long does henna last",
     "how long do henna tattoos last",

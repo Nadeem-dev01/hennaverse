@@ -1,6 +1,35 @@
 {
-  "culturalBackground": [],
-  "motifs": [],
-  "applicationTips": [],
-  "faqPool": []
+  "culturalBackground": [
+    "Gulf-style, or Khaleeji, henna is popular in the UAE, Saudi Arabia, Qatar, Kuwait, Bahrain and Oman.",
+    "It is known for large, bold flowers and leaves with plenty of open space between them.",
+    "Designs usually flow diagonally across the hand instead of covering it completely.",
+    "A henna night before the wedding is a long-standing custom in Gulf weddings."
+  ],
+  "motifs": [
+    "large bold flowers",
+    "broad leaves",
+    "thick outlines",
+    "shaded petals",
+    "diagonal trails",
+    "solid fingertips"
+  ],
+  "applicationTips": [
+    "Use a slightly wider cone tip to get the thick outlines that define the Gulf look.",
+    "Leave clear gaps between motifs; the empty space is part of the style.",
+    "Fill petals with shading instead of fine detail to keep the design bold."
+  ],
+  "faqPool": [
+    {
+      "q": "What is Khaleeji henna?",
+      "a": "It is the henna style of the Arabian Gulf countries: bold floral motifs with thick outlines and open space."
+    },
+    {
+      "q": "How is Gulf henna different from Indian mehndi?",
+      "a": "Gulf designs are larger and more open, while Indian mehndi is finer and covers more of the skin."
+    },
+    {
+      "q": "Is Gulf-style henna quick to apply?",
+      "a": "Usually, yes. The larger motifs and open spacing mean a hand can be finished much faster than a dense design."
+    }
+  ]
 }

@@ -1,6 +1,35 @@
 {
-  "culturalBackground": [],
-  "motifs": [],
-  "applicationTips": [],
-  "faqPool": []
+  "culturalBackground": [
+    "Mandala means circle in Sanskrit, and mandala mehndi is built from rings of petals and patterns around a central point.",
+    "A mandala in the centre of the palm or the back of the hand is one of the most recognisable mehndi layouts.",
+    "In Indian and Pakistani mehndi, this round design is commonly called a tikki or gol tikki.",
+    "The design depends on symmetry: each ring repeats the same shape all the way around."
+  ],
+  "motifs": [
+    "concentric circles",
+    "petal rings",
+    "scalloped borders",
+    "dot rings",
+    "central flower",
+    "radiating lines"
+  ],
+  "applicationTips": [
+    "Start with a small circle in the centre and add one ring at a time.",
+    "Turn the hand, not the cone, as you work around the circle to keep the petals even.",
+    "Finish with a ring of dots; it hides small unevenness in the outer edge."
+  ],
+  "faqPool": [
+    {
+      "q": "What does mandala mean in mehndi?",
+      "a": "It refers to a circular design built from repeating rings around a centre point."
+    },
+    {
+      "q": "Is a mandala the same as a tikki design?",
+      "a": "A tikki is a round mandala placed on the palm or back of the hand, usually with decorated fingertips."
+    },
+    {
+      "q": "Are mandala designs suitable for beginners?",
+      "a": "Yes. A basic mandala uses only circles, petals and dots, and it can be made more detailed as you improve."
+    }
+  ]
 }

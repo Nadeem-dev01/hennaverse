@@ -1,6 +1,35 @@
 {
-  "culturalBackground": [],
-  "motifs": [],
-  "applicationTips": [],
-  "faqPool": []
+  "culturalBackground": [
+    "Finger-only mehndi is a popular minimal choice for people who want a small design that is quick to apply.",
+    "Filling the fingertips solid with henna is a traditional look in many regions, from South Asia to North Africa.",
+    "Ring-style bands drawn around one or more fingers imitate jewelry and pair well with a bare palm.",
+    "Fingertips have thick skin, so they usually take the darkest stain on the hand."
+  ],
+  "motifs": [
+    "ring bands",
+    "solid fingertip caps",
+    "tiny leaves and vines",
+    "dots and teardrops",
+    "small florals",
+    "lattice strips"
+  ],
+  "applicationTips": [
+    "Keep the fingers slightly apart while the paste dries so neighbouring designs do not touch.",
+    "Use a fine-tipped cone; finger designs leave little room for thick lines.",
+    "Avoid bending the fingers until the paste is dry, or the lines across the knuckles will crack."
+  ],
+  "faqPool": [
+    {
+      "q": "How long does a finger mehndi design take?",
+      "a": "A simple finger design takes about 10 to 15 minutes per hand, which makes it a good last-minute option."
+    },
+    {
+      "q": "Why are fingertips often filled in completely?",
+      "a": "Solid fingertips are a traditional style in several henna cultures, and the thick skin there gives a deep, lasting stain."
+    },
+    {
+      "q": "Can I do finger mehndi on myself?",
+      "a": "Yes. It is one of the easiest placements to do yourself, though the hand you write with is harder to decorate."
+    }
+  ]
 }

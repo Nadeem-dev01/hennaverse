@@ -1,6 +1,35 @@
 {
-  "culturalBackground": [],
-  "motifs": [],
-  "applicationTips": [],
-  "faqPool": []
+  "culturalBackground": [
+    "The palm is the traditional placement for mehndi and gives the darkest stain on the body.",
+    "A round mandala in the centre of the palm, often called a tikki, is one of the oldest and best-known layouts.",
+    "Bridal designs usually cover the whole palm and continue past the wrist.",
+    "In a well-known South Asian wedding custom, the groom's name or initials are hidden in the bride's palm design for him to find."
+  ],
+  "motifs": [
+    "central tikki mandala",
+    "full-palm jaal (net)",
+    "paisleys",
+    "finger bands",
+    "wrist cuffs",
+    "florals"
+  ],
+  "applicationTips": [
+    "Keep the palm open and relaxed until the paste dries; closing the hand smudges the centre of the design.",
+    "Start with the central motif and work outward so the layout stays symmetrical.",
+    "Palms sweat, so apply in a cool room and avoid holding anything until the paste has set."
+  ],
+  "faqPool": [
+    {
+      "q": "Why does mehndi stain darkest on the palm?",
+      "a": "The palm has the thickest outer skin on the hand, so it absorbs more dye and holds it longer."
+    },
+    {
+      "q": "What is a tikki mehndi design?",
+      "a": "It is a round mandala placed in the centre of the palm, usually with decorated fingertips and the rest of the palm left bare."
+    },
+    {
+      "q": "How long does palm mehndi last?",
+      "a": "Usually one to three weeks. Frequent hand washing and soap shorten that."
+    }
+  ]
 }

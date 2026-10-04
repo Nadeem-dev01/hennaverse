@@ -1,6 +1,35 @@
 {
-  "culturalBackground": [],
-  "motifs": [],
-  "applicationTips": [],
-  "faqPool": []
+  "culturalBackground": [
+    "Children's mehndi uses small, simple motifs that can be finished in a few minutes.",
+    "Children's skin is more sensitive than adults', so only natural henna paste should be used.",
+    "Black henna often contains PPD, a hair-dye chemical that can cause serious skin reactions, and should never be used on children.",
+    "Henna should not be used on babies, and children with G6PD deficiency should avoid it; ask a doctor if you are unsure."
+  ],
+  "motifs": [
+    "small flowers",
+    "hearts",
+    "stars",
+    "butterflies",
+    "smiley faces",
+    "simple vines"
+  ],
+  "applicationTips": [
+    "Pick a design that takes five to ten minutes; young children rarely sit still for longer.",
+    "Leave the paste on for a shorter time, around one to two hours, and wash hands well afterwards.",
+    "Do a patch test on the inner arm a day before, especially the first time a child wears mehndi."
+  ],
+  "faqPool": [
+    {
+      "q": "Is mehndi safe for children?",
+      "a": "Natural henna is generally safe for older children, but do a patch test first. Avoid it for babies and for children with G6PD deficiency, and never use black henna."
+    },
+    {
+      "q": "What designs do kids like?",
+      "a": "Small flowers, hearts, stars and butterflies on the back of the hand are quick to apply and easy for children to enjoy."
+    },
+    {
+      "q": "How do I keep a child from smudging mehndi?",
+      "a": "Choose a small design on the back of the hand and keep the child busy with a story or video until the paste dries."
+    }
+  ]
 }

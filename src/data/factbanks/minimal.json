@@ -1,6 +1,35 @@
 {
-  "culturalBackground": [],
-  "motifs": [],
-  "applicationTips": [],
-  "faqPool": []
+  "culturalBackground": [
+    "Minimal mehndi uses small motifs and leaves most of the skin bare.",
+    "It is popular for everyday wear, the office and small gatherings where a heavy design would be too much.",
+    "Fine lines on the fingers, wrist or one side of the hand are the most common placements.",
+    "Most minimal designs can be applied in a few minutes."
+  ],
+  "motifs": [
+    "single vines",
+    "tiny flowers",
+    "dots",
+    "thin finger bands",
+    "small leaves",
+    "fine line work"
+  ],
+  "applicationTips": [
+    "Use the finest cone tip you can; thin, clean lines define the minimal look.",
+    "Decide on one focal point, such as a finger or the wrist, and keep the rest bare.",
+    "Stop earlier than you think you should; adding more is what turns a minimal design into a busy one."
+  ],
+  "faqPool": [
+    {
+      "q": "What is minimal mehndi?",
+      "a": "It is a style built on small, simple motifs with a lot of empty space, such as a single vine or a few finger bands."
+    },
+    {
+      "q": "How long does a minimal design take?",
+      "a": "Usually five to fifteen minutes."
+    },
+    {
+      "q": "Does minimal mehndi stain as dark as a full design?",
+      "a": "Yes. The colour depends on the paste, the skin and how long the paste stays on, not on how big the design is."
+    }
+  ]
 }

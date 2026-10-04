@@ -1,6 +1,35 @@
 {
-  "culturalBackground": [],
-  "motifs": [],
-  "applicationTips": [],
-  "faqPool": []
+  "culturalBackground": [
+    "Full-hand mehndi covers the hand from the fingertips to the wrist and often continues up the forearm.",
+    "It is the usual choice for brides and for major festivals where a heavier look is wanted.",
+    "A detailed full-hand design can take an hour or more per hand.",
+    "Full-hand layouts usually combine several motifs, such as a mandala, a jaal (net) and paisleys, in separate sections."
+  ],
+  "motifs": [
+    "jaal (net) fills",
+    "mandalas",
+    "paisleys",
+    "floral panels",
+    "wrist and forearm bands",
+    "decorated fingers"
+  ],
+  "applicationTips": [
+    "Plan the layout in sections before you begin so the design stays balanced from fingers to wrist.",
+    "Take short breaks between sections; a steady hand matters more than speed.",
+    "Have someone help with food and drink, because both hands will be out of use until the paste dries."
+  ],
+  "faqPool": [
+    {
+      "q": "How long does full-hand mehndi take?",
+      "a": "It depends on the detail. A moderate design takes around an hour per hand, and dense bridal work takes longer."
+    },
+    {
+      "q": "Is full-hand mehndi only for brides?",
+      "a": "No. It is also popular for Eid, Karva Chauth, Teej and family weddings."
+    },
+    {
+      "q": "Should both hands have the same full-hand design?",
+      "a": "They can match, mirror each other, or use two related designs. Mirrored designs are the most traditional."
+    }
+  ]
 }

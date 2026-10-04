@@ -1,6 +1,35 @@
 {
-  "culturalBackground": [],
-  "motifs": [],
-  "applicationTips": [],
-  "faqPool": []
+  "culturalBackground": [
+    "Modern mehndi mixes traditional motifs with open space, geometric lines and contemporary elements.",
+    "Indo-Arabic fusion, which combines fine Indian detail with bold Arabic flow, is one of the most common modern styles.",
+    "Some modern designs borrow from tattoo art, with single motifs placed on the wrist, fingers or forearm.",
+    "White henna and glitter are cosmetic body paints, not real henna, and they do not stain the skin."
+  ],
+  "motifs": [
+    "negative-space panels",
+    "geometric lines",
+    "half-mandalas",
+    "bold florals",
+    "finger strips",
+    "asymmetric trails"
+  ],
+  "applicationTips": [
+    "Plan where the bare skin will be before you start; in modern designs the empty space is part of the pattern.",
+    "Mix line weights, using bold outlines with fine detail inside.",
+    "Keep the two hands related but not identical for a contemporary look."
+  ],
+  "faqPool": [
+    {
+      "q": "What is modern mehndi?",
+      "a": "It is a broad style that reworks traditional motifs with open space, geometric shapes and fusion layouts."
+    },
+    {
+      "q": "What is Indo-Arabic mehndi?",
+      "a": "It combines the fine fill work of Indian mehndi with the bold outlines and flowing layout of Arabic henna."
+    },
+    {
+      "q": "Is white henna real henna?",
+      "a": "No. It is a body paint or adhesive that sits on the skin and comes off within a few days."
+    }
+  ]
 }

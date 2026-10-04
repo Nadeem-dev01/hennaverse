@@ -1,6 +1,35 @@
 {
-  "culturalBackground": [],
-  "motifs": [],
-  "applicationTips": [],
-  "faqPool": []
+  "culturalBackground": [
+    "Rajasthani, or Marwari, mehndi is known for dense, very fine detail that covers the whole hand.",
+    "Sojat, in Rajasthan's Pali district, is India's best-known henna-growing area.",
+    "Designs often include figures such as a bride and groom, peacocks and elephants.",
+    "Mirrored designs, where the two hands form one picture when held together, are a hallmark of the style."
+  ],
+  "motifs": [
+    "bride and groom figures",
+    "peacocks",
+    "elephants",
+    "fine jaal (net) fills",
+    "mirrored panels",
+    "dense borders"
+  ],
+  "applicationTips": [
+    "Use a very fine cone tip; Rajasthani detail is too small for a standard tip.",
+    "Divide the hand into panels first and fill one at a time.",
+    "Allow plenty of time, since dense coverage takes much longer than open styles."
+  ],
+  "faqPool": [
+    {
+      "q": "What is special about Rajasthani mehndi?",
+      "a": "Its very fine, dense detail and its use of figures such as the bride, groom, peacocks and elephants."
+    },
+    {
+      "q": "What is a mirrored mehndi design?",
+      "a": "It is a design drawn so that the two hands match or join into one image when placed side by side."
+    },
+    {
+      "q": "When is Rajasthani mehndi worn?",
+      "a": "It is worn at weddings and at festivals such as Teej and Gangaur, which are widely celebrated in Rajasthan."
+    }
+  ]
 }

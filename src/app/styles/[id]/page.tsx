@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { countries } from "@/data/countries";
 import { designs } from "@/data/designs";
 import DesignCard from "@/components/DesignCard";
+import { designHrefForImage } from "@/data/index";
 import SectionHeading from "@/components/SectionHeading";
 import Link from "next/link";
 import Image from "next/image";
@@ -185,7 +186,7 @@ export default async function CountryStylePage(props: { params: Promise<{ id: st
       {countryDesigns.length > 0 ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {countryDesigns.map((design, index) => (
-            <DesignCard key={design.id} design={design} index={index} />
+            <DesignCard key={design.id} design={design} index={index} href={designHrefForImage(design.imageUrl)} />
           ))}
         </div>
       ) : (

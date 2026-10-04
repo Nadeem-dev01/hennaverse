@@ -1,6 +1,35 @@
 {
-  "culturalBackground": [],
-  "motifs": [],
-  "applicationTips": [],
-  "faqPool": []
+  "culturalBackground": [
+    "Jewelry-style mehndi imitates ornaments such as rings, bracelets, anklets and the hathphool, a hand harness that links a ring to a bracelet.",
+    "It is usually drawn on the back of the hand, where real hand jewelry is worn.",
+    "The style suits people who want an ornamental look without wearing heavy jewelry.",
+    "Chains of dots and teardrop shapes are used to suggest beads and links."
+  ],
+  "motifs": [
+    "hathphool chains",
+    "ring bands",
+    "bracelet cuffs",
+    "teardrop pendants",
+    "bead-like dots",
+    "central medallion"
+  ],
+  "applicationTips": [
+    "Keep the dots in a chain the same size and evenly spaced so they read as beads.",
+    "Draw the central medallion first, then connect it to the finger and wrist with chains.",
+    "Leave bare skin around the design so it looks like jewelry instead of a full pattern."
+  ],
+  "faqPool": [
+    {
+      "q": "What is jewelry mehndi?",
+      "a": "It is a mehndi style that copies the look of rings, bracelets and hand chains using henna."
+    },
+    {
+      "q": "What is a hathphool design?",
+      "a": "It is a design that imitates the hathphool ornament: a ring joined by chains to a central piece and a bracelet."
+    },
+    {
+      "q": "Can jewelry mehndi be worn with real jewelry?",
+      "a": "Yes, but keep the real pieces light so they do not hide the design."
+    }
+  ]
 }

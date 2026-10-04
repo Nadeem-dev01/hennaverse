@@ -8,6 +8,8 @@ import CategoryDesignsPage from "@/components/CategoryDesignsPage";
 import DesignGrid from "@/components/DesignGrid";
 import Pagination from "@/components/Pagination";
 import FAQAccordion from "@/components/FAQAccordion";
+import CategoryGuide from "@/components/CategoryGuide";
+import { clampDescription } from "@/lib/seo";
 import { buildFAQSchema } from "@/lib/schema";
 import type { DesignFAQ } from "@/data/types";
 
@@ -56,7 +58,7 @@ export async function generateMetadata(
 
   return {
     title: page > 1 ? `${metaTitle} - Page ${page}` : metaTitle,
-    description: metaDescription,
+    description: clampDescription(metaDescription),
     keywords: taxo?.keywords,
     alternates: {
       canonical: canonicalUrl,
@@ -166,6 +168,9 @@ export default async function MehndiDesignCategoryPage(
               />
             </section>
           )}
+          {currentPage === 1 && (
+            <CategoryGuide title={curated.title} slug={curated.slug} factbank={factbank?.default ?? null} />
+          )}
           <FAQAccordion items={faq} />
         </CategoryPage>
       </>
@@ -218,8 +223,12 @@ export default async function MehndiDesignCategoryPage(
         designs={designs} 
         related={related} 
         currentPage={currentPage}
-        faq={faq}
-      />
+      >
+        {currentPage === 1 && (
+          <CategoryGuide title={taxo!.title} slug={taxo!.slug} factbank={factbank?.default ?? null} />
+        )}
+        <FAQAccordion items={faq} />
+      </CategoryDesignsPage>
     </>
   );
 }

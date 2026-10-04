@@ -1,13 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
-import type { Design, DesignFAQ } from "@/data/types";
+import type { Design } from "@/data/types";
 import type { CategoryDef } from "@/data/taxonomy";
 import Breadcrumbs from "./Breadcrumbs";
 import TableOfContents from "./TableOfContents";
 import DesignGrid from "./DesignGrid";
 import AdSlot from "./AdSlot";
 import Pagination from "./Pagination";
-import FAQAccordion from "./FAQAccordion";
 
 const DESIGNS_PER_PAGE = 48;
 
@@ -27,13 +26,13 @@ export default function CategoryDesignsPage({
   designs,
   related,
   currentPage = 1,
-  faq = [],
+  children,
 }: {
   category: CategoryDef;
   designs: Design[];
   related: { slug: string; title: string }[];
   currentPage?: number;
-  faq?: DesignFAQ[];
+  children?: React.ReactNode;
 }) {
   const total = designs.length;
   
@@ -134,7 +133,7 @@ export default function CategoryDesignsPage({
             )}
           </section>
 
-          <FAQAccordion items={faq} />
+          {children}
 
           <AdSlot adSlot="footer-slot" className="mt-12" />
 
