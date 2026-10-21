@@ -43,7 +43,7 @@ export const blogs: BlogPost[] = [
 <p>In this guide, explore <strong>25 beautiful Asian henna design ideas</strong> and discover styles that can inspire your next mehndi look.</p>
 
 <div class="my-6">
-  <img src="/asian-henna-floral-paisley-design.avif" alt="Asian henna design with floral and paisley patterns" class="rounded-2xl w-full object-cover shadow-lg border border-border/40" />
+  <img src="/asian-henna-floral-paisley-design.avif" width="900" height="672" loading="lazy" alt="Asian henna design with floral and paisley patterns" class="rounded-2xl w-full object-cover shadow-lg border border-border/40" />
 </div>
 
 <h2>What Makes Asian Henna Designs Special?</h2>
@@ -77,7 +77,7 @@ export const blogs: BlogPost[] = [
 <p>Explore more related ideas in our <a href="/mehndi-designs/pakistani">Pakistani Mehndi Designs</a> collection.</p>
 
 <div class="my-6">
-  <img src="/elegant-full-hand-asian-mehndi-design.avif" alt="elegant full hand Asian mehndi design" class="rounded-2xl w-full object-cover shadow-lg border border-border/40" />
+  <img src="/elegant-full-hand-asian-mehndi-design.avif" width="900" height="672" loading="lazy" alt="elegant full hand Asian mehndi design" class="rounded-2xl w-full object-cover shadow-lg border border-border/40" />
 </div>
 
 <h2>4. Modern Asian Floral Mehndi</h2>
@@ -145,7 +145,7 @@ export const blogs: BlogPost[] = [
 <p>Use a central lotus-inspired flower with leaves and fine details for an elegant artistic design.</p>
 
 <div class="my-6">
-  <img src="/lotus-inspired-asian-henna-pattern.avif" alt="lotus inspired henna pattern" class="rounded-2xl w-full object-cover shadow-lg border border-border/40" />
+  <img src="/lotus-inspired-asian-henna-pattern.avif" width="900" height="672" loading="lazy" alt="lotus inspired henna pattern" class="rounded-2xl w-full object-cover shadow-lg border border-border/40" />
 </div>
 
 <h2>20. Jewelry-Style Asian Henna</h2>
@@ -173,7 +173,7 @@ export const blogs: BlogPost[] = [
 <p>For example, you can use detailed floral work, a paisley motif, modern geometric accents and open spaces to create a unique design.</p>
 
 <div class="my-6">
-  <img src="/modern-asian-fusion-henna-design.avif" alt="modern Asian fusion henna design" class="rounded-2xl w-full object-cover shadow-lg border border-border/40" />
+  <img src="/modern-asian-fusion-henna-design.avif" width="900" height="672" loading="lazy" alt="modern Asian fusion henna design" class="rounded-2xl w-full object-cover shadow-lg border border-border/40" />
 </div>
 
 <h2>How to Choose the Right Asian Henna Design</h2>
@@ -391,7 +391,7 @@ export const blogs: BlogPost[] = [
     "readTime": "6 min read",
     "category": "Culture",
     "country": "Indonesia",
-    "imageUrl": "/images/countries/indonesia-hero.jpg",
+    "imageUrl": "/Snapinsta.app_276984494_1121195125340368_881341424541864188_n_1080.avif",
     "tags": [
       "indonesian henna",
       "javanese mehndi",
@@ -428,7 +428,7 @@ export const blogs: BlogPost[] = [
     "readTime": "7 min read",
     "category": "Tutorial",
     "country": "Global",
-    "imageUrl": "/images/countries/indonesia-hero.jpg",
+    "imageUrl": "/Snapinsta.app_276984494_1121195125340368_881341424541864188_n_1080.avif",
     "tags": [
       "easy mehndi designs",
       "simple mehndi",
@@ -878,7 +878,7 @@ export const blogs: BlogPost[] = [
 <p>In this guide, we will explore different Pakistani mehndi styles, how traditional and modern patterns differ, which designs work for different occasions, and how to choose a pattern that suits your hands and personal style. You can also browse our <a href="/mehndi-designs/pakistani">Pakistani Mehndi Designs collection</a> to see hundreds of real patterns for inspiration.</p>
 
 <div class="my-6">
-  <img src="/eid-1000.jpeg" alt="Traditional Pakistani mehndi design with floral and paisley patterns on hands" class="rounded-2xl w-full object-cover shadow-lg border border-border/40" />
+  <img src="/eid-1000.jpeg" width="675" height="900" loading="lazy" alt="Traditional Pakistani mehndi design with floral and paisley patterns on hands" class="rounded-2xl w-full object-cover shadow-lg border border-border/40" />
 </div>
 
 <h2>What Makes Pakistani Mehndi Designs Special?</h2>
@@ -1217,7 +1217,7 @@ export const blogs: BlogPost[] = [
 <p>While mehndi has its own long history across South Asia, the visual language of Chinese art can provide interesting inspiration for <a href='/mehndi-designs/modern'>modern henna</a> artists and anyone looking for something different.</p>
 
 <div class="my-6">
-  <img src="/chinese-mehndi-floral-peony-design.avif" alt="Chinese-inspired mehndi design with peony flowers and cloud motifs on the hand" class="rounded-2xl w-full object-cover shadow-lg border border-border/40" />
+  <img src="/chinese-mehndi-floral-peony-design.avif" width="900" height="604" loading="lazy" alt="Chinese-inspired mehndi design with peony flowers and cloud motifs on the hand" class="rounded-2xl w-full object-cover shadow-lg border border-border/40" />
 </div>
 
 <h2>What Makes Chinese-Inspired Mehndi Designs Unique?</h2>
@@ -1259,7 +1259,7 @@ export const blogs: BlogPost[] = [
 <p>Our <a href="/mehndi-designs/minimal">minimal mehndi designs</a> collection offers dozens of similar clean-line ideas worth exploring.</p>
 
 <div class="my-6">
-  <img src="/chinese-mehndi-minimal-vine-design.avif" alt="Minimal Chinese-inspired mehndi design with a single peony flower and vine on the back of the hand" class="rounded-2xl w-full object-cover shadow-lg border border-border/40" />
+  <img src="/chinese-mehndi-minimal-vine-design.avif" width="900" height="604" loading="lazy" alt="Minimal Chinese-inspired mehndi design with a single peony flower and vine on the back of the hand" class="rounded-2xl w-full object-cover shadow-lg border border-border/40" />
 </div>
 
 <h2>4. Chinese Flower and Vine Design</h2>
@@ -1281,7 +1281,7 @@ export const blogs: BlogPost[] = [
 <p>For a complete bridal inspiration guide, visit our <a href="/mehndi-designs/bridal">bridal mehndi designs</a> collection.</p>
 
 <div class="my-6">
-  <img src="/chinese-mehndi-bridal-fusion-design.avif" alt="Chinese-inspired bridal mehndi fusion design with peony flowers and ornamental cloud motifs" class="rounded-2xl w-full object-cover shadow-lg border border-border/40" />
+  <img src="/chinese-mehndi-bridal-fusion-design.avif" width="900" height="604" loading="lazy" alt="Chinese-inspired bridal mehndi fusion design with peony flowers and ornamental cloud motifs" class="rounded-2xl w-full object-cover shadow-lg border border-border/40" />
 </div>
 
 <h2>6. Chinese-Inspired Back Hand Mehndi</h2>
