@@ -20,7 +20,7 @@ export const designs: Design[] = [
   {
     "id": 1,
     "title": "Mandala Mehndi Design 1",
-    "description": "A stunning hard Mandala design perfect for Engagement. This beautiful henna pattern features unique elements from India traditions.",
+    "description": "A mandala pattern in the Indian style, picked for an engagement. Difficulty: hard.",
     "country": "India",
     "style": "Mandala",
     "occasion": "Engagement",
@@ -40,7 +40,7 @@ export const designs: Design[] = [
   {
     "id": 2,
     "title": "Tikki Mehndi Design 2",
-    "description": "A stunning easy Tikki design perfect for Eid. This beautiful henna pattern features unique elements from Pakistan traditions.",
+    "description": "Here's a tikki design we like for Eid. The look is Pakistani, and it's easy to copy.",
     "country": "Pakistan",
     "style": "Tikki",
     "occasion": "Eid",
@@ -60,7 +60,7 @@ export const designs: Design[] = [
   {
     "id": 3,
     "title": "Arabic bold Mehndi Design 3",
-    "description": "A stunning easy Arabic bold design perfect for Wedding. This beautiful henna pattern features unique elements from Arabia traditions.",
+    "description": "Arabic bold henna for a wedding. Rated easy.",
     "country": "Arabia",
     "style": "Arabic bold",
     "occasion": "Wedding",
@@ -80,7 +80,7 @@ export const designs: Design[] = [
   {
     "id": 4,
     "title": "tribal Mehndi Design 4",
-    "description": "A stunning hard tribal design perfect for Engagement. This beautiful henna pattern features unique elements from Morocco traditions.",
+    "description": "A tribal design with Moroccan roots. It's fairly detailed and works well for an engagement.",
     "country": "Morocco",
     "style": "tribal",
     "occasion": "Engagement",
@@ -100,7 +100,7 @@ export const designs: Design[] = [
   {
     "id": 5,
     "title": "floral Turkish Mehndi Design 5",
-    "description": "A stunning expert floral Turkish design perfect for Party. This beautiful henna pattern features unique elements from Turkey traditions.",
+    "description": "A floral Turkish pattern, picked for a party. Difficulty: expert.",
     "country": "Turkey",
     "style": "floral Turkish",
     "occasion": "Party",
@@ -120,7 +120,7 @@ export const designs: Design[] = [
   {
     "id": 6,
     "title": "Balinese Mehndi Design 6",
-    "description": "A stunning medium Balinese design perfect for Diwali. This beautiful henna pattern features unique elements from Indonesia traditions.",
+    "description": "Here's a Balinese design we like for Diwali. The look is Indonesian, and it's not too hard to draw.",
     "country": "Indonesia",
     "style": "Balinese",
     "occasion": "Diwali",
@@ -140,7 +140,7 @@ export const designs: Design[] = [
   {
     "id": 7,
     "title": "Sudanese Mehndi Design 7",
-    "description": "A stunning medium Sudanese design perfect for Casual. This beautiful henna pattern features unique elements from Sudan traditions.",
+    "description": "Sudanese henna for everyday wear. Rated medium.",
     "country": "Sudan",
     "style": "Sudanese",
     "occasion": "Casual",
@@ -160,7 +160,7 @@ export const designs: Design[] = [
   {
     "id": 8,
     "title": "Indo-Western Mehndi Design 8",
-    "description": "A stunning medium Indo-Western design perfect for Diwali. This beautiful henna pattern features unique elements from Western traditions.",
+    "description": "An Indo-Western design. It's not too hard to draw and works well for Diwali.",
     "country": "Western",
     "style": "Indo-Western",
     "occasion": "Diwali",
@@ -180,7 +180,7 @@ export const designs: Design[] = [
   {
     "id": 9,
     "title": "South Indian Mehndi Design 9",
-    "description": "A stunning hard South Indian design perfect for Party. This beautiful henna pattern features unique elements from India traditions.",
+    "description": "A South Indian pattern, picked for a party. Difficulty: hard.",
     "country": "India",
     "style": "South Indian",
     "occasion": "Party",
@@ -200,7 +200,7 @@ export const designs: Design[] = [
   {
     "id": 10,
     "title": "Tikki Mehndi Design 10",
-    "description": "A stunning medium Tikki design perfect for Teej. This beautiful henna pattern features unique elements from Pakistan traditions.",
+    "description": "Here's a tikki design we like for Teej. The look is Pakistani, and it's not too hard to draw.",
     "country": "Pakistan",
     "style": "Tikki",
     "occasion": "Teej",
@@ -220,7 +220,7 @@ export const designs: Design[] = [
   {
     "id": 11,
     "title": "Arabic bold Mehndi Design 11",
-    "description": "A stunning expert Arabic bold design perfect for Engagement. This beautiful henna pattern features unique elements from Arabia traditions.",
+    "description": "Arabic bold henna for an engagement. Rated expert.",
     "country": "Arabia",
     "style": "Arabic bold",
     "occasion": "Engagement",
@@ -240,7 +240,7 @@ export const designs: Design[] = [
   {
     "id": 12,
     "title": "Berber Mehndi Design 12",
-    "description": "A stunning medium Berber design perfect for Teej. This beautiful henna pattern features unique elements from Morocco traditions.",
+    "description": "A Berber design with Moroccan roots. It's not too hard to draw and works well for Teej.",
     "country": "Morocco",
     "style": "Berber",
     "occasion": "Teej",
@@ -260,7 +260,7 @@ export const designs: Design[] = [
   {
     "id": 13,
     "title": "floral Turkish Mehndi Design 13",
-    "description": "A stunning hard floral Turkish design perfect for Eid. This beautiful henna pattern features unique elements from Turkey traditions.",
+    "description": "A floral Turkish pattern, picked for Eid. Difficulty: hard.",
     "country": "Turkey",
     "style": "floral Turkish",
     "occasion": "Eid",
@@ -280,7 +280,7 @@ export const designs: Design[] = [
   {
     "id": 14,
     "title": "Javanese Mehndi Design 14",
-    "description": "A stunning easy Javanese design perfect for Engagement. This beautiful henna pattern features unique elements from Indonesia traditions.",
+    "description": "Here's a Javanese design we like for an engagement. The look is Indonesian, and it's easy to copy.",
     "country": "Indonesia",
     "style": "Javanese",
     "occasion": "Engagement",
@@ -300,7 +300,7 @@ export const designs: Design[] = [
   {
     "id": 15,
     "title": "Sudanese Mehndi Design 15",
-    "description": "A stunning expert Sudanese design perfect for Engagement. This beautiful henna pattern features unique elements from Sudan traditions.",
+    "description": "Sudanese henna for an engagement. Rated expert.",
     "country": "Sudan",
     "style": "Sudanese",
     "occasion": "Engagement",
@@ -320,7 +320,7 @@ export const designs: Design[] = [
   {
     "id": 16,
     "title": "Geometric modern Mehndi Design 16",
-    "description": "A stunning expert Geometric modern design perfect for Casual. This beautiful henna pattern features unique elements from Western traditions.",
+    "description": "A geometric modern design with Western roots. It's best left to an experienced artist and works well for everyday wear.",
     "country": "Western",
     "style": "Geometric modern",
     "occasion": "Casual",
@@ -340,7 +340,7 @@ export const designs: Design[] = [
   {
     "id": 17,
     "title": "Mughal Mehndi Design 17",
-    "description": "A stunning hard Mughal design perfect for Festival. This beautiful henna pattern features unique elements from India traditions.",
+    "description": "A Mughal pattern in the Indian style, picked for a festival. Difficulty: hard.",
     "country": "India",
     "style": "Mughal",
     "occasion": "Festival",
@@ -360,7 +360,7 @@ export const designs: Design[] = [
   {
     "id": 18,
     "title": "Geometric Mehndi Design 18",
-    "description": "A stunning easy Geometric design perfect for Festival. This beautiful henna pattern features unique elements from Pakistan traditions.",
+    "description": "Here's a geometric design we like for a festival. The look is Pakistani, and it's easy to copy.",
     "country": "Pakistan",
     "style": "Geometric",
     "occasion": "Festival",
@@ -380,7 +380,7 @@ export const designs: Design[] = [
   {
     "id": 19,
     "title": "minimal Arabic Mehndi Design 19",
-    "description": "A stunning expert minimal Arabic design perfect for Teej. This beautiful henna pattern features unique elements from Arabia traditions.",
+    "description": "Minimal Arabic henna for Teej. Rated expert.",
     "country": "Arabia",
     "style": "minimal Arabic",
     "occasion": "Teej",
@@ -400,7 +400,7 @@ export const designs: Design[] = [
   {
     "id": 20,
     "title": "geometric Mehndi Design 20",
-    "description": "A stunning easy geometric design perfect for Teej. This beautiful henna pattern features unique elements from Morocco traditions.",
+    "description": "A geometric design with Moroccan roots. It's easy to copy and works well for Teej.",
     "country": "Morocco",
     "style": "geometric",
     "occasion": "Teej",
@@ -420,7 +420,7 @@ export const designs: Design[] = [
   {
     "id": 21,
     "title": "floral Turkish Mehndi Design 21",
-    "description": "A stunning medium floral Turkish design perfect for Eid. This beautiful henna pattern features unique elements from Turkey traditions.",
+    "description": "A floral Turkish pattern, picked for Eid. Difficulty: medium.",
     "country": "Turkey",
     "style": "floral Turkish",
     "occasion": "Eid",
@@ -440,7 +440,7 @@ export const designs: Design[] = [
   {
     "id": 22,
     "title": "Balinese Mehndi Design 22",
-    "description": "A stunning medium Balinese design perfect for Diwali. This beautiful henna pattern features unique elements from Indonesia traditions.",
+    "description": "Here's a Balinese design we like for Diwali. The look is Indonesian, and it's not too hard to draw.",
     "country": "Indonesia",
     "style": "Balinese",
     "occasion": "Diwali",
@@ -460,7 +460,7 @@ export const designs: Design[] = [
   {
     "id": 23,
     "title": "African tribal Mehndi Design 23",
-    "description": "A stunning medium African tribal design perfect for Engagement. This beautiful henna pattern features unique elements from Sudan traditions.",
+    "description": "African tribal henna for an engagement, drawn in the Sudanese way. Rated medium.",
     "country": "Sudan",
     "style": "African tribal",
     "occasion": "Engagement",
@@ -480,7 +480,7 @@ export const designs: Design[] = [
   {
     "id": 24,
     "title": "Geometric modern Mehndi Design 24",
-    "description": "A stunning easy Geometric modern design perfect for Party. This beautiful henna pattern features unique elements from Western traditions.",
+    "description": "A geometric modern design with Western roots. It's easy to copy and works well for a party.",
     "country": "Western",
     "style": "Geometric modern",
     "occasion": "Party",
@@ -500,7 +500,7 @@ export const designs: Design[] = [
   {
     "id": 25,
     "title": "Bridal Mehndi Design 25",
-    "description": "A stunning medium Bridal design perfect for Wedding. This beautiful henna pattern features unique elements from India traditions.",
+    "description": "A bridal pattern in the Indian style, picked for a wedding. Difficulty: medium.",
     "country": "India",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -520,7 +520,7 @@ export const designs: Design[] = [
   {
     "id": 26,
     "title": "Geometric Mehndi Design 26",
-    "description": "A stunning easy Geometric design perfect for Wedding. This beautiful henna pattern features unique elements from Pakistan traditions.",
+    "description": "Here's a geometric design we like for a wedding. The look is Pakistani, and it's easy to copy.",
     "country": "Pakistan",
     "style": "Geometric",
     "occasion": "Wedding",
@@ -540,7 +540,7 @@ export const designs: Design[] = [
   {
     "id": 27,
     "title": "Arabic bold Mehndi Design 27",
-    "description": "A stunning medium Arabic bold design perfect for Teej. This beautiful henna pattern features unique elements from Arabia traditions.",
+    "description": "Arabic bold henna for Teej. Rated medium.",
     "country": "Arabia",
     "style": "Arabic bold",
     "occasion": "Teej",
@@ -560,7 +560,7 @@ export const designs: Design[] = [
   {
     "id": 28,
     "title": "geometric Mehndi Design 28",
-    "description": "A stunning easy geometric design perfect for Diwali. This beautiful henna pattern features unique elements from Morocco traditions.",
+    "description": "A geometric design with Moroccan roots. It's easy to copy and works well for Diwali.",
     "country": "Morocco",
     "style": "geometric",
     "occasion": "Diwali",
@@ -580,7 +580,7 @@ export const designs: Design[] = [
   {
     "id": 29,
     "title": "Ottoman Mehndi Design 29",
-    "description": "A stunning medium Ottoman design perfect for Engagement. This beautiful henna pattern features unique elements from Turkey traditions.",
+    "description": "An Ottoman pattern in the Turkish style, picked for an engagement. Difficulty: medium.",
     "country": "Turkey",
     "style": "Ottoman",
     "occasion": "Engagement",
@@ -600,7 +600,7 @@ export const designs: Design[] = [
   {
     "id": 30,
     "title": "Javanese Mehndi Design 30",
-    "description": "A stunning hard Javanese design perfect for Festival. This beautiful henna pattern features unique elements from Indonesia traditions.",
+    "description": "Here's a Javanese design we like for a festival. The look is Indonesian, and it's fairly detailed.",
     "country": "Indonesia",
     "style": "Javanese",
     "occasion": "Festival",
@@ -620,7 +620,7 @@ export const designs: Design[] = [
   {
     "id": 31,
     "title": "Sudanese Mehndi Design 31",
-    "description": "A stunning easy Sudanese design perfect for Casual. This beautiful henna pattern features unique elements from Sudan traditions.",
+    "description": "Sudanese henna for everyday wear. Rated easy.",
     "country": "Sudan",
     "style": "Sudanese",
     "occasion": "Casual",
@@ -640,7 +640,7 @@ export const designs: Design[] = [
   {
     "id": 32,
     "title": "Minimalist Mehndi Design 32",
-    "description": "A stunning medium Minimalist design perfect for Mehendi Night. This beautiful henna pattern features unique elements from Western traditions.",
+    "description": "A minimalist design with Western roots. It's not too hard to draw and works well for a mehndi night.",
     "country": "Western",
     "style": "Minimalist",
     "occasion": "Mehendi Night",
@@ -660,7 +660,7 @@ export const designs: Design[] = [
   {
     "id": 33,
     "title": "South Indian Mehndi Design 33",
-    "description": "A stunning hard South Indian design perfect for Party. This beautiful henna pattern features unique elements from India traditions.",
+    "description": "A South Indian pattern, picked for a party. Difficulty: hard.",
     "country": "India",
     "style": "South Indian",
     "occasion": "Party",
@@ -680,7 +680,7 @@ export const designs: Design[] = [
   {
     "id": 34,
     "title": "Geometric Mehndi Design 34",
-    "description": "A stunning easy Geometric design perfect for Diwali. This beautiful henna pattern features unique elements from Pakistan traditions.",
+    "description": "Here's a geometric design we like for Diwali. The look is Pakistani, and it's easy to copy.",
     "country": "Pakistan",
     "style": "Geometric",
     "occasion": "Diwali",
@@ -700,7 +700,7 @@ export const designs: Design[] = [
   {
     "id": 35,
     "title": "Arabic bold Mehndi Design 35",
-    "description": "A stunning hard Arabic bold design perfect for Wedding. This beautiful henna pattern features unique elements from Arabia traditions.",
+    "description": "Arabic bold henna for a wedding. Rated hard.",
     "country": "Arabia",
     "style": "Arabic bold",
     "occasion": "Wedding",
@@ -720,7 +720,7 @@ export const designs: Design[] = [
   {
     "id": 36,
     "title": "geometric Mehndi Design 36",
-    "description": "A stunning easy geometric design perfect for Engagement. This beautiful henna pattern features unique elements from Morocco traditions.",
+    "description": "A geometric design with Moroccan roots. It's easy to copy and works well for an engagement.",
     "country": "Morocco",
     "style": "geometric",
     "occasion": "Engagement",
@@ -740,7 +740,7 @@ export const designs: Design[] = [
   {
     "id": 37,
     "title": "floral Turkish Mehndi Design 37",
-    "description": "A stunning easy floral Turkish design perfect for Party. This beautiful henna pattern features unique elements from Turkey traditions.",
+    "description": "A floral Turkish pattern, picked for a party. Difficulty: easy.",
     "country": "Turkey",
     "style": "floral Turkish",
     "occasion": "Party",
@@ -760,7 +760,7 @@ export const designs: Design[] = [
   {
     "id": 38,
     "title": "Balinese Mehndi Design 38",
-    "description": "A stunning expert Balinese design perfect for Wedding. This beautiful henna pattern features unique elements from Indonesia traditions.",
+    "description": "Here's a Balinese design we like for a wedding. The look is Indonesian, and it's best left to an experienced artist.",
     "country": "Indonesia",
     "style": "Balinese",
     "occasion": "Wedding",
@@ -780,7 +780,7 @@ export const designs: Design[] = [
   {
     "id": 39,
     "title": "Sudanese Mehndi Design 39",
-    "description": "A stunning medium Sudanese design perfect for Teej. This beautiful henna pattern features unique elements from Sudan traditions.",
+    "description": "Sudanese henna for Teej. Rated medium.",
     "country": "Sudan",
     "style": "Sudanese",
     "occasion": "Teej",
@@ -800,7 +800,7 @@ export const designs: Design[] = [
   {
     "id": 40,
     "title": "Indo-Western Mehndi Design 40",
-    "description": "A stunning expert Indo-Western design perfect for Mehendi Night. This beautiful henna pattern features unique elements from Western traditions.",
+    "description": "An Indo-Western design. It's best left to an experienced artist and works well for a mehndi night.",
     "country": "Western",
     "style": "Indo-Western",
     "occasion": "Mehendi Night",
@@ -820,7 +820,7 @@ export const designs: Design[] = [
   {
     "id": 41,
     "title": "Bridal Mehndi Design 41",
-    "description": "A stunning expert Bridal design perfect for Festival. This beautiful henna pattern features unique elements from India traditions.",
+    "description": "A bridal pattern in the Indian style, picked for a festival. Difficulty: expert.",
     "country": "India",
     "style": "Bridal",
     "occasion": "Festival",
@@ -840,7 +840,7 @@ export const designs: Design[] = [
   {
     "id": 42,
     "title": "Floral Mehndi Design 42",
-    "description": "A stunning medium Floral design perfect for Diwali. This beautiful henna pattern features unique elements from Pakistan traditions.",
+    "description": "Here's a floral design we like for Diwali. The look is Pakistani, and it's not too hard to draw.",
     "country": "Pakistan",
     "style": "Floral",
     "occasion": "Diwali",
@@ -860,7 +860,7 @@ export const designs: Design[] = [
   {
     "id": 43,
     "title": "Gulf/Khaleeji Mehndi Design 43",
-    "description": "A stunning medium Gulf/Khaleeji design perfect for Engagement. This beautiful henna pattern features unique elements from Arabia traditions.",
+    "description": "Gulf/Khaleeji henna for an engagement, drawn in the Arabic way. Rated medium.",
     "country": "Arabia",
     "style": "Gulf/Khaleeji",
     "occasion": "Engagement",
@@ -880,7 +880,7 @@ export const designs: Design[] = [
   {
     "id": 44,
     "title": "tribal Mehndi Design 44",
-    "description": "A stunning easy tribal design perfect for Eid. This beautiful henna pattern features unique elements from Morocco traditions.",
+    "description": "A tribal design with Moroccan roots. It's easy to copy and works well for Eid.",
     "country": "Morocco",
     "style": "tribal",
     "occasion": "Eid",
@@ -900,7 +900,7 @@ export const designs: Design[] = [
   {
     "id": 45,
     "title": "Ottoman Mehndi Design 45",
-    "description": "A stunning hard Ottoman design perfect for Casual. This beautiful henna pattern features unique elements from Turkey traditions.",
+    "description": "An Ottoman pattern in the Turkish style, picked for everyday wear. Difficulty: hard.",
     "country": "Turkey",
     "style": "Ottoman",
     "occasion": "Casual",
@@ -920,7 +920,7 @@ export const designs: Design[] = [
   {
     "id": 46,
     "title": "Javanese Mehndi Design 46",
-    "description": "A stunning hard Javanese design perfect for Casual. This beautiful henna pattern features unique elements from Indonesia traditions.",
+    "description": "Here's a Javanese design we like for everyday wear. The look is Indonesian, and it's fairly detailed.",
     "country": "Indonesia",
     "style": "Javanese",
     "occasion": "Casual",
@@ -940,7 +940,7 @@ export const designs: Design[] = [
   {
     "id": 47,
     "title": "African tribal Mehndi Design 47",
-    "description": "A stunning hard African tribal design perfect for Casual. This beautiful henna pattern features unique elements from Sudan traditions.",
+    "description": "African tribal henna for everyday wear, drawn in the Sudanese way. Rated hard.",
     "country": "Sudan",
     "style": "African tribal",
     "occasion": "Casual",
@@ -960,7 +960,7 @@ export const designs: Design[] = [
   {
     "id": 48,
     "title": "Indo-Western Mehndi Design 48",
-    "description": "A stunning expert Indo-Western design perfect for Karva Chauth. This beautiful henna pattern features unique elements from Western traditions.",
+    "description": "An Indo-Western design. It's best left to an experienced artist and works well for Karva Chauth.",
     "country": "Western",
     "style": "Indo-Western",
     "occasion": "Karva Chauth",
@@ -980,7 +980,7 @@ export const designs: Design[] = [
   {
     "id": 49,
     "title": "Mandala Mehndi Design 49",
-    "description": "A stunning medium Mandala design perfect for Mehendi Night. This beautiful henna pattern features unique elements from India traditions.",
+    "description": "A mandala pattern in the Indian style, picked for a mehndi night. Difficulty: medium.",
     "country": "India",
     "style": "Mandala",
     "occasion": "Mehendi Night",
@@ -1000,7 +1000,7 @@ export const designs: Design[] = [
   {
     "id": 50,
     "title": "Tikki Mehndi Design 50",
-    "description": "A stunning medium Tikki design perfect for Festival. This beautiful henna pattern features unique elements from Pakistan traditions.",
+    "description": "Here's a tikki design we like for a festival. The look is Pakistani, and it's not too hard to draw.",
     "country": "Pakistan",
     "style": "Tikki",
     "occasion": "Festival",
@@ -1020,7 +1020,7 @@ export const designs: Design[] = [
   {
     "id": 51,
     "title": "minimal Arabic Mehndi Design 51",
-    "description": "A stunning medium minimal Arabic design perfect for Party. This beautiful henna pattern features unique elements from Arabia traditions.",
+    "description": "Minimal Arabic henna for a party. Rated medium.",
     "country": "Arabia",
     "style": "minimal Arabic",
     "occasion": "Party",
@@ -1040,7 +1040,7 @@ export const designs: Design[] = [
   {
     "id": 52,
     "title": "Berber Mehndi Design 52",
-    "description": "A stunning hard Berber design perfect for Party. This beautiful henna pattern features unique elements from Morocco traditions.",
+    "description": "A Berber design with Moroccan roots. It's fairly detailed and works well for a party.",
     "country": "Morocco",
     "style": "Berber",
     "occasion": "Party",
@@ -1060,7 +1060,7 @@ export const designs: Design[] = [
   {
     "id": 53,
     "title": "floral Turkish Mehndi Design 53",
-    "description": "A stunning hard floral Turkish design perfect for Teej. This beautiful henna pattern features unique elements from Turkey traditions.",
+    "description": "A floral Turkish pattern, picked for Teej. Difficulty: hard.",
     "country": "Turkey",
     "style": "floral Turkish",
     "occasion": "Teej",
@@ -1080,7 +1080,7 @@ export const designs: Design[] = [
   {
     "id": 54,
     "title": "Balinese Mehndi Design 54",
-    "description": "A stunning hard Balinese design perfect for Diwali. This beautiful henna pattern features unique elements from Indonesia traditions.",
+    "description": "Here's a Balinese design we like for Diwali. The look is Indonesian, and it's fairly detailed.",
     "country": "Indonesia",
     "style": "Balinese",
     "occasion": "Diwali",
@@ -1100,7 +1100,7 @@ export const designs: Design[] = [
   {
     "id": 55,
     "title": "Sudanese Mehndi Design 55",
-    "description": "A stunning hard Sudanese design perfect for Karva Chauth. This beautiful henna pattern features unique elements from Sudan traditions.",
+    "description": "Sudanese henna for Karva Chauth. Rated hard.",
     "country": "Sudan",
     "style": "Sudanese",
     "occasion": "Karva Chauth",
@@ -1120,7 +1120,7 @@ export const designs: Design[] = [
   {
     "id": 56,
     "title": "Indo-Western Mehndi Design 56",
-    "description": "A stunning easy Indo-Western design perfect for Teej. This beautiful henna pattern features unique elements from Western traditions.",
+    "description": "An Indo-Western design. It's easy to copy and works well for Teej.",
     "country": "Western",
     "style": "Indo-Western",
     "occasion": "Teej",
@@ -1140,7 +1140,7 @@ export const designs: Design[] = [
   {
     "id": 57,
     "title": "Peacock Mehndi Design 57",
-    "description": "A stunning easy Peacock design perfect for Karva Chauth. This beautiful henna pattern features unique elements from India traditions.",
+    "description": "A peacock pattern in the Indian style, picked for Karva Chauth. Difficulty: easy.",
     "country": "India",
     "style": "Peacock",
     "occasion": "Karva Chauth",
@@ -1160,7 +1160,7 @@ export const designs: Design[] = [
   {
     "id": 58,
     "title": "Geometric Mehndi Design 58",
-    "description": "A stunning hard Geometric design perfect for Teej. This beautiful henna pattern features unique elements from Pakistan traditions.",
+    "description": "Here's a geometric design we like for Teej. The look is Pakistani, and it's fairly detailed.",
     "country": "Pakistan",
     "style": "Geometric",
     "occasion": "Teej",
@@ -1180,7 +1180,7 @@ export const designs: Design[] = [
   {
     "id": 59,
     "title": "Gulf/Khaleeji Mehndi Design 59",
-    "description": "A stunning easy Gulf/Khaleeji design perfect for Engagement. This beautiful henna pattern features unique elements from Arabia traditions.",
+    "description": "Gulf/Khaleeji henna for an engagement, drawn in the Arabic way. Rated easy.",
     "country": "Arabia",
     "style": "Gulf/Khaleeji",
     "occasion": "Engagement",
@@ -1200,7 +1200,7 @@ export const designs: Design[] = [
   {
     "id": 60,
     "title": "Berber Mehndi Design 60",
-    "description": "A stunning hard Berber design perfect for Mehendi Night. This beautiful henna pattern features unique elements from Morocco traditions.",
+    "description": "A Berber design with Moroccan roots. It's fairly detailed and works well for a mehndi night.",
     "country": "Morocco",
     "style": "Berber",
     "occasion": "Mehendi Night",
@@ -1220,7 +1220,7 @@ export const designs: Design[] = [
   {
     "id": 61,
     "title": "floral Turkish Mehndi Design 61",
-    "description": "A stunning medium floral Turkish design perfect for Casual. This beautiful henna pattern features unique elements from Turkey traditions.",
+    "description": "A floral Turkish pattern, picked for everyday wear. Difficulty: medium.",
     "country": "Turkey",
     "style": "floral Turkish",
     "occasion": "Casual",
@@ -1240,7 +1240,7 @@ export const designs: Design[] = [
   {
     "id": 62,
     "title": "Balinese Mehndi Design 62",
-    "description": "A stunning easy Balinese design perfect for Karva Chauth. This beautiful henna pattern features unique elements from Indonesia traditions.",
+    "description": "Here's a Balinese design we like for Karva Chauth. The look is Indonesian, and it's easy to copy.",
     "country": "Indonesia",
     "style": "Balinese",
     "occasion": "Karva Chauth",
@@ -1260,7 +1260,7 @@ export const designs: Design[] = [
   {
     "id": 63,
     "title": "Sudanese Mehndi Design 63",
-    "description": "A stunning hard Sudanese design perfect for Mehendi Night. This beautiful henna pattern features unique elements from Sudan traditions.",
+    "description": "Sudanese henna for a mehndi night. Rated hard.",
     "country": "Sudan",
     "style": "Sudanese",
     "occasion": "Mehendi Night",
@@ -1280,7 +1280,7 @@ export const designs: Design[] = [
   {
     "id": 64,
     "title": "Geometric modern Mehndi Design 64",
-    "description": "A stunning hard Geometric modern design perfect for Karva Chauth. This beautiful henna pattern features unique elements from Western traditions.",
+    "description": "A geometric modern design with Western roots. It's fairly detailed and works well for Karva Chauth.",
     "country": "Western",
     "style": "Geometric modern",
     "occasion": "Karva Chauth",
@@ -1300,7 +1300,7 @@ export const designs: Design[] = [
   {
     "id": 65,
     "title": "Mughal Mehndi Design 65",
-    "description": "A stunning hard Mughal design perfect for Karva Chauth. This beautiful henna pattern features unique elements from India traditions.",
+    "description": "A Mughal pattern in the Indian style, picked for Karva Chauth. Difficulty: hard.",
     "country": "India",
     "style": "Mughal",
     "occasion": "Karva Chauth",
@@ -1320,7 +1320,7 @@ export const designs: Design[] = [
   {
     "id": 66,
     "title": "Floral Mehndi Design 66",
-    "description": "A stunning expert Floral design perfect for Mehendi Night. This beautiful henna pattern features unique elements from Pakistan traditions.",
+    "description": "Here's a floral design we like for a mehndi night. The look is Pakistani, and it's best left to an experienced artist.",
     "country": "Pakistan",
     "style": "Floral",
     "occasion": "Mehendi Night",
@@ -1340,7 +1340,7 @@ export const designs: Design[] = [
   {
     "id": 67,
     "title": "Arabic bold Mehndi Design 67",
-    "description": "A stunning expert Arabic bold design perfect for Karva Chauth. This beautiful henna pattern features unique elements from Arabia traditions.",
+    "description": "Arabic bold henna for Karva Chauth. Rated expert.",
     "country": "Arabia",
     "style": "Arabic bold",
     "occasion": "Karva Chauth",
@@ -1360,7 +1360,7 @@ export const designs: Design[] = [
   {
     "id": 68,
     "title": "tribal Mehndi Design 68",
-    "description": "A stunning hard tribal design perfect for Diwali. This beautiful henna pattern features unique elements from Morocco traditions.",
+    "description": "A tribal design with Moroccan roots. It's fairly detailed and works well for Diwali.",
     "country": "Morocco",
     "style": "tribal",
     "occasion": "Diwali",
@@ -1380,7 +1380,7 @@ export const designs: Design[] = [
   {
     "id": 69,
     "title": "Ottoman Mehndi Design 69",
-    "description": "A stunning expert Ottoman design perfect for Mehendi Night. This beautiful henna pattern features unique elements from Turkey traditions.",
+    "description": "An Ottoman pattern in the Turkish style, picked for a mehndi night. Difficulty: expert.",
     "country": "Turkey",
     "style": "Ottoman",
     "occasion": "Mehendi Night",
@@ -1400,7 +1400,7 @@ export const designs: Design[] = [
   {
     "id": 70,
     "title": "Balinese Mehndi Design 70",
-    "description": "A stunning easy Balinese design perfect for Casual. This beautiful henna pattern features unique elements from Indonesia traditions.",
+    "description": "Here's a Balinese design we like for everyday wear. The look is Indonesian, and it's easy to copy.",
     "country": "Indonesia",
     "style": "Balinese",
     "occasion": "Casual",
@@ -1420,7 +1420,7 @@ export const designs: Design[] = [
   {
     "id": 71,
     "title": "Sudanese Mehndi Design 71",
-    "description": "A stunning hard Sudanese design perfect for Karva Chauth. This beautiful henna pattern features unique elements from Sudan traditions.",
+    "description": "Sudanese henna for Karva Chauth. Rated hard.",
     "country": "Sudan",
     "style": "Sudanese",
     "occasion": "Karva Chauth",
@@ -1440,7 +1440,7 @@ export const designs: Design[] = [
   {
     "id": 72,
     "title": "Indo-Western Mehndi Design 72",
-    "description": "A stunning medium Indo-Western design perfect for Mehendi Night. This beautiful henna pattern features unique elements from Western traditions.",
+    "description": "An Indo-Western design. It's not too hard to draw and works well for a mehndi night.",
     "country": "Western",
     "style": "Indo-Western",
     "occasion": "Mehendi Night",
@@ -1460,7 +1460,7 @@ export const designs: Design[] = [
   {
     "id": 73,
     "title": "Mughal Mehndi Design 73",
-    "description": "A stunning hard Mughal design perfect for Party. This beautiful henna pattern features unique elements from India traditions.",
+    "description": "A Mughal pattern in the Indian style, picked for a party. Difficulty: hard.",
     "country": "India",
     "style": "Mughal",
     "occasion": "Party",
@@ -1480,7 +1480,7 @@ export const designs: Design[] = [
   {
     "id": 74,
     "title": "Tikki Mehndi Design 74",
-    "description": "A stunning expert Tikki design perfect for Festival. This beautiful henna pattern features unique elements from Pakistan traditions.",
+    "description": "Here's a tikki design we like for a festival. The look is Pakistani, and it's best left to an experienced artist.",
     "country": "Pakistan",
     "style": "Tikki",
     "occasion": "Festival",
@@ -1500,7 +1500,7 @@ export const designs: Design[] = [
   {
     "id": 75,
     "title": "Arabic bold Mehndi Design 75",
-    "description": "A stunning expert Arabic bold design perfect for Diwali. This beautiful henna pattern features unique elements from Arabia traditions.",
+    "description": "Arabic bold henna for Diwali. Rated expert.",
     "country": "Arabia",
     "style": "Arabic bold",
     "occasion": "Diwali",
@@ -1520,7 +1520,7 @@ export const designs: Design[] = [
   {
     "id": 76,
     "title": "Berber Mehndi Design 76",
-    "description": "A stunning hard Berber design perfect for Karva Chauth. This beautiful henna pattern features unique elements from Morocco traditions.",
+    "description": "A Berber design with Moroccan roots. It's fairly detailed and works well for Karva Chauth.",
     "country": "Morocco",
     "style": "Berber",
     "occasion": "Karva Chauth",
@@ -1540,7 +1540,7 @@ export const designs: Design[] = [
   {
     "id": 77,
     "title": "Ottoman Mehndi Design 77",
-    "description": "A stunning easy Ottoman design perfect for Party. This beautiful henna pattern features unique elements from Turkey traditions.",
+    "description": "An Ottoman pattern in the Turkish style, picked for a party. Difficulty: easy.",
     "country": "Turkey",
     "style": "Ottoman",
     "occasion": "Party",
@@ -1560,7 +1560,7 @@ export const designs: Design[] = [
   {
     "id": 78,
     "title": "Javanese Mehndi Design 78",
-    "description": "A stunning medium Javanese design perfect for Party. This beautiful henna pattern features unique elements from Indonesia traditions.",
+    "description": "Here's a Javanese design we like for a party. The look is Indonesian, and it's not too hard to draw.",
     "country": "Indonesia",
     "style": "Javanese",
     "occasion": "Party",
@@ -1580,7 +1580,7 @@ export const designs: Design[] = [
   {
     "id": 79,
     "title": "Sudanese Mehndi Design 79",
-    "description": "A stunning hard Sudanese design perfect for Diwali. This beautiful henna pattern features unique elements from Sudan traditions.",
+    "description": "Sudanese henna for Diwali. Rated hard.",
     "country": "Sudan",
     "style": "Sudanese",
     "occasion": "Diwali",
@@ -1600,7 +1600,7 @@ export const designs: Design[] = [
   {
     "id": 80,
     "title": "Minimalist Mehndi Design 80",
-    "description": "A stunning hard Minimalist design perfect for Diwali. This beautiful henna pattern features unique elements from Western traditions.",
+    "description": "A minimalist design with Western roots. It's fairly detailed and works well for Diwali.",
     "country": "Western",
     "style": "Minimalist",
     "occasion": "Diwali",
@@ -1620,7 +1620,7 @@ export const designs: Design[] = [
   {
     "id": 81,
     "title": "Mughal Mehndi Design 81",
-    "description": "A stunning hard Mughal design perfect for Engagement. This beautiful henna pattern features unique elements from India traditions.",
+    "description": "A Mughal pattern in the Indian style, picked for an engagement. Difficulty: hard.",
     "country": "India",
     "style": "Mughal",
     "occasion": "Engagement",
@@ -1640,7 +1640,7 @@ export const designs: Design[] = [
   {
     "id": 82,
     "title": "Floral Mehndi Design 82",
-    "description": "A stunning medium Floral design perfect for Diwali. This beautiful henna pattern features unique elements from Pakistan traditions.",
+    "description": "Here's a floral design we like for Diwali. The look is Pakistani, and it's not too hard to draw.",
     "country": "Pakistan",
     "style": "Floral",
     "occasion": "Diwali",
@@ -1660,7 +1660,7 @@ export const designs: Design[] = [
   {
     "id": 83,
     "title": "minimal Arabic Mehndi Design 83",
-    "description": "A stunning easy minimal Arabic design perfect for Casual. This beautiful henna pattern features unique elements from Arabia traditions.",
+    "description": "Minimal Arabic henna for everyday wear. Rated easy.",
     "country": "Arabia",
     "style": "minimal Arabic",
     "occasion": "Casual",
@@ -1680,7 +1680,7 @@ export const designs: Design[] = [
   {
     "id": 84,
     "title": "geometric Mehndi Design 84",
-    "description": "A stunning easy geometric design perfect for Teej. This beautiful henna pattern features unique elements from Morocco traditions.",
+    "description": "A geometric design with Moroccan roots. It's easy to copy and works well for Teej.",
     "country": "Morocco",
     "style": "geometric",
     "occasion": "Teej",
@@ -1700,7 +1700,7 @@ export const designs: Design[] = [
   {
     "id": 85,
     "title": "Ottoman Mehndi Design 85",
-    "description": "A stunning expert Ottoman design perfect for Party. This beautiful henna pattern features unique elements from Turkey traditions.",
+    "description": "An Ottoman pattern in the Turkish style, picked for a party. Difficulty: expert.",
     "country": "Turkey",
     "style": "Ottoman",
     "occasion": "Party",
@@ -1720,7 +1720,7 @@ export const designs: Design[] = [
   {
     "id": 86,
     "title": "Javanese Mehndi Design 86",
-    "description": "A stunning expert Javanese design perfect for Mehendi Night. This beautiful henna pattern features unique elements from Indonesia traditions.",
+    "description": "Here's a Javanese design we like for a mehndi night. The look is Indonesian, and it's best left to an experienced artist.",
     "country": "Indonesia",
     "style": "Javanese",
     "occasion": "Mehendi Night",
@@ -1740,7 +1740,7 @@ export const designs: Design[] = [
   {
     "id": 87,
     "title": "Sudanese Mehndi Design 87",
-    "description": "A stunning easy Sudanese design perfect for Festival. This beautiful henna pattern features unique elements from Sudan traditions.",
+    "description": "Sudanese henna for a festival. Rated easy.",
     "country": "Sudan",
     "style": "Sudanese",
     "occasion": "Festival",
@@ -1760,7 +1760,7 @@ export const designs: Design[] = [
   {
     "id": 88,
     "title": "Geometric modern Mehndi Design 88",
-    "description": "A stunning hard Geometric modern design perfect for Party. This beautiful henna pattern features unique elements from Western traditions.",
+    "description": "A geometric modern design with Western roots. It's fairly detailed and works well for a party.",
     "country": "Western",
     "style": "Geometric modern",
     "occasion": "Party",
@@ -1780,7 +1780,7 @@ export const designs: Design[] = [
   {
     "id": 89,
     "title": "South Indian Mehndi Design 89",
-    "description": "A stunning medium South Indian design perfect for Engagement. This beautiful henna pattern features unique elements from India traditions.",
+    "description": "A South Indian pattern, picked for an engagement. Difficulty: medium.",
     "country": "India",
     "style": "South Indian",
     "occasion": "Engagement",
@@ -1800,7 +1800,7 @@ export const designs: Design[] = [
   {
     "id": 90,
     "title": "Tikki Mehndi Design 90",
-    "description": "A stunning expert Tikki design perfect for Diwali. This beautiful henna pattern features unique elements from Pakistan traditions.",
+    "description": "Here's a tikki design we like for Diwali. The look is Pakistani, and it's best left to an experienced artist.",
     "country": "Pakistan",
     "style": "Tikki",
     "occasion": "Diwali",
@@ -1820,7 +1820,7 @@ export const designs: Design[] = [
   {
     "id": 91,
     "title": "Gulf/Khaleeji Mehndi Design 91",
-    "description": "A stunning easy Gulf/Khaleeji design perfect for Teej. This beautiful henna pattern features unique elements from Arabia traditions.",
+    "description": "Gulf/Khaleeji henna for Teej, drawn in the Arabic way. Rated easy.",
     "country": "Arabia",
     "style": "Gulf/Khaleeji",
     "occasion": "Teej",
@@ -1840,7 +1840,7 @@ export const designs: Design[] = [
   {
     "id": 92,
     "title": "Berber Mehndi Design 92",
-    "description": "A stunning expert Berber design perfect for Mehendi Night. This beautiful henna pattern features unique elements from Morocco traditions.",
+    "description": "A Berber design with Moroccan roots. It's best left to an experienced artist and works well for a mehndi night.",
     "country": "Morocco",
     "style": "Berber",
     "occasion": "Mehendi Night",
@@ -1860,7 +1860,7 @@ export const designs: Design[] = [
   {
     "id": 93,
     "title": "floral Turkish Mehndi Design 93",
-    "description": "A stunning expert floral Turkish design perfect for Teej. This beautiful henna pattern features unique elements from Turkey traditions.",
+    "description": "A floral Turkish pattern, picked for Teej. Difficulty: expert.",
     "country": "Turkey",
     "style": "floral Turkish",
     "occasion": "Teej",
@@ -1880,7 +1880,7 @@ export const designs: Design[] = [
   {
     "id": 94,
     "title": "Javanese Mehndi Design 94",
-    "description": "A stunning easy Javanese design perfect for Mehendi Night. This beautiful henna pattern features unique elements from Indonesia traditions.",
+    "description": "Here's a Javanese design we like for a mehndi night. The look is Indonesian, and it's easy to copy.",
     "country": "Indonesia",
     "style": "Javanese",
     "occasion": "Mehendi Night",
@@ -1900,7 +1900,7 @@ export const designs: Design[] = [
   {
     "id": 95,
     "title": "Sudanese Mehndi Design 95",
-    "description": "A stunning easy Sudanese design perfect for Teej. This beautiful henna pattern features unique elements from Sudan traditions.",
+    "description": "Sudanese henna for Teej. Rated easy.",
     "country": "Sudan",
     "style": "Sudanese",
     "occasion": "Teej",
@@ -1920,7 +1920,7 @@ export const designs: Design[] = [
   {
     "id": 96,
     "title": "Geometric modern Mehndi Design 96",
-    "description": "A stunning hard Geometric modern design perfect for Karva Chauth. This beautiful henna pattern features unique elements from Western traditions.",
+    "description": "A geometric modern design with Western roots. It's fairly detailed and works well for Karva Chauth.",
     "country": "Western",
     "style": "Geometric modern",
     "occasion": "Karva Chauth",
@@ -1940,7 +1940,7 @@ export const designs: Design[] = [
   {
     "id": 97,
     "title": "Peacock Mehndi Design 97",
-    "description": "A stunning easy Peacock design perfect for Wedding. This beautiful henna pattern features unique elements from India traditions.",
+    "description": "A peacock pattern in the Indian style, picked for a wedding. Difficulty: easy.",
     "country": "India",
     "style": "Peacock",
     "occasion": "Wedding",
@@ -1960,7 +1960,7 @@ export const designs: Design[] = [
   {
     "id": 98,
     "title": "Geometric Mehndi Design 98",
-    "description": "A stunning expert Geometric design perfect for Mehendi Night. This beautiful henna pattern features unique elements from Pakistan traditions.",
+    "description": "Here's a geometric design we like for a mehndi night. The look is Pakistani, and it's best left to an experienced artist.",
     "country": "Pakistan",
     "style": "Geometric",
     "occasion": "Mehendi Night",
@@ -1980,7 +1980,7 @@ export const designs: Design[] = [
   {
     "id": 99,
     "title": "minimal Arabic Mehndi Design 99",
-    "description": "A stunning medium minimal Arabic design perfect for Party. This beautiful henna pattern features unique elements from Arabia traditions.",
+    "description": "Minimal Arabic henna for a party. Rated medium.",
     "country": "Arabia",
     "style": "minimal Arabic",
     "occasion": "Party",
@@ -2000,7 +2000,7 @@ export const designs: Design[] = [
   {
     "id": 100,
     "title": "geometric Mehndi Design 100",
-    "description": "A stunning expert geometric design perfect for Karva Chauth. This beautiful henna pattern features unique elements from Morocco traditions.",
+    "description": "A geometric design with Moroccan roots. It's best left to an experienced artist and works well for Karva Chauth.",
     "country": "Morocco",
     "style": "geometric",
     "occasion": "Karva Chauth",
@@ -2021,7 +2021,7 @@ export const designs: Design[] = [
   {
     "id": 2000,
     "title": "Eid Special Mehndi 1",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive design. It's not too hard to draw and works well for Eid.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2037,7 +2037,7 @@ export const designs: Design[] = [
   {
     "id": 2006,
     "title": "Eid Special Mehndi 7",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Here's a festive design we like for Eid. It's not too hard to draw.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2053,7 +2053,7 @@ export const designs: Design[] = [
   {
     "id": 2001,
     "title": "Eid Special Mehndi 2",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive pattern, picked for Eid. Difficulty: medium.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2069,7 +2069,7 @@ export const designs: Design[] = [
   {
     "id": 2002,
     "title": "Eid Special Mehndi 3",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Here's a festive design we like for Eid. It's not too hard to draw.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2085,7 +2085,7 @@ export const designs: Design[] = [
   {
     "id": 2004,
     "title": "Eid Special Mehndi 5",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive design. It's not too hard to draw and works well for Eid.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2101,7 +2101,7 @@ export const designs: Design[] = [
   {
     "id": 2008,
     "title": "Eid Special Mehndi 9",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive design. It's not too hard to draw and works well for Eid.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2117,7 +2117,7 @@ export const designs: Design[] = [
   {
     "id": 2003,
     "title": "Eid Special Mehndi 4",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Festive henna for Eid. Rated medium.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2133,7 +2133,7 @@ export const designs: Design[] = [
   {
     "id": 2019,
     "title": "Eid Special Mehndi 20",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Festive henna for Eid. Rated medium.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2149,7 +2149,7 @@ export const designs: Design[] = [
   {
     "id": 2016,
     "title": "Eid Special Mehndi 17",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive design. It's not too hard to draw and works well for Eid.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2165,7 +2165,7 @@ export const designs: Design[] = [
   {
     "id": 2014,
     "title": "Eid Special Mehndi 15",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Here's a festive design we like for Eid. It's not too hard to draw.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2181,7 +2181,7 @@ export const designs: Design[] = [
   {
     "id": 2018,
     "title": "Eid Special Mehndi 19",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Here's a festive design we like for Eid. It's not too hard to draw.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2197,7 +2197,7 @@ export const designs: Design[] = [
   {
     "id": 2015,
     "title": "Eid Special Mehndi 16",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Festive henna for Eid. Rated medium.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2213,7 +2213,7 @@ export const designs: Design[] = [
   {
     "id": 2013,
     "title": "Eid Special Mehndi 14",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive pattern, picked for Eid. Difficulty: medium.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2229,7 +2229,7 @@ export const designs: Design[] = [
   {
     "id": 2011,
     "title": "Eid Special Mehndi 12",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Festive henna for Eid. Rated medium.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2245,7 +2245,7 @@ export const designs: Design[] = [
   {
     "id": 2024,
     "title": "Eid Special Mehndi 25",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive design. It's not too hard to draw and works well for Eid.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2261,7 +2261,7 @@ export const designs: Design[] = [
   {
     "id": 2020,
     "title": "Eid Special Mehndi 21",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive design. It's not too hard to draw and works well for Eid.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2277,7 +2277,7 @@ export const designs: Design[] = [
   {
     "id": 2026,
     "title": "Eid Special Mehndi 27",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Here's a festive design we like for Eid. It's not too hard to draw.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2293,7 +2293,7 @@ export const designs: Design[] = [
   {
     "id": 2028,
     "title": "Eid Special Mehndi 29",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive design. It's not too hard to draw and works well for Eid.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2309,7 +2309,7 @@ export const designs: Design[] = [
   {
     "id": 2025,
     "title": "Eid Special Mehndi 26",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive pattern, picked for Eid. Difficulty: medium.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2325,7 +2325,7 @@ export const designs: Design[] = [
   {
     "id": 2021,
     "title": "Eid Special Mehndi 22",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive pattern, picked for Eid. Difficulty: medium.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2341,7 +2341,7 @@ export const designs: Design[] = [
   {
     "id": 2022,
     "title": "Eid Special Mehndi 23",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Here's a festive design we like for Eid. It's not too hard to draw.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2357,7 +2357,7 @@ export const designs: Design[] = [
   {
     "id": 2027,
     "title": "Eid Special Mehndi 28",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Festive henna for Eid. Rated medium.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2373,7 +2373,7 @@ export const designs: Design[] = [
   {
     "id": 2031,
     "title": "Eid Special Mehndi 32",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Festive henna for Eid. Rated medium.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2389,7 +2389,7 @@ export const designs: Design[] = [
   {
     "id": 2037,
     "title": "Eid Special Mehndi 38",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive pattern, picked for Eid. Difficulty: medium.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2405,7 +2405,7 @@ export const designs: Design[] = [
   {
     "id": 2034,
     "title": "Eid Special Mehndi 35",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Here's a festive design we like for Eid. It's not too hard to draw.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2421,7 +2421,7 @@ export const designs: Design[] = [
   {
     "id": 2038,
     "title": "Eid Special Mehndi 39",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Here's a festive design we like for Eid. It's not too hard to draw.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2437,7 +2437,7 @@ export const designs: Design[] = [
   {
     "id": 2032,
     "title": "Eid Special Mehndi 33",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive design. It's not too hard to draw and works well for Eid.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2453,7 +2453,7 @@ export const designs: Design[] = [
   {
     "id": 2035,
     "title": "Eid Special Mehndi 36",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Festive henna for Eid. Rated medium.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2469,7 +2469,7 @@ export const designs: Design[] = [
   {
     "id": 2033,
     "title": "Eid Special Mehndi 34",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive pattern, picked for Eid. Difficulty: medium.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2485,7 +2485,7 @@ export const designs: Design[] = [
   {
     "id": 2030,
     "title": "Eid Special Mehndi 31",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Here's a festive design we like for Eid. It's not too hard to draw.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2501,7 +2501,7 @@ export const designs: Design[] = [
   {
     "id": 2036,
     "title": "Eid Special Mehndi 37",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive design. It's not too hard to draw and works well for Eid.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2517,7 +2517,7 @@ export const designs: Design[] = [
   {
     "id": 2039,
     "title": "Eid Special Mehndi 40",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Festive henna for Eid. Rated medium.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2533,7 +2533,7 @@ export const designs: Design[] = [
   {
     "id": 2044,
     "title": "Eid Special Mehndi 45",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive design. It's not too hard to draw and works well for Eid.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2549,7 +2549,7 @@ export const designs: Design[] = [
   {
     "id": 2043,
     "title": "Eid Special Mehndi 44",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Festive henna for Eid. Rated medium.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2565,7 +2565,7 @@ export const designs: Design[] = [
   {
     "id": 2042,
     "title": "Eid Special Mehndi 43",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Here's a festive design we like for Eid. It's not too hard to draw.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2581,7 +2581,7 @@ export const designs: Design[] = [
   {
     "id": 2048,
     "title": "Eid Special Mehndi 49",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive design. It's not too hard to draw and works well for Eid.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2597,7 +2597,7 @@ export const designs: Design[] = [
   {
     "id": 2041,
     "title": "Eid Special Mehndi 42",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive pattern, picked for Eid. Difficulty: medium.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2613,7 +2613,7 @@ export const designs: Design[] = [
   {
     "id": 2047,
     "title": "Eid Special Mehndi 48",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Festive henna for Eid. Rated medium.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2629,7 +2629,7 @@ export const designs: Design[] = [
   {
     "id": 2040,
     "title": "Eid Special Mehndi 41",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive design. It's not too hard to draw and works well for Eid.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2645,7 +2645,7 @@ export const designs: Design[] = [
   {
     "id": 2046,
     "title": "Eid Special Mehndi 47",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Here's a festive design we like for Eid. It's not too hard to draw.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2661,7 +2661,7 @@ export const designs: Design[] = [
   {
     "id": 2049,
     "title": "Eid Special Mehndi 50",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive pattern, picked for Eid. Difficulty: medium.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2677,7 +2677,7 @@ export const designs: Design[] = [
   {
     "id": 2050,
     "title": "Eid Special Mehndi 51",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Here's a festive design we like for Eid. It's not too hard to draw.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2693,7 +2693,7 @@ export const designs: Design[] = [
   {
     "id": 2059,
     "title": "Eid Special Mehndi 60",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Festive henna for Eid. Rated medium.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2709,7 +2709,7 @@ export const designs: Design[] = [
   {
     "id": 2053,
     "title": "Eid Special Mehndi 54",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive pattern, picked for Eid. Difficulty: medium.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2725,7 +2725,7 @@ export const designs: Design[] = [
   {
     "id": 2057,
     "title": "Eid Special Mehndi 58",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive pattern, picked for Eid. Difficulty: medium.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2741,7 +2741,7 @@ export const designs: Design[] = [
   {
     "id": 2051,
     "title": "Eid Special Mehndi 52",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Festive henna for Eid. Rated medium.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2757,7 +2757,7 @@ export const designs: Design[] = [
   {
     "id": 2058,
     "title": "Eid Special Mehndi 59",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Here's a festive design we like for Eid. It's not too hard to draw.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2773,7 +2773,7 @@ export const designs: Design[] = [
   {
     "id": 2052,
     "title": "Eid Special Mehndi 53",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive design. It's not too hard to draw and works well for Eid.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2789,7 +2789,7 @@ export const designs: Design[] = [
   {
     "id": 2054,
     "title": "Eid Special Mehndi 55",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Here's a festive design we like for Eid. It's not too hard to draw.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2805,7 +2805,7 @@ export const designs: Design[] = [
   {
     "id": 2060,
     "title": "Eid Special Mehndi 61",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive design. It's not too hard to draw and works well for Eid.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2821,7 +2821,7 @@ export const designs: Design[] = [
   {
     "id": 2066,
     "title": "Eid Special Mehndi 67",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Here's a festive design we like for Eid. It's not too hard to draw.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2837,7 +2837,7 @@ export const designs: Design[] = [
   {
     "id": 2062,
     "title": "Eid Special Mehndi 63",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Here's a festive design we like for Eid. It's not too hard to draw.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2853,7 +2853,7 @@ export const designs: Design[] = [
   {
     "id": 2069,
     "title": "Eid Special Mehndi 70",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive pattern, picked for Eid. Difficulty: medium.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2869,7 +2869,7 @@ export const designs: Design[] = [
   {
     "id": 2063,
     "title": "Eid Special Mehndi 64",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Festive henna for Eid. Rated medium.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2885,7 +2885,7 @@ export const designs: Design[] = [
   {
     "id": 2064,
     "title": "Eid Special Mehndi 65",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive design. It's not too hard to draw and works well for Eid.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2901,7 +2901,7 @@ export const designs: Design[] = [
   {
     "id": 2065,
     "title": "Eid Special Mehndi 66",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive pattern, picked for Eid. Difficulty: medium.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2917,7 +2917,7 @@ export const designs: Design[] = [
   {
     "id": 2068,
     "title": "Eid Special Mehndi 69",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive design. It's not too hard to draw and works well for Eid.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2933,7 +2933,7 @@ export const designs: Design[] = [
   {
     "id": 2061,
     "title": "Eid Special Mehndi 62",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive pattern, picked for Eid. Difficulty: medium.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2949,7 +2949,7 @@ export const designs: Design[] = [
   {
     "id": 2077,
     "title": "Eid Special Mehndi 78",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive pattern, picked for Eid. Difficulty: medium.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2965,7 +2965,7 @@ export const designs: Design[] = [
   {
     "id": 2078,
     "title": "Eid Special Mehndi 79",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Here's a festive design we like for Eid. It's not too hard to draw.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2981,7 +2981,7 @@ export const designs: Design[] = [
   {
     "id": 2073,
     "title": "Eid Special Mehndi 74",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive pattern, picked for Eid. Difficulty: medium.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -2997,7 +2997,7 @@ export const designs: Design[] = [
   {
     "id": 2079,
     "title": "Eid Special Mehndi 80",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Festive henna for Eid. Rated medium.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -3013,7 +3013,7 @@ export const designs: Design[] = [
   {
     "id": 2074,
     "title": "Eid Special Mehndi 75",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Here's a festive design we like for Eid. It's not too hard to draw.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -3029,7 +3029,7 @@ export const designs: Design[] = [
   {
     "id": 2072,
     "title": "Eid Special Mehndi 73",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive design. It's not too hard to draw and works well for Eid.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -3045,7 +3045,7 @@ export const designs: Design[] = [
   {
     "id": 2070,
     "title": "Eid Special Mehndi 71",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Here's a festive design we like for Eid. It's not too hard to draw.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -3061,7 +3061,7 @@ export const designs: Design[] = [
   {
     "id": 2075,
     "title": "Eid Special Mehndi 76",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Festive henna for Eid. Rated medium.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -3077,7 +3077,7 @@ export const designs: Design[] = [
   {
     "id": 2076,
     "title": "Eid Special Mehndi 77",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive design. It's not too hard to draw and works well for Eid.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -3093,7 +3093,7 @@ export const designs: Design[] = [
   {
     "id": 2081,
     "title": "Eid Special Mehndi 82",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive pattern, picked for Eid. Difficulty: medium.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -3109,7 +3109,7 @@ export const designs: Design[] = [
   {
     "id": 2087,
     "title": "Eid Special Mehndi 88",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Festive henna for Eid. Rated medium.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -3125,7 +3125,7 @@ export const designs: Design[] = [
   {
     "id": 2080,
     "title": "Eid Special Mehndi 81",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive design. It's not too hard to draw and works well for Eid.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -3141,7 +3141,7 @@ export const designs: Design[] = [
   {
     "id": 2086,
     "title": "Eid Special Mehndi 87",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Here's a festive design we like for Eid. It's not too hard to draw.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -3157,7 +3157,7 @@ export const designs: Design[] = [
   {
     "id": 2088,
     "title": "Eid Special Mehndi 89",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive design. It's not too hard to draw and works well for Eid.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -3173,7 +3173,7 @@ export const designs: Design[] = [
   {
     "id": 2084,
     "title": "Eid Special Mehndi 85",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive design. It's not too hard to draw and works well for Eid.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -3189,7 +3189,7 @@ export const designs: Design[] = [
   {
     "id": 2085,
     "title": "Eid Special Mehndi 86",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive pattern, picked for Eid. Difficulty: medium.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -3205,7 +3205,7 @@ export const designs: Design[] = [
   {
     "id": 2089,
     "title": "Eid Special Mehndi 90",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive pattern, picked for Eid. Difficulty: medium.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -3221,7 +3221,7 @@ export const designs: Design[] = [
   {
     "id": 2099,
     "title": "Eid Special Mehndi 100",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Festive henna for Eid. Rated medium.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -3237,7 +3237,7 @@ export const designs: Design[] = [
   {
     "id": 2095,
     "title": "Eid Special Mehndi 96",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Festive henna for Eid. Rated medium.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -3253,7 +3253,7 @@ export const designs: Design[] = [
   {
     "id": 2091,
     "title": "Eid Special Mehndi 92",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Festive henna for Eid. Rated medium.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -3269,7 +3269,7 @@ export const designs: Design[] = [
   {
     "id": 2097,
     "title": "Eid Special Mehndi 98",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive pattern, picked for Eid. Difficulty: medium.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -3285,7 +3285,7 @@ export const designs: Design[] = [
   {
     "id": 2090,
     "title": "Eid Special Mehndi 91",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Here's a festive design we like for Eid. It's not too hard to draw.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -3301,7 +3301,7 @@ export const designs: Design[] = [
   {
     "id": 2098,
     "title": "Eid Special Mehndi 99",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Here's a festive design we like for Eid. It's not too hard to draw.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -3317,7 +3317,7 @@ export const designs: Design[] = [
   {
     "id": 2094,
     "title": "Eid Special Mehndi 95",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "Here's a festive design we like for Eid. It's not too hard to draw.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -3333,7 +3333,7 @@ export const designs: Design[] = [
   {
     "id": 2096,
     "title": "Eid Special Mehndi 97",
-    "description": "A stunning and intricate Mehndi design specially curated for Eid celebrations. This elegant pattern features beautiful motifs that will make your Eid unforgettable.",
+    "description": "A festive design. It's not too hard to draw and works well for Eid.",
     "country": "Global",
     "style": "Festive",
     "occasion": "Eid",
@@ -3350,7 +3350,7 @@ export const designs: Design[] = [
   {
     "id": 3004,
     "title": "Bridal Mehndi Look 5",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal design. It's best left to an experienced artist and works well for a wedding.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3366,7 +3366,7 @@ export const designs: Design[] = [
   {
     "id": 3003,
     "title": "Bridal Mehndi Look 4",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "Bridal henna for a wedding. Rated expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3382,7 +3382,7 @@ export const designs: Design[] = [
   {
     "id": 3001,
     "title": "Bridal Mehndi Look 2",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal pattern, picked for a wedding. Difficulty: expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3398,7 +3398,7 @@ export const designs: Design[] = [
   {
     "id": 3002,
     "title": "Bridal Mehndi Look 3",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "Here's a bridal design we like for a wedding. It's best left to an experienced artist.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3414,7 +3414,7 @@ export const designs: Design[] = [
   {
     "id": 3000,
     "title": "Bridal Mehndi Look 1",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal design. It's best left to an experienced artist and works well for a wedding.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3430,7 +3430,7 @@ export const designs: Design[] = [
   {
     "id": 3009,
     "title": "Bridal Mehndi Look 10",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal pattern, picked for a wedding. Difficulty: expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3446,7 +3446,7 @@ export const designs: Design[] = [
   {
     "id": 3006,
     "title": "Bridal Mehndi Look 7",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "Here's a bridal design we like for a wedding. It's best left to an experienced artist.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3462,7 +3462,7 @@ export const designs: Design[] = [
   {
     "id": 3005,
     "title": "Bridal Mehndi Look 6",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal pattern, picked for a wedding. Difficulty: expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3478,7 +3478,7 @@ export const designs: Design[] = [
   {
     "id": 3010,
     "title": "Bridal Mehndi Look 11",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "Here's a bridal design we like for a wedding. It's best left to an experienced artist.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3494,7 +3494,7 @@ export const designs: Design[] = [
   {
     "id": 3015,
     "title": "Bridal Mehndi Look 16",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "Bridal henna for a wedding. Rated expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3510,7 +3510,7 @@ export const designs: Design[] = [
   {
     "id": 3011,
     "title": "Bridal Mehndi Look 12",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "Bridal henna for a wedding. Rated expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3526,7 +3526,7 @@ export const designs: Design[] = [
   {
     "id": 3016,
     "title": "Bridal Mehndi Look 17",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal design. It's best left to an experienced artist and works well for a wedding.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3542,7 +3542,7 @@ export const designs: Design[] = [
   {
     "id": 3014,
     "title": "Bridal Mehndi Look 15",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "Here's a bridal design we like for a wedding. It's best left to an experienced artist.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3558,7 +3558,7 @@ export const designs: Design[] = [
   {
     "id": 3012,
     "title": "Bridal Mehndi Look 13",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal design. It's best left to an experienced artist and works well for a wedding.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3574,7 +3574,7 @@ export const designs: Design[] = [
   {
     "id": 3017,
     "title": "Bridal Mehndi Look 18",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal pattern, picked for a wedding. Difficulty: expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3590,7 +3590,7 @@ export const designs: Design[] = [
   {
     "id": 3013,
     "title": "Bridal Mehndi Look 14",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal pattern, picked for a wedding. Difficulty: expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3606,7 +3606,7 @@ export const designs: Design[] = [
   {
     "id": 3019,
     "title": "Bridal Mehndi Look 20",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "Bridal henna for a wedding. Rated expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3622,7 +3622,7 @@ export const designs: Design[] = [
   {
     "id": 3021,
     "title": "Bridal Mehndi Look 22",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal pattern, picked for a wedding. Difficulty: expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3638,7 +3638,7 @@ export const designs: Design[] = [
   {
     "id": 3024,
     "title": "Bridal Mehndi Look 25",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal design. It's best left to an experienced artist and works well for a wedding.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3654,7 +3654,7 @@ export const designs: Design[] = [
   {
     "id": 3028,
     "title": "Bridal Mehndi Look 29",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal design. It's best left to an experienced artist and works well for a wedding.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3670,7 +3670,7 @@ export const designs: Design[] = [
   {
     "id": 3022,
     "title": "Bridal Mehndi Look 23",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "Here's a bridal design we like for a wedding. It's best left to an experienced artist.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3686,7 +3686,7 @@ export const designs: Design[] = [
   {
     "id": 3020,
     "title": "Bridal Mehndi Look 21",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal design. It's best left to an experienced artist and works well for a wedding.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3702,7 +3702,7 @@ export const designs: Design[] = [
   {
     "id": 3026,
     "title": "Bridal Mehndi Look 27",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "Here's a bridal design we like for a wedding. It's best left to an experienced artist.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3718,7 +3718,7 @@ export const designs: Design[] = [
   {
     "id": 3027,
     "title": "Bridal Mehndi Look 28",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "Bridal henna for a wedding. Rated expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3734,7 +3734,7 @@ export const designs: Design[] = [
   {
     "id": 3025,
     "title": "Bridal Mehndi Look 26",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal pattern, picked for a wedding. Difficulty: expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3750,7 +3750,7 @@ export const designs: Design[] = [
   {
     "id": 3029,
     "title": "Bridal Mehndi Look 30",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal pattern, picked for a wedding. Difficulty: expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3766,7 +3766,7 @@ export const designs: Design[] = [
   {
     "id": 3034,
     "title": "Bridal Mehndi Look 35",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "Here's a bridal design we like for a wedding. It's best left to an experienced artist.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3782,7 +3782,7 @@ export const designs: Design[] = [
   {
     "id": 3031,
     "title": "Bridal Mehndi Look 32",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "Bridal henna for a wedding. Rated expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3798,7 +3798,7 @@ export const designs: Design[] = [
   {
     "id": 3033,
     "title": "Bridal Mehndi Look 34",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal pattern, picked for a wedding. Difficulty: expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3814,7 +3814,7 @@ export const designs: Design[] = [
   {
     "id": 3039,
     "title": "Bridal Mehndi Look 40",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "Bridal henna for a wedding. Rated expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3830,7 +3830,7 @@ export const designs: Design[] = [
   {
     "id": 3038,
     "title": "Bridal Mehndi Look 39",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "Here's a bridal design we like for a wedding. It's best left to an experienced artist.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3846,7 +3846,7 @@ export const designs: Design[] = [
   {
     "id": 3032,
     "title": "Bridal Mehndi Look 33",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal design. It's best left to an experienced artist and works well for a wedding.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3862,7 +3862,7 @@ export const designs: Design[] = [
   {
     "id": 3036,
     "title": "Bridal Mehndi Look 37",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal design. It's best left to an experienced artist and works well for a wedding.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3878,7 +3878,7 @@ export const designs: Design[] = [
   {
     "id": 3030,
     "title": "Bridal Mehndi Look 31",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "Here's a bridal design we like for a wedding. It's best left to an experienced artist.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3894,7 +3894,7 @@ export const designs: Design[] = [
   {
     "id": 3040,
     "title": "Bridal Mehndi Look 41",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal design. It's best left to an experienced artist and works well for a wedding.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3910,7 +3910,7 @@ export const designs: Design[] = [
   {
     "id": 3049,
     "title": "Bridal Mehndi Look 50",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal pattern, picked for a wedding. Difficulty: expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3926,7 +3926,7 @@ export const designs: Design[] = [
   {
     "id": 3042,
     "title": "Bridal Mehndi Look 43",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "Here's a bridal design we like for a wedding. It's best left to an experienced artist.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3942,7 +3942,7 @@ export const designs: Design[] = [
   {
     "id": 3047,
     "title": "Bridal Mehndi Look 48",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "Bridal henna for a wedding. Rated expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3958,7 +3958,7 @@ export const designs: Design[] = [
   {
     "id": 3045,
     "title": "Bridal Mehndi Look 46",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal pattern, picked for a wedding. Difficulty: expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3974,7 +3974,7 @@ export const designs: Design[] = [
   {
     "id": 3048,
     "title": "Bridal Mehndi Look 49",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal design. It's best left to an experienced artist and works well for a wedding.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -3990,7 +3990,7 @@ export const designs: Design[] = [
   {
     "id": 3041,
     "title": "Bridal Mehndi Look 42",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal pattern, picked for a wedding. Difficulty: expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4006,7 +4006,7 @@ export const designs: Design[] = [
   {
     "id": 3043,
     "title": "Bridal Mehndi Look 44",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "Bridal henna for a wedding. Rated expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4022,7 +4022,7 @@ export const designs: Design[] = [
   {
     "id": 3051,
     "title": "Bridal Mehndi Look 52",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "Bridal henna for a wedding. Rated expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4038,7 +4038,7 @@ export const designs: Design[] = [
   {
     "id": 3056,
     "title": "Bridal Mehndi Look 57",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal design. It's best left to an experienced artist and works well for a wedding.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4054,7 +4054,7 @@ export const designs: Design[] = [
   {
     "id": 3050,
     "title": "Bridal Mehndi Look 51",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "Here's a bridal design we like for a wedding. It's best left to an experienced artist.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4070,7 +4070,7 @@ export const designs: Design[] = [
   {
     "id": 3052,
     "title": "Bridal Mehndi Look 53",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal design. It's best left to an experienced artist and works well for a wedding.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4086,7 +4086,7 @@ export const designs: Design[] = [
   {
     "id": 3057,
     "title": "Bridal Mehndi Look 58",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal pattern, picked for a wedding. Difficulty: expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4102,7 +4102,7 @@ export const designs: Design[] = [
   {
     "id": 3053,
     "title": "Bridal Mehndi Look 54",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal pattern, picked for a wedding. Difficulty: expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4118,7 +4118,7 @@ export const designs: Design[] = [
   {
     "id": 3055,
     "title": "Bridal Mehndi Look 56",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "Bridal henna for a wedding. Rated expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4134,7 +4134,7 @@ export const designs: Design[] = [
   {
     "id": 3059,
     "title": "Bridal Mehndi Look 60",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "Bridal henna for a wedding. Rated expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4150,7 +4150,7 @@ export const designs: Design[] = [
   {
     "id": 3058,
     "title": "Bridal Mehndi Look 59",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "Here's a bridal design we like for a wedding. It's best left to an experienced artist.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4166,7 +4166,7 @@ export const designs: Design[] = [
   {
     "id": 3062,
     "title": "Bridal Mehndi Look 63",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "Here's a bridal design we like for a wedding. It's best left to an experienced artist.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4182,7 +4182,7 @@ export const designs: Design[] = [
   {
     "id": 3066,
     "title": "Bridal Mehndi Look 67",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "Here's a bridal design we like for a wedding. It's best left to an experienced artist.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4198,7 +4198,7 @@ export const designs: Design[] = [
   {
     "id": 3060,
     "title": "Bridal Mehndi Look 61",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal design. It's best left to an experienced artist and works well for a wedding.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4214,7 +4214,7 @@ export const designs: Design[] = [
   {
     "id": 3069,
     "title": "Bridal Mehndi Look 70",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal pattern, picked for a wedding. Difficulty: expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4230,7 +4230,7 @@ export const designs: Design[] = [
   {
     "id": 3068,
     "title": "Bridal Mehndi Look 69",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal design. It's best left to an experienced artist and works well for a wedding.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4246,7 +4246,7 @@ export const designs: Design[] = [
   {
     "id": 3064,
     "title": "Bridal Mehndi Look 65",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal design. It's best left to an experienced artist and works well for a wedding.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4262,7 +4262,7 @@ export const designs: Design[] = [
   {
     "id": 3065,
     "title": "Bridal Mehndi Look 66",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal pattern, picked for a wedding. Difficulty: expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4278,7 +4278,7 @@ export const designs: Design[] = [
   {
     "id": 3061,
     "title": "Bridal Mehndi Look 62",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal pattern, picked for a wedding. Difficulty: expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4294,7 +4294,7 @@ export const designs: Design[] = [
   {
     "id": 3073,
     "title": "Bridal Mehndi Look 74",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal pattern, picked for a wedding. Difficulty: expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4310,7 +4310,7 @@ export const designs: Design[] = [
   {
     "id": 3071,
     "title": "Bridal Mehndi Look 72",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "Bridal henna for a wedding. Rated expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4326,7 +4326,7 @@ export const designs: Design[] = [
   {
     "id": 3078,
     "title": "Bridal Mehndi Look 79",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "Here's a bridal design we like for a wedding. It's best left to an experienced artist.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4342,7 +4342,7 @@ export const designs: Design[] = [
   {
     "id": 3074,
     "title": "Bridal Mehndi Look 75",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "Here's a bridal design we like for a wedding. It's best left to an experienced artist.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4358,7 +4358,7 @@ export const designs: Design[] = [
   {
     "id": 3076,
     "title": "Bridal Mehndi Look 77",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal design. It's best left to an experienced artist and works well for a wedding.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4374,7 +4374,7 @@ export const designs: Design[] = [
   {
     "id": 3077,
     "title": "Bridal Mehndi Look 78",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal pattern, picked for a wedding. Difficulty: expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4390,7 +4390,7 @@ export const designs: Design[] = [
   {
     "id": 3070,
     "title": "Bridal Mehndi Look 71",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "Here's a bridal design we like for a wedding. It's best left to an experienced artist.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4406,7 +4406,7 @@ export const designs: Design[] = [
   {
     "id": 3072,
     "title": "Bridal Mehndi Look 73",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal design. It's best left to an experienced artist and works well for a wedding.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4422,7 +4422,7 @@ export const designs: Design[] = [
   {
     "id": 3084,
     "title": "Bridal Mehndi Look 85",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal design. It's best left to an experienced artist and works well for a wedding.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4438,7 +4438,7 @@ export const designs: Design[] = [
   {
     "id": 3082,
     "title": "Bridal Mehndi Look 83",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "Here's a bridal design we like for a wedding. It's best left to an experienced artist.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4454,7 +4454,7 @@ export const designs: Design[] = [
   {
     "id": 3088,
     "title": "Bridal Mehndi Look 89",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal design. It's best left to an experienced artist and works well for a wedding.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4470,7 +4470,7 @@ export const designs: Design[] = [
   {
     "id": 3089,
     "title": "Bridal Mehndi Look 90",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal pattern, picked for a wedding. Difficulty: expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4486,7 +4486,7 @@ export const designs: Design[] = [
   {
     "id": 3080,
     "title": "Bridal Mehndi Look 81",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal design. It's best left to an experienced artist and works well for a wedding.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4502,7 +4502,7 @@ export const designs: Design[] = [
   {
     "id": 3086,
     "title": "Bridal Mehndi Look 87",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "Here's a bridal design we like for a wedding. It's best left to an experienced artist.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4518,7 +4518,7 @@ export const designs: Design[] = [
   {
     "id": 3081,
     "title": "Bridal Mehndi Look 82",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal pattern, picked for a wedding. Difficulty: expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4534,7 +4534,7 @@ export const designs: Design[] = [
   {
     "id": 3087,
     "title": "Bridal Mehndi Look 88",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "Bridal henna for a wedding. Rated expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4550,7 +4550,7 @@ export const designs: Design[] = [
   {
     "id": 3085,
     "title": "Bridal Mehndi Look 86",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal pattern, picked for a wedding. Difficulty: expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4566,7 +4566,7 @@ export const designs: Design[] = [
   {
     "id": 3097,
     "title": "Bridal Mehndi Look 98",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal pattern, picked for a wedding. Difficulty: expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4582,7 +4582,7 @@ export const designs: Design[] = [
   {
     "id": 3090,
     "title": "Bridal Mehndi Look 91",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "Here's a bridal design we like for a wedding. It's best left to an experienced artist.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4598,7 +4598,7 @@ export const designs: Design[] = [
   {
     "id": 3098,
     "title": "Bridal Mehndi Look 99",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "Here's a bridal design we like for a wedding. It's best left to an experienced artist.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4614,7 +4614,7 @@ export const designs: Design[] = [
   {
     "id": 3093,
     "title": "Bridal Mehndi Look 94",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal pattern, picked for a wedding. Difficulty: expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4630,7 +4630,7 @@ export const designs: Design[] = [
   {
     "id": 3094,
     "title": "Bridal Mehndi Look 95",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "Here's a bridal design we like for a wedding. It's best left to an experienced artist.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4646,7 +4646,7 @@ export const designs: Design[] = [
   {
     "id": 3096,
     "title": "Bridal Mehndi Look 97",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal design. It's best left to an experienced artist and works well for a wedding.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4662,7 +4662,7 @@ export const designs: Design[] = [
   {
     "id": 3091,
     "title": "Bridal Mehndi Look 92",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "Bridal henna for a wedding. Rated expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4678,7 +4678,7 @@ export const designs: Design[] = [
   {
     "id": 3095,
     "title": "Bridal Mehndi Look 96",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "Bridal henna for a wedding. Rated expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4694,7 +4694,7 @@ export const designs: Design[] = [
   {
     "id": 3092,
     "title": "Bridal Mehndi Look 93",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "A bridal design. It's best left to an experienced artist and works well for a wedding.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4710,7 +4710,7 @@ export const designs: Design[] = [
   {
     "id": 3099,
     "title": "Bridal Mehndi Look 100",
-    "description": "A stunning and intricate Bridal Mehndi design specially curated for grand celebrations. This elegant pattern features beautiful motifs that will make your special day unforgettable.",
+    "description": "Bridal henna for a wedding. Rated expert.",
     "country": "Global",
     "style": "Bridal",
     "occasion": "Wedding",
@@ -4726,7 +4726,7 @@ export const designs: Design[] = [
   {
     "id": 4001,
     "title": "Mandala Bridal Mehndi #70",
-    "description": "An exquisite Mandala Bridal Mehndi design showcasing a striking central mandala, detailed finger patterns, and intricate wrist cuffs. Perfect for adding a traditional yet modern touch to your bridal look.",
+    "description": "A mandala pattern in the Indian style, picked for a wedding. Difficulty: expert.",
     "country": "India",
     "style": "Mandala",
     "occasion": "Wedding",
