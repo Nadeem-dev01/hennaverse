@@ -28,6 +28,9 @@ export async function generateMetadata({
     title: clampTitle(`${tool.tagline} - ${tool.title}`),
     description: clampDescription(tool.description),
     keywords: tool.keywords,
+    // Templated near-duplicate pages: keep them out of the index, but let
+    // crawlers follow their links to the real design pages.
+    robots: { index: false, follow: true },
     alternates: {
       canonical: `/tools/${slug}`,
     },

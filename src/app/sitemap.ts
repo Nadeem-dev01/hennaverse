@@ -2,7 +2,6 @@ import { MetadataRoute } from "next";
 import { blogs } from "@/data/blogs";
 import { countries } from "@/data/countries";
 import { categories } from "@/data/taxonomy";
-import { mehndiTools } from "@/data/mehndiTools";
 import { designCategories } from "@/data/designCategories";
 import { allDesigns, designsByOccasion } from "@/data/index";
 const BASE_URL = "https://www.mehndidesignhenna.com";
@@ -144,13 +143,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }));
 
-  // --- Tool pages ---
-  const toolRoutes: MetadataRoute.Sitemap = mehndiTools.map((tool) => ({
-    url: `${BASE_URL}/tools/${tool.slug}`,
-    lastModified: SITE_LAST_UPDATED,
-    changeFrequency: "monthly" as const,
-    priority: 0.5,
-  }));
+  // Tool pages (/tools/[slug]) are templated near-duplicates and are noindexed,
+  // so they are left out of the sitemap.
 
   // --- Blog category pages ---
   const blogCategories = Array.from(new Set(blogs.map((b) => b.category)));
@@ -169,7 +163,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...blogCategoryRoutes,
     ...blogRoutes,
     ...styleRoutes,
-    ...toolRoutes,
     ...designRoutes,
   ];
 }
