@@ -2,7 +2,7 @@ import TryOnClient from "./TryOnClient";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Virtual Mehndi Try-On Tool | See Henna on Your Hand",
+  title: "Virtual Mehndi Try-On Tool",
   description:
     "Upload a photo of your hand and try on 100+ beautiful mehndi designs instantly. Adjust, rotate, and preview henna art on your own skin tone before booking an artist.",
   alternates: {

@@ -8,7 +8,7 @@ import SectionHeading from "@/components/SectionHeading";
 import DesignGrid from "@/components/DesignGrid";
 import Pagination from "@/components/Pagination";
 import { buildCollectionPageSchema } from "@/lib/schema";
-import { clampDescription } from "@/lib/seo";
+import { clampDescription, clampTitle } from "@/lib/seo";
 
 const BASE_URL = "https://www.mehndidesignhenna.com";
 
@@ -41,7 +41,7 @@ export async function generateMetadata(
   const ogImages = firstImage ? [{ url: `${BASE_URL}${firstImage}`, width: 800, height: 800, alt: occasion.title }] : [];
 
   return {
-    title: page > 1 ? `${occasion.metaTitle} - Page ${page}` : occasion.metaTitle,
+    title: clampTitle(page > 1 ? `${occasion.metaTitle} - Page ${page}` : occasion.metaTitle),
     description: clampDescription(occasion.metaDescription),
     keywords: occasion.keywords,
     // An occasion with no designs yet is an empty page — keep it out of the index.

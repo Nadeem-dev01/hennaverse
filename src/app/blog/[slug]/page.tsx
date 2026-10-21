@@ -1,3 +1,4 @@
+import { clampDescription, clampTitle } from "@/lib/seo";
 import { blogs } from "@/data/blogs";
 import BlogClient from "./BlogClient";
 import type { Metadata } from "next";
@@ -25,8 +26,8 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
   const descriptionText = blog.metaDescription || blog.excerpt;
 
   return {
-    title: blog.metaTitle ? { absolute: blog.metaTitle } : titleText,
-    description: descriptionText,
+    title: clampTitle(titleText),
+    description: clampDescription(descriptionText),
     alternates: {
       canonical: `/blog/${blog.slug}`,
     },

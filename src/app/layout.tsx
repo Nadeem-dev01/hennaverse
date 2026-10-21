@@ -32,7 +32,7 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.mehndidesignhenna.com"),
   title: {
-    default: "Mehndi Design Henna — 350+ Easy Mehndi Designs & Henna Patterns",
+    default: "Mehndi Design Henna — 350+ Easy Mehndi Designs",
     template: "%s | Mehndi Design Henna",
   },
   icons: {

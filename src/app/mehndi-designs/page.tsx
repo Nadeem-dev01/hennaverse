@@ -7,7 +7,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import SectionHeading from "@/components/SectionHeading";
 
 export const metadata: Metadata = {
-  title: "Easy Mehndi Designs — Simple, Arabic, Back Hand and Eid Patterns (2026)",
+  title: { absolute: "Easy Mehndi Designs: Simple, Arabic, Back Hand and Eid" },
   description: "Browse easy mehndi designs for hands: simple, Arabic, back hand, kids and Eid henna patterns across 26 styles.",
   keywords: [
     "designs mehndi designs",

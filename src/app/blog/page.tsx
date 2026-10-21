@@ -4,7 +4,7 @@ import BlogListClient from "./BlogListClient";
 const BASE_URL = "https://www.mehndidesignhenna.com";
 
 export const metadata: Metadata = {
-  title: "Henna Guides: How Long Does Henna Last, Henna Kits, Removal and More",
+  title: { absolute: "Henna Guides: Aftercare, Removal, Kits and More" },
   description:
     "Henna guides: how long henna lasts, how to remove it, drying time, what it is made of, plus henna kit, cone and powder advice.",
     keywords: [

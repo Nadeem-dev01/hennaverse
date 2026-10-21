@@ -1,3 +1,4 @@
+import { clampDescription, clampTitle } from "@/lib/seo";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { designs } from "@/data/designs";
@@ -24,8 +25,8 @@ export async function generateMetadata({
   if (!tool) return { title: "Not Found" };
 
   return {
-    title: `${tool.tagline} - ${tool.title}`,
-    description: tool.description.slice(0, 160),
+    title: clampTitle(`${tool.tagline} - ${tool.title}`),
+    description: clampDescription(tool.description),
     keywords: tool.keywords,
     alternates: {
       canonical: `/tools/${slug}`,

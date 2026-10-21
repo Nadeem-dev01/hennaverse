@@ -6,7 +6,7 @@ import { countries } from "@/data/countries";
 const BASE_URL = "https://www.mehndidesignhenna.com";
 
 export const metadata: Metadata = {
-  title: "Mehndi Styles Around the World: Indian, Arabic, Moroccan and More",
+  title: { absolute: "Mehndi Styles Around the World: Indian, Arabic and More" },
   description:
     "Henna and mehndi styles from India, Pakistan, Arabia, Morocco, Turkey, Indonesia and Africa. Explore regional patterns and their history.",
     keywords: [

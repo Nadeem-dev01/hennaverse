@@ -3,7 +3,7 @@ import { mehndiTools, mehndiToolCategories } from "@/data/mehndiTools";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Henna Stencils, Mehndi Stencils & Free Design Tools (2026)",
+  title: { absolute: "Henna Stencils, Mehndi Stencils and Free Design Tools" },
   description:
     "Free henna stencils, mehndi stencils, and 100+ design tools — generators, finders, and AI-powered selectors for easy arabic mehndi designs, back hand mehndi, and eid henna patterns.",
   keywords: [

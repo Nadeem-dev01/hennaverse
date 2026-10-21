@@ -6,7 +6,7 @@ import SectionHeading from "@/components/SectionHeading";
 const BASE_URL = "https://www.mehndidesignhenna.com";
 
 export const metadata: Metadata = {
-  title: "About Mehndi Design Henna — Our Mission to Celebrate Henna Art Worldwide",
+  title: "About Us — Celebrating Henna Art Worldwide",
   description:
     "Learn about Mehndi Design Henna — our mission to celebrate henna art from every culture, provide expert tutorials, and connect the global mehndi community.",
     keywords: [

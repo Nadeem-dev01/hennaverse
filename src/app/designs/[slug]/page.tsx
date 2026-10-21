@@ -1,3 +1,4 @@
+import { clampDescription, clampTitle } from "@/lib/seo";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { allDesigns, designBySlug } from "@/data/index";
@@ -32,8 +33,8 @@ export async function generateMetadata(
     : design.title;
 
   return {
-    title: enrichedTitle,
-    description: metaDesc,
+    title: clampTitle(enrichedTitle),
+    description: clampDescription(metaDesc),
     alternates: { canonical: `/designs/${design.slug}` },
     openGraph: {
       title: enrichedTitle,

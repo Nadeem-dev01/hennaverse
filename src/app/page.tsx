@@ -18,7 +18,7 @@ import { designHrefForImage } from "@/data/index";
 const BASE_URL = "https://www.mehndidesignhenna.com";
 
 export const metadata: Metadata = {
-  title: "Mehndi Design Henna — 350+ Henna Designs, Virtual Try-On & Free Guides",
+  title: { absolute: "Mehndi Design Henna — 350+ Easy Henna Designs and Guides" },
   description:
     "Browse 350+ easy mehndi designs for hands — simple, arabic, bridal, and eid henna patterns. Use our Virtual Try-On tool & find free henna guides!",
   alternates: {

@@ -5,7 +5,7 @@ import { allDesigns } from "@/data/index";
 const BASE_URL = "https://www.mehndidesignhenna.com";
 
 export const metadata: Metadata = {
-  title: "Mehndi Patterns for Hands: Easy, Cute and Simple Henna Designs Gallery",
+  title: { absolute: "Mehndi Patterns for Hands: Easy Henna Designs Gallery" },
   description:
     "Browse mehndi patterns for hands: easy, simple Arabic, back hand and kids mehndi designs. Filter by style, body part and difficulty.",
     keywords: [

@@ -2,7 +2,7 @@ import DesignFinderClient from "./DesignFinderClient";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Mehndi Design Finder | Suggest Henna based on Your Hand",
+  title: "AI Mehndi Design Finder",
   description:
     "Upload a photo of your hand or foot, and our AI-powered Design Finder will analyze the shape and suggest the perfect mehndi designs from across the web.",
   keywords: [

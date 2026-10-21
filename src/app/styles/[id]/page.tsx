@@ -1,3 +1,4 @@
+import { clampDescription, clampTitle } from "@/lib/seo";
 import { notFound } from "next/navigation";
 import { countries } from "@/data/countries";
 import { designs } from "@/data/designs";
@@ -43,8 +44,8 @@ export async function generateMetadata(props: { params: Promise<{ id: string }> 
   ];
 
   return {
-    title: metaTitle,
-    description: metaDescription,
+    title: clampTitle(metaTitle),
+    description: clampDescription(metaDescription),
     keywords,
     alternates: { canonical: `/styles/${country.id}` },
     openGraph: {

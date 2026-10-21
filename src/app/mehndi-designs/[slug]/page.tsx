@@ -9,7 +9,7 @@ import DesignGrid from "@/components/DesignGrid";
 import Pagination from "@/components/Pagination";
 import FAQAccordion from "@/components/FAQAccordion";
 import CategoryGuide from "@/components/CategoryGuide";
-import { clampDescription } from "@/lib/seo";
+import { clampDescription, clampTitle } from "@/lib/seo";
 import { buildFAQSchema } from "@/lib/schema";
 import type { DesignFAQ } from "@/data/types";
 
@@ -57,7 +57,7 @@ export async function generateMetadata(
     : `/mehndi-designs/${params.slug}`;
 
   return {
-    title: page > 1 ? `${metaTitle} - Page ${page}` : metaTitle,
+    title: clampTitle(page > 1 ? `${metaTitle} - Page ${page}` : metaTitle),
     description: clampDescription(metaDescription),
     keywords: taxo?.keywords,
     alternates: {
